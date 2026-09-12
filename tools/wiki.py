@@ -72,7 +72,7 @@ VALID = {
     "Notability": {"N1", "N2", "N3"},
     "Coherence": {f"F{n}" for n in range(5)},
     "Causality": {"C-owns", "C-dodges", "C-silent"},
-    "Family": {"CAU", "ENE", "CON", "STA", "HAZ", "LOR", "MAN"},
+    "Family": {"CAU", "ENE", "CON", "STA", "HAZ", "LOR", "WRP", "MAN"},
 }
 VERDICTS = {
     "physics": {"SATISFIES", "VIOLATES", "DODGES", "SILENT", "N/A"},
@@ -82,14 +82,14 @@ CONF_RE = re.compile(r"\[([A-Z]{2,6})\]")
 VALID_CONF = {"HIGH", "MED", "LOW"}
 TIER_RE = re.compile(r"\bS([0-9])\b")
 VALID_TIERS = {"1", "2", "3", "4", "5"}
-ID_RE = re.compile(r"\b(CAU|ENE|CON|STA|HAZ|LOR|MAN)-(\d+)\b")
+ID_RE = re.compile(r"\b(CAU|ENE|CON|STA|HAZ|LOR|WRP|MAN)-(\d+)\b")
 ROW_RE = re.compile(r"^\|\s*([A-Z]{3}-\d+)\s*\|\s*([A-Z/]+)\s*\|(.*)\|\s*$")
 
 
 def register_ids():
     ids = []
     for line in REGISTER.read_text(encoding="utf-8").splitlines():
-        m = re.match(r"^\|\s*([A-Z]{3}-\d+)\s*\|", line)
+        m = re.match(r"^\|\s*\[?([A-Z]{3}-\d+)\]?(?:\([^)]*\))?\s*\|", line)
         if m:
             ids.append(m.group(1))
     return ids

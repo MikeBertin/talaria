@@ -16,6 +16,7 @@ Families:
 | **STA** | Stability: semiclassical instability of bubbles, throats and chronology horizons |
 | **HAZ** | Hazards to crew and destination |
 | **LOR** | Kinematics: what special relativity and wave propagation actually forbid, and the tachyon and tunnelling claims |
+| **WRP** | The warp drive class: what a warp drive is, the shell classification and the dated state of the positive-energy argument |
 | **MAN** | Leaving the manifold: what extra dimensions do and do not permit |
 
 Verification marks in the citation column: **⚠ v1** means written from
@@ -26,3 +27,13 @@ build on an unverified entry.
 Scoring vocabulary is in [GRADING.md](../GRADING.md). Every dossier scores
 every entry here; the tables in the dossiers are the only source the matrix
 reads.
+
+## Page schema
+
+One page per entry, filename the id in lower case (`cau-1.md`). H1 is the id
+and a short statement of the result, the italic hook is what it forbids in one
+line, and the metadata line carries `**Kind:** constraint`, `**Family:**` and
+`**Last reviewed:**`. Sections in order: The result, What it forbids or costs,
+Escape hatches, Who it bites (one line per dossier that scores against it,
+added as dossiers are written), Sources. `tools/seed_constraints.py` writes a
+skeleton for any id that has no page; the prose is then rewritten by hand.

@@ -60,7 +60,9 @@ note that says why. A row with a verdict and no note is a guess.
 | LOR-2 | N/A | |
 | LOR-3 | N/A | |
 | LOR-4 | N/A | |
-| LOR-5 | SILENT | |
+| WRP-1 | SILENT | |
+| WRP-2 | SILENT | |
+| WRP-3 | SILENT | |
 | MAN-1 | N/A | |
 
 ## Status of the argument

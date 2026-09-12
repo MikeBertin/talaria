@@ -10,7 +10,7 @@ loophole class; port 8191.
   register v1 (draft citations), two dossier templates, seed catalogue of
   roughly 35 physics and 65 fiction entries, health checker, registry entry.
 
-## M1: Register hardening
+## M1: Register hardening ✅ (2026-09-12)
 - Verify every register entry against the paper: journal reference, arXiv
   id, and that the stated result is what the paper shows. Mark ✓ per entry.
 - Split contested entries where the literature disagrees (the positive-energy

@@ -64,7 +64,9 @@ the engagement or rule occurs.
 | LOR-2 | N/A | |
 | LOR-3 | N/A | |
 | LOR-4 | N/A | |
-| LOR-5 | N/A | |
+| WRP-1 | N/A | |
+| WRP-2 | N/A | |
+| WRP-3 | N/A | |
 | MAN-1 | ENGAGES | |
 
 ## Sources

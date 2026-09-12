@@ -5,3 +5,34 @@
 The hand-written worklist is [theories/CATALOGUE.md](theories/CATALOGUE.md);
 the register is [constraints/REGISTER.md](constraints/REGISTER.md).
 
+## Constraints
+
+- [CAU-1: The tachyonic antitelephone](constraints/cau-1.md): Any FTL signal or vehicle, of any mechanism, unless Lorentz invariance is broken
+- [CAU-2: Chronology protection](constraints/cau-2.md): Any scheme that turns FTL into a time machine, which by CAU-1 and CAU-3 is all of them given two devices
+- [CAU-3: Two devices make a time machine](constraints/cau-3.md): Wormholes and warp drives are not merely fast: they are time machines with an assembly step
+- [CAU-4: The preferred-frame escape](constraints/cau-4.md): Any FTL scheme that keeps full Lorentz invariance with no fixed FTL speed is a time machine
+- [CAU-5: The no-communication theorem](constraints/cau-5.md): Every "entanglement radio" and quantum ansible
+- [CON-1: The horizon: nobody is steering](constraints/con-1.md): The pilot's chair is decorative
+- [CON-2: The bootstrap problem](constraints/con-2.md): "Just build a warp drive" is not a plan
+- [CON-3: The Krasnikov tube](constraints/con-3.md): The honest L2 scheme, and it still pays the ENE-3 bill and the CAU-3 bill
+- [ENE-1: The energy conditions](constraints/ene-1.md): Not itself a no-go, but the currency every other ENE entry is priced in
+- [ENE-2: Superluminal travel requires negative energy](constraints/ene-2.md): Every L2 and L3 scheme pays in negative energy; positive-energy warp drives cannot be superluminal
+- [ENE-3: Quantum inequalities and the Alcubierre bill](constraints/ene-3.md): Any L2 scheme at engineering scale; the bill is not merely large but larger than the universe
+- [ENE-4: Van Den Broeck's pocket](constraints/ene-4.md): Does not remove the negative energy, only its quantity
+- [ENE-5: Generic warp drives violate the null energy condition](constraints/ene-5.md): The positive-energy warp claims of 2021 are not what the press said they were
+- [ENE-6: The Casimir floor](constraints/ene-6.md): The only negative energy anyone has ever made, and the only one anyone can point to, and it is tens of…
+- [HAZ-1: The arrival burst](constraints/haz-1.md): Do not decelerate towards anything you like
+- [HAZ-2: The crew is cooked](constraints/haz-2.md): The crew problem as well as the bubble problem, if ENE-3 holds
+- [HAZ-3: Tidal limits on a traversable throat](constraints/haz-3.md): The throat is large, and the exotic matter bill (STA-2) scales with it
+- [LOR-1: Nothing accelerates to c](constraints/lor-1.md): Every L1 scheme that proposes to push harder
+- [LOR-2: Tachyons are an instability](constraints/lor-2.md): L1 by particle physics is closed: the tachyon is an instability, and if it were a particle it would be a…
+- [LOR-3: Front velocity is the signal velocity](constraints/lor-3.md): Every L5 claim built on a group velocity or a tunnelling time
+- [LOR-4: The Scharnhorst effect and OPERA](constraints/lor-4.md): The one "measured" superluminal velocity in the literature was an instrument, and the one calculated is…
+- [MAN-1: Extra dimensions offer no hyperspace](constraints/man-1.md): "Hyperspace" as a separate space with laxer rules has no counterpart in physics
+- [STA-1: Semiclassical instability of warp bubbles](constraints/sta-1.md): A superluminal bubble is not a stable object even if you could build it
+- [STA-2: The throat needs exotic matter](constraints/sta-2.md): Every L3 wormhole pays in negative energy, and the amount scales with throat radius
+- [STA-3: Divergence at the chronology horizon](constraints/sta-3.md): The time-machine step in CAU-3 may be self-destroying
+- [WRP-1: What a warp drive is](constraints/wrp-1.md): The class definition
+- [WRP-2: A warp drive is a shell of matter](constraints/wrp-2.md): Positive energy buys you a subluminal shell, which is a spaceship
+- [WRP-3: No superluminal positive-energy warp drive survives](constraints/wrp-3.md): The live argument, with a dated score: superluminal and positive-energy, none; subluminal and…
+
