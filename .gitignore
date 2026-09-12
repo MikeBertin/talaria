@@ -1,0 +1,6 @@
+HANDOVER.md
+STATUS.md
+log.md
+.DS_Store
+node_modules/
+__pycache__/
