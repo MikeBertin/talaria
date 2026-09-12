@@ -37,6 +37,35 @@ None; this is a floor, not a ceiling
 - SILENT: [Natário 2002: warp drive with zero expansion](../theories/physics/natario-2002.md). The paper does not invoke a source at all; the only negative energy ever made (Casimir) is tens of orders of magnitude short of any wall density, and the gap is not addressed.
 - SILENT: [Van Den Broeck 1999: the pocket geometry](../theories/physics/van-den-broeck-1999.md). The Casimir effect is named as the reason the WEC may be violated quantum mechanically and never priced; the neck density of $10^{93}$ kg per cubic metre is about a hundred orders of magnitude above the Casimir floor and the paper does not address the gap beyond saying that generating enough negative energy remains a question.
 
+**Fictional drives**
+
+- SILENT: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [Battlestar Galactica: the FTL jump (2004 series)](../theories/fiction/battlestar-galactica-ftl-jump.md). No source of negative energy is named.
+- SILENT: [Commonwealth: CST wormholes with trains through them (Hamilton 2004)](../theories/fiction/commonwealth-cst-wormholes.md). No source of negative energy is named.
+- SILENT: [Contact: the Machine and the tunnel system (Sagan 1985, Zemeckis 1997)](../theories/fiction/contact-sagan-machine.md). The Casimir effect is the only negative energy ever produced and it is tens of orders of magnitude short of any throat; the work never names a source for its exotic material beyond "somebody older built it".
+- SILENT: [Cowboy Bebop (1998): the astral gates](../theories/fiction/cowboy-bebop-astral-gates.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). The trail is a vacuum with a changed light speed, which is what the Casimir vacuum is on a scale of one part in $10^{32}$; the novel never connects the two or prices the change.
+- SILENT: [Dune: the Guild navigators and folding space (Herbert 1965)](../theories/fiction/dune-holtzman-fold-space.md). No source of negative energy is named; the Casimir effect does not appear.
+- SILENT: [Event Horizon (1997): the gravity drive](../theories/fiction/event-horizon-gravity-drive.md). The only real negative energy is Casimir's, and the film neither invokes it nor names any source for holding a gateway open.
+- SILENT: [Farscape (1999): wormholes, and starburst as a separate thing](../theories/fiction/farscape-wormholes.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [Guardians of the Galaxy Vol. 2 (2017): jump points](../theories/fiction/guardians-jump-points.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [Hyperion: the farcasters (Simmons 1989)](../theories/fiction/hyperion-farcasters.md). No source of negative energy is named.
+- SILENT: [Interstellar: the wormhole near Saturn (2014)](../theories/fiction/interstellar-wormhole.md). The Casimir effect is never mentioned; the film has no candidate source for negative energy beyond "they".
+- SILENT: [Mass Effect: the mass relays (BioWare 2007 onward)](../theories/fiction/mass-effect-relays.md). No source of negative energy is named.
+- SILENT: [Outer Wilds (2019): Nomai warp cores](../theories/fiction/outer-wilds-warp-cores.md). No source of negative energy is named; the supernova is positive energy, and the Casimir floor is not approached.
+- SILENT: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). No source of negative energy beyond "quantum fuel" is named; the Casimir floor is not approached.
+- SILENT: [Starfield (2023): the grav drive](../theories/fiction/starfield-grav-drive.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [Stargate: the gate network (1994 film, SG-1 1997 onward)](../theories/fiction/stargate-gate-network.md). No source of negative energy is named.
+- SILENT: [Stargate: the ships' hyperdrives](../theories/fiction/stargate-hyperdrive.md). The ZPM's "vacuum energy" is the one place the series reaches toward the Casimir vacuum, and it never states a magnitude or a mechanism; the row applies to the claim and is never addressed.
+- SILENT: [Starman Jones: the congruencies (Heinlein 1953)](../theories/fiction/starman-jones-congruencies.md). No source of negative energy is named.
+- SILENT: [Super Dimension Fortress Macross (1982): the space fold](../theories/fiction/macross-fold-drive.md). No source of negative energy is named; the Casimir floor is not approached.
+- SILENT: [The Alderson drive (Niven and Pournelle 1974)](../theories/fiction/alderson-drive.md). No source of negative energy is named.
+- SILENT: [The Expanse: the ring gates and the slow zone (Corey 2013 onward)](../theories/fiction/expanse-ring-gates.md). No source of negative energy is named.
+- SILENT: [The Forever War: collapsar jumps (Haldeman 1974)](../theories/fiction/forever-war-collapsars.md). No source of negative energy is named.
+- SILENT: [Thor (2011): the Bifrost](../theories/fiction/thor-bifrost.md). No source of negative energy is named; the Casimir floor is not approached by anything on screen.
+- SILENT: [Wing Commander (1990) and the 1999 film: jump points](../theories/fiction/wing-commander-jump-points.md). No source of negative energy is named; the Casimir floor is not approached.
+- ENGAGES: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). The depleted vacuum between two polar discs is the Casimir geometry described in the lore's own words: vacuum with its energy drawn out between two plates. The lore does not name Casimir and does not price the effect, which the register puts at $-4 \times 10^{-4}$ joules per cubic metre.
+
 ## Sources
 
 - Casimir, Proc. K. Ned. Akad. Wet. 51, 793 (1948); Lamoreaux, Phys. Rev. Lett. 78, 5 (1997), erratum 81, 5475 (1998) ✓

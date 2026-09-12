@@ -1,0 +1,86 @@
+# Star Citizen: quantum drive and jump points
+
+*A sublight warp bubble for getting around a system and natural wormholes for getting out of it, in a game that has been in development since 2012 and opened its first jump point to players in 2024.*
+
+**Kind:** fiction · **Loophole:** L3 · **Notability:** N3 · **Coherence:** F3 · **Causality:** C-silent · **Last reviewed:** 2026-09-12
+
+## The drive as depicted
+
+*Star Citizen* (Cloud Imperium Games, directed by Chris Roberts, crowdfunded from 2012 and playable as an evolving alpha) separates its travel into two mechanisms and keeps them separate in play. Within a star system a ship uses its quantum drive: the pilot selects a destination, the drive spools and calibrates, and the ship travels there at very high speed over minutes, with the starfield streaking past and a real transit that can be interrupted **[HIGH] S1**. Between systems a ship must find a jump point, a natural anomaly at a fixed place near the edge of a system, and fly through a tunnel to the paired point in another system; since Alpha 4.0 (December 2024) the first such point, between the Stanton and Pyro systems, has been open to players, with more added since **[HIGH] S1**.
+
+The quantum drive is the part with physics. Roberts's account, given to the player community, is that the drive makes a bubble around the ship that contracts space ahead and expands it behind, "essentially an Alcubierre drive"; quantum fuel is converted into the negative energy density that shapes the bubble, at a cost in power and heat that larger ships absorb better **[MED] S3** (Chris Roberts on the Spectrum forum, as transcribed by the Star Citizen Wiki). The in-fiction speed is the point: the drive is sublight. The lore timeline has the first self-sustaining quantum drive built in 2075 at one per cent of light speed and a 2214 engine reaching ten per cent, and the drive's ceiling in lore is a fifth of light speed, which is why interstellar travel needs something else **[MED] S2** (RSI comm-links as compiled by the wiki; in the current build drives reach higher fractions of c over long routes, and the numbers change with patches).
+
+The jump points are the shortcut, and the official lore piece that defines them is "UEE Queries: Jump-Points" (2012). Jump points are gaps in spacetime connecting distant systems, each with a paired exit; they are near-invisible, described as looking like shimmering air on a hot day, and are found by scanning for energy signatures **[HIGH] S2**. Nick Croshaw made the first traversal in 2271 after observing "a flow of neutrons disappear into nothing" and passing through with a modified quantum drive; modern jump drives reproduce the emissions of an exposed fusion core that he found would open the point **[HIGH] S2**. The interior, called interspace, is "a smear of sight and sound"; masses inside can damage a ship; and a pilot who leaves the tunnel early is destroyed **[HIGH] S2**. The game's implementation follows: a ship with a jump drive fitted to its quantum drive opens the point, flies a twisting tunnel with walls that damage the hull on contact and emerges in the far system **[HIGH] S1**. New points can be discovered and registered with the UEE for a reward, on production of scan data and a return trip **[HIGH] S2**.
+
+## Origin and lineage
+
+Roberts's sequel in spirit to his *Wing Commander*, which the catalogue carries separately ([Wing Commander](wing-commander-jump-points.md)); the fixed natural jump point, the flash and the logo's star all descend from it by the franchise's own account **[MED] S3**. The quantum drive's lineage is the unusual one: the developer names [Alcubierre 1994](../physics/alcubierre-1994.md) as the model and adopts its negative energy density as the thing the fuel is for **[MED] S3**. That is a rare case of a game citing the paper, and the citation is used correctly as far as it goes: a bubble, contraction ahead and expansion behind, no acceleration felt inside.
+
+What the developer's statement does not say, and this dossier records, is that a subluminal Alcubierre-type bubble is the one warp configuration the physics permits without exotic matter. [Bobrick and Martire](../physics/bobrick-martire-2021.md) classify subluminal positive-energy warp shells, and the 2024 constant-velocity subluminal shell is the surviving positive-energy result on the register ([WRP-3](../../constraints/wrp-3.md)); superluminal bubbles need negative energy and, by [CON-1](../../constraints/con-1.md), cannot be steered from inside. A game whose warp drive stays under light speed and needs a separate device to leave the system has, by accident or design, drawn the line where the literature draws it.
+
+## Which loophole, and why
+
+**L3, take a shortcut**, with L2 as a stated secondary move. The interstellar mechanism is the jump point: fixed, natural, paired, with a tunnel between, which is a traversable wormhole in everything but name, and the lore's own word for it is a gap in spacetime. The in-system mechanism is an Alcubierre bubble at sublight speed, which is L2 by the catalogue's definition and not FTL at all. The primary class is L3 because that is where the light barrier is crossed; the quantum drive is noted as L2 and scored where the warp rows apply.
+
+The cousin for the jump points is [Morris and Thorne 1988](../physics/morris-thorne-1988.md), whose bill is negative energy at a throat that scales with the size of what passes, mouths in place before the first trip and a time machine on any relative motion of the mouths. The lore pays the second cleanly: points are natural and found, not made, and the game's history is a history of finding them. The cousin for the quantum drive is [Alcubierre 1994](../physics/alcubierre-1994.md), whose bill is universe-scale negative energy, a horizon that cuts the crew off from the front wall and a bootstrap that needs the route laid in advance; every one of those bills is for a superluminal bubble, and the quantum drive stays under light speed, so it pays the subluminal price only, which is a positive-energy shell and a ship. The lore says the fuel makes negative energy; the physics says a subluminal bubble need not.
+
+## The rules it keeps
+
+- The quantum drive is sublight, with a stated ceiling of a fifth of light speed in lore, so systems cannot be reached by it; the lore states this as the reason jump points matter **[MED] S2**.
+- The quantum drive needs a fixed destination to lock, spools before firing, consumes fuel, generates heat and can be pulled out of transit by interdiction; all enforced in play **[HIGH] S1**.
+- Jump points are natural, fixed and paired, found by scanning, sized so that only ships below a maximum can use each, and the only way between systems **[HIGH] S2**.
+- Transit needs a jump drive and a pilot; the tunnel has walls that damage a ship and an early exit is fatal **[HIGH] S1**.
+- New points exist and must be found and proven by a return trip **[HIGH] S2**.
+- The bubble is shaped by negative energy density made from fuel, per the developer, and this is why drives run hot and small ships have small drives **[MED] S3**.
+
+This is F3 by the grading scheme: the work states a limitation, that the warp bubble is sublight and a wormhole is needed to leave a system, and applies it consistently, in lore, in the timeline and in play. The quantum drive's physics is named and used with care. It is not F4, because no constraint is made into story: the negative energy is a fuel gauge, the jump points are travel, and nothing in the fiction is built around what either costs.
+
+## What it ignores
+
+Time. A jump between systems takes minutes by the ship's clock and the same by the destination's, and the game's universal calendar (the in-fiction year runs about nine hundred and thirty years ahead of ours) advances identically everywhere; no lore piece or in-game text asks whether a jump can arrive before it left, or what two jumps in different directions would do to the order of events **[HIGH] S1**. There is no preferred frame, no simultaneity rule and no consequence drawn. C-silent. The sublight quantum drive raises no causal question and the lore is right to ignore it there.
+
+The register's other questions get one answer and several silences. The quantum drive's negative energy is named; its amount is not, and the Alcubierre bill of universe-scale mass is nowhere. What holds a jump point open is unsaid; they are natural, which is an answer to who made them and not to how they persist. The tunnel's hazards are priced in hull damage, not in tides. Absence here is on the wormhole side, where the game's mechanism is a convention inherited from *Wing Commander*, and not on the warp side, where the game has read the paper.
+
+## Constraint scoring
+
+Every entry in [the register](../../constraints/REGISTER.md), one row each, verdict from the fiction vocabulary, with a note that says where in the work the engagement or rule occurs.
+
+| Constraint | Verdict | Note |
+|---|---|---|
+| CAU-1 | SILENT | A jump between systems is an FTL signal and no lore piece or in-game text asks in which frame it is instantaneous; the quantum drive is sublight and raises no question. |
+| CAU-2 | SILENT | No closed causal curves are contemplated; chronology protection is not in the lore's vocabulary. |
+| CAU-3 | SILENT | Paired points in systems moving relative to one another is the moving-mouth configuration of the entry; never raised. |
+| CAU-4 | SILENT | No preferred frame; the UEE runs one calendar across all systems without saying why. |
+| CAU-5 | N/A | No entanglement or quantum signalling; "quantum" in the drive's name refers to the developer's bubble, not to entanglement. |
+| ENE-1 | ENGAGES | The developer states that quantum fuel is converted into negative energy density to shape the bubble, which is a stated violation of the energy conditions for the quantum drive; the jump points are given no energy content. |
+| ENE-2 | RULE | The quantum drive is sublight by rule, so it claims no time advance and the entry does not bite on it; the jump points do deliver a time advance and the negative energy they would need is never named. |
+| ENE-3 | SILENT | Negative energy is admitted for the bubble and never quantified; the quantum inequalities are not engaged. |
+| ENE-4 | N/A | The pocket geometry is a fix for superluminal bubbles' total energy, and the quantum drive is subluminal with no stated total. |
+| ENE-5 | ENGAGES | The developer's bubble is an Alcubierre-type flow, the class the entry's theorem covers, and the lore's negative energy density agrees with the theorem that any such flow violates the null energy condition, superluminal or not. The agreement is stated by the developer as a fuel requirement rather than as a theorem. |
+| ENE-6 | SILENT | No source of negative energy beyond "quantum fuel" is named; the Casimir floor is not approached. |
+| ENE-7 | SILENT | A natural gap in spacetime with a paired exit is the handle topological censorship forbids under the averaged null energy condition; the lore does not address the theorem. |
+| CON-1 | RULE | The quantum drive is subluminal, so by the entry's own escape hatch no horizon forms and the pilot's chair is not decorative; the game's rule that the pilot must maintain course or the bubble fails is consistent with a bubble the crew can control. |
+| CON-2 | RULE | Jump points are natural and found, not made, and the lore's history is a history of discovery from Croshaw onward; the route exists before the trip, which is the entry's demand stated as the setting's premise. |
+| CON-3 | N/A | No Krasnikov tube. |
+| STA-1 | RULE | The quantum drive's bubble is subluminal by rule, which is the regime in which the entry's instability does not arise; the lore gives it a different instability, heat, which is engineering rather than semiclassical. |
+| STA-2 | SILENT | What holds a jump point open is never described; the lore says they are natural and studied for centuries without understanding, which is an admission of silence. |
+| STA-3 | SILENT | No time machine is constructed, so no chronology horizon; the lore does not reach the question. |
+| HAZ-1 | RULE | A subluminal bubble does not time-lock swept-up matter in the entry's sense, and the game's quantum travel has no arrival burst; interdiction pulls ships out without debris. The entry's hazard is avoided by the sublight rule rather than engaged. |
+| HAZ-2 | RULE | No horizon, no Hawking flux; the subluminal rule again. The game's interior hazard is heat from the drive, not radiation from a wall. |
+| HAZ-3 | ENGAGES | Interspace has walls that damage the hull on contact, masses that can kill a crew and a fatal early exit; "UEE Queries" and the 4.0 implementation price the tunnel in hull and lives, which is the entry's question answered in the game's own units. |
+| LOR-1 | RULE | Quantum travel is a bubble, not a push, and the lore's speed ceiling keeps it under c; jump points are passages. Nothing is accelerated to light speed, and the two-mechanism design is the setting's way of saying so. |
+| LOR-2 | N/A | No tachyons. |
+| LOR-3 | N/A | No wave in a medium. |
+| LOR-4 | N/A | Neither the Scharnhorst effect nor OPERA bears on either mechanism. |
+| WRP-1 | ENGAGES | The developer describes the quantum drive as contraction ahead and expansion behind, "essentially an Alcubierre drive", which is the entry's class definition adopted by name. |
+| WRP-2 | RULE | A subluminal shell moving inertially, which is the entry's positive-energy case; the lore insists on negative energy anyway, so the game is stricter with itself than the classification requires. |
+| WRP-3 | RULE | The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result and the game does not know it. |
+| MAN-1 | SILENT | Interspace is described as higher-dimensional in wiki summaries of developer talks and as "a smear of sight and sound" in the lore; no dimension is counted and no bulk physics is invoked. |
+
+## Sources
+
+- **S1** *Star Citizen* (Cloud Imperium Games, alpha 2015 to present), Alpha 4.0 (December 2024) and later, for quantum travel and the Stanton to Pyro jump point in play.
+- **S2** Roberts Space Industries, "UEE Queries: Jump-Points", Spectrum Dispatch comm-link (2012), read 2026-09-12; the official in-fiction definition of jump points, Croshaw's discovery, jump drives and interspace.
+- **S2** Roberts Space Industries comm-links "2075: The Stars Get A Little Closer", "2214: The March of Progress" and "2271: One Small Jump for Man", and the Galactapedia articles "Jump Point" and "Nick Croshaw", as compiled by the Star Citizen Wiki; official lore, not read directly.
+- **S3** Star Citizen Wiki (starcitizen.tools), articles "Quantum drive", "Jump point" and "Nick Croshaw", consulted 2026-09-12, including its transcription of Chris Roberts's Spectrum post on the quantum drive as an Alcubierre bubble and the 2015 developer answer on jump points as wormholes.
+- **S3** Post by the *Wing Commander* franchise historian on Bluesky, 7 October 2025, on the logo star as a jump-point flash, as cited by the wiki above.

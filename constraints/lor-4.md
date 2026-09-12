@@ -21,9 +21,16 @@ None
 **Physics proposals**
 
 - SATISFIES: [Lorentz-violating frameworks (the Standard-Model Extension and Hořava-Lifshitz gravity)](../theories/physics/lorentz-violating-frameworks.md). The frameworks contain the Scharnhorst shift as a coefficient and absorbed the OPERA episode as a bound; every measured coefficient in the Kostelecký and Russell tables is consistent with zero, which is what the entry's two cases say.
-- SATISFIES: [The OPERA superluminal neutrino (2011)](../theories/physics/opera-neutrinos-2011.md). This is the entry carrying the verified account: fibre connection plus oscillator offset, corrected not retracted, consistent with c; its other half, the [Scharnhorst effect](scharnhorst-effect.md), is the calculated superluminal velocity that nobody can measure.
-- SATISFIES: [The Scharnhorst effect](../theories/physics/scharnhorst-effect.md). This is the entry: magnitude of order $10^{-32}$ for micron plates, unmeasurable, causally harmless. The entry's other half, the [OPERA neutrinos](opera-neutrinos-2011.md), was an instrument; this was a calculation
+- SATISFIES: [The OPERA superluminal neutrino (2011)](../theories/physics/opera-neutrinos-2011.md). This is the entry carrying the verified account: fibre connection plus oscillator offset, corrected not retracted, consistent with c; its other half, the [Scharnhorst effect](../theories/physics/scharnhorst-effect.md), is the calculated superluminal velocity that nobody can measure.
+- SATISFIES: [The Scharnhorst effect](../theories/physics/scharnhorst-effect.md). This is the entry: magnitude of order $10^{-32}$ for micron plates, unmeasurable, causally harmless. The entry's other half, the [OPERA neutrinos](../theories/physics/opera-neutrinos-2011.md), was an instrument; this was a calculation
 - SILENT: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Light between Casimir plates is the Scharnhorst case, a phase velocity above $c$ by a part in $10^{32}$, unmeasurable and benign; the paper proposes to time photons through a Casimir structure and never mentions it
+
+**Fictional drives**
+
+- SILENT: [Mass Effect: element zero and the FTL drive (BioWare, 2007)](../theories/fiction/mass-effect-element-zero.md). The claim that the field raises the speed of light within it is a Scharnhorst-type claim made without a mechanism; the setting never says how a vacuum's light speed is changed.
+- ENGAGES: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). The trails are the Scharnhorst effect reversed: a vacuum whose light speed is set by its state. The novel engages the idea on the page, with death lines at zero lightspeed and the black domain at 16.7 km/s, without naming the physics.
+- ENGAGES: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). A vacuum emptied of energy in which things move faster than light is the Scharnhorst effect by description; the lore does not name it and the register puts the real effect at one part in $10^{32}$. Engaged in substance, not by name.
+- ENGAGES: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). "Scientists increased the speed of light in 2208" is a Scharnhorst-shaped claim made as a punchline: c as a number that can be changed. Engaged on screen, in one line, never again.
 
 ## Sources
 

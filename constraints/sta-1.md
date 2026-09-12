@@ -33,6 +33,18 @@ Subluminal bubbles are stable in this analysis; both calculations are 1+1 dimens
 - SILENT: [Warp drives in modified gravity](../theories/physics/warp-drives-in-modified-gravity.md). The horizon is unchanged and Hiscock's divergence uses only the metric and a quantum field on it, so it is expected to carry over, but no renormalised stress-energy has been computed for a warp bubble in Einstein-Cartan or conformal gravity.
 - SILENT: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Semiclassical stability never discussed
 
+**Fictional drives**
+
+- SILENT: [Campbell's Islands of Space (1931): where the word came from](../theories/fiction/word-hyperspace-campbell-1931.md). Whether the field is stable at superluminal speed is never asked; the coil is switched on and off with a relay.
+- SILENT: [Elite Dangerous: the frame shift drive (Frontier Developments, 2014)](../theories/fiction/elite-dangerous-frame-shift-drive.md). Supercruise fails only by emergency drop and interdiction; the semiclassical divergence at the wall is not engaged.
+- SILENT: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). Bubbles are dispersed on arrival and disrupted by modules; the semiclassical divergence at the wall is not engaged.
+- SILENT: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). The engines fail for fuel and comic reasons, never for a semiclassical divergence.
+- SILENT: [Star Trek: warp drive (1966 onward)](../theories/fiction/star-trek-warp-drive.md). Warp fields collapse in the show for engineering reasons, never for the semiclassical divergence at the wall.
+- SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). Warp bubbles never fail for physical reasons; the semiclassical divergence is not engaged.
+- SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). Bubbles collapse for engineering reasons ("New Dimensions"), never for the semiclassical divergence at the wall.
+- RULE: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). Finazzi, Liberati and Barceló find the semiclassical instability disappears for subluminal bubbles; the novel's ships are subluminal by rule and are stable.
+- RULE: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The quantum drive's bubble is subluminal by rule, which is the regime in which the entry's instability does not arise; the lore gives it a different instability, heat, which is engineering rather than semiclassical.
+
 ## Sources
 
 - Hiscock, Class. Quantum Grav. 14, L183 (1997), arXiv:gr-qc/9707024; Finazzi, Liberati and Barceló, Phys. Rev. D 79, 124017 (2009), arXiv:0904.0141 ✓

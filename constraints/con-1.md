@@ -33,6 +33,18 @@ Subluminal warp drives have no horizon; an external agent along the route (CON-2
 - SILENT: [NASA Eagleworks warp field interferometer](../theories/physics/eagleworks-warp-field-interferometer.md). Horizons appear once, as a "pseudo-horizon" in the boost plot; control is never discussed
 - SILENT: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Horizons and control are never discussed
 
+**Fictional drives**
+
+- SILENT: [Campbell's Islands of Space (1931): where the word came from](../theories/fiction/word-hyperspace-campbell-1931.md). Everett and Roman's pilot cut off from the wall is Arcot's blind crew aiming before entry, but the novel treats blindness as an optics problem, not a horizon; the constraint is not addressed.
+- SILENT: [Elite Dangerous: the frame shift drive (Frontier Developments, 2014)](../theories/fiction/elite-dangerous-frame-shift-drive.md). The pilot throttles and steers in supercruise at 2001 c; the horizon at the wall of a superluminal bubble is never mentioned.
+- SILENT: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). Leela steers from the pilot's seat in every episode; the horizon that would make the seat decorative is never mentioned.
+- SILENT: [Star Trek: warp drive (1966 onward)](../theories/fiction/star-trek-warp-drive.md). The helm steers at warp in every episode; the horizon at the wall of a superluminal bubble and the loss of control it implies are never mentioned.
+- SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). Fleets are steered at warp and through lanes from the map screen; no horizon, no loss of control.
+- SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). The helm steers at quantum speed in every episode; the horizon at the wall of a superluminal bubble is never mentioned.
+- ENGAGES: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). The lore says a ship at warp can barely see or act, and that navigation had to be solved from outside; this is the control problem stated in the fiction's own terms.
+- RULE: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). The superluminal horizon does not form because the drive is subluminal, by rule; Wade's ships are piloted from inside without comment.
+- RULE: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The quantum drive is subluminal, so by the entry's own escape hatch no horizon forms and the pilot's chair is not decorative; the game's rule that the pilot must maintain course or the bubble fails is consistent with a bubble the crew can control.
+
 ## Sources
 
 - Hiscock, Class. Quantum Grav. 14, L183 (1997), arXiv:gr-qc/9707024; Everett and Roman, Phys. Rev. D 56, 2100 (1997), arXiv:gr-qc/9702049; Krasnikov, Phys. Rev. D 57, 4760 (1998), arXiv:gr-qc/9511068 ✓

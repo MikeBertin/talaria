@@ -39,6 +39,50 @@ Van Den Broeck's pocket geometry (ENE-4); the inequalities are derived for free 
 - SILENT: [The Mach effect thruster](../theories/physics/mach-effect-thruster.md). If the negative-mass transient were real, the quantum inequalities would bound its magnitude and duration; the proposal treats it classically and never addresses them
 - SILENT: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Never computes the energy or wall thickness an Alcubierre bubble of the pillar's size would need at any speed, so the Pfenning–Ford bounds are never confronted; the estimate above shows they would not be met
 
+**Fictional drives**
+
+- SILENT: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). No negative energy, so no inequality.
+- SILENT: [Battlestar Galactica: the FTL jump (2004 series)](../theories/fiction/battlestar-galactica-ftl-jump.md). No mechanism is described to which the quantum inequalities could be applied; a ship-sized shortcut opened for an instant would be priced by them and the show says nothing.
+- SILENT: [Campbell's Islands of Space (1931): where the word came from](../theories/fiction/word-hyperspace-campbell-1931.md). If the self-made hyperspace is read as a bubble, its wall is priced by the quantum inequalities; the novel has no wall thickness, no wall, only a coil.
+- SILENT: [Commonwealth: CST wormholes with trains through them (Hamilton 2004)](../theories/fiction/commonwealth-cst-wormholes.md). A train-sized throat held open for centuries would be priced by the quantum inequalities; the work has no such calculation.
+- SILENT: [Contact: the Machine and the tunnel system (Sagan 1985, Zemeckis 1997)](../theories/fiction/contact-sagan-machine.md). The quantum inequalities bound how much negative energy can exist for how long; a tunnel wide enough for a dodecahedron, open long enough for a day's transit, is priced by them and the work never mentions the price.
+- SILENT: [Cordwainer Smith: planoforming, Space² and Space³](../theories/fiction/cordwainer-smith-planoforming.md). No negative energy, so no inequality is engaged.
+- SILENT: [Cowboy Bebop (1998): the astral gates](../theories/fiction/cowboy-bebop-astral-gates.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). If the engine is a warp shell the quantum inequalities bound any negative energy in its wall; the novel does not say whether there is any.
+- SILENT: [Doctor Who: the TARDIS and the time vortex](../theories/fiction/doctor-who-tardis.md). No negative energy is invoked, so no quantum inequality is engaged.
+- SILENT: [Dune: the Guild navigators and folding space (Herbert 1965)](../theories/fiction/dune-holtzman-fold-space.md). The quantum inequalities would price a fold large enough for a heighliner; the work has no such calculation and no mechanism to apply it to.
+- SILENT: [Elite Dangerous: the frame shift drive (Frontier Developments, 2014)](../theories/fiction/elite-dangerous-frame-shift-drive.md). A ship-sized bubble is the case priced at universe-scale negative energy; never addressed.
+- SILENT: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). A ship-sized wall of depleted vacuum is the case Pfenning and Ford priced; the lore gives no thickness or energy.
+- SILENT: [Event Horizon (1997): the gravity drive](../theories/fiction/event-horizon-gravity-drive.md). No negative energy is admitted, so no quantum inequality is engaged; the drive's power budget is never shown.
+- SILENT: [Farscape (1999): wormholes, and starburst as a separate thing](../theories/fiction/farscape-wormholes.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [FTL: Faster Than Light, the jump drive as a game mechanic](../theories/fiction/ftl-the-game.md). No negative energy, so no inequality.
+- SILENT: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). A ship-sized bubble is the case priced at universe-scale negative energy; never addressed.
+- SILENT: [Guardians of the Galaxy Vol. 2 (2017): jump points](../theories/fiction/guardians-jump-points.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Homeworld: hyperspace cores and the Far Jumpers](../theories/fiction/homeworld-hyperspace-cores.md). No negative energy, so no inequality.
+- SILENT: [Hyperion: the farcasters (Simmons 1989)](../theories/fiction/hyperion-farcasters.md). A doorway held open for centuries would be priced by the quantum inequalities; the work has no such calculation.
+- SILENT: [Interstellar: the wormhole near Saturn (2014)](../theories/fiction/interstellar-wormhole.md). The quantum inequality bound on negative energy density and duration is not addressed in the film; the wormhole is open for at least the decades between its appearance and the Endurance's passage.
+- SILENT: [Mass Effect: the mass relays (BioWare 2007 onward)](../theories/fiction/mass-effect-relays.md). A corridor thousands of light years long, open for millennia, would be priced by the quantum inequalities; the work has no such calculation.
+- SILENT: [No Man's Sky: the hyperdrive, warp cells and range](../theories/fiction/no-mans-sky-hyperdrive.md). No negative energy, so no inequality.
+- SILENT: [Outer Wilds (2019): Nomai warp cores](../theories/fiction/outer-wilds-warp-cores.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Space Battleship Yamato: warp by wave motion engine](../theories/fiction/yamato-wave-motion-warp.md). No negative energy, so no inequality.
+- SILENT: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). Negative energy is admitted for the bubble and never quantified; the quantum inequalities are not engaged.
+- SILENT: [Star Trek: warp drive (1966 onward)](../theories/fiction/star-trek-warp-drive.md). Bubble scale is ship scale, which is the case Pfenning and Ford priced at universe-scale negative energy; never addressed.
+- SILENT: [Starfield (2023): the grav drive](../theories/fiction/starfield-grav-drive.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Stargate: the gate network (1994 film, SG-1 1997 onward)](../theories/fiction/stargate-gate-network.md). A disc several metres across held open for thirty-eight minutes is priced by the quantum inequalities; the show gives a duration and never a reason for it.
+- SILENT: [Stargate: the ships' hyperdrives](../theories/fiction/stargate-hyperdrive.md). No negative energy, so no inequality. The ZPM is described as drawing on vacuum energy in a pocket of subspace-time, which is the closest the series comes, and it never says the sign.
+- SILENT: [Starman Jones: the congruencies (Heinlein 1953)](../theories/fiction/starman-jones-congruencies.md). No mechanism is described to which the quantum inequalities could be applied.
+- SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). Warp bubbles at ship scale are the case priced at universe-scale negative energy; never addressed.
+- SILENT: [Super Dimension Fortress Macross (1982): the space fold](../theories/fiction/macross-fold-drive.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [The Alderson drive (Niven and Pournelle 1974)](../theories/fiction/alderson-drive.md). No mechanism is described to which the quantum inequalities could be applied.
+- SILENT: [The Expanse: the ring gates and the slow zone (Corey 2013 onward)](../theories/fiction/expanse-ring-gates.md). A ring a thousand kilometres across, open for years, is priced by the quantum inequalities; the work has no such calculation.
+- SILENT: [The Forever War: collapsar jumps (Haldeman 1974)](../theories/fiction/forever-war-collapsars.md). The quantum inequalities would price a throat three kilometres across held open forever; the book predates them and never touches the question.
+- SILENT: [The Hitchhiker's Guide to the Galaxy: the Infinite Improbability Drive and bistromathics](../theories/fiction/hitchhikers-improbability-drive.md). No negative energy is invoked, so no quantum inequality bounds it.
+- SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). A ship-sized bubble is the case Pfenning and Ford priced at universe-scale negative energy; the show's dysonium tanks are never sized against it.
+- SILENT: [Thor (2011): the Bifrost](../theories/fiction/thor-bifrost.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Wing Commander (1990) and the 1999 film: jump points](../theories/fiction/wing-commander-jump-points.md). No negative energy is admitted, so the quantum inequalities are not engaged.
+- SILENT: [Xenocide: travel through the Outside](../theories/fiction/xenocide-outside.md). No negative energy, so no inequality.
+
 ## Sources
 
 - Ford and Roman, Phys. Rev. D 51, 4277 (1995), arXiv:gr-qc/9410043; Ford and Roman, Phys. Rev. D 55, 2082 (1997), arXiv:gr-qc/9607003; Pfenning and Ford, Class. Quantum Grav. 14, 1743 (1997), arXiv:gr-qc/9702026 ✓

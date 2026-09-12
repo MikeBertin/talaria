@@ -26,7 +26,7 @@ loophole class; port 8191.
   al., White), then L3 wormholes, then L1, L5, L4, L6.
 - Every dossier steelmanned before scoring; every scoring row noted.
 
-## M3: Fiction dossiers
+## M3: Fiction dossiers ✅ (2026-09-12)
 - N1 works first, then N2, then N3. Primary material read or watched where
   the drive is defined; S3 sources cited as S3.
 

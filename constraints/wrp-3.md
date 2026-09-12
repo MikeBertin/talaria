@@ -29,6 +29,17 @@ A future construction outside the Natário class, or a peer-reviewed reply to th
 - SATISFIES: [Natário 2002: warp drive with zero expansion](../theories/physics/natario-2002.md). No positive-energy claim is made; Theorem 1.7 is a proof that none can be made inside the class in general relativity, consistent with the absence WRP-3 records.
 - SATISFIES: [Van Den Broeck 1999: the pocket geometry](../theories/physics/van-den-broeck-1999.md). No positive-energy claim; the paper reduces the negative energy and says so.
 
+**Fictional drives**
+
+- SILENT: [Elite Dangerous: the frame shift drive (Frontier Developments, 2014)](../theories/fiction/elite-dangerous-frame-shift-drive.md). The game assumes a working superluminal bubble; the absence WRP-3 records is never engaged.
+- SILENT: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). The lore asserts a working superluminal bubble sourced by depleted vacuum; the absence WRP-3 records is never engaged.
+- SILENT: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). The show asserts a working superluminal bubble fuelled by dense matter; the absence WRP-3 records is never engaged.
+- SILENT: [Star Trek: warp drive (1966 onward)](../theories/fiction/star-trek-warp-drive.md). The franchise asserts positive-energy superluminal warp by default; the absence WRP-3 records is the absence of any Star Trek answer to it.
+- SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). The warp mode asserted a working superluminal bubble; the absence WRP-3 records is never engaged, and the mode itself was removed in 2018 for design reasons.
+- SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). The show asserts a working superluminal bubble sourced by a fuel; the absence WRP-3 records is not engaged in any episode.
+- RULE: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). The one surviving positive-energy warp result is subluminal and constant-velocity; the novel's drive accelerates to c and stays there, which is the regime WRP-3 permits, by the novel's own rule of never exceeding light.
+- RULE: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result and the game does not know it.
+
 ## Sources
 
 - Santiago, Schuster and Visser, Phys. Rev. D 105, 064038 (2022); Lentz, Class. Quantum Grav. 38, 075015 (2021), arXiv:2006.07125, and MG16 proceedings (2023), arXiv:2201.00652; Celmaster and Rubin, arXiv:2511.18251 (2025); Fell and Heisenberg, Class. Quantum Grav. 38, 155020 (2021), arXiv:2104.06488; Fuchs et al., Class. Quantum Grav. 41, 095013 (2024), arXiv:2405.02709; Helmerich et al., Class. Quantum Grav. (2024), arXiv:2404.03095; Rodal, Gen. Relativ. Gravit. 58, 1 (2026), arXiv:2512.18008; Le, arXiv:2602.18023 (2026); Barzegar, Buchert and Vigneron, arXiv:2602.16495 (2026) ✓ (2025–2026 preprints ⚠ v1, found by search)

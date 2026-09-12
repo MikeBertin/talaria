@@ -30,9 +30,16 @@ def main():
                 m = ROW.match(line)
                 if not m or m.group(2) == "N/A":
                     continue
+                note = m.group(3).strip()
+                # Links inside a note are written relative to the dossier's
+                # directory; rebase them so they resolve from constraints/.
+                note = re.sub(r"\]\(\.\./\.\./constraints/([^)]+)\)", r"](\1)", note)
+                note = re.sub(r"\]\(\.\./(physics|fiction)/([^)]+)\)",
+                              r"](../theories/\1/\2)", note)
+                note = re.sub(r"\]\((?![./#]|https?:)([^)/]+\.md)\)",
+                              rf"](../theories/{kind}/\1)", note)
                 hits.setdefault(m.group(1), []).append(
-                    (kind, m.group(2), title, f"../theories/{kind}/{p.name}",
-                     m.group(3).strip()))
+                    (kind, m.group(2), title, f"../theories/{kind}/{p.name}", note))
     n = 0
     for page in sorted((ROOT / "constraints").glob("*-[0-9]*.md")):
         cid = page.stem.upper()

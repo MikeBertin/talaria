@@ -31,6 +31,18 @@ Metrics outside the Natário class; the subluminal positive-energy constant-velo
 - SATISFIES: [NASA Eagleworks warp field interferometer](../theories/physics/eagleworks-warp-field-interferometer.md). No positive-energy claim; the null-condition violation of the Alcubierre bubble is accepted
 - SATISFIES: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Claims no positive-energy drive; its bubble is Alcubierre's and violates the null condition as the entry says, which the paper does not dispute
 
+**Fictional drives**
+
+- SILENT: [Campbell's Islands of Space (1931): where the word came from](../theories/fiction/word-hyperspace-campbell-1931.md). A bubble with unit lapse and a carried interior is in the Natário class and violates the NEC; the novel gives no metric to check and the constraint is unaddressed.
+- SILENT: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). Santiago, Schuster and Visser show every Natário-class drive violates the NEC at any nonzero velocity, subluminal included; whether Liu's engine is in that class is not stated and the novel does not address it.
+- SILENT: [Elite Dangerous: the frame shift drive (Frontier Developments, 2014)](../theories/fiction/elite-dangerous-frame-shift-drive.md). Supercruise is Natário-class in everything but name; the NEC theorem is never touched.
+- SILENT: [EVE Online: the warp drive (CCP Games, 2003)](../theories/fiction/eve-online-warp-drive.md). The bubble is Natário-class in everything but name; the NEC theorem is never touched.
+- SILENT: [Futurama: the Planet Express ship's dark matter engines (1999 onward)](../theories/fiction/futurama-planet-express-drive.md). Cubert's mechanism is Natário-class by description; the NEC theorem is never touched.
+- SILENT: [Star Trek: warp drive (1966 onward)](../theories/fiction/star-trek-warp-drive.md). The warp field is in the Natário class in everything but name, so the NEC theorem applies; never addressed.
+- SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). The warp mode is Natário-class in everything but name; the NEC theorem is never touched.
+- SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). The bubble is Natário-class in everything but name; the NEC theorem is never touched.
+- ENGAGES: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The developer's bubble is an Alcubierre-type flow, the class the entry's theorem covers, and the lore's negative energy density agrees with the theorem that any such flow violates the null energy condition, superluminal or not. The agreement is stated by the developer as a fuel requirement rather than as a theorem.
+
 ## Sources
 
 - Santiago, Schuster and Visser, Phys. Rev. D 105, 064038 (2022), arXiv:2105.03079 ✓
