@@ -18,7 +18,16 @@ A future construction outside the Natário class, or a peer-reviewed reply to th
 
 ## Who it bites
 
-No dossier has scored against this entry yet.
+**Physics proposals**
+
+- VIOLATES: [Fell and Heisenberg 2021: positive energy from hidden geometric structure](../theories/physics/fell-heisenberg-2021.md). Recorded in the entry as positivity for Eulerian observers only; not a surviving superluminal positive-energy drive
+- VIOLATES: [Lentz 2021: hyper-fast positive-energy solitons](../theories/physics/lentz-solitons-2021.md). The entry's case study: found never to have solved the Einstein equations, then independently found to contain negative-energy regions and derivation errors, with a reply only in proceedings
+- DODGES: [Warp drives in modified gravity](../theories/physics/warp-drives-in-modified-gravity.md). WRP-3's dated score is implicitly within general relativity. DeBenedictis and Ilijic (2018) is a peer-reviewed superluminal ($v_s = 1.2$) warp drive whose matter satisfies the weak and null conditions, in Einstein-Cartan theory; it evades the score by changing the theory and pays in $10^{68}\,\hbar$ per cubic metre of spin. The register entry should say so.
+- SATISFIES: [Alcubierre 1994: the warp drive metric](../theories/physics/alcubierre-1994.md). The proposal makes no positive-energy claim; the 1994 letter is where the negative energy requirement was first stated, and the absence WRP-3 records is consistent with it.
+- SATISFIES: [Bobrick and Martire 2021: physical warp drives](../theories/physics/bobrick-martire-2021.md). Makes no superluminal positive-energy claim and says its conclusions do not support Lentz's; its subluminal positive-energy idea is carried by the group's own 2024 shell, the one survivor the entry records
+- SATISFIES: [Fuchs et al. 2024: the constant-velocity physical warp shell](../theories/physics/fuchs-constant-velocity-2024.md). The one surviving positive-energy result the entry records, and it is subluminal and constant-velocity as the entry says
+- SATISFIES: [Natário 2002: warp drive with zero expansion](../theories/physics/natario-2002.md). No positive-energy claim is made; Theorem 1.7 is a proof that none can be made inside the class in general relativity, consistent with the absence WRP-3 records.
+- SATISFIES: [Van Den Broeck 1999: the pocket geometry](../theories/physics/van-den-broeck-1999.md). No positive-energy claim; the paper reduces the negative energy and says so.
 
 ## Sources
 

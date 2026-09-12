@@ -21,6 +21,7 @@ the register is [constraints/REGISTER.md](constraints/REGISTER.md).
 - [ENE-4: Van Den Broeck's pocket](constraints/ene-4.md): Does not remove the negative energy, only its quantity
 - [ENE-5: Generic warp drives violate the null energy condition](constraints/ene-5.md): The positive-energy warp claims of 2021 are not what the press said they were
 - [ENE-6: The Casimir floor](constraints/ene-6.md): The only negative energy anyone has ever made, and the only one anyone can point to, and it is tens of…
+- [ENE-7: Topological censorship, no wormhole shortcuts](constraints/ene-7.md): The modern form of ENE-2 for L3: a wormhole may be traversable, but it cannot be a shortcut
 - [HAZ-1: The arrival burst](constraints/haz-1.md): Do not decelerate towards anything you like
 - [HAZ-2: The crew is cooked](constraints/haz-2.md): The crew problem as well as the bubble problem, if ENE-3 holds
 - [HAZ-3: Tidal limits on a traversable throat](constraints/haz-3.md): The throat is large, and the exotic matter bill (STA-2) scales with it

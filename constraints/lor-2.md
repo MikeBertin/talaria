@@ -18,7 +18,20 @@ None found in nearly sixty years of searching; Lorentz-violating frameworks
 
 ## Who it bites
 
-No dossier has scored against this entry yet.
+**Physics proposals**
+
+- VIOLATES: [Alcubierre 1994: the warp drive metric](../theories/physics/alcubierre-1994.md). For $v_s > 1$ the world line of the leading edge of the wall matter is spacelike (Krasnikov), so a bubble created on demand is sourced by tachyonic matter, which LOR-2 says is an instability rather than a courier. The only way out is CON-2's pre-laid route.
+- VIOLATES: [Meta relativity (Bilaniuk, Deshpande and Sudarshan 1962)](../theories/physics/meta-relativity-sudarshan-1962.md). This is the paper the register cites first under LOR-2; the classical kinematics are correct and the quantised version was shown by Aharonov, Komar and Susskind to describe an instability, while every search since 1968 has been null.
+- VIOLATES: [Natário 2002: warp drive with zero expansion](../theories/physics/natario-2002.md). For $v_s > 1$ the wall matter ahead of the ship lies outside its light cone and moves on spacelike world lines in the exterior frame, so creating the bubble on demand needs [tachyonic](tachyons-feinberg-1967.md) matter; the class inherits Krasnikov's objection to Alcubierre.
+- VIOLATES: [Tachyons (Feinberg 1967)](../theories/physics/tachyons-feinberg-1967.md). This is the entry that closes the proposal: Aharonov, Komar and Susskind show the causal superluminal group velocities are small oscillations about an unstable configuration, and nearly sixty years of searches (Alväger and Kreisler, Baltay et al., Danburg et al., the tritium endpoint, OPERA) have found nothing.
+- VIOLATES: [Van Den Broeck 1999: the pocket geometry](../theories/physics/van-den-broeck-1999.md). The paper states that part of the energy in the region moves tachyonically, which LOR-2 says is not a courier; this is the problem it defers.
+- VIOLATES: [Warp drives in modified gravity](../theories/physics/warp-drives-in-modified-gravity.md). The spacelike leading edge of the wall matter for $v_s > 1$ is a statement about the metric; in Einstein-Cartan theory that matter carries the spin, so it is the spin fluid itself that would have to move tachyonically on a first flight.
+- DODGES: [Gott's cosmic-string time machine (1991)](../theories/physics/gott-cosmic-string-time-machine.md). No tachyon is present, yet the two-string system has the holonomy, and so the total energy-momentum, of a tachyon (Deser, Jackiw and 't Hooft); the construction obtains a spacelike total momentum from subluminal parts, which Carroll et al. show cannot be reached from timelike initial data in an open universe.
+- DODGES: [Lorentz-violating frameworks (the Standard-Model Extension and Hořava-Lifshitz gravity)](../theories/physics/lorentz-violating-frameworks.md). The register lists "Lorentz-violating frameworks" as the escape hatch; these frameworks use positive $m^2$ and modified maximal velocities, never a tachyonic mass term, so the instability argument does not arise.
+- SATISFIES: [Everett and Roman 1997: the superluminal subway](../theories/physics/everett-roman-superluminal-subway.md). The construction excludes tachyonic signals by design; the forward light cone of the launch contains every modification.
+- SATISFIES: [Krasnikov 1998: the tube laid on the way out](../theories/physics/krasnikov-tube.md). The whole construction is designed to avoid tachyons: utter causality is imposed precisely so that nothing, matter or metric, acts outside the light cone, and Proposition 1 is proved under that assumption.
+- SATISFIES: [The OPERA superluminal neutrino (2011)](../theories/physics/opera-neutrinos-2011.md). The tachyonic-neutrino reading predicts $(v - c)/c \propto 1/E^2$; the observed energy independence of $\delta t$ disfavours a special-relativistic tachyon (Amelino-Camelia et al. 2011) and the corrected null result removes the need for one.
+- SILENT: [Bobrick and Martire 2021: physical warp drives](../theories/physics/bobrick-martire-2021.md). Class II "superluminal matter", at rest in a spacelike frame and violating the dominant energy condition, is tachyonic matter in all but name; the paper neither engages the instability result nor claims such matter exists
 
 ## Sources
 

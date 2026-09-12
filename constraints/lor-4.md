@@ -18,7 +18,12 @@ None
 
 ## Who it bites
 
-No dossier has scored against this entry yet.
+**Physics proposals**
+
+- SATISFIES: [Lorentz-violating frameworks (the Standard-Model Extension and Hořava-Lifshitz gravity)](../theories/physics/lorentz-violating-frameworks.md). The frameworks contain the Scharnhorst shift as a coefficient and absorbed the OPERA episode as a bound; every measured coefficient in the Kostelecký and Russell tables is consistent with zero, which is what the entry's two cases say.
+- SATISFIES: [The OPERA superluminal neutrino (2011)](../theories/physics/opera-neutrinos-2011.md). This is the entry carrying the verified account: fibre connection plus oscillator offset, corrected not retracted, consistent with c; its other half, the [Scharnhorst effect](scharnhorst-effect.md), is the calculated superluminal velocity that nobody can measure.
+- SATISFIES: [The Scharnhorst effect](../theories/physics/scharnhorst-effect.md). This is the entry: magnitude of order $10^{-32}$ for micron plates, unmeasurable, causally harmless. The entry's other half, the [OPERA neutrinos](opera-neutrinos-2011.md), was an instrument; this was a calculation
+- SILENT: [White et al. 2021: the worldline-numerics Casimir pattern](../theories/physics/white-casimir-nano-bubble-2021.md). Light between Casimir plates is the Scharnhorst case, a phase velocity above $c$ by a part in $10^{32}$, unmeasurable and benign; the paper proposes to time photons through a Casimir structure and never mentions it
 
 ## Sources
 

@@ -59,7 +59,7 @@ def main():
                         lines.append(entry)
                 lines.append("")
         body = "\n".join(lines).rstrip() + "\n\n"
-        new = re.sub(r"## Who it bites\n.*?(?=## Sources)", body, text, flags=re.S)
+        new = re.sub(r"## Who it bites\n.*?(?=## Sources)", lambda _: body, text, flags=re.S)
         if new != text:
             page.write_text(new, encoding="utf-8")
             n += 1

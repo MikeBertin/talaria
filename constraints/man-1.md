@@ -18,7 +18,13 @@ Brane bending is a real research direction; the price is that brane physics is n
 
 ## Who it bites
 
-No dossier has scored against this entry yet.
+**Physics proposals**
+
+- VIOLATES: [Heim theory and the Dröscher-Häuser propulsion proposal (2004 to 2005)](../theories/physics/heim-theory.md). A parallel space $\mathbb R^4(n)$ with its own light speed $nc$, its own $G/n$ and its own clock $t/n^3$, entered by a vehicle and exited displaced, is exactly the "hyperspace as a separate space with laxer rules" that the entry says has no counterpart in physics; the proposal requires it.
+- DODGES: [NASA Eagleworks warp field interferometer](../theories/physics/eagleworks-warp-field-interferometer.md). Leans on the Chung–Freese bulk as an informal analogue of the boost, $\gamma \sim e^U$, and on oscillating $dU/dt$ to cut the energy bill; the entry's finding is that bulk shortcuts are a form of L3 inside the bulk light cone, not a dial on the warp bill, and no calculation connects the two
+- SATISFIES: [Brane-bulk shortcuts (Chung and Freese 2000, Ishihara 2001, Caldwell and Langlois 2001)](../theories/physics/brane-bulk-shortcuts.md). This is the entry's second half stated exactly: the shortcut is real, is a form of L3, remains inside the bulk light cone and looks from the brane like FTL, and the size is set by $(\ell H)^2$.
+- SATISFIES: [Kaluza-Klein and the hyperspace reading (Kaluza 1921, Klein 1926, ADD 1998, Randall-Sundrum 1999)](../theories/physics/kaluza-klein-hyperspace.md). This is the entry's first half stated exactly: extra dimensions where they appear are compact or warped, Standard Model fields are localised, and "hyperspace" as a separate space with laxer rules has no counterpart; the frameworks are what the entry describes and the hyperspace reading is what it excludes.
+- SATISFIES: [Maldacena, Milekhin and Popov: traversable wormholes in four dimensions (2018), and the humanly traversable sequel (2021)](../theories/physics/maldacena-milekhin-popov-2018.md). The human version uses a Randall–Sundrum II bulk exactly as MAN-1 describes such models, and the bulk supplies degrees of freedom, not a shortcut: the wormhole remains longer than the brane path, so no apparent brane causality violation arises.
 
 ## Sources
 
