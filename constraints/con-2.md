@@ -18,8 +18,7 @@ The Krasnikov tube (CON-3), which accepts this and makes the return trip fast. C
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

@@ -18,8 +18,7 @@ Never having been below c (tachyons, LOR-2); changing the geometry instead of th
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

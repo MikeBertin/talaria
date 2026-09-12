@@ -19,7 +19,7 @@ Every faster-than-light scheme, whether it came from a physics journal or a scre
 | **L5 Send the message, not the ship** | Information beats light even if matter can't | Entanglement signalling, tunnelling, the Scharnhorst effect | The ansible |
 | **L6 Not actually FTL** | Everything that gets filed here by mistake | Time dilation, the EM drive | Cryosleep, generation ships, the ship that stays still |
 
-Against those sits the **constraint register**: every theorem, inequality and no-go result that puts a price on the loophole. Causality first, because any FTL signal in a Lorentz-invariant world is a message to your own past. Then the energy conditions, the quantum inequalities that cap how much negative energy you can borrow and for how long, the horizon that stops a warp-bubble crew steering, the bootstrap problem, semiclassical instability, and the result that a warp bubble arrives with a shotgun blast of everything it swept up on the way.
+Against those sits the **constraint register**: every theorem, inequality and no-go result that puts a price on the loophole. Causality first, because any FTL signal in a Lorentz-invariant world is a message to your own past. Then the energy conditions, the quantum inequalities that cap how much negative energy you can borrow and for how long, the horizon that stops a warp-bubble crew steering, the bootstrap problem and semiclassical instability. And the result that a warp bubble drops out of warp with a shotgun blast of everything it swept up on the way.
 
 Two scoring matrices come out of that:
 

@@ -18,8 +18,7 @@ Subluminal bubbles are stable in this analysis; both calculations are 1+1 dimens
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

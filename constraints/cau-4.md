@@ -18,8 +18,7 @@ This is the escape hatch. Its cost is that special relativity is no longer the w
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

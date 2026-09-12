@@ -14,7 +14,6 @@ the dossier may revise.
 |---|---|---|
 | tachyons-feinberg-1967 | Tachyons as faster-than-light particles with imaginary mass | ☐ |
 | meta-relativity-sudarshan-1962 | Bilaniuk, Deshpande and Sudarshan's extension of relativity to v > c | ☐ |
-| tachyon-fields-as-instability | Aharonov, Komar and Susskind: the field-theory tachyon is a vacuum instability | ☐ |
 | opera-neutrinos-2011 | The superluminal neutrino result and its retraction | ☐ |
 | lorentz-violating-frameworks | Standard-Model Extension and Hořava-type proposals where a preferred frame permits FTL sectors | ☐ |
 
@@ -43,7 +42,6 @@ the dossier may revise.
 | bobrick-martire-2021 | The general classification of warp spacetimes | ☐ |
 | lentz-solitons-2021 | Positive-energy superluminal solitons in Einstein–Maxwell-plasma theory | ☐ |
 | fell-heisenberg-2021 | Positive energy from hidden geometric structure | ☐ |
-| santiago-schuster-visser-2022 | Generic warp drives violate the NEC | ☐ |
 | fuchs-constant-velocity-2024 | The subluminal positive-energy warp shell | ☐ |
 | white-casimir-nano-bubble-2021 | The worldline-numerics Casimir result and what it is not | ☐ |
 | eagleworks-warp-field-interferometer | NASA Eagleworks' 2013 tabletop measurement programme | ☐ |
@@ -187,5 +185,5 @@ the dossier may revise.
 
 ## Counts
 
-Physics 39 · Fiction 65. The fiction cap is roughly sixty; N3 entries are the
+Physics 37 · Fiction 65. Two results that are constraints rather than proposals (Aharonov, Komar and Susskind; Santiago, Schuster and Visser) live in the register as LOR-2 and ENE-5 and get no dossier. The fiction cap is roughly sixty; N3 entries are the
 first to be cut if the sweep runs long.

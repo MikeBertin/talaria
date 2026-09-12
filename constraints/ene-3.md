@@ -18,8 +18,7 @@ Van Den Broeck's pocket geometry (ENE-4); the inequalities are derived for free 
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

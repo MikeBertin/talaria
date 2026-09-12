@@ -18,8 +18,7 @@ None within quantum mechanics. Nonlinear modifications of quantum mechanics woul
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

@@ -18,8 +18,7 @@ Brane bending is a real research direction; the price is that brane physics is n
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 

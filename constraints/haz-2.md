@@ -18,8 +18,7 @@ Subluminal speeds; a thick wall, which ENE-3 forbids
 
 ## Who it bites
 
-Filled in as dossiers are scored. Each line links a dossier and gives its
-verdict against this entry.
+No dossier has scored against this entry yet.
 
 ## Sources
 
