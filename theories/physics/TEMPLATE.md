@@ -47,6 +47,7 @@ note that says why. A row with a verdict and no note is a guess.
 | ENE-4 | SILENT | |
 | ENE-5 | VIOLATES | |
 | ENE-6 | N/A | |
+| ENE-7 | SILENT |  |
 | CON-1 | VIOLATES | |
 | CON-2 | SILENT | |
 | CON-3 | N/A | |

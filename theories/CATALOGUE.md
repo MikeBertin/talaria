@@ -73,7 +73,7 @@ the dossier may revise.
 | kerr-interior-passage | Passing through the ring singularity of a rotating black hole | ☐ |
 | gott-cosmic-string-time-machine | Two passing cosmic strings and closed timelike curves (1991) | ☐ |
 | gao-jafferis-wall-2017 | Traversable wormholes via double-trace deformation, and why they are not shortcuts | ☐ |
-| maldacena-milekhin-popov-2018 | Humanly traversable wormholes in Randall–Sundrum | ☐ |
+| maldacena-milekhin-popov-2018 | Traversable wormholes in four dimensions, with the humanly traversable sequel of Maldacena and Milekhin (2021) | ☐ |
 | er-equals-epr | Maldacena and Susskind's entanglement–wormhole conjecture | ☐ |
 
 ### Fiction

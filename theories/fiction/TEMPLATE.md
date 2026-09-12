@@ -51,6 +51,7 @@ the engagement or rule occurs.
 | ENE-4 | N/A | |
 | ENE-5 | N/A | |
 | ENE-6 | N/A | |
+| ENE-7 | N/A |  |
 | CON-1 | SILENT | |
 | CON-2 | RULE | |
 | CON-3 | N/A | |
