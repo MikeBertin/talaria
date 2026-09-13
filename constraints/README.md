@@ -24,6 +24,8 @@ working knowledge in M0 and not yet checked against the paper. **✓** means
 the reference and the stated result were verified in M1. The matrix does not
 build on an unverified entry.
 
+**What is not on the register, by decision.** Conservation of momentum. The two reactionless-thruster dossiers in the L6 bin (the EM drive and the Mach-effect thruster) fail on it, and say so in their own text, but it is not a faster-than-light constraint and would bite nothing else in the catalogue. The register stays the price list for one thing. Decided 2026-09-13.
+
 Scoring vocabulary is in [GRADING.md](../GRADING.md). Every dossier scores
 every entry here; the tables in the dossiers are the only source the matrix
 reads.
