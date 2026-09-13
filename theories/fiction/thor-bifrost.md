@@ -22,6 +22,8 @@ The content does not fit, and the physics dossier says why. The [Einstein–Rose
 
 Kip Thorne is not involved and the film does not claim him. The lensing Jane sees around the edges is the one honest detail: a wormhole mouth does lens light, and the "wrong stars" through it is the Morris–Thorne picture of looking through a throat at another sky **[MED] S3**.
 
+Lineage: [The wormhole goes to television](../../lineage/morris-thorne-gate-fiction.md); [Physicists in the writers' room](../../lineage/physicists-in-the-writers-room.md).
+
 ## Which loophole, and why
 
 **L3, take a shortcut.** The Bifrost connects fixed points, Asgard's observatory and wherever Heimdall aims, and travel through it is a passage, not a run: travellers are drawn up the column of light and arrive at the other end within seconds of screen time. Nothing moves fast through ordinary space. The film says as much when it calls the thing a wormhole and an Einstein-Rosen bridge, and the catalogue takes the film at its word.

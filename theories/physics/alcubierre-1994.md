@@ -18,6 +18,8 @@ Miguel Alcubierre, then at Cardiff, published "The warp drive: hyper-fast travel
 
 Everything downstream is on the register. Everett's two-bubble time machine ([CAU-3](../../constraints/cau-3.md)); Pfenning and Ford's quantum-inequality bill ([ENE-3](../../constraints/ene-3.md)); Hiscock's horizon and semiclassical divergence ([CON-1](../../constraints/con-1.md), [STA-1](../../constraints/sta-1.md)); Everett and Roman's control argument and the tube that answers it ([Everett and Roman 1997](everett-roman-superluminal-subway.md)); Krasnikov's and Coule's bootstrap ([CON-2](../../constraints/con-2.md), [Krasnikov 1998](krasnikov-tube.md)); Van Den Broeck's pocket ([Van Den Broeck 1999](van-den-broeck-1999.md), [ENE-4](../../constraints/ene-4.md)); Natário's class definition and zero-expansion drive ([Natário 2002](natario-2002.md), [WRP-1](../../constraints/wrp-1.md)); the 2021 positive-energy claims of [Lentz](lentz-solitons-2021.md), [Bobrick and Martire](bobrick-martire-2021.md) and [Fell and Heisenberg](fell-heisenberg-2021.md) and their 2022 refutation ([ENE-5](../../constraints/ene-5.md), [WRP-3](../../constraints/wrp-3.md)). Attempts to move the bill off the matter side of the field equations are surveyed in [warp drives in modified gravity](warp-drives-in-modified-gravity.md).
 
+Lineage: [Star Trek to Alcubierre and back out](../../lineage/star-trek-alcubierre-outward.md).
+
 ## The mechanism
 
 Units $G = c = 1$. In the 3+1 language spacetime is sliced into hypersurfaces of constant $t$ with 3-metric $\gamma_{ij}$, lapse $\alpha$ and shift $\beta^i$:

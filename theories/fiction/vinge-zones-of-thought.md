@@ -16,6 +16,8 @@ Vinge stated the purpose of the construction. The Zones were "my attempt to get 
 
 Vernor Vinge, a mathematician and computer scientist at San Diego State, first used the Zones in the novella "The Blabber" (1988), set after the events of *Fire* **[HIGH] S3** (Wikipedia). The 1992 novel won the Hugo Award, and the setting produced *A Deepness in the Sky* (1999) and *The Children of the Sky* (2011). The physics is not borrowed from any proposal: the zones exist because Vinge wanted to keep writing about FTL and about the Singularity while believing, on the evidence, that the first is forbidden and the second is coming, and his solution was to make the forbidding regional **[HIGH] S3** (Lightspeed 2012). What the construction amounts to in the register's terms, a region-dependent maximal speed fixed to the galaxy, is discussed under causality below; Vinge does not describe it in those terms and no physics paper cites the novel.
 
+Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansible-outward.md).
+
 ## Which loophole, and why
 
 L4 by the catalogue's placement and by the drive's presentation: a jump drive that moves a ship in a series of leaps is the pulp hyperspace jump ([Asimov's Jump](foundation-hyperspace-jumps.md) is the template), and the novel says nothing about what is between the leaps. But the interesting move is not the drive, it is the map. Vinge's real loophole is that the laws of physics are a function of position, and FTL of any mechanism is allowed only where that function permits. That is a different kind of claim from any other work in the catalogue, and it has a physics cousin of its own.

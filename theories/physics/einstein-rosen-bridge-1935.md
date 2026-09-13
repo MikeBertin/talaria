@@ -16,6 +16,8 @@ The bridge belongs at the top of the L3 list because it is the object everyone e
 
 Flamm noticed in 1916 that the spatial geometry of the Schwarzschild solution embeds as a surface that flares out on both sides of the throat. Einstein and Rosen, Phys. Rev. 48, 73 (1935), made the two-sheeted reading explicit and gave it a physical role as a particle model **[HIGH] S1**. Kruskal (1960) and Szekeres (1960) gave the maximal analytic extension of Schwarzschild, in which the bridge is the $t = 0$ slice and its time evolution can be read off. Fuller and Wheeler, Phys. Rev. 128, 919 (1962), asked whether a signal through the bridge could outpace one going round, and showed it cannot **[HIGH] S1**. Wheeler's group renamed the object a "wormhole" (see [Wheeler's geons and foam](wheeler-geons-and-foam.md)). Morris and Thorne opened their 1988 paper by listing the objections to using Schwarzschild wormholes for travel, and built their traversable class to answer them. Maldacena and Susskind's [ER = EPR](er-equals-epr.md) conjecture returns to the non-traversable bridge as the geometric face of entanglement. In fiction the name survives in *Thor* (2011), where the Bifrost is called an Einstein–Rosen bridge on screen; the fiction catalogue carries that entry.
 
+Lineage: [The wormhole goes to television](../../lineage/morris-thorne-gate-fiction.md); [Physicists in the writers' room](../../lineage/physicists-in-the-writers-room.md); [The paper fold](../../lineage/the-paper-fold.md).
+
 ## The mechanism
 
 Start from the Schwarzschild metric in units $G = c = 1$,

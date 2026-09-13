@@ -14,6 +14,8 @@ In its strongest form the claim is this. Nothing in the Einstein equations forbi
 
 The ancestor is the [Einstein–Rosen bridge](einstein-rosen-bridge-1935.md); Morris and Thorne open with the list of reasons a Schwarzschild wormhole cannot be used (horizons, the pinch-off, lethal tides at small mass) **[HIGH] S1**. Their proposed source for a wormhole is [Wheeler's quantum foam](wheeler-geons-and-foam.md), pulled to macroscopic size. Earlier exact solutions of the same class had appeared unnoticed: Ellis's "drainhole" (1973), Bronnikov (1973), Kodama (1978) and Clément (1981) **[HIGH] S2** (Lemos, Lobo and Oliveira §1.3). Within months the same authors with Yurtsever showed the wormhole is a time machine with an assembly step, the [Morris, Thorne and Yurtsever time machine](morris-thorne-yurtsever-time-machine.md), which became the register's [CAU-3](../../constraints/cau-3.md). Visser dropped spherical symmetry and confined the exotic matter to a thin shell, [Visser's thin-shell wormholes](visser-thin-shell-1989.md). Visser's 1995 monograph and Lobo's 2007 review are the standard secondary accounts. The direct fictional descendants are *Contact* itself and the wormhole of *Interstellar*, both with Thorne as consultant.
 
+Lineage: [The wormhole goes to television](../../lineage/morris-thorne-gate-fiction.md); [Physicists in the writers' room](../../lineage/physicists-in-the-writers-room.md); [Sagan asks Thorne for a legal wormhole](../../lineage/sagan-thorne-contact-interstellar.md); [The paper fold](../../lineage/the-paper-fold.md).
+
 ## The mechanism
 
 **The metric.** With $G = c = 1$ where convenient, the Morris–Thorne line element is

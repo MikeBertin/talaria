@@ -20,6 +20,8 @@ The name comes from "answerable". Le Guin's own statement of this survives only 
 
 The borrowers are the lineage. Orson Scott Card took the word for "Ender's Game" (*Analog*, August 1977; novel 1985), whose text says "somebody dredged the name ansible out of an old book somewhere", and Card has written that the word originated with Le Guin while the mechanism is his own ([Ender's philotic ansible](ender-philotic-ansible.md)) **[HIGH] S1**. The SF Encyclopedia and the Historical Dictionary of SF list Vernor Vinge ("The Blabber", 1988), Elizabeth Moon (*Winning Colors*, 1995), Dan Simmons (*Ilium*, 2003), Terry Bisson, Paul Park, a 1996 *Deep Space Nine* novel and a 2013 *Doctor Who* episode by Neil Gaiman, and David Langford's newsletter *Ansible*, founded 1979 **[HIGH] S3**. No real physics proposal is named in any of the four Hainish texts, and none is claimed to have fed one. The one real-physics neighbour is retrospective: once quantum entanglement offered a non-local correlation to hang the wish on, "ansible" became the generic word for the entanglement radio, which is the proposal the [no-communication theorem](../physics/entanglement-signalling.md) closes.
 
+Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansible-outward.md).
+
 ## Which loophole, and why
 
 L5, send the message. Nothing material crosses the gap; "simultaneity is identity" is a statement that the two ends are, in the relevant sense, one place, and the story's only cargo is text. The ships that carry people are honest L6 vessels, and the novels are unusually careful to keep the two apart: the ansible answers in an instant, the traveller pays in years.

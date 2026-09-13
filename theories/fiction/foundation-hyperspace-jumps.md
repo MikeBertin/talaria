@@ -14,7 +14,9 @@ Asimov wrote one story that prices the Jump, and it is not in the Foundation ser
 
 ## Origin and lineage
 
-Isaac Asimov wrote the first Foundation story for John W. Campbell's *Astounding Science Fiction* in 1942, and Campbell was the editor who had put the word hyperspace into space travel eleven years earlier ([Campbell 1931](word-hyperspace-campbell-1931.md)) **[HIGH] S2** (Historical Dictionary of Science Fiction, entry "hyperspace", citing Campbell 1931 and Asimov 1951). Asimov's usage, and the shape of the Jump (instantaneous, computed, felt as a jar), became the pulp default and then the general one; the Historical Dictionary's citation trail runs from Campbell through E. E. Smith (1939) and Sturgeon (1941) to Asimov (1951) and on to 2022 **[HIGH] S2**. No physics proposal is named in the series, and Asimov, who was a biochemist by training, never claimed one. The lineage page planned for this line is campbell-hyperspace-outward (see [lineage](../../lineage/README.md)).
+Isaac Asimov wrote the first Foundation story for John W. Campbell's *Astounding Science Fiction* in 1942, and Campbell was the editor who had put the word hyperspace into space travel eleven years earlier ([Campbell 1931](word-hyperspace-campbell-1931.md)) **[HIGH] S2** (Historical Dictionary of Science Fiction, entry "hyperspace", citing Campbell 1931 and Asimov 1951). Asimov's usage, and the shape of the Jump (instantaneous, computed, felt as a jar), became the pulp default and then the general one; the Historical Dictionary's citation trail runs from Campbell through E. E. Smith (1939) and Sturgeon (1941) to Asimov (1951) and on to 2022 **[HIGH] S2**. No physics proposal is named in the series, and Asimov, who was a biochemist by training, never claimed one. The lineage page planned for this line is hyperspace-the-word (see [lineage](../../lineage/README.md)).
+
+Lineage: [Hyperspace: the word](../../lineage/hyperspace-the-word.md).
 
 ## Which loophole, and why
 

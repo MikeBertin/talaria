@@ -20,6 +20,8 @@ The name is a documented loan. Card wrote on his own site that calling the devic
 
 The mechanism has no real-physics parent by the author's own account. Asked in October 1999 whether the philotic effect has any basis in quantum physics, Card answered "no and no" and said that any coincidence with present theories of material existence "is purely coincidental" **[HIGH] S1**. The secondary literature's habit of glossing philotes as quantum entanglement is therefore a reader's gloss, not the work's statement. No real proposal was fed by it.
 
+Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansible-outward.md).
+
 ## Which loophole, and why
 
 L5, send the message. Nothing with mass crosses the gap; the fleet crosses it at sublight over decades and the ansible carries the orders. The Outside of *Xenocide* onward is a separate move (L4) and gets its own dossier.

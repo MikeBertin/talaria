@@ -35,7 +35,7 @@ loophole class; port 8191.
   `matrix/physics.csv` and `matrix/fiction.csv`, plus `matrix/MATRIX.md` with
   the derived views: bill by loophole, coherence by loophole, the join.
 
-## M5: Lineage
+## M5: Lineage ✅ (2026-09-13)
 - One page per line of descent: Sagan to Thorne to Contact and Interstellar;
   Star Trek to Alcubierre to Elite and the Orville; Tolman to Benford's
   antitelephone to Timescape; Le Guin's ansible outward; the word "hyperspace"

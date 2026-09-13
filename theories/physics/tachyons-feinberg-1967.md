@@ -18,6 +18,8 @@ The pre-relativistic literature on charges moving faster than light (Thomson 188
 
 In fiction the tachyon became the stock word for a faster-than-light messenger, most seriously in Benford's *Timescape* (1980), which is listed in the catalogue as timescape-tachyon-message, and as tech-babble in Star Trek's subspace radio (star-trek-subspace-radio).
 
+Lineage: [Feinberg's tachyon, outward](../../lineage/feinberg-tachyon-outward.md); [Tolman's paradox to Timescape](../../lineage/tolman-benford-timescape.md).
+
 ## The mechanism
 
 Take the invariant relation for a free particle in units with $c = 1$,

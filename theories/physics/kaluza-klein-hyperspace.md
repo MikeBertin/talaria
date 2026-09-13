@@ -16,6 +16,8 @@ The hyperspace claim is what fiction needs and is the thing this dossier scores:
 
 Kaluza, Sitzungsber. Preuss. Akad. Wiss. Berlin, 966 (1921), was presented to the Academy by Einstein, who had held the manuscript since 1919; Klein, Z. Phys. 37, 895 (1926), added the compactification and the quantum reading. Overduin and Wesson's Phys. Rep. 283, 303 (1997) review separates three descendants, compactified, projective and non-compactified, and is the S2 source for the classical theory here. String theory's requirement of ten or eleven dimensions revived compactification in the 1980s; Hořava and Witten's 1996 domain walls gave the brane picture; ADD and Randall-Sundrum made large and warped dimensions phenomenology. Sub-millimetre tests of the inverse-square law (the Eöt-Wash torsion pendulum, 2020) and collider searches are the experimental side. In fiction "hyperspace" predates all of this (John Campbell, 1931) and never meant a compact dimension; the catalogue lists the Star Wars hyperdrive, Babylon 5's hyperspace and their relatives under L4, and the register entry that governs them is [MAN-1](../../constraints/man-1.md).
 
+Lineage: [Hyperspace: the word](../../lineage/hyperspace-the-word.md).
+
 ## The mechanism
 
 **Kaluza's reduction.** Write the five-dimensional metric in terms of a four-dimensional metric $g_{\mu\nu}$, a vector $A_\mu$ and a scalar $\phi$:

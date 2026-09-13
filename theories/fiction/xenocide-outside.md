@@ -16,7 +16,9 @@ The test flight in "Voyage" is a bare room of a ship with Ender, Miro and Ela ab
 
 ## Origin and lineage
 
-Card wrote *Xenocide* as the third of what became four Ender novels; it was nominated for the Hugo and Locus awards in 1992 **[HIGH] S3**. Card has said in print that he took the word "ansible" from Le Guin, needing the same rule set she used, instantaneous communication in a universe of slower-than-light ships **[HIGH] S3**; the lineage page for the ansible belongs to the L5 dossiers ([Le Guin's ansible](le-guin-ansible.md) and [Card's philotic ansible](ender-philotic-ansible.md)), and the Outside is Card's own extension of it, unattested elsewhere. Philotes resemble entangled particles in that separated parts remain correlated without a signal passing between them, and the novel's "philotic ray" plays the role a popular account gives to a nonlocal link, but Card names no physics paper and this dossier asserts no source; the resemblance is recorded, not the influence. No physicist has been found citing the Outside.
+Card wrote *Xenocide* as the third of what became four Ender novels; it was nominated for the Hugo and Locus awards in 1992 **[HIGH] S3**. Card has said in print that he took the word "ansible" from Le Guin, needing the same rule set she used, instantaneous communication in a universe of slower-than-light ships **[HIGH] S1** (Hatrack River, "OSC Answers Questions", readable directly over plain http); the lineage page for the ansible belongs to the L5 dossiers ([Le Guin's ansible](le-guin-ansible.md) and [Card's philotic ansible](ender-philotic-ansible.md)), and the Outside is Card's own extension of it, unattested elsewhere. Philotes resemble entangled particles in that separated parts remain correlated without a signal passing between them, and the novel's "philotic ray" plays the role a popular account gives to a nonlocal link, but Card names no physics paper and this dossier asserts no source; the resemblance is recorded, not the influence. No physicist has been found citing the Outside.
+
+Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansible-outward.md).
 
 ## Which loophole, and why
 

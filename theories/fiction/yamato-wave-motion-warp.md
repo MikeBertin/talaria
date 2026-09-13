@@ -16,6 +16,8 @@ The reference literature attributes the engine's energy to tachyon particles, dr
 
 Nishizaki began developing the project in 1973 and the series premiered against *Heidi* and lost the ratings battle, which is why the run was cut; it became a phenomenon in reruns and through the 1977 compilation film, and is generally credited with starting the anime boom of the late 1970s **[HIGH] S3**. The word "warp" (*wāpu*) was already loose in Japanese science fiction from *Star Trek*'s Japanese broadcast (1969), and the series uses it for a jump rather than for a continuous speed, which is the L4 reading rather than *Star Trek*'s L2 one; no statement by the production tying the drive to a real proposal has been found and none is claimed. The influence out of the series is broad but unsourced beyond the general histories: the space-opera anime that followed (*Galaxy Express 999*, *Macross*, *Gundam*) took "warp" as a given.
 
+Lineage: [Feinberg's tachyon, outward](../../lineage/feinberg-tachyon-outward.md).
+
 ## Which loophole, and why
 
 L4, leave the manifold, on the series' own picture: the ship leaves ordinary space, passes through a region in which the crew's senses and clocks misbehave, and reappears at a calculated point, with the passage described in the dimensional language of "third to fourth". Nothing accelerates the ship past c in normal space (L1); the engine does not carry a bubble of space with it (L2), and the visual, the ship streaming into a tunnel of light and out again, is the L4 convention. The "fold" reading, in which the jump is a shortcut through folded space (L3), belongs to *Macross* (1982) and is not what the 1974 series says.

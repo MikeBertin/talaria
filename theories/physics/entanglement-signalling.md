@@ -16,6 +16,8 @@ The idea is as old as the Einstein, Podolsky and Rosen argument of 1935, which c
 
 In fiction this is the ansible: Le Guin's device of 1966 and the philotic web of Card's Ender novels are both instantaneous links between fixed stations, and the Star Trek subspace radio is the same wish in different clothes. The catalogue lists them as le-guin-ansible, ender-philotic-ansible and star-trek-subspace-radio under L5. None of those works claims entanglement as the mechanism; the entanglement radio is what the ansible became once real physics offered a non-local correlation to hang it on.
 
+Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansible-outward.md).
+
 ## The mechanism
 
 Write the joint state of the pair as a density matrix $\rho_{AB}$ on the tensor product of Alice's and Bob's Hilbert spaces. Everything Bob can measure, alone, is a function of his reduced density matrix

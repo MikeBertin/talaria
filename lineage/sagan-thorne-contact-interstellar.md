@@ -1,0 +1,50 @@
+# Sagan asks Thorne for a legal wormhole
+
+*A novelist's request in 1985 produced the traversable wormhole paper and the paper produced a time machine; the same physicist and producer then carried the wormhole into Interstellar three decades later.*
+
+**Kind:** lineage · **Span:** 1985–2015 · **Last reviewed:** 2026-09-13
+
+## The line
+
+This is the one line in the catalogue that runs from fiction into physics and back out again, and the paper at its centre says so in its own text. In the summer of 1985 Carl Sagan sent Kip Thorne a prepublication draft of [Contact](../theories/fiction/contact-sagan-machine.md) and asked for help making its gravitational physics as accurate as possible. Thorne and his student Michael Morris looked for a wormhole that a person could actually cross, found the class of solutions now named after them and sent Sagan a preliminary description; Sagan wrote the results into the novel at the galley proof stage, and the book came out that September. The paper itself, [Morris and Thorne 1988](../theories/physics/morris-thorne-1988.md), appeared in the American Journal of Physics three years later, opens its abstract by naming the novel and thanks Sagan in its acknowledgements. What travelled from Sagan to Thorne was a question: is there any way through? What travelled back was a metric with a bill attached, matter with negative energy density at the throat, which Sagan paid by giving the tunnels to a vanished civilisation.
+
+The paper had a sequel within months. Thinking about what a traversable wormhole could do, Morris, Thorne and Yurtsever showed that moving one mouth on a fast round trip turns the shortcut into a time machine, the [Morris, Thorne and Yurtsever time machine](../theories/physics/morris-thorne-yurtsever-time-machine.md) of Physical Review Letters, and that a wormhole needs the averaged energy condition to fail. Thorne's own account of the whole episode, from Sagan's request to the time machine, is the final chapter of his 1994 book *Black Holes and Time Warps*, and John Preskill's review of that book puts the causal chain in one sentence: Sagan asked, Thorne suggested wormholes and the request "inspired Thorne and his students" to ask whether an advanced civilisation could build one.
+
+The line then leaves physics again by a personal route. Sagan had set Thorne up on a blind date with Lynda Obst; Obst became executive producer of the 1997 film of *Contact* and, years later, the producer with whom Thorne wrote the treatment that became [Interstellar](../theories/fiction/interstellar-wormhole.md). Thorne was that film's executive producer and science consultant, its wormhole is a Morris–Thorne throat given a visual physics, and the visual effects work went back into the American Journal of Physics in 2015 as James, von Tunzelmann, Franklin and Thorne, "Visualizing Interstellar's Wormhole". The same journal that printed the paper Sagan provoked printed the paper the film provoked, twenty-seven years apart. The folded-paper scene in *Interstellar* has its own line, [the-paper-fold](the-paper-fold.md), and the wormhole's spread into television is [morris-thorne-gate-fiction](morris-thorne-gate-fiction.md).
+
+## The links
+
+| From | To | Year | Evidence | Grade |
+|---|---|---|---|---|
+| Sagan, draft of *Contact* | Morris and Thorne, traversable wormhole solutions | 1985 | Morris and Thorne 1988, §I.C: "stimulated to find them in the summer of 1985" when Sagan sent a prepublication draft and asked for accurate gravitational physics. Text read in an archived scan | **[HIGH] S1** |
+| Morris and Thorne, preliminary description | Sagan, *Contact* (Simon and Schuster, September 1985) | 1985 | Same section: Sagan "incorporated them into his novel at the galley proof stage". The novel's Part III transit is the result | **[HIGH] S1** |
+| Sagan, *Contact* | Morris and Thorne 1988, Am. J. Phys. 56, 395 | 1988 | The abstract names the novel as treating interstellar travel in accord with "the best 1986 knowledge of the laws of physics"; the acknowledgements thank Carl Sagan. Both read | **[HIGH] S1** |
+| Morris and Thorne 1988 | Morris, Thorne and Yurtsever 1988, Phys. Rev. Lett. 61, 1446 | 1988 | The time-machine paper takes the traversable class as given; Preskill's review of Thorne 1994 records that thinking about the wormholes "eventually led Thorne" to the time machine | **[MED] S3** |
+| Sagan's request | Thorne, *Black Holes and Time Warps* (Norton, 1994), chapter 14 | 1994 | Preskill's review: "Thorne recalls how Carl Sagan prevailed upon him" to invent a transport system for *Contact*. Chapter 14, "Wormholes and Time Machines", opens on p. 483 of the Norton edition according to a chapter summary; the book was not read for this page | **[MED] S3** |
+| Sagan and Thorne | Lynda Obst, executive producer of *Contact* (1997) | 1997 | Highfield, Science Museum blog (5 November 2014): Sagan "had even set up Thorne on a blind date with Lynda Obst", who produced *Contact* and *Interstellar*. Obst's *Contact* credit confirmed from the film's Wikipedia entry | **[LOW] S4** |
+| Morris and Thorne 1988 | *Contact* (1997 film), the tunnel system called a wormhole on screen | 1997 | The film keeps the novel's transit and the word "wormhole"; the novel's transit is the paper's. No credit or statement ties Thorne to the film's production; see below | **[MED] S3** |
+| Thorne and Obst, treatment | *Interstellar* (2014), Thorne as executive producer and science consultant | 2014 | Thorne's own account in *The Science of Interstellar* (Norton, 2014), per the fiction dossier; film credits | **[MED] S2** |
+| Morris and Thorne 1988 | *Interstellar*'s wormhole geometry | 2014 | James et al. 2015 describe the "three-parameter wormhole" the production used and the ray tracing through it; the metric is a Morris–Thorne throat with a chosen shape function. Abstract read at arXiv:1502.03809 | **[HIGH] S1** |
+| *Interstellar* (2014) | James, von Tunzelmann, Franklin and Thorne, Am. J. Phys. 83, 486 | 2015 | The paper's title and abstract: the film's wormhole visualisations offered as a teaching tool, with the parameters chosen for the film. arXiv v1 12 February 2015, v3 22 April 2015 | **[HIGH] S1** |
+
+## What is not sourced
+
+- **Thorne and the 1997 film.** The *Contact* dossier says the film's wormhole "descends from the same paper by way of the same consultant", and the *Interstellar* dossier calls Thorne "the link between the two films". No source found for this page names Thorne in the 1997 film's production; its Wikipedia entry lists technical consultants from the SETI Institute, Caltech and the VLA without naming him, and its physics is the novel's. The documented human link between the two films is Obst, not Thorne. A credit list from the film, or a statement by Thorne, Zemeckis or Obst, would settle it.
+- **Thorne's 1994 account, read directly.** Every statement here about *Black Holes and Time Warps* rests on Preskill's review and on chapter summaries. The page reference for the Sagan story (chapter 14, from p. 483 in the Norton hardcover) needs a copy of the book to confirm; the Picador edition on the Internet Archive is lending-restricted and its full text is not searchable.
+- **The black hole Sagan first tried.** The popular account, that Sagan's draft sent Ellie through a black hole and Thorne replaced it with a wormhole, appears in Highfield, in Berry's review of Thorne 1994 and in later press, all drawing on Thorne's book. Morris and Thorne's §I.C says only that Sagan asked for accurate physics; it does not say what the draft contained.
+- **The date.** Morris and Thorne say summer 1985. One press account (Quanta, 2017) gives the phone call as 1987, which cannot be right for a novel published in September 1985; the paper is the primary source and 1985 stands.
+- **Whether Sagan read the time-machine paper.** No edition of *Contact* engages the causality of its own tunnels, and no source says Sagan saw Morris, Thorne and Yurtsever before or after publication.
+
+## Sources
+
+- **S1** Morris, M. S. and Thorne, K. S., "Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity", Am. J. Phys. 56, 395–412 (1988). doi:10.1119/1.15620. Abstract, §I.C and acknowledgements read in the scan mirrored on the Internet Archive.
+- **S1** Morris, M. S., Thorne, K. S. and Yurtsever, U., "Wormholes, Time Machines, and the Weak Energy Condition", Phys. Rev. Lett. 61, 1446–1449 (1988). doi:10.1103/PhysRevLett.61.1446. Abstract only.
+- **S1** James, O., von Tunzelmann, E., Franklin, P. and Thorne, K. S., "Visualizing Interstellar's Wormhole", Am. J. Phys. 83, 486 (2015), arXiv:1502.03809. Abstract and submission history read at arXiv.
+- **S1** Sagan, C., *Contact* (Simon and Schuster, 1985). Not read for this page; publication date from the fiction dossier.
+- **S1** *Contact* (1997), directed by Robert Zemeckis, Warner Bros., released 11 July 1997. *Interstellar* (2014), directed by Christopher Nolan, Paramount and Warner Bros., US release 5 November 2014.
+- **S2** Thorne, K. S., *The Science of Interstellar* (W. W. Norton, 2014). Not read for this page; cited through the *Interstellar* dossier.
+- **S2** Thorne, K. S., *Black Holes and Time Warps: Einstein's Outrageous Legacy* (W. W. Norton, 1994), chapter 14, "Wormholes and Time Machines". Not read; chapter title and opening page from a chapter summary, so every claim resting on it is graded from the S3 retellings.
+- **S3** Preskill, J., review of *Black Holes and Time Warps*, text at preskill.caltech.edu/pubs/preskill-1996-thorne.pdf. Read in full; the source for Thorne's account of Sagan's request and the path to the time machine.
+- **S3** Wikipedia, "Contact (1997 American film)" and "Lynda Obst", for producer credits and the film's consultants.
+- **S4** Highfield, R., "The Science of Interstellar", Science Museum blog, 5 November 2014, for the 1985 page-proof account and the Obst blind date.
+- **S4** Quanta Magazine, "Newfound Wormhole Allows Information to Escape Black Holes" (23 October 2017), for the popular retelling; its 1987 date is noted above as wrong.

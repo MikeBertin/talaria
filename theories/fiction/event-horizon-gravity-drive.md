@@ -20,6 +20,8 @@ The folded-paper demonstration is older than the film. Madeleine L'Engle's *A Wr
 
 The gravity drive gyroscope was modelled on the puzzle box from *Hellraiser* **[MED] S3**, which says more about what the drive is for than any equation would.
 
+Lineage: [The paper fold](../../lineage/the-paper-fold.md).
+
 ## Which loophole, and why
 
 **L3, take a shortcut.** Weir says so in terms: the ship does not move faster than light, it makes two distant points coincide and steps across. The mechanism is a singularity produced on board, which puts the film in the black-hole-as-tunnel family rather than the traversable-wormhole family. Its nearest physics cousin is therefore [passage through the Kerr interior](../physics/kerr-interior-passage.md), the one general-relativity construction in which a black hole is a door to somewhere else. That dossier's bill is B-mass and B-caus: a rotating hole of tens of thousands of solar masses at minimum, a route that runs through a region of built-in closed timelike curves, and a destination nobody chooses. The film keeps the last part faithfully.

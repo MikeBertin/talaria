@@ -20,6 +20,8 @@ Created by Rockne S. O'Bannon and produced by Brian Henson and David Kemper, *Fa
 
 The forward influence is on television rather than on physics. Farscape's wormhole weapon, a hole that eats a galaxy, is the strongest statement in popular fiction that a wormhole's danger is not travel but what it does to the space around it; no paper cites it.
 
+Lineage: [The wormhole goes to television](../../lineage/morris-thorne-gate-fiction.md).
+
 ## Which loophole, and why
 
 **L3, take a shortcut.** A wormhole in *Farscape* is a tunnel with an entrance and millions of exits, entered by flying a module or a ship into it, and it delivers the traveller elsewhere without local superluminal motion. The show's own word is "wormhole" throughout, and Einstein's account of it as a bridge in space-time is the Morris–Thorne picture in plain words.
