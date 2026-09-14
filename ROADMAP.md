@@ -49,6 +49,6 @@ loophole class; port 8191.
   time-machine conversion; pick-a-drive-pick-a-frame; the relativistic rocket
   calculator; the entanglement no-signalling demo.
 
-## M7: Ship
-- README polish, OG image, capture. GitHub and Pages only on Mike's explicit
+## M7: Ship ◐ (prep done 2026-09-14; publish awaits Mike's confirmation)
+- README polish, OG image, capture: done. GitHub and Pages only on Mike's explicit
   confirmation.

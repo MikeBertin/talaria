@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TALARIA social card</title>
+<!-- Copied from stoa/tools/og/og-card.html. Render with:
+     ../stoa/tools/og/make-og.sh og-card.html web/og.png
+     Goes stale when demos are added; see HANDOVER. -->
+<style>
+  :root {
+    --bg: #0a0a0f; --panel: #13131c; --line: #23232f; --ink: #e7e7ef; --muted: #8a8a9c;
+    --accent: #6d96ec; --accent2: #f68aaf;
+    --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; background: var(--bg);
+    background-image: radial-gradient(900px 600px at 65% -10%, #14142a, transparent);
+    color: var(--ink); font-family: system-ui, -apple-system, sans-serif;
+    display: flex; flex-direction: column; justify-content: center; padding: 0 90px; overflow: hidden; position: relative; }
+  .kicker { font-family: var(--mono); font-size: 22px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
+  h1 { font-size: 96px; line-height: 1.05; letter-spacing: 0.16em; font-weight: 800;
+    background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 26px; }
+  .sub { font-size: 30px; color: var(--muted); max-width: 900px; line-height: 1.4; }
+  .chips { display: flex; gap: 14px; margin-top: 44px; }
+  .chip { font-family: var(--mono); font-size: 19px; padding: 10px 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+  .url { position: absolute; right: 90px; bottom: 48px; font-family: var(--mono); font-size: 21px; color: var(--muted); }
+  svg.cone { position: absolute; right: 70px; top: 60px; width: 300px; height: 300px; opacity: .9; }
+</style>
+</head>
+<body>
+  <svg class="cone" viewBox="0 0 100 100" fill="none" stroke-linecap="round">
+    <line x1="10" y1="90" x2="90" y2="10" stroke="#a1942f" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="90" y1="90" x2="10" y2="10" stroke="#a1942f" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="50" y1="95" x2="50" y2="5" stroke="#4d5ca7" stroke-width="2.4"/>
+    <line x1="62" y1="95" x2="86" y2="5" stroke="#c64e31" stroke-width="2.4"/>
+    <line x1="50" y1="50" x2="74" y2="56" stroke="#cf5684" stroke-width="3"/>
+    <line x1="74" y1="56" x2="50" y2="43" stroke="#54a85a" stroke-width="3"/>
+    <circle cx="50" cy="50" r="2.6" fill="#f68aaf"/><circle cx="74" cy="56" r="2.6" fill="#ed8368"/><circle cx="50" cy="43" r="2.6" fill="#8cd28e"/>
+  </svg>
+  <div class="kicker">Faster than light · real and invented</div>
+  <h1>TALARIA</h1>
+  <p class="sub">Every way anyone has proposed to beat light, catalogued and scored against the physics that says you can't. Six demos, 105 dossiers, 29 no-go results.</p>
+  <div class="chips">
+    <span class="chip" style="color:#6d96ec">warp bubbles</span>
+    <span class="chip" style="color:#c69d56">wormholes</span>
+    <span class="chip" style="color:#a478b6">hyperspace</span>
+    <span class="chip" style="color:#f68aaf">the antitelephone</span>
+  </div>
+  <div class="url">mikebertin.github.io/talaria</div>
+</body>
+</html>

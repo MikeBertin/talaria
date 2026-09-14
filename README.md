@@ -2,6 +2,8 @@
 
 *Every way anyone has proposed to beat light, real or invented, catalogued, graded and scored against the physics that says you can't.*
 
+![The antitelephone, the Alcubierre bubble and the atlas](web/demo.gif)
+
 ## Why TALARIA
 
 The talaria were the winged sandals of Hermes, the oldest faster-than-anything device in Western storytelling. Nobody in the myths asks how they work. That is the interesting part: three thousand years later we still want the sandals, and physics still hasn't decided whether they are impossible or merely very expensive. This project keeps both halves in one room. The real proposals get the scrutiny of the actual theorems that constrain them. The fictional ones get sorted by which loophole they are quietly using, and graded on whether the story noticed the bill.
