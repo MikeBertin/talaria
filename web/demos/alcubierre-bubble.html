@@ -261,7 +261,20 @@ function draw() {
   // The transition is centred outside the drawn disc so the interior moves as
   // a rigid block and the bunching and stretching sit in the wake and the bow.
   const gwidth = Math.max(w.drawn, 0.45), gsig = 2 / gwidth, gR = 1 + gwidth / 2;
-  const dx = (px, py) => A * RPX * shape(Math.hypot((px - FX) / RPX, (py - FY) / RPX), gR, gsig);
+  // Integrate the drift dx/dt = v_s f(r_s) rather than displacing by the field
+  // at the start point: a flow map never lets one particle overtake another,
+  // so the lines cannot cross. Forty midpoint steps over the carry distance.
+  const NSTEP = 40, hstep = A / NSTEP;
+  const dx = (px, py) => {
+    let x = px; const yy = (py - FY) / RPX;
+    for (let i = 0; i < NSTEP; i++) {
+      const k1 = shape(Math.hypot((x - FX) / RPX, yy), gR, gsig);
+      const xm = x + 0.5 * hstep * RPX * k1;
+      const k2 = shape(Math.hypot((xm - FX) / RPX, yy), gR, gsig);
+      x += hstep * RPX * k2;
+    }
+    return x - px;
+  };
   ctx.strokeStyle = A > 0 ? '#34344a' : GRID; ctx.lineWidth = 1; ctx.lineJoin = 'round';
   const STEP = 1.5;
   for (let x0 = FX % 50; x0 < W + 50; x0 += 50) {
