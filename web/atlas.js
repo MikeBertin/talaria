@@ -47,7 +47,7 @@ pbody.addEventListener('click', e => { const a = e.target.closest('[data-open]')
 /* ---------- grids ---------- */
 function grid(table, rows, kind) {
   let h = '<thead><tr><th class="name">' + (kind === 'physics' ? 'proposal' : 'work') + '</th>';
-  h += IDS.map(i => `<th class="rot" title="${esc(REG[i].title)}"><a href="pages/constraints/${i.toLowerCase()}.html">${i}</a></th>`).join('') + '</tr></thead><tbody>';
+  h += IDS.map(i => `<th class="rot" data-hc="${i}"><a href="pages/constraints/${i.toLowerCase()}.html">${i}</a></th>`).join('') + '</tr></thead><tbody>';
   for (const d of rows) {
     h += `<tr><td class="name" data-open="${kind}:${d.slug}">${chip(d.loophole, d.loophole)} ${esc(d.title)}</td>`;
     h += IDS.map(i => { const v = d.verdicts[i] || 'N/A'; return `<td class="cell" data-open="${kind}:${d.slug}" title="${i} ${v}: ${esc(d.notes[i] || '')}"><span class="${vcls(v)}"></span></td>`; }).join('') + '</tr>';
@@ -78,6 +78,26 @@ const v = id => document.getElementById(id).value;
 ['p-loop', 'p-stand', 'p-sort', 'p-search'].forEach(id => document.getElementById(id).addEventListener('input', renderPhysics));
 ['f-loop', 'f-coh', 'f-cau', 'f-sort', 'f-search'].forEach(id => document.getElementById(id).addEventListener('input', renderFiction));
 renderPhysics(); renderFiction();
+
+/* ---------- hover cards on column heads ---------- */
+const hc = document.createElement('div'); hc.id = 'hovercard'; hc.hidden = true; document.body.appendChild(hc);
+function showCard(th) {
+  const r = REG[th.dataset.hc]; if (!r) return;
+  const short = t => t.length > 220 ? t.slice(0, 217).replace(/\s+\S*$/, '') + '…' : t;
+  hc.innerHTML = `<b>${esc(r.id)}</b> <span class="fam">${esc(D.families[r.family] || r.family)}</span><h4>${esc(r.title)}</h4><p>${esc(short(r.forbids))}</p><small>click for the full entry, escape hatches and who it bites</small>`;
+  const b = th.getBoundingClientRect();
+  hc.hidden = false;
+  const w = hc.offsetWidth;
+  let x = b.left + b.width / 2 - w / 2; x = Math.max(8, Math.min(x, window.innerWidth - w - 8));
+  hc.style.left = x + 'px'; hc.style.top = (b.bottom + 6) + 'px';
+}
+document.querySelectorAll('table.grid').forEach(t => {
+  t.addEventListener('mouseover', e => { const th = e.target.closest('th[data-hc]'); if (th) showCard(th); });
+  t.addEventListener('mouseout', e => { const th = e.target.closest('th[data-hc]'); if (th && !th.contains(e.relatedTarget)) hc.hidden = true; });
+  t.addEventListener('focusin', e => { const th = e.target.closest('th[data-hc]'); if (th) showCard(th); });
+  t.addEventListener('focusout', () => { hc.hidden = true; });
+});
+document.querySelectorAll('#grid-wrap, #grid-wrap-f').forEach(w => w.addEventListener('scroll', () => { hc.hidden = true; }));
 
 /* ---------- join ---------- */
 const jseg = document.getElementById('joinSeg');
