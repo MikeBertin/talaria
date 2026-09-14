@@ -57,6 +57,8 @@ tr:hover td { background: #101018; }
 table.grid { font-size: 12px; }
 table.grid th { position: sticky; top: 0; background: var(--panel); z-index: 2; }
 table.grid th.rot { writing-mode: vertical-rl; transform: rotate(180deg); padding: 8px 4px; height: 66px; text-align: left; }
+table.grid th.rot a { color: var(--muted); text-decoration: none; }
+table.grid th.rot a:hover { color: var(--accent); text-decoration: underline; }
 table.grid td.name { position: sticky; left: 0; background: var(--bg); z-index: 1; min-width: 220px; cursor: pointer; }
 table.grid td.name:hover { color: var(--accent); }
 table.grid td.cell { text-align: center; padding: 3px; cursor: pointer; }

@@ -47,7 +47,7 @@ pbody.addEventListener('click', e => { const a = e.target.closest('[data-open]')
 /* ---------- grids ---------- */
 function grid(table, rows, kind) {
   let h = '<thead><tr><th class="name">' + (kind === 'physics' ? 'proposal' : 'work') + '</th>';
-  h += IDS.map(i => `<th class="rot" title="${esc(REG[i].title)}" data-c="${i}">${i}</th>`).join('') + '</tr></thead><tbody>';
+  h += IDS.map(i => `<th class="rot" title="${esc(REG[i].title)}"><a href="pages/constraints/${i.toLowerCase()}.html">${i}</a></th>`).join('') + '</tr></thead><tbody>';
   for (const d of rows) {
     h += `<tr><td class="name" data-open="${kind}:${d.slug}">${chip(d.loophole, d.loophole)} ${esc(d.title)}</td>`;
     h += IDS.map(i => { const v = d.verdicts[i] || 'N/A'; return `<td class="cell" data-open="${kind}:${d.slug}" title="${i} ${v}: ${esc(d.notes[i] || '')}"><span class="${vcls(v)}"></span></td>`; }).join('') + '</tr>';
@@ -55,7 +55,6 @@ function grid(table, rows, kind) {
   table.innerHTML = h + '</tbody>';
 }
 document.querySelectorAll('table.grid').forEach(t => t.addEventListener('click', e => {
-  const th = e.target.closest('th[data-c]'); if (th) return openConstraint(th.dataset.c);
   const td = e.target.closest('[data-open]'); if (td) { const [k, s] = td.dataset.open.split(':'); openDossier(k, s); }
 }));
 const K = { K4: 4, K3: 3, K2: 2, K1: 1, K0: 0 }, F = { F4: 4, F3: 3, F2: 2, F1: 1, F0: 0 };
