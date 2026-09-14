@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Alcubierre bubble · TALARIA</title>
+<link rel="stylesheet" href="../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../vendor/stoa/controls.css">
+<link rel="stylesheet" href="../vendor/stoa/notice.css">
+<link rel="stylesheet" href="../vendor/stoa/popover.css">
+<link rel="stylesheet" href="../palette.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../favicon.svg">
+<style>
+  .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
+  .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  .bound { position:relative; height:6px; margin:6px 0 2px; border-radius:3px; background:var(--line); overflow:hidden; }
+  .bound .ok { position:absolute; left:0; top:0; bottom:0; background:var(--good); opacity:.7; }
+  .bound .tick { position:absolute; top:-2px; bottom:-2px; width:2px; background:var(--ink); }
+  .bound-note { font-size:11.5px; color:var(--muted); line-height:1.45; margin:0; }
+  .bound-note.bad { color:var(--bad); }
+  .panel label .val.bad { color:var(--bad); }
+  .readout-box .sub { color:var(--muted); font-size:12.5px; margin-top:6px; }
+</style>
+</head><body>
+<nav class="top"><a href="../index.html">TALARIA</a><span>/</span><span class="kind">demo · the Alcubierre bubble</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">The Alcubierre bubble</h1>
+  <p class="sub">The ship sits still in a patch of flat space. Space squeezes in front of that patch and stretches behind it, and the patch is carried along faster than light. Here is the bubble from above, the shape of its wall and the bill for building it.</p>
+</header>
+<main>
+  <div class="demo-wrap">
+    <div>
+      <canvas id="cv" width="760" height="560"></canvas>
+      <div class="legend-row">
+        <span><i style="background:var(--a-mark)"></i>the ship</span>
+        <span><i style="background:var(--L2-mark)"></i>the bubble, where space is carried</span>
+        <span><i style="background:var(--b-mark)"></i>contraction</span>
+        <span><i style="background:var(--reply-mark)"></i>expansion</span>
+        <span><i style="background:var(--signal-mark)"></i>negative energy</span>
+      </div>
+      <div class="readout-box" id="readout"></div>
+    </div>
+    <div class="panel">
+      <h2>Controls</h2>
+      <label>What is drawn</label>
+      <div class="seg" id="viewSeg">
+        <button data-view="f" class="active" aria-pressed="true">shape</button>
+        <button data-view="theta" aria-pressed="false">expansion</button>
+        <button data-view="rho" aria-pressed="false">energy</button>
+      </div>
+      <label>Bubble speed v<sub>s</sub>, in multiples of c <span class="val" id="vVal"></span></label>
+      <input type="range" id="v" min="0" max="200" value="100">
+      <label>Bubble radius R <span class="val" id="RVal"></span></label>
+      <input type="range" id="R" min="0" max="300" value="200">
+      <label>Wall thickness Δ <span class="val" id="DVal"></span></label>
+      <input type="range" id="D" min="0" max="1000" value="0">
+      <div class="bound" id="bound"><div class="ok" id="boundOk"></div><div class="tick" id="boundTick"></div></div>
+      <p class="bound-note" id="boundNote"></p>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px">The picture is a slice through the bubble, seen from above, with the ship heading right. The wall is drawn thick enough to see; the readout says how thick it really is. Speed only changes the strength of the fields and the bill, not the shape of the wall. The strip at the bottom is the field along the dashed line.</p>
+    </div>
+  </div>
+
+  <section class="notice">
+    <h2 class="notice-title">Things to notice</h2>
+    <div class="notice-grid">
+      <div class="ncard"><h3>The ship <span>never breaks the speed limit</span></h3><p>Pick the shape view and push the speed to 10c. The flat patch around the ship, where the shape function is 1, does not change at all. Only the wall does any work. Inside, clocks tick at the home rate and nobody feels any push.</p><span class="x why" data-pop="local">Why nothing happens inside</span></div>
+      <div class="ncard"><h3>Above c the crew <span>cannot steer</span></h3><p>Slide the speed past 1c and a dashed ring appears in the wall. That ring is a horizon: light sent forward from the ship gets no further. The front of the wall is out of the crew's reach, so the pilot's chair is decorative.</p><span class="x why" data-pop="horizon">Register CON-1</span></div>
+      <div class="ncard"><h3>The route has to be <span>laid in advance</span></h3><p>Keep the speed above 1c and look at the front wall. The stuff that shapes it is ahead of anything the ship can send, so it cannot be put there from the ship. Someone has to build the track first, at sublight speed.</p><span class="x why" data-pop="bootstrap">Register CON-2</span></div>
+      <div class="ncard"><h3>A thicker wall is cheaper, and <span>forbidden</span></h3><p>Drag the wall thickness up and watch the bill fall: it goes as 1 over Δ. Then look at the bar under the slider. Past the tick the wall is thicker than the quantum inequalities allow at this speed, and the bar turns red.</p><span class="x why" data-pop="qi">Register ENE-3</span></div>
+      <div class="ncard"><h3>Shrink the bubble, keep the room: <span>the pocket trick</span></h3><p>Drag the radius down and the bill falls as R squared. Van Den Broeck's idea is to make the bubble a few femtometres across while the room inside stays 200 m. The readout runs the same formula for that case: about a third of a solar mass for the wall.</p><span class="x why" data-pop="pocket">Register ENE-4</span></div>
+      <div class="ncard"><h3>Do not slow down <span>near anything you like</span></h3><p>Set the speed above 1c. Everything the front wall meets on the way gets stuck in it and stays stuck. Slide the speed back below 1c and it all comes out at once, forwards, as a beam of very fast particles aimed at wherever you were going.</p><span class="x why" data-pop="burst">Register HAZ-1</span></div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>What is going on</h2>
+    <p>In 1994 Miguel Alcubierre wrote down a spacetime, not a machine. He chose a shape for the geometry first, a bubble of radius R with a wall of thickness Δ moving at speed v<sub>s</sub>, and then asked Einstein's equations what matter would be needed to produce it. The answer is the picture above. Space contracts ahead of the bubble and expands behind it, and the ship inside rides along without ever moving faster than light through its own patch of space. The wall has to be filled with <span class="x" data-pop="negative">negative energy</span>. That last part is the whole problem. The dossier is <a href="../pages/physics/alcubierre-1994.html">Alcubierre 1994</a>, and the class it founded is <a href="../pages/constraints/wrp-1.html">WRP-1</a>.</p>
+    <p>How much negative energy depends on how thin the wall is, and quantum field theory has a say in that. The <span class="x" data-pop="qi-def">quantum inequalities</span> of Ford and Roman bound how much negative energy can sit in one place for how long. Pfenning and Ford applied them to this bubble in 1997 and found the wall can be no thicker than about 10² v<sub>s</sub> Planck lengths, which makes the total for a 100 m bubble about ten orders of magnitude more than the mass of everything we can see. That is <a href="../pages/constraints/ene-3.html">ENE-3</a>. Van Den Broeck's pocket, <a href="../pages/constraints/ene-4.html">ENE-4</a>, cuts the bill to a few solar masses by making the bubble tiny and the room inside big. The horizon that stops the crew steering is <a href="../pages/constraints/con-1.html">CON-1</a> and the need to lay the route first is <a href="../pages/constraints/con-2.html">CON-2</a>. The burst on arrival is <a href="../pages/constraints/haz-1.html">HAZ-1</a>.</p>
+  </section>
+</main>
+<footer>TALARIA · the Alcubierre bubble · Alcubierre 1994, Pfenning and Ford 1997, Van Den Broeck 1999</footer>
+<script type="module">
+import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
+import { bindSlider, seg } from '../vendor/stoa/controls.js';
+import { initPopovers } from '../vendor/stoa/popover.js';
+import { DEMO, LOOPHOLES, INK, PANEL, GRID, MUTED } from '../palette.js';
+
+// Constants. Planck units turn the Pfenning and Ford estimate into kilograms.
+const LP = 1.616e-35;        // Planck length, m
+const MP = 2.176e-8;         // Planck mass, kg
+const MSUN = 1.989e30;       // kg
+const MUNIV = 1e53;          // visible universe, kg, to order of magnitude
+const CLIGHT = 2.998e8;      // m/s
+const POCKET_R = 3e-15;      // Van Den Broeck's outer bubble radius, m
+
+// --- physics, pure functions -------------------------------------------
+// Alcubierre's shape function and its slope. Wall steepness sigma relates to
+// wall thickness by Delta = 2 / sigma (Pfenning and Ford's identification).
+function shape(r, R, sig) {
+  return (Math.tanh(sig * (r + R)) - Math.tanh(sig * (r - R))) / (2 * Math.tanh(sig * R));
+}
+function sech2(x) { const c = Math.cosh(x); return 1 / (c * c); }
+function dshape(r, R, sig) {
+  return sig * (sech2(sig * (r + R)) - sech2(sig * (r - R))) / (2 * Math.tanh(sig * R));
+}
+// York time: expansion of the volume elements, theta = v_s (x/r_s) df/dr_s.
+// Negative ahead (x > 0), positive behind.
+function theta(x, y, vs, R, sig) {
+  const r = Math.hypot(x, y); if (r === 0) return 0;
+  return vs * (x / r) * dshape(r, R, sig);
+}
+// Energy density seen by Eulerian observers, G = c = 1:
+// T00 = -(1/8pi) v_s^2 rho^2 / (4 r_s^2) (df/dr_s)^2, rho = distance from the axis.
+function t00(x, y, vs, R, sig) {
+  const r = Math.hypot(x, y); if (r === 0) return 0;
+  const d = dshape(r, R, sig);
+  return -(vs * vs * y * y) / (32 * Math.PI * r * r) * d * d;
+}
+// Pfenning and Ford total: E = -(v_s^2/12) [ (R + D/2)^2 / D + D/12 ] in Planck
+// units, so R and D in Planck lengths give E in Planck masses.
+function energyKg(vs, Rm, Dm) {
+  const R = Rm / LP, D = Dm / LP;
+  const E = -(vs * vs / 12) * ((R + D / 2) ** 2 / D + D / 12);
+  return E * MP;
+}
+// Quantum-inequality wall bound, ENE-3: Delta <= 10^2 v_s Planck lengths.
+function wallBound(vs) { return 100 * vs * LP; }
+// Peak energy density in the wall, at the side of the bubble (rho = r_s), kg per m^3.
+function peakDensityKgm3(vs, Dm) {
+  const D = Dm / LP;
+  return -(vs * vs) / (32 * Math.PI * D * D) * MP / (LP ** 3);
+}
+// Radius of the horizon, where v_s f = 1, for v_s > 1 (large sigma R form).
+function horizonR(vs, R, sig) {
+  if (vs <= 1) return null;
+  return R + Math.atanh(1 - 2 / vs) / sig;
+}
+// --- formatting ----------------------------------------------------------
+function sci(x, digits = 1) {
+  if (x === 0) return '0';
+  const e = Math.floor(Math.log10(Math.abs(x)));
+  const m = x / 10 ** e;
+  if (e >= -2 && e <= 3) return (Math.abs(x) >= 100 ? x.toFixed(0) : x.toPrecision(2));
+  return `${m.toFixed(digits)} × 10<sup>${e}</sup>`;
+}
+function metres(m) {
+  if (m >= 1) return `${m >= 100 ? m.toFixed(0) : m.toPrecision(3)} m`;
+  if (m >= 1e-3) return `${(m * 1e3).toPrecision(3)} mm`;
+  if (m >= 1e-6) return `${(m * 1e6).toPrecision(3)} µm`;
+  if (m >= 1e-9) return `${(m * 1e9).toPrecision(3)} nm`;
+  if (m >= 1e-15) return `${(m * 1e15).toPrecision(3)} fm`;
+  return `${sci(m)} m`;
+}
+
+// --- state and controls --------------------------------------------------
+const W = 760, H = 560;
+const cv = document.getElementById('cv');
+const ctx = setup(cv, W, H);
+const S = { vs: 1, R: 100, D: 100 * LP, view: 'f' };
+const LOGD = Math.log10(1 / LP) - 2;  // decades from 100 Planck lengths to 1 m
+
+function vOf(s) { return 0.1 * 100 ** (s / 200); }          // 0.1c to 10c, log
+function rOf(s) { return 10 ** (s / 100); }                  // 1 m to 1000 m, log
+function dOf(s) { return 100 * LP * 10 ** (LOGD * s / 1000); }  // 100 lP to 1 m, log
+function dLabel(D) {
+  const n = D / LP;
+  return n < 1e6 ? `${n.toFixed(0)} ℓP` : (D >= 1e-3 ? metres(D) : `${n.toExponential(1)} ℓP`);
+}
+
+// --- drawing -------------------------------------------------------------
+const FX = 380, FY = 200, RPX = 150;    // field region centre and bubble radius in px
+const FIELD_H = 400;                    // field region height; profile strip below
+const off = document.createElement('canvas');
+off.width = 380; off.height = 200;      // one cell per two CSS pixels
+const octx = off.getContext('2d');
+const hex = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+const BG = hex(PANEL), COL = { f: hex(LOOPHOLES.L2.mark), con: hex(DEMO.b.mark), exp: hex(DEMO.reply.mark), neg: hex(DEMO.signal.mark) };
+
+function drawnWall() {
+  // Wall thickness in units of R. Below about 0.09 R it would be invisible,
+  // so the picture uses a floor and the readout says the true value.
+  const real = S.D / S.R;
+  const drawn = Math.max(real, 0.09);
+  return { real, drawn, sig: 2 / drawn, exaggerated: drawn > real * 1.001 };
+}
+
+function paintField(w) {
+  const img = octx.createImageData(off.width, off.height);
+  const px = img.data;
+  const { vs, view } = S;
+  const sig = w.sig, R = 1;
+  const peak = view === 'theta' ? vs * Math.abs(dshape(1, R, sig)) : (view === 'rho' ? Math.abs(t00(0, 1, vs, R, sig)) : 1);
+  for (let j = 0; j < off.height; j++) {
+    for (let i = 0; i < off.width; i++) {
+      const x = (i * 2 + 1 - FX) / RPX, y = (j * 2 + 1 - FY) / RPX;
+      let c = COL.f, a = 0;
+      if (view === 'f') { a = shape(Math.hypot(x, y), R, sig) * 0.85; }
+      else if (view === 'theta') { const t = theta(x, y, vs, R, sig) / peak; c = t < 0 ? COL.con : COL.exp; a = Math.sqrt(Math.abs(t)) * 0.95; }
+      else { const q = -t00(x, y, vs, R, sig) / peak; c = COL.neg; a = Math.sqrt(q) * 0.95; }
+      const k = (j * off.width + i) * 4;
+      px[k] = BG[0] + (c[0] - BG[0]) * a; px[k + 1] = BG[1] + (c[1] - BG[1]) * a; px[k + 2] = BG[2] + (c[2] - BG[2]) * a; px[k + 3] = 255;
+    }
+  }
+  octx.putImageData(img, 0, 0);
+  ctx.imageSmoothingEnabled = true;
+  ctx.drawImage(off, 0, 0, W, FIELD_H);
+}
+
+function profile(w) {
+  // Strip at the bottom: the field along the dashed line through the ship.
+  const { vs, view } = S, sig = w.sig;
+  const y0 = FIELD_H + 12, top = y0 + 18, h = H - top - 8, mid = top + h / 2;  // caption sits in the 18 px above the plot
+  ctx.fillStyle = PANEL; ctx.fillRect(0, FIELD_H, W, H - FIELD_H);
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, FIELD_H + 2); ctx.lineTo(W, FIELD_H + 2); ctx.stroke();
+  ctx.strokeStyle = MUTED; ctx.setLineDash([3, 5]); ctx.beginPath(); ctx.moveTo(30, mid); ctx.lineTo(W - 30, mid); ctx.stroke(); ctx.setLineDash([]);
+  const n = 380;
+  const samp = i => {
+    const s = (i / (n - 1) - 0.5) * (W / RPX);   // coordinate along the line, units of R
+    if (view === 'f') return shape(Math.abs(s), 1, sig);
+    if (view === 'theta') return theta(s, 0, vs, 1, sig);
+    return t00(0, s, vs, 1, sig);
+  };
+  const vals = Array.from({ length: n }, (_, i) => samp(i));
+  const peak = Math.max(...vals.map(Math.abs)) || 1;
+  ctx.lineWidth = 2;
+  for (let i = 1; i < n; i++) {
+    const v = vals[i];
+    ctx.strokeStyle = view === 'f' ? LOOPHOLES.L2.text : (view === 'theta' ? (v < 0 ? DEMO.b.text : DEMO.reply.text) : DEMO.signal.text);
+    ctx.beginPath();
+    ctx.moveTo(30 + (i - 1) / (n - 1) * (W - 60), mid - vals[i - 1] / peak * (h / 2 - 4));
+    ctx.lineTo(30 + i / (n - 1) * (W - 60), mid - v / peak * (h / 2 - 4));
+    ctx.stroke();
+  }
+  const cap = view === 'f' ? 'shape function f along the line of flight: 1 inside, 0 outside'
+    : view === 'theta' ? 'expansion θ along the line of flight: below the line is contraction, above is expansion'
+    : 'energy density across the bubble, side to side: never above the line';
+  label(ctx, cap, W / 2, y0 + 4, MUTED, 11);
+  label(ctx, view === 'rho' ? 'left side' : 'behind', 44, mid + h / 2 - 2, MUTED, 11);
+  label(ctx, view === 'rho' ? 'right side' : 'ahead', W - 44, mid + h / 2 - 2, MUTED, 11);
+}
+
+function draw() {
+  const { vs, R, D, view } = S;
+  const w = drawnWall();
+  clear(ctx, W, H, PANEL);
+  paintField(w);
+  // grid over the field
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+  for (let x = FX % 50; x < W; x += 50) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, FIELD_H); ctx.stroke(); }
+  for (let y = FY % 50; y < FIELD_H; y += 50) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+  // profile line through the ship
+  ctx.strokeStyle = MUTED; ctx.setLineDash([3, 5]); ctx.beginPath();
+  if (view === 'rho') { ctx.moveTo(FX, 0); ctx.lineTo(FX, FIELD_H); } else { ctx.moveTo(0, FY); ctx.lineTo(W, FY); }
+  ctx.stroke(); ctx.setLineDash([]);
+  // bubble wall edges, faint
+  ctx.strokeStyle = LOOPHOLES.L2.text; ctx.lineWidth = 1; ctx.globalAlpha = 0.5;
+  for (const rr of [1 - w.drawn / 2, 1 + w.drawn / 2]) { ctx.beginPath(); ctx.arc(FX, FY, rr * RPX, 0, Math.PI * 2); ctx.stroke(); }
+  ctx.globalAlpha = 1;
+  // horizon ring when v_s > 1
+  const rh = horizonR(vs, 1, w.sig);
+  if (rh !== null) {
+    ctx.strokeStyle = INK; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
+    ctx.beginPath(); ctx.arc(FX, FY, rh * RPX, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+    label(ctx, 'horizon: light from the ship stops here', FX, FY + rh * RPX + 11, INK, 11);
+  }
+  // direction of travel
+  arrow(ctx, FX + 30, FY + 22, FX + 90, FY + 22, MUTED, 1.5);
+  label(ctx, 'heading', FX + 60, FY + 36, MUTED, 11);
+  // the ship
+  ctx.fillStyle = DEMO.a.mark; ctx.beginPath(); ctx.moveTo(FX + 14, FY); ctx.lineTo(FX - 10, FY - 8); ctx.lineTo(FX - 10, FY + 8); ctx.closePath(); ctx.fill();
+  label(ctx, 'ship', FX, FY - 16, DEMO.a.text, 12);
+  // view-specific labels, in words, where colours meet
+  if (view === 'f') {
+    label(ctx, 'flat inside, f = 1', FX, FY + 70, LOOPHOLES.L2.text, 13);
+    label(ctx, 'flat outside, f = 0', FX, 24, MUTED, 13);
+    label(ctx, 'the wall', FX + RPX + 6, FY - RPX * 0.72, LOOPHOLES.L2.text, 12);
+    if (vs > 1) label(ctx, 'swept-up particles pile up here', FX + RPX + 4, FY + 60, MUTED, 11);
+  } else if (view === 'theta') {
+    label(ctx, 'space contracts ahead', FX + RPX + 4, FY - RPX - 22, DEMO.b.text, 13);
+    label(ctx, 'space expands behind', FX - RPX - 4, FY - RPX - 22, DEMO.reply.text, 13);
+    label(ctx, 'nothing happens inside', FX, FY + 70, MUTED, 12);
+  } else {
+    label(ctx, 'negative energy, strongest at the sides', FX, FY - RPX - 22, DEMO.signal.text, 13);
+    label(ctx, 'zero on the line of flight', FX + RPX + 70, FY + 16, MUTED, 11);
+    label(ctx, 'none inside', FX, FY + 70, MUTED, 12);
+  }
+  if (w.exaggerated) label(ctx, `wall drawn thick to be seen; really Δ/R = ${(w.real).toExponential(1)}`, W / 2, FIELD_H - 12, MUTED, 11);
+  else label(ctx, `wall drawn to scale: Δ/R = ${w.real.toPrecision(2)}`, W / 2, FIELD_H - 12, MUTED, 11);
+  profile(w);
+  readout();
+}
+
+function readout() {
+  const { vs, R, D } = S;
+  const E = energyKg(vs, R, D);
+  const bound = wallBound(vs);
+  const over = D > bound;
+  const suns = -E / MSUN, univ = -E / MUNIV;
+  let vs_txt;
+  if (univ >= 1) vs_txt = `${sci(univ)} times the mass of the visible universe, ${Math.round(Math.log10(univ))} orders of magnitude more`;
+  else if (suns >= 1) vs_txt = `${sci(suns)} times the mass of the Sun`;
+  else if (suns >= 0.01) vs_txt = `about ${suns.toPrecision(2)} of a solar mass`;
+  else vs_txt = `${sci(suns)} of a solar mass`;
+  const Epocket = energyKg(vs, POCKET_R, Math.min(D, bound));
+  const dens = peakDensityKgm3(vs, D);
+  const th = vs * CLIGHT / D;
+  const box = document.getElementById('readout');
+  box.classList.toggle('hot', over);
+  box.innerHTML = `Negative energy to hold this wall: <b>${sci(E)} kg</b>, which is ${vs_txt}. ` +
+    (over ? `The wall is thicker than the quantum inequalities allow at ${vs.toPrecision(2)}c, where the bound is <b>${dLabel(bound)}</b>, so this bubble is forbidden outright as well as unaffordable.`
+          : `The wall is within the quantum-inequality bound of <b>${dLabel(bound)}</b> at this speed.`) +
+    `<div class="sub">Peak expansion rate in the wall ${sci(th)} per second; peak negative energy density ${sci(dens)} kg per cubic metre. Same wall around Van Den Broeck's 3 fm bubble instead: ${sci(Epocket)} kg, about ${(-Epocket / MSUN).toPrecision(2)} of a solar mass, with the room inside still 200 m across (ENE-4).</div>`;
+  // the bound marker under the wall slider
+  const pos = Math.max(0, Math.min(100, 100 * Math.log10(bound / (100 * LP)) / LOGD));
+  document.getElementById('boundOk').style.width = pos + '%';
+  document.getElementById('boundTick').style.left = `calc(${pos}% - 1px)`;
+  const note = document.getElementById('boundNote');
+  note.classList.toggle('bad', over);
+  note.textContent = over
+    ? `Forbidden: the quantum inequalities allow at most ${dLabel(bound)} at ${vs.toPrecision(2)}c (ENE-3).`
+    : `Allowed: at most ${dLabel(bound)} at ${vs.toPrecision(2)}c (ENE-3). Green is the allowed range.`;
+}
+
+// Bindings go last: bindSlider fires once at bind time, and draw() needs
+// everything above to exist.
+bindSlider('v', { out: 'vVal', scale: 1, fmt: s => vOf(s).toPrecision(3) + ' c', set: s => S.vs = vOf(s), after: draw });
+bindSlider('R', { out: 'RVal', scale: 1, fmt: s => metres(rOf(s)), set: s => S.R = rOf(s), after: draw });
+bindSlider('D', { out: 'DVal', scale: 1, fmt: s => dLabel(dOf(s)), set: s => S.D = dOf(s), after: draw });
+seg('viewSeg', d => { S.view = d.view; draw(); });
+draw();
+
+initPopovers({
+  local: { title: 'Why the ship feels nothing', html: '<p>Inside the bubble the shape function is 1 and the metric is plain flat space moving as a block. Alcubierre checked that the ship\'s path is a <span class="x" data-pop="geodesic">geodesic</span> on which proper time equals the time of clocks at home: no time dilation, no acceleration, no tidal stretch if the wall is sharp. Faster than light here means faster than light through the space outside, the way distant galaxies separate faster than light without either of them moving fast locally.</p>' },
+  geodesic: { title: 'Geodesic', html: '<p>The path a thing follows when nothing pushes it, gravity included. Someone on a geodesic is weightless.</p>' },
+  horizon: { title: 'Register CON-1: the horizon', html: '<p>For v<sub>s</sub> &gt; 1 there is a surface in the wall where the flow speed v<sub>s</sub>f equals c. Light sent forward from the ship is carried along with the bubble there and never reaches the outer edge, so the crew are cut off from the front of the wall. Hiscock found the horizon, Everett and Roman drew the consequence that nobody inside can create or steer the bubble. See <a href="../pages/constraints/con-1.html">CON-1</a>.</p>' },
+  bootstrap: { title: 'Register CON-2: the bootstrap problem', html: '<p>Krasnikov showed that the leading edge of the wall matter moves on a spacelike path once v<sub>s</sub> &gt; 1, which is to say faster than light, so it cannot have been sent from the ship. Coule put it as "you need one to make one". The way round is to lay devices along the route at sublight speed first, which makes warp travel a railway rather than a rocket. See <a href="../pages/constraints/con-2.html">CON-2</a>.</p>' },
+  qi: { title: 'Register ENE-3: the quantum inequalities', html: '<p>Pfenning and Ford sampled the negative energy along the paths of observers crossing the wall and found</p><div class="eq">Δ ≤ 10² v<sub>s</sub> ℓ<sub>P</sub></div><p>a wall a few hundred Planck lengths thick at most. With that wall the total for a 100 m bubble at v<sub>s</sub> = 1 is</p><div class="eq">E ≈ −v<sub>s</sub>² R² / 12Δ ≈ −6 × 10⁶² kg</div><p>They quote −6.2 × 10⁶² kg working to order of magnitude with the Planck mass as 10⁻⁵ g; the exact constants give about −6.9 × 10⁶². Either way it is ten orders of magnitude more than the visible universe. A metre-thick wall, forbidden by the bound, still needs a good fraction of a solar mass: they say about a quarter, exact constants say about half. See <a href="../pages/constraints/ene-3.html">ENE-3</a>.</p>' },
+  pocket: { title: 'Register ENE-4: the pocket', html: '<p>The bill goes as R²/Δ, and Van Den Broeck noticed that R, the size of the bubble as seen from outside, need not be the size of the room inside. A conformal factor blows up the space inside a bubble 3 fm across into a pocket 200 m wide. The same Pfenning and Ford formula then gives about −6 × 10²⁹ kg for the wall, and the neck adds about −1.4 × 10³⁰ kg, a solar mass or so in total, with structure only ten Planck lengths across. See <a href="../pages/constraints/ene-4.html">ENE-4</a>.</p>' },
+  burst: { title: 'Register HAZ-1: the arrival burst', html: '<p>McMonigal, Lewis and O\'Byrne followed particles that a superluminal bubble meets. They become time locked in the wall and gain enormous energy. When the bubble drops below c they are all released ahead of it as a concentrated beam, and the ones picked up earliest hit hardest. Alcubierre\'s own itinerary slows to rest close to the destination star. See <a href="../pages/constraints/haz-1.html">HAZ-1</a>.</p>' },
+  negative: { title: 'Negative energy', html: '<p>Ordinary matter has positive energy density. The wall of this bubble needs matter whose energy density, as measured by observers falling freely through it, is less than zero. Quantum fields can do this briefly and in small amounts, as in the Casimir effect, and the quantum inequalities say how briefly and how small.</p>' },
+  'qi-def': { title: 'Quantum inequalities', html: '<p>Results of Ford and Roman: a quantum field can have negative energy density, but its size times the square of how long it lasts is bounded, roughly by Planck\'s constant. Very negative means very short-lived, and for a wall that has to persist it means very thin.</p>' },
+});
+</script>
+</body></html>

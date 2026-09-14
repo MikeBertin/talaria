@@ -41,7 +41,7 @@ loophole class; port 8191.
   antitelephone to Timescape; Le Guin's ansible outward; the word "hyperspace"
   from Campbell to everyone.
 
-## M6: The site
+## M6: The site ✅ (2026-09-14)
 - STOA vendored, palette minted per the palette README, atlas of the
   catalogue with both matrices filterable.
 - Demos in priority order: the antitelephone spacetime diagram; the Alcubierre

@@ -6,7 +6,7 @@
 
 ## The result
 
-Quantum inequalities: a quantum field can have negative energy density, but the magnitude times the duration squared is bounded, roughly by the Planck constant. The more negative, the shorter it lasts. Applied to the Alcubierre bubble, the wall must be thinner than a few hundred Planck lengths (about 10² v_b Planck lengths for their sampling choice), and for a 100 m bubble at v_b = 1 the total negative energy is about −6.2 × 10^62 kg, scaling with v_b: roughly ten orders of magnitude beyond the mass of the visible universe. A metre-thick wall would need about a quarter of a solar mass, still unattainable
+Quantum inequalities: a quantum field can have negative energy density, but the magnitude times the duration squared is bounded, roughly by the Planck constant. The more negative, the shorter it lasts. Applied to the Alcubierre bubble, the wall must be thinner than a few hundred Planck lengths (about 10² v_b Planck lengths for their sampling choice), and for a 100 m bubble at v_b = 1 the total negative energy is about −6.2 × 10^62 kg, scaling with v_b: roughly ten orders of magnitude beyond the mass of the visible universe. A metre-thick wall would need about a quarter of a solar mass by the paper's order-of-magnitude constants, about half with exact ones, still unattainable
 
 ## What it forbids or costs
 

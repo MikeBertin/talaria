@@ -45,13 +45,27 @@ Start at [GRADING.md](GRADING.md) for the vocabulary, then [constraints/REGISTER
 
 Neutral scoring, honest about consensus. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.
 
-## Running the site
+## The site
+
+`web/` is a static site: a hub, the atlas (both matrices, the join, the register and the lineage list), every page of the catalogue rendered from its markdown, and six demos.
+
+| Demo | What it shows |
+|---|---|
+| The antitelephone | Send a faster-than-light message to a moving friend and watch the reply land before you sent it |
+| The Alcubierre bubble | The shape function, the expansion and contraction, the negative-energy shells and the bill in kilograms |
+| The wormhole | A throat you can walk through, its tidal limits, and what one round trip with a mouth does to it |
+| Pick a drive, pick a frame | Any of the sixty-eight fictional drives, any observer, and whether the round trip lands before departure |
+| The honest rocket | Ship years against home years to the nearby stars at one g, and the fuel bill |
+| No signalling | Entangled pairs, any measurement you like, and nothing gets through |
+
+Shared parts are vendored from STOA (`web/vendor/stoa/`), the palette is minted in OKLCH and validated (`web/palette.js` carries the provenance), and the only external asset is KaTeX from a CDN for the maths on the rendered pages.
 
 ```
-python3 -m http.server 8191 --directory web
+python3 tools/build_web.py                       # render pages and data from the catalogue
+python3 -m http.server 8191 --directory web      # serve
 ```
 
-Then open http://localhost:8191/. No build step, no dependencies. Health checks: `python3 tools/wiki.py`.
+Then open http://localhost:8191/. Tool order after any content change: `bite.py`, `backlink.py`, `build_matrix.py`, `wiki.py`, `check_prose.py`, `build_web.py`.
 
 ## Status
 

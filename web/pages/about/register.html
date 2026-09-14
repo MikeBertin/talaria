@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The constraint register · TALARIA</title>
+<link rel="stylesheet" href="../../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../../site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="icon" href="../../favicon.svg">
+</head><body class="page">
+<nav class="top"><a href="../../index.html">TALARIA</a><span>/</span><a href="../../atlas.html">atlas</a><span>/</span><span class="kind">method</span></nav>
+<main class="doc">
+<h1>The constraint register</h1>
+<p>One table, <a href="../../atlas.html#register">REGISTER.md</a>, and one page per entry. An entry is a published result that puts a price on faster-than-light travel or signalling: a theorem, an inequality, an instability, a hazard or a no-go argument. Each carries an id by family, a one-line statement, what it forbids or costs, the known escape hatches, and the citation.</p>
+<p>Families:</p>
+<div class='tablewrap'><table><thead><tr><th>Family</th><th>Concern</th></tr></thead><tbody><tr><td><strong>CAU</strong></td><td>Causality: signals to the past, chronology protection, the preferred-frame escape</td></tr><tr><td><strong>ENE</strong></td><td>Energy: the energy conditions, the theorems that superluminal travel violates them, the quantum bounds on borrowing</td></tr><tr><td><strong>CON</strong></td><td>Control: horizons, steering, the bootstrap problem, pre-built routes</td></tr><tr><td><strong>STA</strong></td><td>Stability: semiclassical instability of bubbles, throats and chronology horizons</td></tr><tr><td><strong>HAZ</strong></td><td>Hazards to crew and destination</td></tr><tr><td><strong>LOR</strong></td><td>Kinematics: what special relativity and wave propagation actually forbid, and the tachyon and tunnelling claims</td></tr><tr><td><strong>WRP</strong></td><td>The warp drive class: what a warp drive is, the shell classification and the dated state of the positive-energy argument</td></tr><tr><td><strong>MAN</strong></td><td>Leaving the manifold: what extra dimensions do and do not permit</td></tr></tbody></table></div>
+<p>Verification marks in the citation column: <strong>⚠ v1</strong> means written from working knowledge in M0 and not yet checked against the paper. <strong>✓</strong> means the reference and the stated result were verified in M1. The matrix does not build on an unverified entry.</p>
+<p><strong>What is not on the register, by decision.</strong> Conservation of momentum. The two reactionless-thruster dossiers in the L6 bin (the EM drive and the Mach-effect thruster) fail on it, and say so in their own text, but it is not a faster-than-light constraint and would bite nothing else in the catalogue. The register stays the price list for one thing. Decided 2026-09-13.</p>
+<p>Scoring vocabulary is in <a href="../about/grading.html">GRADING.md</a>. Every dossier scores every entry here; the tables in the dossiers are the only source the matrix reads.</p>
+<h2>Page schema</h2>
+<p>One page per entry, filename the id in lower case (<code>cau-1.md</code>). H1 is the id and a short statement of the result, the italic hook is what it forbids in one line, and the metadata line carries <code>**Kind:** constraint</code>, <code>**Family:**</code> and <code>**Last reviewed:**</code>. Sections in order: The result, What it forbids or costs, Escape hatches, Who it bites (one line per dossier that scores against it, added as dossiers are written), Sources. <code>tools/seed_constraints.py</code> writes a skeleton for any id that has no page; the prose is then rewritten by hand.</p>
+</main>
+<footer>TALARIA · every faster-than-light scheme, real or invented, scored against the physics that says you can't · <a href="https://github.com/mikebertin/talaria">source</a></footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

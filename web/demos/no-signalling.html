@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>No signalling · TALARIA</title>
+<link rel="stylesheet" href="../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../vendor/stoa/controls.css">
+<link rel="stylesheet" href="../vendor/stoa/notice.css">
+<link rel="stylesheet" href="../vendor/stoa/popover.css">
+<link rel="stylesheet" href="../palette.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../favicon.svg">
+<style>
+  .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
+  .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  .panel .row { margin-top: 14px; }
+  .panel .row + .row { margin-top: 8px; }
+</style>
+</head><body>
+<nav class="top"><a href="../index.html">TALARIA</a><span>/</span><span class="kind">demo · no signalling</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">No signalling</h1>
+  <p class="sub">Alice and Bob share pairs of entangled particles, light years apart. Each picks an angle and measures. Alice can twist her dial however she likes, even to spell out a message. Here is what Bob sees, and what only the two of them together can see.</p>
+</header>
+<main>
+  <div class="demo-wrap">
+    <div>
+      <canvas id="cv" width="760" height="560"></canvas>
+      <div class="legend-row">
+        <span><i style="background:var(--a-mark)"></i>Alice</span>
+        <span><i style="background:var(--b-mark)"></i>Bob</span>
+        <span><i style="background:var(--light-mark)"></i>the pair, flying out at c</span>
+        <span><i style="background:var(--reply-mark)"></i>the comparison</span>
+      </div>
+      <div class="readout-box" id="readout"></div>
+    </div>
+    <div class="panel">
+      <h2>Controls</h2>
+      <label>Alice's measurement angle <span class="val" id="alphaVal"></span></label>
+      <input type="range" id="alpha" min="0" max="180" value="30">
+      <label>Bob's measurement angle <span class="val" id="betaVal"></span></label>
+      <input type="range" id="beta" min="0" max="180" value="90">
+      <div class="row">
+        <button id="run" class="primary">Run 1000 pairs</button>
+        <button id="play"></button>
+      </div>
+      <label>Alice tries to send a bit</label>
+      <div class="seg" id="sendSeg">
+        <button data-send="0" class="active" aria-pressed="true">off</button>
+        <button data-send="1" aria-pressed="false">on</button>
+      </div>
+      <div class="row"><button id="reset">Clear all records</button></div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Each pair is two particles in the <span class="x" data-pop="singlet">singlet state</span>. Alice and Bob each measure their own particle along their own angle and get up or down. The angle between the two settings is θ. Bob's and Alice's bars keep counting across every setting you try; the comparison panel restarts when a setting changes.</p>
+    </div>
+  </div>
+
+  <section class="notice">
+    <h2 class="notice-title">Things to notice</h2>
+    <div class="notice-grid">
+      <div class="ncard"><h3>Bob's bar <span>never moves</span></h3><p>Slide Alice's angle anywhere, run a few batches, then slide it again and run more. Bob's up and down bars stay at half and half, within the <span class="x" data-pop="error">error bar</span>, across every setting you have tried.</p><span class="x why" data-pop="trace">Why it cannot move</span></div>
+      <div class="ncard"><h3>Alice <span>tries to send a bit</span></h3><p>Switch the toggle on and press play. Alice now jumps between two settings 90° apart to spell out a message. The readout splits Bob's record by which bit she was sending: the two halves agree.</p><span class="x why" data-pop="sendbit">What Bob would need</span></div>
+      <div class="ncard"><h3>The correlation is <span>real</span></h3><p>Put Bob 60° from Alice and run. The measured point lands on the cosine curve at minus one half, below the straight line the simplest classical model gives. Bell showed no local model reaches the curve.</p><span class="x why" data-pop="bell">Bell's point</span></div>
+      <div class="ncard"><h3>It shows up only when <span>the records meet</span></h3><p>The right-hand panel is not something Bob can see. It is drawn from both lists laid side by side, and getting Alice's list to Bob takes an ordinary message at light speed or slower.</p><span class="x why" data-pop="compare">The missing step</span></div>
+      <div class="ncard"><h3>Every quantum ansible is <span>this diagram with a step skipped</span></h3><p>Le Guin's ansible names no mechanism. Card's philotic ansible pairs particles so the far end changes as the near end does. Both are the right-hand panel turning up at Bob's station on its own.</p><span class="x why" data-pop="ansible">The two dossiers</span></div>
+      <div class="ncard"><h3>The one way out is to <span>change quantum mechanics</span></h3><p>There is no slider for it here, because it is not a setting. Make the theory nonlinear and Bob's bar would move. Gisin and Polchinski showed that, and it is why nonlinear quantum mechanics is ruled out.</p><span class="x why" data-pop="nonlinear">Register CAU-5</span></div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>What is going on</h2>
+    <p>Entanglement is real and the correlations are strong. In the singlet state, if Alice and Bob measure along the same angle they always get opposite answers, and at other angles the chance of opposite answers is cos² of half the angle between them. That gives a correlation of minus cos θ, and Bell showed in 1964 that no model where each particle carries its own private instructions can produce that curve. The natural next thought is the entanglement radio: if Alice's choice changes Bob's particle at once, she can send him a message with no delay.</p>
+    <p>It does not work, and the reason is short. Everything Bob can measure on his own comes from his half of the state alone, which for the singlet is a coin toss whatever Alice does: measure, do not measure, pick any angle, the toss is the same. The <span class="x" data-pop="trace">partial trace</span> proof was given by Eberhard in 1978 and by Ghirardi, Rimini and Weber in 1980, and Peres and Terno restate it in their 2004 review. The correlation only appears when the two lists are compared, and the lists travel by post. That is the no-communication theorem, <a href="../pages/constraints/cau-5.html">CAU-5 in the register</a>, and it covers cloning, amplifying and interfering on Bob's side too, which is what closed Herbert's FLASH proposal in 1982 and gave the world the no-cloning theorem along the way.</p>
+    <p>The full dossier, with citations, is <a href="../pages/physics/entanglement-signalling.html">entanglement signalling and the no-communication theorem</a>. The two fictional devices it shadows are <a href="../pages/fiction/le-guin-ansible.html">Le Guin's ansible</a> and <a href="../pages/fiction/ender-philotic-ansible.html">Ender's philotic ansible</a>. The only escape hatch is nonlinear quantum mechanics, and Simon, Bužek and Gisin showed in 2001 that no signalling plus the usual structure of quantum states forces the theory to be linear, so the hatch is nailed shut from the other side.</p>
+  </section>
+</main>
+<footer>TALARIA · no signalling · Eberhard 1978, Ghirardi, Rimini and Weber 1980, Peres and Terno 2004</footer>
+<script type="module">
+import { setup, clear, arrow, label, bar } from '../vendor/stoa/draw.js';
+import { bindSlider, seg, playToggle } from '../vendor/stoa/controls.js';
+import { initPopovers } from '../vendor/stoa/popover.js';
+import { DEMO, INK, PANEL, GRID, MUTED } from '../palette.js';
+
+// ---- physics, pure ----
+const DEG = Math.PI / 180;
+// Singlet: P(same outcome) = sin²(θ/2), P(opposite) = cos²(θ/2), θ the angle between the settings.
+function pSame(thetaDeg) { const s = Math.sin(thetaDeg * DEG / 2); return s * s; }
+function quantumE(thetaDeg) { return -Math.cos(thetaDeg * DEG); }
+// Bell's 1964 straight line: the simplest local model that agrees at 0° and 180°.
+function classicalE(thetaDeg) { return -1 + 2 * Math.abs(thetaDeg) / 180; }
+function simulatePairs(n, thetaDeg, rand = Math.random) {
+  const ps = pSame(thetaDeg);
+  let aUp = 0, bUp = 0, same = 0;
+  for (let i = 0; i < n; i++) {
+    const a = rand() < 0.5 ? 1 : -1;          // Alice: a fair coin
+    const b = rand() < ps ? a : -a;           // Bob: opposite with probability cos²(θ/2)
+    if (a > 0) aUp++;
+    if (b > 0) bUp++;
+    if (a === b) same++;
+  }
+  return { n, aUp, bUp, same };
+}
+function sigmaP(p, n) { return n > 0 ? Math.sqrt(p * (1 - p) / n) : 0; }
+function corr(s) { return s.n > 0 ? (2 * s.same - s.n) / s.n : 0; }
+function sigmaE(E, n) { return n > 0 ? Math.sqrt(Math.max(0, 1 - E * E) / n) : 0; }
+function num(x, d = 3) { return x.toFixed(d).replace('-', '\u2212'); }
+// ---- end pure ----
+
+const W = 760, H = 560;
+const cv = document.getElementById('cv');
+const ctx = setup(cv, W, H);
+const BATCH = 1000;
+const BITS = '0100100001001001';               // "HI" in ASCII, sent over and over
+const S = { alpha: 30, beta: 90, send: false, bitIndex: 0 };
+
+// M: lifetime marginal record for Alice and Bob, kept across every setting.
+// C: the comparison records, one per Alice setting slot (0 = her dial, 1 = her dial + 90°). Reset on any setting change.
+const M = { n: 0, aUp: 0, bUp: 0, byBit: [{ n: 0, bUp: 0 }, { n: 0, bUp: 0 }] };
+const C = [blank(), blank()];
+function blank() { return { n: 0, aUp: 0, bUp: 0, same: 0 }; }
+function resetC() { C[0] = blank(); C[1] = blank(); }
+function resetAll() { M.n = M.aUp = M.bUp = 0; M.byBit = [{ n: 0, bUp: 0 }, { n: 0, bUp: 0 }]; S.bitIndex = 0; resetC(); }
+
+function aliceSetting(slot) { return slot ? (S.alpha + 90) % 180 : S.alpha; }
+function theta(slot) { return Math.abs(S.beta - aliceSetting(slot)); }
+
+let lastSlot = 0;
+function runBatch() {
+  let slot = 0;
+  if (S.send) { slot = +BITS[S.bitIndex % BITS.length]; S.bitIndex++; }
+  lastSlot = slot;
+  const r = simulatePairs(BATCH, theta(slot));
+  M.n += r.n; M.aUp += r.aUp; M.bUp += r.bUp;
+  if (S.send) { M.byBit[slot].n += r.n; M.byBit[slot].bUp += r.bUp; }
+  const c = C[slot]; c.n += r.n; c.aUp += r.aUp; c.bUp += r.bUp; c.same += r.same;
+  draw();
+}
+
+bindSlider('alpha', { out: 'alphaVal', fmt: x => x.toFixed(0) + '°', set: x => { if (x !== S.alpha) resetC(); S.alpha = x; }, after: draw });
+bindSlider('beta', { out: 'betaVal', fmt: x => x.toFixed(0) + '°', set: x => { if (x !== S.beta) resetC(); S.beta = x; }, after: draw });
+seg('sendSeg', d => { const on = d.send === '1'; if (on !== S.send) { S.send = on; S.bitIndex = 0; resetC(); } draw(); });
+document.getElementById('run').addEventListener('click', runBatch);
+document.getElementById('reset').addEventListener('click', () => { resetAll(); draw(); });
+let timer = null;
+playToggle('play', { labels: ['▶ Play', '⏸ Pause'], onChange: p => { if (p) timer = setInterval(runBatch, 140); else { clearInterval(timer); timer = null; } } });
+
+function roundBox(x, y, w, h) { ctx.strokeStyle = GRID; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(x, y, w, h, 10); ctx.stroke(); }
+function dial(cx, cy, r, angleDeg, col) {
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = col; ctx.lineWidth = 3.5;
+  const dx = Math.cos(angleDeg * DEG) * r, dy = -Math.sin(angleDeg * DEG) * r;
+  ctx.beginPath(); ctx.moveTo(cx - dx, cy - dy); ctx.lineTo(cx + dx, cy + dy); ctx.stroke();
+  ctx.fillStyle = col; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
+}
+function hist(x0, y0, w, h, rec, ent, title) {
+  roundBox(x0, y0, w, h);
+  label(ctx, title, x0 + w / 2, y0 + 18, ent.text, 13);
+  const base = y0 + h - 44, full = h - 96;
+  const n = rec.n, up = n ? rec.up / n : 0, down = n ? 1 - up : 0;
+  ctx.strokeStyle = GRID; ctx.setLineDash([3, 5]); ctx.beginPath(); ctx.moveTo(x0 + 14, base - full / 2); ctx.lineTo(x0 + w - 14, base - full / 2); ctx.stroke(); ctx.setLineDash([]);
+  label(ctx, 'half', x0 + w - 26, base - full / 2 - 8, MUTED, 10, false);
+  const bw = 52, gap = 30, xa = x0 + w / 2 - bw - gap / 2, xb = x0 + w / 2 + gap / 2;
+  bar(ctx, xa, base - full * up, bw, full * up, ent.mark);
+  bar(ctx, xb, base - full * down, bw, full * down, ent.mark);
+  ctx.strokeStyle = GRID; ctx.beginPath(); ctx.moveTo(x0 + 14, base); ctx.lineTo(x0 + w - 14, base); ctx.stroke();
+  label(ctx, 'up', xa + bw / 2, base + 12, INK, 12, false);
+  label(ctx, 'down', xb + bw / 2, base + 12, INK, 12, false);
+  if (n) {
+    label(ctx, (100 * up).toFixed(1) + '%', xa + bw / 2, base - full * up - 10, ent.text, 12, false);
+    label(ctx, (100 * down).toFixed(1) + '%', xb + bw / 2, base - full * down - 10, ent.text, 12, false);
+    label(ctx, n.toLocaleString() + ' pairs, every setting', x0 + w / 2, y0 + h - 14, MUTED, 11, false);
+  } else {
+    label(ctx, 'nothing measured yet', x0 + w / 2, base - full / 4, MUTED, 12);
+  }
+}
+
+function draw() {
+  clear(ctx, W, H, PANEL);
+  const R = DEMO.reply;
+  // ---- top strip: the stations ----
+  const ya = 66, ax = 130, bx = 630, sx = 380;
+  ctx.fillStyle = GRID; ctx.beginPath(); ctx.arc(sx, ya, 9, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = INK; ctx.lineWidth = 1; ctx.stroke();
+  label(ctx, 'source', sx, ya + 22, MUTED, 11, false);
+  label(ctx, 'any distance', sx, ya + 36, MUTED, 11);
+  arrow(ctx, sx - 14, ya, ax + 44, ya, DEMO.light.mark, 2);
+  arrow(ctx, sx + 14, ya, bx - 44, ya, DEMO.light.mark, 2);
+  label(ctx, 'one particle each way, at c', sx, ya - 20, DEMO.light.text, 12);
+  const aNow = aliceSetting(S.send ? lastSlot : 0);
+  dial(ax, ya, 30, aNow, DEMO.a.mark);
+  dial(bx, ya, 30, S.beta, DEMO.b.mark);
+  label(ctx, 'Alice', ax, ya - 44, DEMO.a.text, 14);
+  label(ctx, 'Bob', bx, ya - 44, DEMO.b.text, 14);
+  label(ctx, 'setting ' + S.beta.toFixed(0) + '°', bx, ya + 46, DEMO.b.text, 12, false);
+  if (S.send) {
+    const i = Math.max(0, S.bitIndex - 1) % BITS.length;
+    label(ctx, 'sending bit ' + BITS[i] + ', setting ' + aNow.toFixed(0) + '°', ax, ya + 46, DEMO.a.text, 12, false);
+    label(ctx, 'message "HI": ' + BITS, ax, ya + 62, MUTED, 11, false);
+  } else {
+    label(ctx, 'setting ' + S.alpha.toFixed(0) + '°', ax, ya + 46, DEMO.a.text, 12, false);
+  }
+
+  // ---- three panels ----
+  const py = 150, ph = 350;
+  hist(20, py, 200, ph, { n: M.n, up: M.bUp }, DEMO.b, "Bob's record, alone");
+  hist(240, py, 200, ph, { n: M.n, up: M.aUp }, DEMO.a, "Alice's record, alone");
+
+  // comparison panel
+  const cx0 = 460, cw = 280;
+  roundBox(cx0, py, cw, ph);
+  label(ctx, 'The two records compared', cx0 + cw / 2, py + 18, R.text, 13);
+  const gx0 = cx0 + 44, gx1 = cx0 + cw - 20, gy0 = py + 48, gy1 = py + ph - 66;
+  const X = t => gx0 + (gx1 - gx0) * t / 180;
+  const Y = e => gy0 + (gy1 - gy0) * (1 - e) / 2;
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+  for (const e of [1, 0, -1]) { ctx.beginPath(); ctx.moveTo(gx0, Y(e)); ctx.lineTo(gx1, Y(e)); ctx.stroke(); }
+  for (const t of [0, 90, 180]) { ctx.beginPath(); ctx.moveTo(X(t), gy0); ctx.lineTo(X(t), gy1); ctx.stroke(); label(ctx, t + '°', X(t), gy1 + 12, MUTED, 11, false); }
+  label(ctx, '+1', gx0 - 16, Y(1), MUTED, 11, false);
+  label(ctx, '0', gx0 - 16, Y(0), MUTED, 11, false);
+  label(ctx, '−1', gx0 - 16, Y(-1), MUTED, 11, false);
+  label(ctx, 'θ, angle between the two settings', (gx0 + gx1) / 2, gy1 + 28, MUTED, 11);
+  ctx.save(); ctx.translate(cx0 + 12, (gy0 + gy1) / 2); ctx.rotate(-Math.PI / 2); label(ctx, 'correlation', 0, 0, MUTED, 11); ctx.restore();
+  // classical straight line
+  ctx.strokeStyle = MUTED; ctx.setLineDash([4, 5]); ctx.beginPath(); ctx.moveTo(X(0), Y(classicalE(0))); ctx.lineTo(X(180), Y(classicalE(180))); ctx.stroke(); ctx.setLineDash([]);
+  label(ctx, 'straight line, classical', X(118), Y(classicalE(118)) + 16, MUTED, 10.5, false);
+  // quantum curve
+  ctx.strokeStyle = R.mark; ctx.lineWidth = 2.5; ctx.beginPath();
+  for (let t = 0; t <= 180; t += 2) { const x = X(t), y = Y(quantumE(t)); t ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+  ctx.stroke();
+  label(ctx, 'quantum, −cos θ', X(128), Y(quantumE(128)) - 18, R.text, 11);
+  // measured points
+  const slots = S.send ? [0, 1] : [0];
+  for (const s of slots) {
+    const t = theta(s), c = C[s];
+    ctx.strokeStyle = GRID; ctx.setLineDash([2, 4]); ctx.beginPath(); ctx.moveTo(X(t), gy0); ctx.lineTo(X(t), gy1); ctx.stroke(); ctx.setLineDash([]);
+    if (!c.n) continue;
+    const E = corr(c), se = sigmaE(E, c.n);
+    ctx.strokeStyle = R.text; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(X(t), Y(E + se)); ctx.lineTo(X(t), Y(E - se)); ctx.stroke();
+    ctx.fillStyle = R.text; ctx.beginPath(); ctx.arc(X(t), Y(E), 5, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = PANEL; ctx.lineWidth = 1.5; ctx.stroke();
+    if (S.send) label(ctx, 'bit ' + s, X(t) + (t > 150 ? -18 : 18), Y(E) + (E > 0 ? 14 : -14), R.text, 11, false);
+  }
+  if (!C[0].n && !(S.send && C[1].n)) label(ctx, 'no records to compare yet', (gx0 + gx1) / 2, Y(0) - 26, MUTED, 12);
+  label(ctx, 'visible only after comparing notes', cx0 + cw / 2, py + ph - 14, MUTED, 12);
+
+  // ---- footer strip ----
+  const cn = C[0].n + (S.send ? C[1].n : 0);
+  label(ctx, 'pairs measured so far: ' + M.n.toLocaleString() + ' · in this comparison: ' + cn.toLocaleString(), W / 2, H - 22, MUTED, 12, false);
+
+  readout();
+}
+
+function fmtP(up, n) { const p = n ? up / n : 0; return n ? `<b>${p.toFixed(3)} ± ${sigmaP(p, n).toFixed(3)}</b>` : '<b>not yet measured</b>'; }
+function readout() {
+  const box = document.getElementById('readout');
+  if (!M.n) { box.innerHTML = 'Press <b>Run 1000 pairs</b>. Each pair gives Alice one answer and Bob one answer; the page keeps both lists.'; return; }
+  const parts = [];
+  parts.push(`Bob's up fraction ${fmtP(M.bUp, M.n)}, Alice's ${fmtP(M.aUp, M.n)}, over ${M.n.toLocaleString()} pairs at every setting tried.`);
+  if (S.send) {
+    const b0 = M.byBit[0], b1 = M.byBit[1];
+    parts.push(`While Alice sent 0 Bob was up ${fmtP(b0.bUp, b0.n)}; while she sent 1, ${fmtP(b1.bUp, b1.n)}. He cannot tell which was which.`);
+  }
+  for (const s of (S.send ? [0, 1] : [0])) {
+    const c = C[s]; if (!c.n) continue;
+    const t = theta(s), E = corr(c);
+    parts.push(`${S.send ? 'Bit ' + s + ': ' : ''}measured correlation <b>${num(E)} ± ${num(sigmaE(E, c.n))}</b> at θ = ${t.toFixed(0)}°, quantum prediction −cos θ = <b>${num(quantumE(t))}</b>, straight-line classical <b>${num(classicalE(t))}</b>.`);
+  }
+  parts.push(`Bob's statistics do not depend on Alice's setting. That is the no-communication theorem, <a href="../pages/constraints/cau-5.html">CAU-5</a>.`);
+  box.innerHTML = parts.join(' ');
+}
+draw();
+
+initPopovers({
+  singlet: { title: 'The singlet state', html: '<p>Two spin-half particles made together so their spins point opposite ways, with no fact yet about which way either one points. Measure both along the same angle and you always get one up and one down. At an angle θ apart, the chance of opposite answers is cos²(θ/2) and the chance of the same answer is sin²(θ/2). With photon polarisation the same curve appears, with the analyser angle doubled.</p><div class="eq">P(opposite) = cos²(θ/2), P(same) = sin²(θ/2)</div>' },
+  error: { title: 'Statistical error', html: '<p>A fraction measured from n coin tosses wobbles by about √(p(1−p)/n). For 1000 pairs at p = ½ that is ±0.016, so a run can land at 0.48 or 0.52 and still be a fair coin. The error bar shrinks as √n, which is why the play button helps.</p>' },
+  trace: { title: 'The partial trace', html: '<p>Bob\'s half of the pair, on its own, is described by his reduced state, found by tracing out Alice\'s half. Anything Alice does on her side, measuring at any angle or not at all, is an operation on her factor only, and the trace over her factor wipes it out.</p><div class="eq">ρ′<sub>B</sub> = Tr<sub>A</sub> Σ<sub>m</sub>(A<sub>m</sub>⊗1) ρ<sub>AB</sub> (A<sub>m</sub>†⊗1) = Tr<sub>A</sub> ρ<sub>AB</sub> = ρ<sub>B</sub></div><p>For the singlet ρ<sub>B</sub> = ½·1, a fair coin, whatever Alice does. Eberhard 1978, Ghirardi, Rimini and Weber 1980, Peres and Terno 2004.</p>' },
+  sendbit: { title: 'What Bob would need', html: '<p>To read a bit, Bob needs something he can compute from his own list that comes out different when Alice picks one angle rather than the other. His up fraction is the same. So is the spread, the purity, any interference pattern, and anything he could build by copying or amplifying his particle. Herbert\'s FLASH proposal of 1982 tried the amplifier and ran into the no-cloning theorem.</p>' },
+  bell: { title: 'Bell\'s point', html: '<p>Suppose each particle left the source carrying private instructions for every angle. Bell showed in 1964 that such models can match the cosine at 0° and 180° but not everywhere in between; the dashed straight line is the simplest one, and at 60° it gives −⅓ where the singlet gives −½. Experiments side with the cosine. So the correlation is not a trick of prior arrangement. It is still not a signal.</p>' },
+  compare: { title: 'The missing step', html: '<p>The correlation is a fact about pairs of entries, Alice\'s and Bob\'s for the same pair. Bob has one column. To fill in the other he needs Alice\'s list, which arrives by radio, by post or by courier, all at or below c. Until it arrives, the right-hand panel is blank for him. Every proposal for an entanglement radio is a claim that this step can be skipped, and the partial trace says it cannot.</p>' },
+  ansible: { title: 'The two dossiers', html: '<p><a href="../pages/fiction/le-guin-ansible.html">Le Guin\'s ansible</a> (1966, given its theory in 1974) says "simultaneity is identity" and never names a mechanism, so the theorem has nothing on the page to close. <a href="../pages/fiction/ender-philotic-ansible.html">Ender\'s philotic ansible</a> (1985, mechanism in 1991) holds paired particles in a shared ray so that the far one changes as the near one does, which is the entanglement radio in costume; Card himself said it has no basis in quantum physics.</p>' },
+  nonlinear: { title: 'Register CAU-5', html: '<p>The proof above uses linearity. Weinberg proposed a nonlinear extension of quantum mechanics in 1989 as something to test; Gisin showed in 1990 that it allows arbitrarily fast signalling, and Polchinski showed in 1991 that any such theory signals either between Alice and Bob or between branches of the wavefunction. Simon, Bužek and Gisin closed the loop in 2001: no signalling forces linear dynamics. See <a href="../pages/constraints/cau-5.html">CAU-5</a>.</p>' },
+});
+</script>
+</body></html>

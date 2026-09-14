@@ -19,7 +19,7 @@ BANNED = re.compile(r"\bledger\b|\bload-bearing\b", re.I)
 
 errors, warns = [], []
 for p in sorted(list(ROOT.rglob("*.md")) + list(ROOT.rglob("*.html"))):
-    if p.name in SKIP or ".git" in p.parts or "node_modules" in p.parts:
+    if p.name in SKIP or ".git" in p.parts or "node_modules" in p.parts or ("web" in p.parts and "pages" in p.parts):
         continue
     rel = p.relative_to(ROOT)
     for i, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):

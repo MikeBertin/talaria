@@ -73,6 +73,12 @@ def rewrite(href):
     m = re.match(r"^([a-z0-9-]+)\.md(#.*)?$", href)
     if m:
         return f"{m.group(1)}.html{m.group(2) or ''}"
+    if href.endswith("GRADING.md"):
+        return "../about/grading.html"
+    if href.endswith("constraints/REGISTER.md") or href == "REGISTER.md":
+        return "../../atlas.html#register"
+    if href.endswith("constraints/README.md"):
+        return "../about/register.html"
     if href.endswith("README.md") or href.endswith("GRADING.md") or href.endswith("REGISTER.md") or href.endswith("CATALOGUE.md") or href.endswith("TEMPLATE.md") or href.endswith("INDEX.md") or href.endswith("ROADMAP.md"):
         return "https://github.com/mikebertin/talaria/blob/main/" + re.sub(r"^(\.\./)+", "", href)
     return href
@@ -222,6 +228,13 @@ def build():
                 data[kind].append(entry)
             elif kind == "lineage":
                 entry["span"] = meta["span"]; data["lineage"].append(entry)
+    # method pages from the repo root and the register README
+    about = WEB / "pages" / "about"; about.mkdir(parents=True, exist_ok=True)
+    for src, name in ((ROOT / "GRADING.md", "grading"), (ROOT / "constraints" / "README.md", "register"), (ROOT / "README.md", "readme")):
+        text = src.read_text(encoding="utf-8")
+        title = title_hook(text, name)[0]
+        (about / f"{name}.html").write_text(SHELL.format(title=html.escape(title), kind="method", body=md_to_html(text)), encoding="utf-8")
+        n += 1
     (WEB / "data").mkdir(exist_ok=True)
     (WEB / "data" / "talaria.js").write_text("window.TALARIA = " + json.dumps(data, ensure_ascii=False) + ";\n", encoding="utf-8")
     print(f"web: {n} pages, {len(data['register'])} register entries, {len(data['physics'])} physics, {len(data['fiction'])} fiction, {len(data['lineage'])} lineage")

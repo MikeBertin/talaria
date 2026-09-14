@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The honest rocket · TALARIA</title>
+<link rel="stylesheet" href="../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../vendor/stoa/controls.css">
+<link rel="stylesheet" href="../vendor/stoa/notice.css">
+<link rel="stylesheet" href="../vendor/stoa/popover.css">
+<link rel="stylesheet" href="../palette.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../favicon.svg">
+<style>
+  .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
+  .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  .panel select { display:block; width:100%; margin-top:6px; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:7px 10px; font:inherit; font-size:13px; }
+  .readout-box sup { font-size:.75em; }
+</style>
+</head><body>
+<nav class="top"><a href="../index.html">TALARIA</a><span>/</span><span class="kind">demo · the honest rocket</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">The honest rocket</h1>
+  <p class="sub">No loophole. Hold a steady thrust, turn the ship round halfway, brake to a stop. You never beat light. Here is what the trip costs in ship years, home years and fuel.</p>
+</header>
+<main>
+  <div class="demo-wrap">
+    <div>
+      <canvas id="cv" width="760" height="560"></canvas>
+      <div class="legend-row">
+        <span><i style="background:var(--a-mark)"></i>home and the destination, at rest</span>
+        <span><i style="background:var(--b-mark)"></i>the ship</span>
+        <span><i style="background:var(--light-mark)"></i>light</span>
+      </div>
+      <div class="readout-box" id="readout"></div>
+    </div>
+    <div class="panel">
+      <h2>Controls</h2>
+      <label>Destination</label>
+      <select id="dest">
+        <option value="proxima">Proxima Centauri, 4.24 ly</option>
+        <option value="vega">Vega, 25 ly</option>
+        <option value="gc">The galactic centre, 26,000 ly</option>
+        <option value="andromeda">Andromeda, 2.5 million ly</option>
+        <option value="custom">Custom distance</option>
+      </select>
+      <label>Distance <span class="val" id="dVal"></span></label>
+      <input type="range" id="d" min="0" max="100" value="9">
+      <label>Thrust, as a multiple of Earth gravity <span class="val" id="aVal"></span></label>
+      <input type="range" id="a" min="1" max="30" value="10">
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px">The ship holds a constant <span class="x" data-pop="proper">proper acceleration</span>, the push its own crew feel, for the first half of the distance, then turns round and brakes at the same rate for the second half. Left: a <span class="x" data-pop="minkowski">spacetime diagram</span> of the trip as seen from home. Right: the bill.</p>
+    </div>
+  </div>
+
+  <section class="notice">
+    <h2 class="notice-title">Things to notice</h2>
+    <div class="notice-grid">
+      <div class="ncard"><h3>Anywhere in the galaxy <span>in a working lifetime</span></h3><p>Pick the galactic centre at 1 g: about 20 years by the ship's clock. Pick Andromeda: under 30. The ship never crosses the light line on the diagram, and it never needs to.</p><span class="x why" data-pop="lifetime">Why the log</span></div>
+      <div class="ncard"><h3>You can go, but you <span>cannot come home</span></h3><p>Watch the home bar, not the ship bar. To the galactic centre it reads 26,000 years, only a couple of years more than light itself would take. Everyone you knew is history before you land.</p><span class="x why" data-pop="home">Where the years go</span></div>
+      <div class="ncard"><h3>The fuel is <span>the real bill</span></h3><p>Slide the thrust down to 0.1 g for Proxima. The crew's trip stretches to about 13 years but the fuel per tonne falls from 39 to under 4. Push it to 3 g and the bill jumps to about 230, to save under two ship years.</p><span class="x why" data-pop="mass">Register LOR-1</span></div>
+      <div class="ncard"><h3>Time dilation is <span>drawn on the ship's line</span></h3><p>The dots along the ship's worldline are its own years. Near the turnaround they spread out: one ship year covers thousands of home years there. Try Vega, where you can still count them.</p><span class="x why" data-pop="dots">The dots</span></div>
+      <div class="ncard"><h3>Haldeman and Le Guin <span>did this sum</span></h3><p>Set a custom distance of about 30 ly at 1 g and the home clock reads within a couple of years of 33, which is what Anderson's <em>Tau Zero</em> planned for Beta Virginis. Haldeman's soldiers and Le Guin's NAFAL crews pay the same arithmetic, novel after novel.</p><span class="x why" data-pop="fiction">The dossiers</span></div>
+      <div class="ncard"><h3>No paradox, <span>at any setting</span></h3><p>Push thrust to 3 g for any destination. The ship's line hugs the light line and never touches it, so it stays inside the light cone. That is why this diagram cannot be turned into an antitelephone.</p><span class="x why" data-pop="cone">Register CAU-1</span></div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>What is going on</h2>
+    <p>This is the control group for the whole catalogue. Every other entry is a scheme to beat this ship. The ship itself is plain special relativity: hold a steady push, and your speed creeps toward light without ever reaching it, while your own clock runs slower and slower compared with the clocks at home. With c set to one light year per year and one g equal to 1.032 light years per year squared, each half of a trip of distance d takes the crew (c/a) arccosh(1 + a(d/2)/c²) of their own time and takes home sqrt((d/2)² / c² + 2(d/2)/a). The peak <span class="x" data-pop="gamma">Lorentz factor</span> at the turnaround is 1 + a(d/2)/c², and a perfect <span class="x" data-pop="photon">photon rocket</span> needs a mass ratio of exp(aτ/c) for the one-way trip, where τ is the crew's total time. Coming back squares it.</p>
+    <p>Crew time grows only as the logarithm of the distance, which is why the galaxy fits in a career. Home time grows as the distance itself, which is why nobody waits up. The exponential fuel bill is <a href="../pages/constraints/lor-1.html">LOR-1 in the register</a>, the rule that a massive body cannot be pushed to c because its energy runs away first; in the register's own words the rocket satisfies LOR-1 exactly and its bill is B-mass. The reason the diagram never produces a paradox is <a href="../pages/constraints/cau-1.html">CAU-1</a>: the worldline is timelike, always inside the light cone, so every observer agrees on the order of departure and arrival. The full physics dossier is <a href="../pages/physics/relativistic-rocket.html">the relativistic rocket</a>; the novels that keep this account honestly are <a href="../pages/fiction/forever-war-collapsars.html">The Forever War</a>, <a href="../pages/fiction/le-guin-ansible.html">Le Guin's Hainish cycle</a> and <a href="../pages/fiction/tau-zero-ramjet.html">Tau Zero</a>.</p>
+  </section>
+</main>
+<footer>TALARIA · the honest rocket · Ackeret 1946, Sänger 1953, Sagan 1963, Rindler</footer>
+<script type="module">
+import { setup, clear, arrow, label, bar } from '../vendor/stoa/draw.js';
+import { bindSlider } from '../vendor/stoa/controls.js';
+import { initPopovers } from '../vendor/stoa/popover.js';
+import { DEMO, LOOPHOLES, INK, BOARD, PANEL, GRID, MUTED } from '../palette.js';
+
+const W = 760, H = 560;
+const cv = document.getElementById('cv');
+const ctx = setup(cv, W, H);
+
+// c = 1 ly/yr, one g = 1.032 ly/yr². Distances from the catalogue.
+const G = 1.032;
+const DEST = { proxima: 4.24, vega: 25.0, gc: 26000, andromeda: 2.5e6 };
+const S = { d: DEST.proxima, ag: 1.0, locked: false };
+
+// Distance slider is logarithmic: 0..100 maps to 1 ly .. 10 million ly.
+const dOf = s => Math.pow(10, s * 7 / 100);
+const sOf = d => Math.round(Math.log10(d) * 100 / 7);
+
+// The physics. All of it is here.
+function trip(d, ag) {
+  const a = ag * G, h = d / 2;
+  const gmax = 1 + a * h;                        // peak Lorentz factor at the turnaround
+  const tauHalf = Math.acosh(gmax) / a;          // ship time for one half
+  const tHalf = Math.sqrt(h * h + 2 * h / a);    // home time for one half
+  const vmax = Math.tanh(a * tauHalf);           // peak speed, units of c
+  const oneMinusV = 1 / (gmax * gmax * (1 + vmax)); // 1 - v, computed without cancellation
+  const massOne = Math.exp(2 * a * tauHalf);     // photon rocket, accelerate then brake
+  return { d, a, ag, gmax, tauHalf, tau: 2 * tauHalf, tHalf, t: 2 * tHalf, vmax, oneMinusV, massOne, massRound: massOne * massOne };
+}
+// Position (x, t) in the home frame at ship time s along the trip.
+function point(T, s) {
+  const { a, tauHalf, tau, t, d } = T;
+  if (s <= tauHalf) return [(Math.cosh(a * s) - 1) / a, Math.sinh(a * s) / a];
+  const r = tau - s;
+  return [d - (Math.cosh(a * r) - 1) / a, t - Math.sinh(a * r) / a];
+}
+
+// Number formatting, plain words where the numbers get big.
+const SUP = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+const sup = n => String(n).split('').map(c => c === '-' ? '⁻' : SUP[+c]).join('');
+function fmtYears(y) {
+  if (y < 10) return y.toFixed(1);
+  if (y < 1e4) return Math.round(y).toLocaleString('en-GB');
+  if (y < 1e6) return Number(y.toPrecision(3)).toLocaleString('en-GB');
+  if (y < 1e9) return Number((y / 1e6).toPrecision(2)) + ' million';
+  return Number((y / 1e9).toPrecision(2)) + ' billion';
+}
+function fmtLy(d) {
+  if (d < 100) return Number(d.toPrecision(3)) + ' ly';
+  if (d < 1e6) return Number(d.toPrecision(3)).toLocaleString('en-GB') + ' ly';
+  return Number((d / 1e6).toPrecision(2)) + ' million ly';
+}
+function fmtBig(m, html = false) {
+  if (m < 1000) return String(Number(m.toPrecision(2)));
+  if (m < 1e6) return Number(m.toPrecision(2)).toLocaleString('en-GB');
+  const e = Math.floor(Math.log10(m));
+  const mant = Number((m / Math.pow(10, e)).toPrecision(2));
+  return html ? `${mant} × 10<sup>${e}</sup>` : `${mant} × 10${sup(e)}`;
+}
+function fmtSpeed(T, html = false) {
+  if (T.oneMinusV > 1e-3) return T.vmax.toFixed(3) + ' c';
+  const e = Math.floor(Math.log10(T.oneMinusV));
+  const mant = Number((T.oneMinusV / Math.pow(10, e)).toPrecision(2));
+  return html ? `within ${mant} × 10<sup>${e}</sup> of c` : `within ${mant} × 10${sup(e)} of c`;
+}
+function niceStep(range, target) {
+  const raw = range / target, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p;
+  return p * (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10);
+}
+function txt(s, x, y, col, size = 12, align = 'left', italic = false) {
+  ctx.save(); ctx.fillStyle = col; ctx.font = `${italic ? 'italic ' : ''}600 ${size}px Georgia, serif`;
+  ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillText(s, x, y); ctx.restore();
+}
+function dot(x, y, r, col) { ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill(); }
+
+// Controls
+const sel = document.getElementById('dest');
+const dSlider = document.getElementById('d');
+S.locked = true;
+bindSlider('d', { out: 'dVal', scale: 1, fmt: () => fmtLy(S.d), set: x => { if (!S.locked) { S.d = dOf(x); sel.value = 'custom'; } }, after: draw });
+S.locked = false;
+bindSlider('a', { out: 'aVal', scale: 0.1, fmt: x => x.toFixed(1) + ' g', set: x => S.ag = x, after: draw });
+sel.addEventListener('change', () => {
+  if (sel.value === 'custom') return;
+  S.d = DEST[sel.value];
+  S.locked = true; dSlider.value = sOf(S.d); dSlider.dispatchEvent(new Event('input')); S.locked = false;
+});
+
+function draw() {
+  const T = trip(S.d, S.ag);
+  const { d, t, tau, tauHalf } = T;
+  clear(ctx, W, H, PANEL);
+
+  // ---- Left: spacetime diagram in the home frame ----
+  const L = 40, R = 470, TOP = 40, BOT = 500;
+  const OX = 48, plotW = R - L - OX, plotH = BOT - TOP - 20;
+  const k = Math.min(plotW / d, plotH / t);
+  const X = x => L + OX + x * k, Y = tt => BOT - tt * k;
+  const tTop = (BOT - TOP) / k, xRight = plotW / k;
+
+  ctx.save(); ctx.beginPath(); ctx.rect(L, TOP, R - L, BOT - TOP); ctx.clip();
+  // the future light cone of the departure event, filled darker
+  ctx.fillStyle = BOARD; ctx.beginPath();
+  ctx.moveTo(X(0), Y(0)); ctx.lineTo(X(tTop * 1.2), Y(tTop * 1.2)); ctx.lineTo(X(-tTop * 1.2), Y(tTop * 1.2)); ctx.closePath(); ctx.fill();
+  // grid at nice ticks
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+  const st = niceStep(t, 4), sx = niceStep(d, 3);
+  for (let v = st; v <= tTop; v += st) { ctx.beginPath(); ctx.moveTo(L, Y(v)); ctx.lineTo(R, Y(v)); ctx.stroke(); }
+  for (let v = sx; v <= xRight; v += sx) { ctx.beginPath(); ctx.moveTo(X(v), TOP); ctx.lineTo(X(v), BOT); ctx.stroke(); }
+  // light cone edges, dashed
+  ctx.strokeStyle = DEMO.light.mark; ctx.lineWidth = 1.5; ctx.setLineDash([6, 6]);
+  for (const sg of [1, -1]) { ctx.beginPath(); ctx.moveTo(X(0), Y(0)); ctx.lineTo(X(sg * tTop * 1.2), Y(tTop * 1.2)); ctx.stroke(); }
+  ctx.setLineDash([]);
+  // home and destination worldlines
+  ctx.strokeStyle = DEMO.a.mark; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(X(0), BOT); ctx.lineTo(X(0), TOP); ctx.stroke();
+  ctx.lineWidth = 1.5; ctx.setLineDash([2, 4]); ctx.beginPath(); ctx.moveTo(X(d), BOT); ctx.lineTo(X(d), TOP); ctx.stroke(); ctx.setLineDash([]);
+  // the ship's worldline
+  const N = 240;
+  ctx.strokeStyle = DEMO.b.mark; ctx.lineWidth = 3; ctx.beginPath();
+  for (let i = 0; i <= N; i++) { const [x, tt] = point(T, tau * i / N); if (i === 0) ctx.moveTo(X(x), Y(tt)); else ctx.lineTo(X(x), Y(tt)); }
+  ctx.stroke();
+  // ship years as dots along it
+  const step = tau < 6 ? 0.5 : niceStep(tau, 12);
+  for (let s = step; s < tau - step / 2; s += step) { const [x, tt] = point(T, s); dot(X(x), Y(tt), 2.6, DEMO.b.text); }
+  ctx.restore();
+
+  // axes and tick labels
+  arrow(ctx, X(0), BOT + 4, X(0), TOP - 6, MUTED, 1.2);
+  arrow(ctx, L + 6, BOT, R - 4, BOT, MUTED, 1.2);
+  for (let v = st; v <= tTop; v += st) if (Math.abs(Y(v) - (TOP + 14)) > 12) txt(fmtYears(v), X(0) - 6, Y(v), MUTED, 10.5, 'right');
+  for (let v = sx; v <= xRight; v += sx) txt(fmtLy(v), X(v), BOT + 11, MUTED, 10.5, 'center');
+  txt('home years ↑', X(0) + 8, TOP - 14, MUTED, 11.5);
+  txt('light years →', R - 6, BOT + 26, MUTED, 11.5, 'right');
+
+  // labels, in words, wherever colours meet
+  txt('home', X(0) - 6, TOP + 14, DEMO.a.text, 13, 'right', true);
+  txt('destination', X(d) + (X(d) > R - 80 ? -5 : 5), BOT - 16, DEMO.a.text, 12, X(d) > R - 80 ? 'right' : 'left', true);
+  const lp = Math.min(tTop, d) * 0.62;
+  txt('light', X(lp) + 10, Y(lp) + 10, DEMO.light.text, 12.5, 'left', true);
+  const mid = point(T, tauHalf), q1 = point(T, tauHalf * 0.55);
+  txt('ship', X(q1[0]) - 10, Y(q1[1]) - 4, DEMO.b.text, 13, 'right', true);
+  dot(X(mid[0]), Y(mid[1]), 5, DEMO.b.text);
+  txt('turnaround, ' + fmtSpeed(T), X(mid[0]) - 10, Y(mid[1]), DEMO.b.text, 11.5, 'right', true);
+  dot(X(d), Y(t), 5, DEMO.b.text);
+  const arrLeft = X(d) > R - 130;
+  txt('arrive: ' + fmtYears(t) + ' home yr, ' + fmtYears(tau) + ' ship yr', X(d) + (arrLeft ? -10 : 10), Y(t) - 12, DEMO.b.text, 11.5, arrLeft ? 'right' : 'left', true);
+  dot(X(d), Y(d), 4, DEMO.light.text);
+  if ((t - d) * k > 22) txt('light arrives: ' + fmtYears(d) + ' yr', X(d) + (arrLeft ? -10 : 10), Y(d) + 12, DEMO.light.text, 11.5, arrLeft ? 'right' : 'left', true);
+  txt('dots on the ship line: one every ' + (step === 1 ? 'ship year' : Number(step.toPrecision(2)) + ' ship years'), L + 4, BOT + 44, MUTED, 10.5);
+
+  // ---- Right: the bill, on log scales ----
+  const BX0 = 504, BX1 = 744, BW = BX1 - BX0;
+  const logBar = (v, vmax) => Math.max(3, Math.log10(Math.max(v, 1.0001)) / Math.log10(vmax) * BW);
+  const group = (title, rows, y0, vmax, unit) => {
+    txt(title, BX0, y0, INK, 13);
+    let y = y0 + 24;
+    for (const [name, v, col, textCol] of rows) {
+      txt(name, BX0, y, textCol, 11);
+      txt(fmtBig(v), BX1, y, textCol, 11, 'right');
+      bar(ctx, BX0, y + 8, logBar(v, vmax), 12, col);
+      y += 40;
+    }
+    // log axis ticks
+    const top = Math.ceil(Math.log10(vmax));
+    ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+    const every = top > 12 ? 4 : top > 6 ? 2 : 1;
+    for (let e = 0; e <= top; e += every) {
+      const x = BX0 + e / Math.log10(vmax) * BW; if (x > BX1 + 1) break;
+      ctx.beginPath(); ctx.moveTo(x, y0 + 16); ctx.lineTo(x, y - 14); ctx.stroke();
+      txt(e === 0 ? '1' : '10' + sup(e), x, y - 6, MUTED, 10, 'center');
+    }
+    txt(unit + ', log scale', BX1, y + 8, MUTED, 10, 'right');
+    return y + 22;
+  };
+  const tmax = Math.max(t, 10) * 2;
+  let y = group('How long the trip takes', [
+    ['ship years (the crew’s clock)', tau, DEMO.b.mark, DEMO.b.text],
+    ['home years (the calendar)', t, DEMO.a.mark, DEMO.a.text],
+    ['light would take', d, DEMO.light.mark, DEMO.light.text],
+  ], 44, tmax, 'years');
+  const mmax = T.massRound * 3;
+  y = group('The fuel bill, perfect photon rocket', [
+    ['one way, there and stop', T.massOne, LOOPHOLES.L6.mark, LOOPHOLES.L6.text],
+    ['round trip, home again', T.massRound, LOOPHOLES.L6.mark, LOOPHOLES.L6.text],
+  ], y, mmax, 'tonnes of fuel per tonne delivered');
+  txt('peak speed: ' + fmtSpeed(T), BX0, y, INK, 12);
+  txt('peak Lorentz factor: ' + fmtBig(T.gmax), BX0, y + 18, INK, 12);
+
+  // ---- Readout ----
+  const name = sel.value === 'custom' ? 'a custom target ' + fmtLy(d) + ' away' : sel.options[sel.selectedIndex].text.split(',')[0];
+  const box = document.getElementById('readout');
+  box.classList.toggle('hot', T.massOne > 1e6);
+  box.innerHTML = `To <b>${name}</b> at <b>${S.ag.toFixed(1)} g</b>: you arrive after <b>${fmtYears(tau)}</b> ship years, and <b>${fmtYears(t)}</b> years have passed at home (light would have taken ${fmtYears(d)}). At the turnaround you are moving at <b>${fmtSpeed(T, true)}</b>, a Lorentz factor of <b>${fmtBig(T.gmax, true)}</b>. A perfect photon rocket burns <b>${fmtBig(T.massOne, true)}</b> tonnes of fuel for every tonne that arrives, and <b>${fmtBig(T.massRound, true)}</b> to bring that tonne home again.`;
+}
+draw();
+
+initPopovers({
+  proper: { title: 'Proper acceleration', html: '<p>The acceleration the ship’s own instruments read, the push the crew feel in their seats. At 1 g they weigh what they weighed on Earth for the whole trip. Seen from home the ship’s speed creeps up ever more slowly, because it is approaching light and cannot get there.</p>' },
+  minkowski: { title: 'Spacetime diagram', html: '<p>Distance runs left to right, home time runs upward, and the units are chosen so light moves at 45°. Something standing still is a vertical line. The ship starts vertical, leans over toward the light line as it speeds up, then leans back as it brakes.</p>' },
+  gamma: { title: 'Lorentz factor', html: '<p>The number gamma, one over the square root of one minus v² over c². It is how many home years pass for each ship year at a given speed. At 0.95 c it is about 3.2; at the galactic-centre turnaround it is about 13,000.</p>' },
+  photon: { title: 'Photon rocket', html: '<p>The best rocket physics allows: it turns its fuel entirely into light and throws the light backwards. Its exhaust speed is c, which makes its mass ratio exp(a τ / c) for a burn of ship time τ. Real exhausts are far slower, so the real bill is far larger.</p>' },
+  lifetime: { title: 'Why crew time barely grows', html: '<p>At high speed the ship’s own time for a leg is about (c/a) times the natural log of the distance in units of c²/a, and c²/a is about a light year at 1 g. Multiply the distance by ten and the crew pay about 2.2 more years per half trip. That is why 4 light years costs 3.5 years and 2.5 million light years costs under 30.</p><div class="eq">τ = (2c/a) arccosh(1 + ad / 2c²)</div>' },
+  home: { title: 'Where the years go', html: '<p>Home time for each half is sqrt((d/2)² + 2(d/2)c²/a) with c = 1, which for any long trip is just d/2 plus a bit: the ship is doing nearly c almost all the way. So the calendar at home advances by the light travel time plus about two years for getting up to speed and back down. The dossier gives 26,000 home years to the galactic centre against 20 ship years.</p>' },
+  mass: { title: 'Register LOR-1, the bill', html: '<p>A massive body cannot be pushed to c because its kinetic energy runs away first. The rocket lives inside that rule: the fuel needed grows as exp(a τ / c), and since a τ / c is twice the arccosh of the peak Lorentz factor, the one-way mass ratio is close to four times gamma squared. Halve the thrust and you halve the peak gamma for a short trip, but you pay in ship years. The register scores the rocket SATISFIES on LOR-1 with the bill B-mass. See <a href="../pages/constraints/lor-1.html">LOR-1</a>.</p>' },
+  dots: { title: 'Reading the dots', html: '<p>Each dot is one tick of the crew’s clock at equal spacing in ship time. Where the ship is slow, ship years and home years match and the dots sit close together. Where the ship is near c the dots stretch apart along the line: one ship year is spread over many home years. The spacing is the Lorentz factor, drawn.</p>' },
+  fiction: { title: 'The novels that kept the account', html: '<p>Haldeman’s <em>The Forever War</em> (1974) uses free collapsar jumps but makes every ship fly the relativistic legs in full: a campaign of months by the ship’s clock costs years on Earth, and the war lasts a thousand years for Earth and a few for its soldiers. Le Guin’s ansible talks in an instant, but her NAFAL ships never beat light: Semley’s one night costs sixteen years at home. Anderson’s <em>Tau Zero</em> planned Beta Virginis at 30 light years for 5 ship years and 33 on Earth, and this page gives about 32 home years at 1 g. See <a href="../pages/fiction/forever-war-collapsars.html">the Forever War dossier</a>, <a href="../pages/fiction/le-guin-ansible.html">Le Guin’s ansible</a> and <a href="../pages/fiction/tau-zero-ramjet.html">Tau Zero</a>.</p>' },
+  cone: { title: 'Register CAU-1, satisfied', html: '<p>The antitelephone needs a signal that runs flatter than 45° on this diagram, outside the light cone. The rocket’s worldline is always steeper than 45°, inside the cone, however hard you push. Every observer in every frame agrees the ship left before it arrived, and arrived after light would have. The register scores the rocket SATISFIES on CAU-1: this is the case the constraint leaves untouched. See <a href="../pages/constraints/cau-1.html">CAU-1</a>.</p>' },
+});
+</script>
+</body></html>

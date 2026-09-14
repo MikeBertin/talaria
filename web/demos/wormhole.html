@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The wormhole · TALARIA</title>
+<link rel="stylesheet" href="../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../vendor/stoa/controls.css">
+<link rel="stylesheet" href="../vendor/stoa/notice.css">
+<link rel="stylesheet" href="../vendor/stoa/popover.css">
+<link rel="stylesheet" href="../palette.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../favicon.svg">
+<style>
+  .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
+  .legend-row[hidden] { display:none; }
+  .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  .readout-box sup { font-size: 0.75em; }
+  .panel .seg { flex-wrap: wrap; }
+</style>
+</head><body>
+<nav class="top"><a href="../index.html">TALARIA</a><span>/</span><span class="kind">demo · the wormhole</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">The wormhole</h1>
+  <p class="sub">A tunnel through space with a mouth at each end. Morris and Thorne worked out what it takes to walk through one and live: a throat hundreds of kilometres wide, held open by matter that weighs less than nothing. Then they noticed that one trip with a mouth turns it into a time machine.</p>
+</header>
+<main>
+  <div class="demo-wrap">
+    <div>
+      <canvas id="cv" width="760" height="560"></canvas>
+      <div class="legend-row" id="legend-throat">
+        <span><i style="background:var(--L3-mark)"></i>the tunnel surface</span>
+        <span><i style="background:var(--L3-text)"></i>the throat</span>
+        <span><i style="background:var(--signal-mark)"></i>the traveller and the one-g limit</span>
+      </div>
+      <div class="legend-row" id="legend-machine" hidden>
+        <span><i style="background:var(--a-mark)"></i>mouth A, stays home</span>
+        <span><i style="background:var(--b-mark)"></i>mouth B, goes out and back</span>
+        <span><i style="background:var(--signal-mark)"></i>a walk through the throat</span>
+      </div>
+      <div class="readout-box" id="readout"></div>
+    </div>
+    <div class="panel">
+      <h2>Controls</h2>
+      <label>View</label>
+      <div class="seg" id="viewSeg">
+        <button data-view="throat" class="active" aria-pressed="true">the throat</button>
+        <button data-view="machine" aria-pressed="false">the time machine</button>
+      </div>
+      <div id="ctl-throat">
+        <label>Throat radius b<sub>0</sub> <span class="val" id="b0Val"></span></label>
+        <input type="range" id="b0" min="0" max="400" value="300">
+        <label>Speed through the throat, as a fraction of c <span class="val" id="vtVal"></span></label>
+        <input type="range" id="vt" min="0" max="269" value="100">
+        <label>Shape of the tunnel</label>
+        <div class="seg" id="shapeSeg">
+          <button data-shape="ellis" class="active" aria-pressed="true">Ellis, b = b<sub>0</sub>²/r</button>
+          <button data-shape="mt" aria-pressed="false">Morris and Thorne, b = √(b<sub>0</sub> r)</button>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:14px">The picture is an <span class="x" data-pop="embed">embedding diagram</span>: one slice through the tunnel, drawn as a surface so you can see its shape. Up and down are not directions in space, only a way of showing how the tunnel narrows to the throat and opens out again on the far side. The dashed ring is how wide the throat has to be for a person to pass at this speed and feel no more than one g of <span class="x" data-pop="tide">tidal stretch</span>.</p>
+      </div>
+      <div id="ctl-machine" hidden>
+        <label>Speed of mouth B on its trip, as a fraction of c <span class="val" id="vmVal"></span></label>
+        <input type="range" id="vm" min="10" max="95" value="90">
+        <label>Length of the trip, by the clocks at home <span class="val" id="TVal"></span></label>
+        <input type="range" id="T" min="0" max="200" value="0">
+        <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Mouth B is carried away and brought back. Its clock runs slow on the trip, by the usual factor <span class="x" data-pop="gamma">gamma</span>. The tunnel is short, so it joins the two mouths at equal readings of their own clocks. The diagram is a <span class="x" data-pop="minkowski">spacetime diagram</span>: space across, home time up, with the gap between the mouths not to scale.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="notice">
+    <h2 class="notice-title">Things to notice</h2>
+    <div class="notice-grid">
+      <div class="ncard"><h3>The throat bound <span>grows with speed</span></h3><p>In the throat view set the speed to 0.01c. The dashed one-g ring sits at 1,000 km for the Ellis tunnel and at 500 km if you switch to Morris and Thorne's own shape, the register's number. Slide the speed to 0.1c and both grow tenfold. The ring scales as γv.</p><span class="x why" data-pop="haz3">Register HAZ-3</span></div>
+      <div class="ncard"><h3>Bigger is safer and <span>dearer</span></h3><p>Slide the throat radius up. The tension at the throat falls, but the mass of negative-energy matter needed to hold it open grows in step with the radius: about 170 suns' worth at 500 km, about 3,400 at 10,000 km.</p><span class="x why" data-pop="sta2">Register STA-2</span></div>
+      <div class="ncard"><h3>One trip makes a <span>time machine</span></h3><p>Switch to the time machine, set 0.9c and one year. Mouth B comes home 0.56 years younger than mouth A, and the tunnel now leads 0.56 years into the past. Nothing on the diagram ever moves faster than light.</p><span class="x why" data-pop="cau3">Register CAU-3</span></div>
+      <div class="ncard"><h3>The twin paradox <span>does all the work</span></h3><p>Push the trip speed toward 0.95c: the offset climbs toward 69 percent of the trip time. The whole effect is ordinary time dilation plus a tunnel that keeps the two clocks in step. That is why every wormhole owes this bill.</p><span class="x why" data-pop="twin">Why no FTL is needed</span></div>
+      <div class="ncard"><h3>The conjectured <span>stop</span></h3><p>Hawking's chronology protection: as the loop is about to close, the energy of quantum fields piles up on the edge of the time-travel region and the back reaction shuts it. Set any offset you like on the diagram; this is the claim that the last step never happens. A conjecture, not a theorem.</p><span class="x why" data-pop="cau2">Register CAU-2</span></div>
+      <div class="ncard"><h3>It cannot be a <span>shortcut</span> at all</h3><p>Topological censorship: if the averaged null energy condition holds, no wormhole beats the outside route. The tunnel drawn here is a shortcut, so it needs a violation no known field supplies. The modern traversable wormholes obey the theorem by being long, and the time-machine step fails on them.</p><span class="x why" data-pop="ene7">Register ENE-7</span></div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>What is going on</h2>
+    <p>Morris and Thorne, in 1988, wrote down the tunnel a traveller would want, a throat with no horizon and gentle tides, and asked Einstein's equations what would have to be inside it. The answer is matter with negative energy density along the light rays that thread the throat, which they called <span class="x" data-pop="exotic">exotic matter</span>. Nothing known supplies it, and the amount grows with the size of the throat. That is <a href="../pages/constraints/sta-2.html">STA-2 in the register</a>. The size of the throat is set by comfort: one Earth g of tidal stretch across a two-metre body, which bounds the tidal terms at the throat by about (10<sup>8</sup> m)<sup>-2</sup> and gives a throat radius that scales with the speed of the crossing, about 500 km at one percent of light speed for their design shape. That is <a href="../pages/constraints/haz-3.html">HAZ-3</a>.</p>
+    <p>Within the year, with Yurtsever, they showed that any such wormhole is a time machine with an assembly step: carry one mouth away at high speed and bring it back, and its clock lags the other by T(1 − 1/γ), while the tunnel still joins the mouths at equal clock readings. Walk in at the mouth that travelled and you step out of the other one in the past. That is <a href="../pages/constraints/cau-3.html">CAU-3</a>. Hawking's reply in 1992, <a href="../pages/constraints/cau-2.html">chronology protection, CAU-2</a>, conjectures that quantum back reaction stops the loop from ever closing. And a theorem of Friedman, Schleich and Witt from 1993, with the averaged null energy condition proved for the geodesics it needs between 2007 and 2017, says a wormhole in ordinary flat surroundings cannot be a shortcut at all: that is <a href="../pages/constraints/ene-7.html">topological censorship, ENE-7</a>. The traversable wormholes built since 2017 by Gao, Jafferis and Wall and by Maldacena, Milekhin and Popov obey it by being longer inside than the way round, which is also why they cannot be turned into time machines.</p>
+  </section>
+</main>
+<footer>TALARIA · the wormhole · Morris and Thorne 1988 · Morris, Thorne and Yurtsever 1988 · Hawking 1992 · Friedman, Schleich and Witt 1993</footer>
+<script type="module">
+import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
+import { bindSlider, seg } from '../vendor/stoa/controls.js';
+import { initPopovers } from '../vendor/stoa/popover.js';
+import { DEMO, LOOPHOLES, INK, PANEL, GRID, MUTED } from '../palette.js';
+
+// --- physics ---
+const G = 6.674e-11, C = 2.998e8, MSUN = 1.989e30;
+const BOUND = 1e-16;          // m^-2: one Earth g across 2 m, g/(2 m c^2) rounded as Morris and Thorne do
+const SHAPES = {              // b'(r0) at the throat, and the embedding z(r)/b0 as a function of u = r/b0
+  ellis: { bp0: -1,  z: u => Math.acosh(u),                                   name: 'Ellis' },
+  mt:    { bp0: 0.5, z: u => (4 / 3) * Math.sqrt(Math.sqrt(u) - 1) * (Math.sqrt(u) + 2), name: 'Morris and Thorne' },
+};
+function gamma(v) { return 1 / Math.sqrt(1 - v * v); }
+// lateral tidal term at the throat, Phi = 0, v in units of c, b0 in metres: gamma^2 v^2 (1 - b'0) / (2 b0^2)
+function tideTerm(b0, v, bp0) { const g = gamma(v); return g * g * v * v * (1 - bp0) / (2 * b0 * b0); }
+// smallest throat that keeps that term under BOUND: b0 >= gamma v sqrt((1 - b'0)/2) / sqrt(BOUND)
+function minThroat(v, bp0) { return gamma(v) * v * Math.sqrt((1 - bp0) / 2) / Math.sqrt(BOUND); }
+// fastest safe crossing for a given throat: gamma v = x  =>  v = x / sqrt(1 + x^2)
+function maxSpeed(b0, bp0) { const x = b0 * Math.sqrt(BOUND) / Math.sqrt((1 - bp0) / 2); return x / Math.sqrt(1 + x * x); }
+function tension(b0) { return C ** 4 / (8 * Math.PI * G * b0 * b0); }   // Pa, radial tension at the throat
+function throatMass(b0) { return b0 * C * C / (2 * G); }                 // kg, effective mass inside the throat
+function offset(v, T) { return T * (1 - 1 / gamma(v)); }                 // years, the clock lag after the trip
+// --- end physics ---
+
+const W = 760, H = 560;
+const cv = document.getElementById('cv');
+const ctx = setup(cv, W, H);
+const S = { view: 'throat', b0: 1e6, vt: 0.01, shape: 'ellis', vm: 0.9, T: 1 };
+
+bindSlider('b0', { out: 'b0Val', scale: 1, fmt: s => km(1000 * 10 ** (s / 100)), set: s => S.b0 = 1000 * 10 ** (s / 100), after: draw });
+bindSlider('vt', { out: 'vtVal', scale: 1, fmt: s => vOf(s).toFixed(3) + ' c', set: s => S.vt = vOf(s), after: draw });
+bindSlider('vm', { out: 'vmVal', scale: 0.01, fmt: x => x.toFixed(2) + ' c', set: x => S.vm = x, after: draw });
+bindSlider('T', { out: 'TVal', scale: 1, fmt: s => yr(10 ** (s / 100)) + ' years', set: s => S.T = 10 ** (s / 100), after: draw });
+seg('shapeSeg', d => { S.shape = d.shape; draw(); });
+seg('viewSeg', d => {
+  S.view = d.view;
+  document.getElementById('ctl-throat').hidden = d.view !== 'throat';
+  document.getElementById('ctl-machine').hidden = d.view !== 'machine';
+  document.getElementById('legend-throat').hidden = d.view !== 'throat';
+  document.getElementById('legend-machine').hidden = d.view !== 'machine';
+  draw();
+});
+function vOf(s) { return 10 ** (-3 + s / 100); }   // 0.001c to 0.5c, log
+
+// formatting
+function km(m) { const k = m / 1000; return (k >= 100 ? Math.round(k).toLocaleString('en-GB') : k >= 10 ? k.toFixed(1) : k.toFixed(2)) + ' km'; }
+function yr(t) { return t >= 10 ? t.toFixed(0) : t >= 1 ? t.toFixed(1) : t.toFixed(2); }
+function num(x) { return String(x).replace('-', '−'); }
+function sci(x, d = 1) { const e = Math.floor(Math.log10(x)); return `${(x / 10 ** e).toFixed(d)}×10<sup>${e}</sup>`; }
+function suns(kg) { const m = kg / MSUN; return (m >= 100 ? Math.round(m).toLocaleString('en-GB') : m >= 10 ? m.toFixed(0) : m.toFixed(2)) + (m < 1.5 ? ' solar mass' : ' solar masses'); }
+function text(s, x, y, col, size = 12, align = 'left', italic = false) {
+  ctx.save(); ctx.fillStyle = col; ctx.font = `${italic ? 'italic ' : ''}600 ${size}px Georgia, serif`; ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillText(s, x, y); ctx.restore();
+}
+function line(x0, y0, x1, y1, col, w = 1.5, dash = null) {
+  ctx.save(); ctx.strokeStyle = col; ctx.lineWidth = w; if (dash) ctx.setLineDash(dash);
+  ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); ctx.restore();
+}
+function dot(x, y, col, r = 5) { ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill(); }
+
+function draw() { if (S.view === 'throat') drawThroat(); else drawMachine(); }
+
+// ---------- view 1: the throat ----------
+function drawThroat() {
+  const { b0, vt: v } = S;
+  const sh = SHAPES[S.shape];
+  const ZMAX = 1.9;                       // both shapes drawn to the same height, in units of b0
+  // radius at which the embedding reaches ZMAX, by bisection on u = r/b0
+  const uOfZ = z => { let lo = 1, hi = 1; while (sh.z(hi) < z) hi *= 2; for (let i = 0; i < 40; i++) { const m = (lo + hi) / 2; if (sh.z(m) < z) lo = m; else hi = m; } return hi; };
+  const UMAX = uOfZ(ZMAX);
+  const cx = 300, cy = 282, s = 66, e = 0.42;   // px per b0, elevation of the viewpoint
+  const P = (u, th, z) => { const x = u * Math.cos(th), y = u * Math.sin(th); return [cx + x * s, cy - (z * Math.cos(e) + y * Math.sin(e)) * s]; };
+
+  clear(ctx, W, H, PANEL);
+  const surf = LOOPHOLES.L3.mark, ring = LOOPHOLES.L3.text, trav = DEMO.signal.mark, travT = DEMO.signal.text;
+
+  // parallels at equal heights, back halves dim, front halves bright
+  const NR = 7, levels = [];
+  for (let k = -NR; k <= NR; k++) levels.push(k * ZMAX / NR);
+  const halfRing = (u, z, back) => {
+    ctx.beginPath();
+    for (let i = 0; i <= 48; i++) { const th = (back ? 0 : Math.PI) + Math.PI * i / 48; const [x, y] = P(u, th, z); if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }
+    ctx.stroke();
+  };
+  ctx.lineWidth = 1.2;
+  for (const pass of ['back', 'front']) {
+    ctx.save(); ctx.globalAlpha = pass === 'back' ? 0.3 : 1;
+    // meridians
+    ctx.strokeStyle = MUTED; ctx.lineWidth = 0.8;
+    for (let m = 0; m < 24; m++) {
+      const th = Math.PI * 2 * m / 24; const isBack = Math.sin(th) > 0; if ((pass === 'back') !== isBack) continue;
+      ctx.beginPath();
+      for (let i = 0; i <= 40; i++) { const z = -ZMAX + 2 * ZMAX * i / 40; const [x, y] = P(uOfZ(Math.abs(z)), th, z); if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }
+      ctx.stroke();
+    }
+    // parallels
+    for (const z of levels) {
+      const isThroat = Math.abs(z) < 1e-9;
+      ctx.strokeStyle = isThroat ? ring : surf; ctx.lineWidth = isThroat ? 2.6 : 1.2;
+      halfRing(uOfZ(Math.abs(z)), z, pass === 'back');
+    }
+    ctx.restore();
+  }
+
+  // traveller through the tunnel along the axis, top to bottom
+  const [tx0, ty0] = P(0, 0, ZMAX + 0.5), [tx1, ty1] = P(0, 0, -ZMAX - 0.55);
+  arrow(ctx, tx0, ty0, tx1, ty1, trav, 2.5, true);
+  text(`traveller at ${v.toFixed(3)} c`, tx0 + 10, ty0 + 4, travT, 12);
+
+  // one-g limit ring in the throat plane
+  const rmin = minThroat(v, sh.bp0), q = rmin / b0, off = q > UMAX * 1.08, qd = off ? UMAX * 1.08 : q;
+  ctx.save(); ctx.strokeStyle = trav; ctx.lineWidth = 2; ctx.setLineDash([7, 5]);
+  ctx.beginPath();
+  for (let i = 0; i <= 96; i++) { const [x, y] = P(qd, Math.PI * 2 * i / 96, 0); if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }
+  ctx.stroke(); ctx.restore();
+  const [lx, ly] = P(qd, 0, 0);
+  const safe = q <= 1.005;                 // one percent of slack so a throat right on the bound reads as safe
+  text(`one-g limit at this speed: ${km(rmin)}${off ? ', off the chart' : ''}`, Math.min(lx + 8, 560), ly + (safe ? 22 : -14), travT, 12);
+  text(safe ? 'no wider than the throat: safe' : 'wider than the throat: too fast', Math.min(lx + 8, 560), ly + (safe ? 38 : 2), travT, 11.5);
+
+  // labels on the surface: mouths at the front rims, throat on the left so it never meets the limit label
+  const [ax, ay] = P(UMAX, -Math.PI / 2, ZMAX);
+  text('mouth A', ax + 30, ay - 14, ring, 14, 'left', true);
+  const [bx, by] = P(UMAX, -Math.PI / 2, -ZMAX);
+  text('mouth B', bx + 30, by + 18, ring, 14, 'left', true);
+  const [thx, thy] = P(1, Math.PI, 0);
+  text('throat', thx - 10, thy - 16, ring, 14, 'right', true);
+  text('held open by matter with', thx - 10, thy + 2, MUTED, 11, 'right');
+  text('negative energy along', thx - 10, thy + 16, MUTED, 11, 'right');
+  text('the rays through it', thx - 10, thy + 30, MUTED, 11, 'right');
+
+  // scale bar
+  line(40, H - 34, 40 + s, H - 34, INK, 2); line(40, H - 40, 40, H - 28, INK, 2); line(40 + s, H - 40, 40 + s, H - 28, INK, 2);
+  text(`b0 = ${km(b0)}`, 40 + s / 2, H - 48, INK, 12, 'center');
+  text(`${sh.name} tunnel, b(r) = ${S.shape === 'ellis' ? 'b0²/r' : '√(b0 r)'}, no redshift`, 40, 28, MUTED, 12);
+
+  // readout
+  const g = gamma(v), term = tideTerm(b0, v, sh.bp0), ok = term <= BOUND * 1.01;
+  const other = SHAPES[S.shape === 'ellis' ? 'mt' : 'ellis'];
+  const box = document.getElementById('readout');
+  box.classList.toggle('hot', !ok);
+  box.innerHTML = `Throat radius <b>${km(b0)}</b>, crossing at <b>${v.toFixed(3)} c</b> (γ = ${g.toFixed(g < 1.01 ? 5 : 3)}). `
+    + `Sideways tidal term at the throat, γ²v²(1 − b′<sub>0</sub>)/(2b<sub>0</sub>²) = <b>${sci(term)}</b> m<sup>-2</sup> against the one-g bound of <b>${sci(BOUND, 0)}</b> m<sup>-2</sup>: `
+    + (ok ? `<b>passes</b>. This throat is safe up to <b>${maxSpeed(b0, sh.bp0).toFixed(3)} c</b>.` : `<b>fails</b>, a body would feel more than one g of stretch. Slow down to <b>${maxSpeed(b0, sh.bp0).toFixed(3)} c</b> or widen the throat.`)
+    + ` Smallest throat at this speed: <b>${km(rmin)}</b> for the ${sh.name} shape (b′<sub>0</sub> = ${num(sh.bp0)}), <b>${km(minThroat(v, other.bp0))}</b> for the ${other.name} shape.`
+    + ` Holding the throat open: tension c⁴/(8πG b<sub>0</sub>²) = <b>${sci(tension(b0))}</b> Pa, and the mass inside the throat, b<sub>0</sub>c²/2G, is <b>${suns(throatMass(b0))}</b> of negative-energy matter.`;
+}
+
+// ---------- view 2: the time machine ----------
+function drawMachine() {
+  const { vm: v, T } = S;
+  const g = gamma(v), dt = offset(v, T);
+  clear(ctx, W, H, PANEL);
+
+  // two clocks on the left: one full turn = T years of home time
+  const clock = (x, y, r, frac, col, colT, title, reading) => {
+    ctx.save();
+    ctx.globalAlpha = 0.4; ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x, y); ctx.arc(x, y, r, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * frac); ctx.closePath(); ctx.fill();
+    ctx.globalAlpha = 1; ctx.strokeStyle = colT; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.stroke();
+    for (let i = 0; i < 12; i++) { const a = Math.PI * 2 * i / 12; line(x + Math.cos(a) * (r - 6), y + Math.sin(a) * (r - 6), x + Math.cos(a) * r, y + Math.sin(a) * r, colT, 1.5); }
+    const a = -Math.PI / 2 + Math.PI * 2 * frac;
+    line(x, y, x + Math.cos(a) * r * 0.8, y + Math.sin(a) * r * 0.8, INK, 3);
+    ctx.restore();
+    text(title, x, y - r - 18, colT, 13, 'center', true);
+    text(reading, x, y + r + 18, INK, 13, 'center');
+  };
+  clock(125, 150, 58, 1, DEMO.a.mark, DEMO.a.text, 'mouth A, stayed home', `clock reads ${yr(T)} yr`);
+  clock(125, 380, 58, 1 / g, DEMO.b.mark, DEMO.b.text, 'mouth B, went and came back', `clock reads ${yr(T / g)} yr`);
+  text(`one full turn = ${yr(T)} years of home time`, 125, 480, MUTED, 11.5, 'center');
+  text(`B lags A by ${yr(dt)} yr`, 125, 500, INK, 12.5, 'center');
+
+  // spacetime diagram on the right, c = 1, years and light-years
+  const ox = 372, tmin = -0.06 * T, tmax = 1.45 * T, k = (505 - 45) / (tmax - tmin);
+  const X = x => ox + x * k, Y = t => 505 - (t - tmin) * k;
+  const D = 55 / k;                         // the gap between the mouths, fixed on screen, not to scale
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+  for (let i = 0; i <= 8; i++) { const t = tmin + (tmax - tmin) * i / 8; line(260, Y(t), W - 10, Y(t), GRID, 1); }
+  text('home time ↑', 268, 74, MUTED, 12);
+  text('space →', W - 20, 520, MUTED, 12, 'right');
+  line(260, Y(0), W - 10, Y(0), MUTED, 1, [3, 5]); text('B leaves', W - 16, Y(0) - 9, MUTED, 11, 'right');
+  line(260, Y(T), W - 10, Y(T), MUTED, 1, [3, 5]); text(`B is back, ${yr(T)} yr later`, W - 16, Y(T) - 9, MUTED, 11, 'right');
+
+  // worldlines: A at x = 0, B out to D + vT/2 and back
+  line(X(0), Y(tmin), X(0), Y(tmax), DEMO.a.mark, 3);
+  const bpath = [[D, tmin], [D, 0], [D + v * T / 2, T / 2], [D, T], [D, tmax]];
+  ctx.strokeStyle = DEMO.b.mark; ctx.lineWidth = 3; ctx.beginPath();
+  bpath.forEach(([x, t], i) => i ? ctx.lineTo(X(x), Y(t)) : ctx.moveTo(X(x), Y(t))); ctx.stroke();
+  text('A', X(0) - 12, Y(tmax) + 8, DEMO.a.text, 14, 'right', true);
+  text('B', X(D) + 12, Y(tmax) + 8, DEMO.b.text, 14, 'left', true);
+  text(`B travels at ${v.toFixed(2)} c`, X(D + v * T / 2) + 12, Y(T / 2), DEMO.b.text, 12, 'left', true);
+
+  // each mouth's own clock ticks, every T/6 of proper time; B's are stretched by gamma while it travels
+  const bAt = t => t <= 0 ? D : t <= T / 2 ? D + v * t : t <= T ? D + v * (T - t) : D;
+  for (let n = 1; n * T / 6 <= tmax; n++) {
+    const tau = n * T / 6;
+    line(X(0) - 6, Y(tau), X(0) + 6, Y(tau), INK, 1.5);
+    const tb = tau <= T / g ? g * tau : T + (tau - T / g);
+    if (tb <= tmax) { const xb = bAt(tb); line(X(xb) - 6, Y(tb), X(xb) + 6, Y(tb), INK, 1.5); }
+  }
+  text('ticks: each mouth’s own clock, every sixth of the trip', 268, 530, MUTED, 11);
+
+  // the identified crossing: in at B after the trip, out at A at the same clock reading
+  const tIn = 1.28 * T, tOut = tIn - dt;
+  arrow(ctx, X(D), Y(tIn), X(0), Y(tOut), DEMO.signal.mark, 3, true);
+  dot(X(D), Y(tIn), DEMO.b.text); dot(X(0), Y(tOut), DEMO.a.text);
+  text('in at mouth B', X(D) + 12, Y(tIn) - 12, DEMO.signal.text, 12.5, 'left', true);
+  text('out at mouth A', X(0) - 10, Y(tOut) - 16, DEMO.signal.text, 12.5, 'right', true);
+  text(`${yr(dt)} yr earlier`, X(0) - 10, Y(tOut) + 2, DEMO.signal.text, 12.5, 'right', true);
+  text('through the throat', (X(D) + X(0)) / 2 + 60, (Y(tIn) + Y(tOut)) / 2 + 14, DEMO.signal.text, 11.5, 'left');
+
+  const box = document.getElementById('readout');
+  box.classList.toggle('hot', true);
+  box.innerHTML = `Mouth B goes out and back at <b>${v.toFixed(2)} c</b> for <b>${yr(T)}</b> years of home time, so γ = <b>${g.toFixed(2)}</b> and its clock advances only T/γ = <b>${yr(T / g)}</b> years. `
+    + `The tunnel joins the mouths at equal clock readings, so the offset is T(1 − 1/γ) = <b>${yr(dt)} years</b>. `
+    + `Walk in at mouth B in year N, come out at mouth A in year N minus <b>${yr(dt)}</b>. Walk in at A instead and you come out of B in year N plus ${yr(dt)}. `
+    + `Any pair of mouths closer than <b>${yr(dt)} light-years</b> now has a loop, through the tunnel and back around the outside, that returns before it left.`;
+}
+draw();
+
+initPopovers({
+  embed: { title: 'Embedding diagram', html: '<p>Take one flat slice through the wormhole, the equator at one instant, and bend it in an imaginary extra direction until distances on the bent sheet match the real ones. The result is the trumpet shape: two flat sheets, our side and the far side, joined by a neck. For a tunnel with shape function b(r) the height of the sheet obeys dz/dr = (r/b − 1)<sup>-1/2</sup>, and for the Ellis tunnel that integrates to z = b<sub>0</sub> arccosh(r/b<sub>0</sub>).</p>' },
+  tide: { title: 'Tidal stretch', html: '<p>Gravity pulls your feet a little harder than your head, and curved space squeezes you sideways. Morris and Thorne ask that the difference across a two-metre body stay under one Earth g. With no redshift the sideways term at the throat is</p><div class="eq">γ²v²(1 − b′<sub>0</sub>) / (2 b<sub>0</sub>²) ≤ 1/(10<sup>8</sup> m)²</div><p>where b′<sub>0</sub> is the slope of the shape function at the throat and 1/(10<sup>8</sup> m)² is g/(2 m c²) rounded as the paper rounds it. Ellis has b′<sub>0</sub> = −1, Morris and Thorne’s design shape has b′<sub>0</sub> = ½. See <a href="../pages/constraints/haz-3.html">HAZ-3</a>.</p>' },
+  gamma: { title: 'Gamma', html: '<p>γ = 1/√(1 − v²/c²), the factor by which a moving clock runs slow. At 0.9c it is about 2.3: a one-year trip by home clocks is 0.44 years by the traveller’s clock.</p>' },
+  minkowski: { title: 'Spacetime diagram', html: '<p>Position runs left to right, time runs upward, and the units are chosen so light would move at 45°. A mouth standing still is a vertical line. Mouth B’s trip is a V: out at speed v, then back. The tick marks are each mouth’s own clock, and you can see B’s ticks spread out while it moves.</p>' },
+  exotic: { title: 'Exotic matter', html: '<p>Matter whose tension along the tunnel is larger than its energy density, so that light rays passing through the throat see negative energy on average. That is what it takes to make a bundle of rays spread apart again after squeezing through the neck. No known material does it; the Casimir effect does something similar, very weakly, at micron scales.</p>' },
+  haz3: { title: 'Register HAZ-3', html: '<p>Morris and Thorne bound the tidal terms at the throat by about (10<sup>8</sup> m)<sup>-2</sup> for one g across two metres. Solving the sideways bound for the throat radius gives</p><div class="eq">b<sub>0</sub> ≥ γv × 10<sup>8</sup> m × √((1 − b′<sub>0</sub>)/2)</div><p>For their design shape, b′<sub>0</sub> = ½, at 0.01c that is 500 km, the register’s number. The Ellis tunnel drawn here flares harder at the throat, b′<sub>0</sub> = −1, and needs twice that. See <a href="../pages/constraints/haz-3.html">HAZ-3</a>.</p>' },
+  sta2: { title: 'Register STA-2', html: '<p>At the throat the radial tension is c⁴/(8πG b<sub>0</sub>²), about 2 × 10<sup>31</sup> Pa at 500 km, and it must exceed the energy density, which violates every energy condition. The effective mass inside the throat is b<sub>0</sub>c²/2G, about 170 suns at 500 km, so the bigger the safe throat, the more exotic matter it takes. See <a href="../pages/constraints/sta-2.html">STA-2</a>.</p>' },
+  cau3: { title: 'Register CAU-3', html: '<p>Morris, Thorne and Yurtsever, 1988: if a wormhole can be built and kept open for travel, it can be turned into a time machine. Move one mouth at speed v for a home time T; its clock lags by T(1 − 1/γ), and the short tunnel still joins the mouths at equal clock readings. Once the lag exceeds the light travel time between the mouths, a trip through and back around returns before it left. See <a href="../pages/constraints/cau-3.html">CAU-3</a>.</p>' },
+  twin: { title: 'Why no FTL is needed', html: '<p>Mouth B moves slower than light, the traveller moves slower than light, and nothing in the tunnel moves at all. The time travel comes from the twin paradox, which is ordinary special relativity, plus one geometric fact: the tunnel is shorter inside than the way round, so it cannot tell that the outside clocks have drifted apart. That is why the register scores this wormhole as satisfying <a href="../pages/constraints/lor-1.html">LOR-1</a> and still violating CAU-3.</p>' },
+  cau2: { title: 'Register CAU-2', html: '<p>Hawking, 1992: the laws of physics do not allow closed timelike curves to appear, because the energy of quantum fields grows without bound as a loop is about to close and the back reaction stops it. It is a conjecture, argued in semiclassical gravity, and a full quantum theory of gravity might not obey it. Kim and Thorne argued the divergence is weak enough to be cut off. See <a href="../pages/constraints/cau-2.html">CAU-2</a>.</p>' },
+  ene7: { title: 'Register ENE-7', html: '<p>Friedman, Schleich and Witt, 1993: in a spacetime that is flat far away and obeys the averaged null energy condition, every path from far past to far future can be slid off any tunnel, so no wormhole is a shortcut. Between 2007 and 2017 that condition was proved for the light rays the theorem needs. The escape is a wormhole that is longer inside than the way round: Gao, Jafferis and Wall and Maldacena, Milekhin and Popov build exactly those, and on them the time-machine step cannot close a loop. See <a href="../pages/constraints/ene-7.html">ENE-7</a>.</p>' },
+});
+</script>
+</body></html>

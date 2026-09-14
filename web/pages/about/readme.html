@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALARIA · TALARIA</title>
+<link rel="stylesheet" href="../../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../../site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="icon" href="../../favicon.svg">
+</head><body class="page">
+<nav class="top"><a href="../../index.html">TALARIA</a><span>/</span><a href="../../atlas.html">atlas</a><span>/</span><span class="kind">method</span></nav>
+<main class="doc">
+<h1>TALARIA</h1>
+<p><em>Every way anyone has proposed to beat light, real or invented, catalogued, graded and scored against the physics that says you can't.</em></p>
+<h2>Why TALARIA</h2>
+<p>The talaria were the winged sandals of Hermes, the oldest faster-than-anything device in Western storytelling. Nobody in the myths asks how they work. That is the interesting part: three thousand years later we still want the sandals, and physics still hasn't decided whether they are impossible or merely very expensive. This project keeps both halves in one room. The real proposals get the scrutiny of the actual theorems that constrain them. The fictional ones get sorted by which loophole they are quietly using, and graded on whether the story noticed the bill.</p>
+<h2>The idea</h2>
+<p>Every faster-than-light scheme, whether it came from a physics journal or a screenplay, leans on one of a small number of loopholes. That is the spine of the catalogue:</p>
+<div class='tablewrap'><table><thead><tr><th>Loophole</th><th>What it does</th><th>Real physics</th><th>Fiction</th></tr></thead><tbody><tr><td><strong>L1 Faster in the same space</strong></td><td>The ship itself outruns light</td><td>Tachyons</td><td>Lensman's inertialess drive, ludicrous speed</td></tr><tr><td><strong>L2 Move the space, not the ship</strong></td><td>Spacetime carries you; locally you never exceed c</td><td>Alcubierre, Natário, Lentz, Krasnikov tubes</td><td>Star Trek warp</td></tr><tr><td><strong>L3 Take a shortcut</strong></td><td>Connect two distant points through a tunnel or fold</td><td>Morris-Thorne wormholes</td><td>Interstellar, Stargate, the Expanse ring gates, Dune's fold-space</td></tr><tr><td><strong>L4 Leave the manifold</strong></td><td>Step into another space with different rules</td><td>Extra-dimensional proposals</td><td>Hyperspace, subspace, slipspace, the Warp</td></tr><tr><td><strong>L5 Send the message, not the ship</strong></td><td>Information beats light even if matter can't</td><td>Entanglement signalling, tunnelling, the Scharnhorst effect</td><td>The ansible</td></tr><tr><td><strong>L6 Not actually FTL</strong></td><td>Everything that gets filed here by mistake</td><td>Time dilation, the EM drive</td><td>Cryosleep, generation ships, the ship that stays still</td></tr></tbody></table></div>
+<p>Against those sits the <strong>constraint register</strong>: every theorem, inequality and no-go result that puts a price on the loophole. Causality first, because any FTL signal in a Lorentz-invariant world is a message to your own past. Then the energy conditions, the quantum inequalities that cap how much negative energy you can borrow and for how long, the horizon that stops a warp-bubble crew steering, the bootstrap problem and semiclassical instability. And the result that a warp bubble drops out of warp with a shotgun blast of everything it swept up on the way.</p>
+<p>Two scoring matrices come out of that:</p>
+<ol><li><strong>Physics matrix.</strong> Every real proposal against every constraint: satisfies, violates, dodges or silent. Plus the bill: what each one needs that we do not have.</li><li><strong>Fiction matrix.</strong> Every notable invented drive by loophole, notability and coherence: does the story engage with the physics, follow its own rules, or wave its hands? And what does it do about the time-travel implication?</li></ol>
+<p>The two matrices join on the loophole column. That join is the point of the project: it shows which fictional drives have a real cousin, and what that cousin costs.</p>
+<h2>Layout</h2>
+<pre><code>constraints/     the constraint register: one page per no-go result, with citations
+theories/        one dossier per proposal; physics/ and fiction/ from separate templates
+lineage/         who begat whom: Alcubierre was answering Star Trek, Thorne was answering Sagan
+matrix/          the two scoring matrices, generated from the dossiers
+web/             the interactive site: atlas, diagrams and runnable demos
+tools/           health checks, index and matrix builders</code></pre>
+<p>Start at <a href="../about/grading.html">GRADING.md</a> for the vocabulary, then <a href="../../atlas.html#register">constraints/REGISTER.md</a>, then the <a href="https://github.com/mikebertin/talaria/blob/main/theories/CATALOGUE.md">theory catalogue</a>.</p>
+<h2>Editorial stance</h2>
+<p>Neutral scoring, honest about consensus. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.</p>
+<h2>Running the site</h2>
+<pre><code>python3 -m http.server 8191 --directory web</code></pre>
+<p>Then open http://localhost:8191/. No build step, no dependencies. Health checks: <code>python3 tools/wiki.py</code>.</p>
+<h2>Status</h2>
+<p>Research phase, M0 complete. See <a href="https://github.com/mikebertin/talaria/blob/main/ROADMAP.md">ROADMAP.md</a>.</p>
+<p><em>Any quotes used in this project are real, sourced attributions. No invented quotes.</em></p>
+</main>
+<footer>TALARIA · every faster-than-light scheme, real or invented, scored against the physics that says you can't · <a href="https://github.com/mikebertin/talaria">source</a></footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+</body></html>

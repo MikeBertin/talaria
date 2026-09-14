@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pick a drive, pick a frame · TALARIA</title>
+<link rel="stylesheet" href="../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../vendor/stoa/controls.css">
+<link rel="stylesheet" href="../vendor/stoa/notice.css">
+<link rel="stylesheet" href="../vendor/stoa/popover.css">
+<link rel="stylesheet" href="../palette.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../favicon.svg">
+<style>
+  .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
+  .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  .panel select { width:100%; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:7px 10px; font:inherit; font-size:13px; margin:4px 0 10px; }
+  .panel input[type=range]:disabled { opacity:.35; }
+  .readout-box .rd-head { display:flex; flex-wrap:wrap; gap:8px 10px; align-items:center; margin-bottom:6px; }
+  .readout-box .rd-head a { font-weight:700; color:var(--ink); text-decoration:none; }
+  .readout-box .rd-head a:hover { color:var(--accent); }
+  .readout-box p { margin:6px 0; }
+  .readout-box .mark { font-weight:700; }
+  .readout-box .note { color:var(--muted); font-size:13px; }
+  .readout-box .dossier { font-size:12.5px; }
+</style>
+</head><body>
+<nav class="top"><a href="../index.html">TALARIA</a><span>/</span><span class="kind">demo · pick a drive, pick a frame</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">Pick a drive, pick a frame</h1>
+  <p class="sub">Every faster-than-light drive in the catalogue, from warp bubbles to jump gates to ansibles, can carry a message out and a reply back. Choose one, set how fast the other observer is moving and see whether the reply lands before you sent. Then read what the story itself says about that.</p>
+</header>
+<main>
+  <div class="demo-wrap">
+    <div>
+      <canvas id="cv" width="760" height="560"></canvas>
+      <div class="legend-row">
+        <span><i style="background:var(--a-mark)"></i>you, at rest</span>
+        <span><i style="background:var(--b-mark)"></i>the other observer, moving</span>
+        <span><i style="background:var(--light-mark)"></i>light</span>
+        <span><i style="background:var(--signal-mark)"></i>the drive carries it out</span>
+        <span><i style="background:var(--reply-mark)"></i>it comes back the same way</span>
+      </div>
+      <div class="readout-box" id="readout"></div>
+    </div>
+    <div class="panel">
+      <h2>Controls</h2>
+      <label>The drive, grouped by <span class="x" data-pop="loophole">loophole</span></label>
+      <select id="drive" aria-label="Choose a drive"></select>
+      <label>Drive speed, in multiples of c <span class="val" id="mVal"></span></label>
+      <input type="range" id="m" min="11" max="300" value="100">
+      <label>The other observer's speed, as a fraction of c <span class="val" id="vVal"></span></label>
+      <input type="range" id="v" min="0" max="98" value="30">
+      <label>Whose frame is drawn</label>
+      <div class="seg" id="frameSeg">
+        <button data-frame="a" class="active" aria-pressed="true">yours</button>
+        <button data-frame="b" aria-pressed="false">theirs</button>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Diagram is a <span class="x" data-pop="minkowski">spacetime diagram</span>: position across, time up, light at 45°. The other observer starts one light-unit away, so one time unit is the time light takes to cross that gap. Everything above the dashed line happened after you sent. If the return leg lands below it, it arrived before you sent.</p>
+    </div>
+  </div>
+
+  <section class="notice">
+    <h2 class="notice-title">Things to notice</h2>
+    <div class="notice-grid">
+      <div class="ncard"><h3>An instant jump needs <span>almost no motion</span> to break</h3><p>Pick any shortcut, hyperspace or ansible drive and nudge the other observer's speed to 0.05c. The return leg already lands before you sent. The faster the drive, the lower the speed that breaks it, all the way down to zero.</p><span class="x why" data-pop="instant">The threshold</span></div>
+      <div class="ncard"><h3>Warp and hyperfast ships get a <span>speed dial</span></h3><p>Pick a warp drive or a faster-in-flat-space ship and the speed slider wakes up. At 1.1c the other observer needs nearly 0.995c to cause trouble. At 20c, a tenth of light speed does it.</p><span class="x why" data-pop="dial">Why the dial matters</span></div>
+      <div class="ncard"><h3>The sublight ships <span>cannot build the diagram</span></h3><p>Pick a generation ship, a ramjet or a hibernation liner. Slide the other observer's speed anywhere you like. The return leg always lands after you sent, and if they outrun your message it never reaches them at all.</p><span class="x why" data-pop="sublight">Why nothing goes wrong</span></div>
+      <div class="ncard"><h3>Some stories <span>own the bill</span></h3><p>The register marks a drive C-owns when the story admits the reply can beat the question and does something with it. Among them: <span id="ownsList"></span>. Pick one and read its note under the diagram.</p><span class="x why" data-pop="owns">All the owners</span></div>
+      <div class="ncard"><h3>The dodgers lean on a <span>preferred frame</span></h3><p>A few stories keep their drive and avoid the paradox by giving "instant" one fixed meaning for everyone, a rule the register files under CAU-4. Pick Le Guin's ansible or the Foundation jump and read the readout's mark.</p><span class="x why" data-pop="dodges">Register CAU-4</span></div>
+      <div class="ncard"><h3>Switching frames <span>changes nothing</span></h3><p>Draw it in their frame instead. The return leg still lands on your worldline below the send event. Whether you got the reply before you asked is a fact about your worldline, not about a viewpoint.</p><span class="x why" data-pop="invariant">What is invariant</span></div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>What is going on</h2>
+    <p>The register's first causality entry, <a href="../pages/constraints/cau-1.html">CAU-1</a>, says that any signal faster than light in one frame runs backwards in time in some other frame, and that two such signals between people in relative motion deliver the answer before the question. That is true of any mechanism at all. A warp bubble that moves the space, a wormhole that shortens the path, a jump through hyperspace and an ansible that sends only the message all count as the same kind of signal once they beat light between two points. This page treats each drive as exactly that signal and draws the two-leg exchange from <a href="antitelephone.html">the antitelephone demo</a>.</p>
+    <p>The only way out that keeps the drive is <a href="../pages/constraints/cau-4.html">CAU-4</a>, the preferred-frame escape: if "instant" means instant in one special frame for everyone, the two legs no longer add up. The cost is that special relativity is no longer the whole story for the FTL sector, and the story has to say what picks the frame. The catalogue marks each fictional drive on what it does about all this. Most say nothing. A few own it and build the plot on it. A few dodge it with a stated rule. The sublight ships, kept as a control group, never owed the bill in the first place.</p>
+  </section>
+</main>
+<footer>TALARIA · pick a drive, pick a frame · Einstein 1907, Tolman 1917, Benford, Book and Newcomb 1970, Liberati, Sonego and Visser 2002</footer>
+<script src="../data/talaria.js"></script>
+<script type="module">
+import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
+import { bindSlider, seg } from '../vendor/stoa/controls.js';
+import { initPopovers } from '../vendor/stoa/popover.js';
+import { DEMO, LOOPHOLES, PANEL, GRID, MUTED } from '../palette.js';
+
+// PURE-BEGIN
+// Effective signal speed for a drive, c = 1, from its loophole class.
+// L1 and L2 take the slider multiple; L3, L4 and L5 are instant in the
+// sender's frame (u = 1000); L6 never beats light (u = 0.5).
+const INSTANT = 1000, SUBLIGHT = 0.5;
+function effectiveU(loophole, mult) {
+  if (loophole === 'L1' || loophole === 'L2') return mult;
+  if (loophole === 'L6') return SUBLIGHT;
+  return INSTANT;
+}
+function defaultMult(loophole) { return loophole === 'L2' ? 10 : 5; }
+function threshold(u) { return 2 * u / (1 + u * u); }
+
+// Events in A's frame, c = 1. A at x = 0. B at x = d + v t. The outbound
+// leg runs at +u in A's frame; the return leg runs at -u in B's frame.
+function events(v, u, d) {
+  if (u <= v) return { send: [0, 0], reach: false };            // sublight: B outruns the message
+  const t1 = d / (u - v), x1 = u * t1;                          // message reaches B
+  const w = (v - u) / (1 - u * v);                              // return velocity in A's frame
+  const t2 = t1 - x1 / w;                                       // return reaches x = 0
+  return { send: [0, 0], recv: [x1, t1], back: [0, t2], w, reach: true };
+}
+function boost(p, v) { const g = 1 / Math.sqrt(1 - v * v); const [x, t] = p; return [g * (x - v * t), g * (t - v * x)]; }
+
+// Group by loophole L1..L6, titles sorted inside each group.
+function grouped(drives) {
+  const out = {};
+  for (const d of drives) (out[d.loophole] ||= []).push(d);
+  for (const k in out) out[k].sort((a, b) => a.title.localeCompare(b.title));
+  return Object.keys(out).sort().map(k => [k, out[k]]);
+}
+const MARK_WORDS = {
+  'C-owns': 'This story owns the bill.',
+  'C-dodges': 'This story dodges it with a stated rule.',
+  'C-silent': 'This story never mentions it.'
+};
+// PURE-END
+
+const W = 760, H = 560;
+const cv = document.getElementById('cv');
+const ctx = setup(cv, W, H);
+const DRIVES = window.TALARIA.fiction;
+const byId = Object.fromEntries(DRIVES.map(d => [d.slug, d]));
+const S = { v: 0.3, mult: 10, d: 1, frame: 'a', drive: byId['star-trek-warp-drive'] || DRIVES[0] };
+
+// populate the select
+const sel = document.getElementById('drive');
+for (const [L, list] of grouped(DRIVES)) {
+  const g = document.createElement('optgroup');
+  g.label = `${L} · ${LOOPHOLES[L].name}`;
+  for (const d of list) { const o = document.createElement('option'); o.value = d.slug; o.textContent = d.title; g.appendChild(o); }
+  sel.appendChild(g);
+}
+sel.value = S.drive.slug;
+
+const mEl = document.getElementById('m'), mVal = document.getElementById('mVal');
+function hasDial() { return S.drive.loophole === 'L1' || S.drive.loophole === 'L2'; }
+function syncDial() {
+  mEl.disabled = !hasDial();
+  if (hasDial()) { mEl.value = Math.round(S.mult * 10); mVal.textContent = S.mult.toFixed(1) + ' c'; }
+  else mVal.textContent = S.drive.loophole === 'L6' ? 'sublight, no dial' : 'instant';
+}
+function pickDrive(slug) {
+  S.drive = byId[slug];
+  if (hasDial()) S.mult = defaultMult(S.drive.loophole);
+  syncDial();
+  draw();
+}
+sel.addEventListener('change', () => pickDrive(sel.value));
+bindSlider('m', { out: 'mVal', scale: 0.1, fmt: x => x.toFixed(1) + ' c', set: x => { if (hasDial()) S.mult = x; }, after: () => { syncDial(); draw(); } });
+bindSlider('v', { out: 'vVal', scale: 0.01, fmt: x => x.toFixed(2) + ' c', set: x => S.v = x, after: draw });
+seg('frameSeg', d => { S.frame = d.frame; draw(); });
+
+function draw() {
+  const { v, d } = S;
+  const u = effectiveU(S.drive.loophole, S.mult);
+  const L = S.drive.loophole;
+  const E = events(v, u, d);
+  const inB = S.frame === 'b';
+  const tr = p => inB ? boost(p, v) : p;
+  const pts = (E.reach ? [E.send, E.recv, E.back] : [E.send, [d, 0], [d + v * 1.5, 1.5]]).map(tr);
+  const xs = pts.map(p => p[0]), ts = pts.map(p => p[1]);
+  const span = Math.max(1.6, ...xs.map(Math.abs), ...ts.map(Math.abs)) * 1.15;
+  const ox = W * 0.5, oy = H * 0.55, k = Math.min(W, H) * 0.42 / span;
+  const X = x => ox + x * k, Y = t => oy - t * k;
+
+  clear(ctx, W, H, PANEL);
+  ctx.strokeStyle = GRID; ctx.lineWidth = 1;
+  for (let i = -6; i <= 6; i++) { const s = i * span / 3; ctx.beginPath(); ctx.moveTo(X(s), 0); ctx.lineTo(X(s), H); ctx.stroke(); ctx.beginPath(); ctx.moveTo(0, Y(s)); ctx.lineTo(W, Y(s)); ctx.stroke(); }
+  arrow(ctx, X(-span * 1.05), Y(0), X(span * 1.05), Y(0), MUTED, 1.5);
+  arrow(ctx, X(0), Y(-span * 1.05), X(0), Y(span * 1.05), MUTED, 1.5);
+  label(ctx, 'space →', X(span * 0.8), Y(0) + 18, MUTED, 12);
+  label(ctx, 'time ↑', X(0) + 30, Y(span * 0.95), MUTED, 12);
+  // light cone through the send event
+  ctx.strokeStyle = DEMO.light.mark; ctx.lineWidth = 1.5; ctx.setLineDash([6, 6]);
+  const s0 = tr(E.send);
+  for (const sgn of [1, -1]) { ctx.beginPath(); ctx.moveTo(X(s0[0] - sgn * span * 2), Y(s0[1] - span * 2)); ctx.lineTo(X(s0[0] + sgn * span * 2), Y(s0[1] + span * 2)); ctx.stroke(); }
+  label(ctx, 'light', X(s0[0] + span * 0.62), Y(s0[1] + span * 0.62) - 10, DEMO.light.text, 11);
+  // "now" line through send event
+  ctx.strokeStyle = MUTED; ctx.setLineDash([3, 5]); ctx.beginPath(); ctx.moveTo(0, Y(s0[1])); ctx.lineTo(W, Y(s0[1])); ctx.stroke(); ctx.setLineDash([]);
+  label(ctx, 'the moment you send', 8 + 60, Y(s0[1]) - 6, MUTED, 11);
+  // worldlines
+  const line = (p, q, col, wdt) => { ctx.strokeStyle = col; ctx.lineWidth = wdt; ctx.beginPath(); ctx.moveTo(X(p[0]), Y(p[1])); ctx.lineTo(X(q[0]), Y(q[1])); ctx.stroke(); };
+  const T = span * 2;
+  line(tr([0, -T]), tr([0, T]), DEMO.a.mark, 2.5);
+  line(tr([d - v * T, -T]), tr([d + v * T, T]), DEMO.b.mark, 2.5);
+  const al = tr([0, T * 0.45]); label(ctx, 'you', X(al[0]) + 16, Y(al[1]), DEMO.a.text, 13);
+  const bl = tr([d + v * T * 0.45, T * 0.45]); label(ctx, 'them', X(bl[0]) + 20, Y(bl[1]), DEMO.b.text, 13);
+  // drive tag, in the loophole's own colour with its L-code
+  ctx.save(); ctx.textAlign = 'left'; ctx.font = 'italic 600 12px Georgia, serif'; ctx.fillStyle = LOOPHOLES[L].text; ctx.fillText(`${L} · ${LOOPHOLES[L].name}`, 12, 20); ctx.restore();
+  // signals
+  const a1 = tr(E.send);
+  if (E.reach) {
+    const a2 = tr(E.recv), a3 = tr(E.back);
+    arrow(ctx, X(a1[0]), Y(a1[1]), X(a2[0]), Y(a2[1]), DEMO.signal.mark, 3, true);
+    arrow(ctx, X(a2[0]), Y(a2[1]), X(a3[0]), Y(a3[1]), DEMO.reply.mark, 3, true);
+    const mid1 = [(a1[0] + a2[0]) / 2, (a1[1] + a2[1]) / 2], mid2 = [(a2[0] + a3[0]) / 2, (a2[1] + a3[1]) / 2];
+    label(ctx, 'out', X(mid1[0]), Y(mid1[1]) + 14, DEMO.signal.text, 11);
+    label(ctx, 'back', X(mid2[0]) - 22, Y(mid2[1]), DEMO.reply.text, 11);
+    // each label sits on its own side so they stay apart when the reply lands a few pixels from the send event
+    for (const [p, col, name, dx, dy] of [[a1, DEMO.signal.text, 'send', -26, -12], [a2, DEMO.b.text, 'they get it, reply', 46, -12], [a3, DEMO.reply.text, 'reply lands', -40, 14]]) {
+      ctx.fillStyle = col; ctx.beginPath(); ctx.arc(X(p[0]), Y(p[1]), 5, 0, Math.PI * 2); ctx.fill();
+      label(ctx, name, X(p[0]) + dx, Y(p[1]) + dy, col, 12);
+    }
+  } else {
+    // sublight message that never catches them: draw it to the edge
+    const far = tr([u * T, T]);
+    arrow(ctx, X(a1[0]), Y(a1[1]), X(far[0]), Y(far[1]), DEMO.signal.mark, 3, true);
+    ctx.fillStyle = DEMO.signal.text; ctx.beginPath(); ctx.arc(X(a1[0]), Y(a1[1]), 5, 0, Math.PI * 2); ctx.fill();
+    label(ctx, 'send', X(a1[0]) + 9, Y(a1[1]) - 8, DEMO.signal.text, 12);
+    label(ctx, 'your message, never catching up', X(a1[0]) + 40, Y(a1[1] + span * 0.9), DEMO.signal.text, 11);
+  }
+  readout(u, E);
+}
+
+function readout(u, E) {
+  const { v } = S, d = S.drive, L = d.loophole;
+  const box = document.getElementById('readout');
+  const thr = threshold(u);
+  const dossier = `../pages/fiction/${d.slug}.html`;
+  const head = `<div class="rd-head"><a href="${dossier}">${d.title}</a><span class="chip ${L}">${L} · ${LOOPHOLES[L].name}</span></div>`;
+  let speed, result, hot = false;
+  if (L === 'L6') {
+    speed = `This drive never beats light. The register keeps it as a control group, so the diagram uses an ordinary signal at <b>${u.toFixed(1)}c</b>.`;
+    if (!E.reach) result = `At ${v.toFixed(2)}c the other observer outruns your message and it never reaches them. No reply, no paradox. Slow them below ${u.toFixed(1)}c to see the return leg.`;
+    else result = `The return leg lands <b>${E.back[1].toFixed(2)}</b> time units <b>after</b> you send, and it does so in every frame. A signal slower than light stays inside the light cone, and every observer agrees on the order of events inside the cone, so there is no speed you can give them that flips it.`;
+  } else {
+    speed = (L === 'L1' || L === 'L2')
+      ? `Effective signal speed <b>${u.toFixed(1)}c</b>, set by the dial.`
+      : `Treated as instant in the sender's frame, so the diagram uses <b>u = ${u}c</b>, which is as good as instant here.`;
+    const dt = E.back[1];
+    hot = dt < 0;
+    result = hot
+      ? `The return leg lands <b>${(-dt).toFixed(3)}</b> time units <b>before</b> you send. Their speed ${v.toFixed(2)}c is above the threshold <b>${thr.toFixed(3)}c</b> for this drive. You can read the reply, then decide not to send.`
+      : `The return leg lands <b>${dt.toFixed(3)}</b> time units after you send. Threshold for this drive: their speed above <b>${thr.toFixed(3)}c</b>. ${v < thr ? 'Push their speed up.' : ''}`;
+  }
+  const note = (d.notes && d.notes['CAU-1']) || 'No note on CAU-1 in the register.';
+  box.classList.toggle('hot', hot);
+  box.innerHTML = head + `<p>${speed}</p><p>${result}</p><p><span class="mark">${MARK_WORDS[d.causality] || d.causality}</span> <span class="note">${note}</span></p><p class="dossier"><a href="${dossier}">Read the dossier for ${d.title}</a> · register row <a href="../pages/constraints/cau-1.html">CAU-1</a></p>`;
+}
+
+syncDial();
+draw();
+
+// stories that own the bill, pulled from the data
+const owners = DRIVES.filter(x => x.causality === 'C-owns').sort((a, b) => a.title.localeCompare(b.title));
+const dodgers = DRIVES.filter(x => x.causality === 'C-dodges').sort((a, b) => a.title.localeCompare(b.title));
+const shortTitle = t => t.split(':')[0].split(' (')[0];
+const ftlOwners = owners.filter(x => x.loophole !== 'L6'), slowOwners = owners.filter(x => x.loophole === 'L6');
+document.getElementById('ownsList').textContent = ftlOwners.slice(0, 4).map(x => shortTitle(x.title)).join(', ');
+const linkList = list => '<ul>' + list.map(x => `<li><a href="../pages/fiction/${x.slug}.html">${x.title}</a></li>`).join('') + '</ul>';
+
+initPopovers({
+  minkowski: { title: 'Spacetime diagram', html: '<p>Position runs left to right and time runs upward, with the units chosen so light moves at 45°. A person standing still is a vertical line. A person moving steadily is a tilted line. Anything faster than light is a line flatter than 45°.</p>' },
+  loophole: { title: 'Loophole classes', html: '<p>The catalogue sorts every drive by which rule it bends. L1 goes faster in the same space. L2 moves the space itself, the warp bubble. L3 takes a shortcut, wormholes and gates. L4 leaves our space for another, hyperspace and its cousins. L5 sends only the message, the ansible. L6 never beats light at all and is kept as a control group.</p>' },
+  instant: { title: 'The threshold', html: '<p>With c = 1, signal speed u and the other observer\'s speed v, the return leg lands before you send when</p><div class="eq">v &gt; 2u / (1 + u²)</div><p>For u = 2 that is v &gt; 0.8. For u = 10 it is v &gt; 0.198. For the u = 1000 this page uses for instant drives it is v &gt; 0.002. As u grows without bound the threshold goes to zero, so an instant jump makes any relative motion at all enough. That is why the shortcut, hyperspace and ansible drives break at the first nudge of the slider.</p>' },
+  dial: { title: 'Why the speed dial matters', html: '<p>Only the drives that move through ordinary space, faster in it (L1) or moving it (L2), come with a speed the story can state. The threshold falls quickly as that speed rises: 0.995c at 1.1c, 0.8c at 2c, 0.198c at 10c, 0.1c at 20c. A shortcut or a jump has no speed to dial, only a departure and an arrival, which is why the page treats them as instant.</p>' },
+  sublight: { title: 'Why the control group is safe', html: '<p>The threshold formula is only meaningful above c. Below c the message stays inside the light cone of the send event, and the order of events inside the cone is the same for every observer. Worked through on this page: the return leg lands after you send for every speed you can give them, and once they move faster than the message it never arrives at all. The register keeps these ships in the catalogue to show what a story looks like when it never owed the bill.</p>' },
+  owns: { title: 'Stories marked C-owns', html: '<p>The register marks a drive C-owns when the story admits the reply can beat the question and does something with it.</p>' + linkList(ftlOwners) + '<p>The sublight ships below also carry the mark, for the opposite reason: each states a no-FTL rule and keeps it, so it never runs the bill up.</p>' + linkList(slowOwners) },
+  dodges: { title: 'Register CAU-4 and the dodgers', html: '<p>Liberati, Sonego and Visser showed faster-than-c signals avoid paradox if a preferred frame fixes the FTL speed for everyone. Then "instant" is the special frame\'s, not the sender\'s, and the two legs no longer add up. The cost is that special relativity is no longer the whole story for the FTL sector. See <a href="../pages/constraints/cau-4.html">CAU-4</a>. The stories the register marks C-dodges take this escape, mostly without naming it:</p>' + linkList(dodgers) },
+  invariant: { title: 'What every observer agrees on', html: '<p>The order of events along one worldline is frame-independent. The return leg landing on your worldline below the send event is a fact about your worldline, not about a viewpoint. Every frame agrees that you received before you sent.</p>' },
+});
+</script>
+</body></html>
