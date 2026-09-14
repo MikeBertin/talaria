@@ -1,9 +1,54 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>TALARIA</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>body{background:#0b0d12;color:#d8dbe2;font:16px/1.5 system-ui,sans-serif;max-width:60ch;margin:4rem auto;padding:0 1rem}h1{letter-spacing:.08em}code{color:#9ec5ff}</style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALARIA</title>
+<meta name="description" content="Every way anyone has proposed to beat light, real or invented, catalogued and scored against the physics that says you can't.">
+<link rel="stylesheet" href="vendor/stoa/theme.css">
+<link rel="stylesheet" href="vendor/stoa/cards.css">
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.svg">
 </head><body>
-<h1>TALARIA</h1>
-<p>Every way anyone has proposed to beat light, real or invented, scored against the physics that says you can't.</p>
-<p>The site is milestone M4. The research apparatus lives in the repo: start at <code>GRADING.md</code>.</p>
+<nav class="top"><a href="index.html">TALARIA</a></nav>
+<header class="hero">
+  <h1>TALARIA</h1>
+  <p class="tag">Every way anyone has proposed to beat light, real or invented, catalogued and scored against the physics that says you can't.</p>
+  <p class="sub">Thirty-seven real proposals and sixty-eight fictional drives, each sorted by the loophole it uses and scored line by line against a register of twenty-nine no-go results. The two halves join on the loophole: pick a drive from a story and see what its real cousin would cost.</p>
+</header>
+<main>
+  <div class="grid">
+    <a class="card" href="atlas.html" style="--c:var(--L2-text)">
+      <span class="num">01</span><h3>The atlas</h3>
+      <p>Both scoring matrices, filterable, with the join between physics and fiction and the full register.</p>
+      <span class="open">open <span class="arrow">→</span></span>
+    </a>
+    <a class="card" href="demos/antitelephone.html" style="--c:var(--signal-text)">
+      <span class="num">02</span><h3>The antitelephone</h3>
+      <p>Send a faster-than-light message to a moving friend. Watch the reply arrive before you sent it.</p>
+      <span class="open">open <span class="arrow">→</span></span>
+    </a>
+    <a class="card" href="atlas.html#register" style="--c:var(--L1-text)">
+      <span class="num">03</span><h3>The register</h3>
+      <p>Twenty-nine results that put a price on beating light, each with what it forbids, the escape hatches and who it bites.</p>
+      <span class="open">open <span class="arrow">→</span></span>
+    </a>
+    <a class="card" href="atlas.html#lineage" style="--c:var(--L5-text)">
+      <span class="num">04</span><h3>Lineage</h3>
+      <p>Who was reading whom: Sagan to Thorne, Star Trek to Alcubierre, the word hyperspace, the paper fold.</p>
+      <span class="open">open <span class="arrow">→</span></span>
+    </a>
+    <a class="card soon" href="#" style="--c:var(--L2-text)"><span class="num">05</span><h3>The Alcubierre bubble</h3><p>Expansion, contraction, the negative-energy shells and the bill in kilograms.</p></a>
+    <a class="card soon" href="#" style="--c:var(--L3-text)"><span class="num">06</span><h3>The wormhole</h3><p>A throat you can walk through, and what happens when one mouth takes a trip.</p></a>
+    <a class="card soon" href="#" style="--c:var(--L4-text)"><span class="num">07</span><h3>Pick a drive, pick a frame</h3><p>Any drive from the catalogue, any observer. The jump becomes a message to the past.</p></a>
+    <a class="card soon" href="#" style="--c:var(--L6-text)"><span class="num">08</span><h3>The honest rocket</h3><p>Ship time against home time to the nearby stars at one g.</p></a>
+    <a class="card soon" href="#" style="--c:var(--L5-text)"><span class="num">09</span><h3>No signalling</h3><p>Entangled pairs, any measurement you like, and nothing gets through.</p></a>
+  </div>
+  <section class="prose" style="margin-top:36px">
+    <h2>The idea</h2>
+    <p>Every faster-than-light scheme leans on one of six moves. Go faster in the same space. Move the space instead of the ship. Take a shortcut through a tunnel or a fold. Leave the manifold for some other space with laxer rules. Send the message rather than the ship. Or, more often than you would think, not beat light at all and get filed here by habit.</p>
+    <p>Against those sits the register: the theorems, inequalities and instabilities that put a price on each move. Three of them do most of the work. Any signal faster than light is a message to somebody's past unless something breaks Lorentz invariance. Any geometric shortcut needs negative energy. And the negative energy has to be laid along the route in advance, at sublight speed, which makes a warp drive a railway rather than a car.</p>
+    <p>Real proposals are stated in their strongest form and then scored: satisfies, violates, dodges or silent, against every entry. Fiction cannot violate a theorem, so it is graded on what it does with the physics it chose to invoke: does the story engage with the cost, follow a rule that happens to answer it, or never notice? The join between the two is the point.</p>
+    <p class="reg-link">Method: <a href="https://github.com/mikebertin/talaria/blob/main/GRADING.md">GRADING.md</a> · sources and every dossier: <a href="https://github.com/mikebertin/talaria">the repository</a></p>
+  </section>
+</main>
+<footer>TALARIA, the winged sandals of Hermes: the oldest faster-than-anything device in the canon, and nobody in the myths asks how they work.</footer>
 </body></html>

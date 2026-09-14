@@ -1,0 +1,25 @@
+/* Generated from palette.js on 2026-09-14; edit palette.js, not this. */
+:root {
+  --L1-mark: #c96736;
+  --L1-text: #f09870;
+  --L2-mark: #3d68ca;
+  --L2-text: #6d96ec;
+  --L3-mark: #9f7100;
+  --L3-text: #c69d56;
+  --L4-mark: #814ea4;
+  --L4-text: #a97dc9;
+  --L5-mark: #29a987;
+  --L5-text: #74d3b4;
+  --L6-mark: #9b3b6e;
+  --L6-text: #c16c96;
+  --a-mark: #4c5ca7;
+  --a-text: #7688ca;
+  --b-mark: #c64e31;
+  --b-text: #ed8368;
+  --light-mark: #a1942f;
+  --light-text: #cbc071;
+  --signal-mark: #cf5684;
+  --signal-text: #f68aaf;
+  --reply-mark: #54a859;
+  --reply-text: #8cd28e;
+}

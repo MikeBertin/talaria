@@ -1,0 +1,59 @@
+/* Popover chrome for popover.js. The .x span is the trigger; #pop is the
+   floating panel the script creates and positions. */
+
+.x {
+  cursor: help;
+  border-bottom: 1px dotted var(--muted, #8a8a9c);
+  color: var(--ink, #e7e7ef);
+}
+.x.why {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--accent, #7cc4ff);
+}
+
+#pop {
+  position: fixed;
+  z-index: 40;
+  max-width: 340px;
+  background: var(--panel, #13131c);
+  border: 1px solid var(--line, #23232f);
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink, #e7e7ef);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms;
+}
+#pop.show { opacity: 1; pointer-events: auto; }
+#pop h4 {
+  margin: 0 0 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent, #7cc4ff);
+}
+#pop p { margin: 0 0 8px; }
+#pop p:last-child { margin-bottom: 0; }
+#pop code {
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12.5px;
+  background: var(--bg, #0a0a0f);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+#pop .eq {
+  font-family: var(--mono, ui-monospace, monospace);
+  background: var(--bg, #0a0a0f);
+  border: 1px solid var(--line, #23232f);
+  border-radius: 7px;
+  padding: 8px 10px;
+  margin: 9px 0;
+  font-size: 13px;
+  text-align: center;
+  color: var(--ink, #e7e7ef);
+}

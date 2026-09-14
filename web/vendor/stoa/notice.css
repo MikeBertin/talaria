@@ -1,0 +1,47 @@
+/* "Things to notice" card grid. The most copied block in the estate:
+   34 pages across hermes, symbole, kybernetes and aegis carried a variant
+   of this. Default is the auto-fit grid (cards wrap on their own); add
+   .cols-2 or .cols-3 for the fixed layouts the older pages used. */
+
+.notice {
+  margin-top: 30px;
+  border-top: 1px solid var(--line, #23232f);
+  padding-top: 22px;
+}
+
+.notice-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: var(--muted, #8a8a9c);
+  margin: 0 0 14px;
+  font-weight: 600;
+  font-family: var(--mono, ui-monospace, monospace);
+}
+
+.notice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.notice-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.notice-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.notice-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) {
+  .notice-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .notice-grid, .notice-grid.cols-2, .notice-grid.cols-3, .notice-grid.cols-4 { grid-template-columns: 1fr; }
+}
+
+.ncard {
+  background: var(--panel, #13131c);
+  border: 1px solid var(--line, #23232f);
+  border-radius: 12px;
+  padding: 15px 16px;
+}
+.ncard h3 { margin: 0 0 7px; font-size: 14px; font-weight: 600; color: var(--ink, #e7e7ef); }
+.ncard h3 span { color: var(--accent, #7cc4ff); }
+.ncard p { margin: 0; color: var(--muted, #8a8a9c); font-size: 12.5px; line-height: 1.5; }
+.ncard p b { color: var(--ink, #e7e7ef); }
+.ncard .why { font-size: 0.85rem; font-weight: 600; }

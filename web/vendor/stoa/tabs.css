@@ -1,0 +1,76 @@
+/* Sticky chapter tab bar, prev/next links and the full-source panel. */
+
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg, #0a0a0f);
+  border-bottom: 1px solid var(--line, #23232f);
+  padding: 10px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.tabs a {
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 13px;
+  color: var(--muted, #8a8a9c);
+  text-decoration: none;
+  padding: 6px 11px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.tabs a:hover { color: var(--ink, #e7e7ef); border-color: var(--line, #23232f); }
+.tabs a.active { color: var(--accent, #7cc4ff); border-color: var(--line, #23232f); background: var(--panel, #13131c); }
+
+main section.chapter { display: none; margin-top: 36px; }
+main section.chapter.active { display: block; }
+
+.chapter-nav { display: flex; justify-content: space-between; margin-top: 48px; gap: 20px; }
+.chapter-nav a { color: var(--accent, #7cc4ff); text-decoration: none; font-size: 15px; }
+.chapter-nav a:hover { text-decoration: underline; }
+
+details.source {
+  margin: 26px 0;
+  border: 1px solid var(--line, #23232f);
+  border-radius: 10px;
+  background: var(--panel, #13131c);
+}
+details.source summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--muted, #8a8a9c);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  list-style: none;
+}
+details.source summary::before { content: '▸ '; }
+details.source[open] summary::before { content: '▾ '; }
+.src-files { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 14px 12px; }
+.src-files button {
+  background: none;
+  border: 1px solid var(--line, #23232f);
+  border-radius: 7px;
+  color: var(--muted, #8a8a9c);
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 12.5px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.src-files button:hover { color: var(--ink, #e7e7ef); }
+.src-files button.active { color: var(--accent, #7cc4ff); border-color: var(--line, #23232f); }
+.src-view {
+  margin: 0;
+  border-top: 1px solid var(--line, #23232f);
+  padding: 14px 16px;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink, #e7e7ef);
+  overflow: auto;
+  max-height: 480px;
+  white-space: pre;
+}

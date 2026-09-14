@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALARIA atlas</title>
+<link rel="stylesheet" href="vendor/stoa/theme.css">
+<link rel="stylesheet" href="vendor/stoa/tabs.css">
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.svg">
+</head><body>
+<nav class="top"><a href="index.html">TALARIA</a><span>/</span><span class="kind">atlas</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">The atlas</h1>
+  <p class="sub">Every dossier against every register entry. Click a row for the dossier's scores and notes, a column head for the constraint. Colour is the verdict; the code in each row is the loophole.</p>
+</header>
+<nav class="tabs">
+  <a href="#physics" data-tab="physics">physics</a>
+  <a href="#fiction" data-tab="fiction">fiction</a>
+  <a href="#join" data-tab="join">the join</a>
+  <a href="#register" data-tab="register">register</a>
+  <a href="#lineage" data-tab="lineage">lineage</a>
+</nav>
+<main>
+  <section class="chapter" id="physics">
+    <div class="atlas-controls">
+      <select id="p-loop"><option value="">all loopholes</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option><option>L6</option></select>
+      <select id="p-stand"><option value="">all standings</option><option>K4</option><option>K3</option><option>K2</option><option>K1</option><option>K0</option></select>
+      <select id="p-sort"><option value="loop">sort: loophole</option><option value="viol">sort: most violations</option><option value="stand">sort: standing</option><option value="name">sort: name</option></select>
+      <input id="p-search" type="search" placeholder="search proposals">
+      <span class="hint" id="p-count"></span>
+    </div>
+    <div class="legend"><span><i class="v-VIOLATES-bg"></i>violates</span><span><i class="v-DODGES-bg"></i>dodges</span><span><i class="v-SATISFIES-bg"></i>satisfies</span><span><i class="v-SILENT-bg"></i>silent</span><span><i class="v-NA-bg"></i>not applicable</span></div>
+    <div id="grid-wrap"><table class="grid" id="p-grid"></table></div>
+  </section>
+  <section class="chapter" id="fiction">
+    <div class="atlas-controls">
+      <select id="f-loop"><option value="">all loopholes</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option><option>L6</option></select>
+      <select id="f-coh"><option value="">all coherence</option><option>F4</option><option>F3</option><option>F2</option><option>F1</option><option>F0</option></select>
+      <select id="f-cau"><option value="">all causality</option><option value="C-owns">owns it</option><option value="C-dodges">dodges it</option><option value="C-silent">silent</option></select>
+      <select id="f-sort"><option value="loop">sort: loophole</option><option value="coh">sort: coherence</option><option value="eng">sort: most engaged</option><option value="name">sort: name</option></select>
+      <input id="f-search" type="search" placeholder="search works">
+      <span class="hint" id="f-count"></span>
+    </div>
+    <div class="legend"><span><i class="v-ENGAGES-bg"></i>engages</span><span><i class="v-RULE-bg"></i>a rule answers it</span><span><i class="v-SILENT-bg"></i>silent</span><span><i class="v-NA-bg"></i>not applicable</span></div>
+    <div id="grid-wrap-f" style="overflow:auto;border:1px solid var(--line);border-radius:12px;max-height:70vh"><table class="grid" id="f-grid"></table></div>
+  </section>
+  <section class="chapter" id="join">
+    <div class="atlas-controls">
+      <span class="hint">Pick a loophole. Left, what physics has tried and what it costs. Right, the stories that use the same move, graded on whether they noticed.</span>
+    </div>
+    <div class="seg" id="joinSeg" style="margin-bottom:8px"></div>
+    <div id="join-body"></div>
+  </section>
+  <section class="chapter" id="register">
+    <p class="prose" style="color:var(--muted)">Twenty-nine results that put a price on beating light. Three do most of the work: CAU-1, ENE-2 and CON-2. Click any entry for its page, with the escape hatches and every dossier it bites.</p>
+    <div class="reg" id="reg-list"></div>
+  </section>
+  <section class="chapter" id="lineage">
+    <p class="prose" style="color:var(--muted)">Who was reading whom, with a graded evidence table on every page and a section on what nobody has documented.</p>
+    <div class="reg" id="lin-list"></div>
+  </section>
+</main>
+<aside id="panel" class="hidden"><button id="panel-close" aria-label="close">×</button><div id="panel-body"></div></aside>
+<footer>TALARIA · verdicts: physics SATISFIES, VIOLATES, DODGES, SILENT, N/A · fiction ENGAGES, RULE, SILENT, N/A · grades in <a href="https://github.com/mikebertin/talaria/blob/main/GRADING.md">GRADING.md</a></footer>
+<script src="data/talaria.js"></script>
+<script type="module" src="atlas.js"></script>
+</body></html>
