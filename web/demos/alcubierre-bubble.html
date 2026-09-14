@@ -256,8 +256,8 @@ function draw() {
   // ahead and the stretching behind. That is the York time θ made visible.
   const A = S.grid === 'carried' ? S.A : 0;
   const dx = (px, py) => A * RPX * shape(Math.hypot((px - FX) / RPX, (py - FY) / RPX), 1, w.sig);
-  ctx.strokeStyle = A > 0 ? '#34344a' : GRID; ctx.lineWidth = 1;
-  const STEP = 6;
+  ctx.strokeStyle = A > 0 ? '#34344a' : GRID; ctx.lineWidth = 1; ctx.lineJoin = 'round';
+  const STEP = 1.5;
   for (let x0 = FX % 50; x0 < W + 50; x0 += 50) {
     ctx.beginPath();
     for (let y = 0; y <= FIELD_H; y += STEP) { const x = x0 + dx(x0, y); y === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); }
