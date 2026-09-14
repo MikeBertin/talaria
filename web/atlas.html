@@ -22,8 +22,8 @@
 <main>
   <section class="chapter" id="physics">
     <div class="atlas-controls">
-      <select id="p-loop"><option value="">all loopholes</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option><option>L6</option></select>
-      <select id="p-stand"><option value="">all standings</option><option>K4</option><option>K3</option><option>K2</option><option>K1</option><option>K0</option></select>
+      <select id="p-loop"><option value="">all loopholes</option><option value="L1">L1 · faster in the same space</option><option value="L2">L2 · move the space</option><option value="L3">L3 · take a shortcut</option><option value="L4">L4 · leave the manifold</option><option value="L5">L5 · send the message</option><option value="L6">L6 · not FTL</option></select>
+      <select id="p-stand"><option value="">all standings</option><option value="K4">K4 · exact solution, peer reviewed</option><option value="K3">K3 · worked proposal or contested solution</option><option value="K2">K2 · speculative, named mechanism</option><option value="K1">K1 · no mechanism or a misreading</option><option value="K0">K0 · refuted or retracted</option></select>
       <select id="p-sort"><option value="loop">sort: loophole</option><option value="viol">sort: most violations</option><option value="stand">sort: standing</option><option value="name">sort: name</option></select>
       <input id="p-search" type="search" placeholder="search proposals">
       <span class="hint" id="p-count"></span>
@@ -33,9 +33,9 @@
   </section>
   <section class="chapter" id="fiction">
     <div class="atlas-controls">
-      <select id="f-loop"><option value="">all loopholes</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option><option>L6</option></select>
-      <select id="f-coh"><option value="">all coherence</option><option>F4</option><option>F3</option><option>F2</option><option>F1</option><option>F0</option></select>
-      <select id="f-cau"><option value="">all causality</option><option value="C-owns">owns it</option><option value="C-dodges">dodges it</option><option value="C-silent">silent</option></select>
+      <select id="f-loop"><option value="">all loopholes</option><option value="L1">L1 · faster in the same space</option><option value="L2">L2 · move the space</option><option value="L3">L3 · take a shortcut</option><option value="L4">L4 · leave the manifold</option><option value="L5">L5 · send the message</option><option value="L6">L6 · not FTL</option></select>
+      <select id="f-coh"><option value="">all coherence</option><option value="F4">F4 · engages the physics</option><option value="F3">F3 · acknowledges a limit</option><option value="F2">F2 · rule-bound, no physics</option><option value="F1">F1 · handwave</option><option value="F0">F0 · a joke that knows it</option></select>
+      <select id="f-cau"><option value="">all causality</option><option value="C-owns">C-owns · admits the time-travel bill</option><option value="C-dodges">C-dodges · a stated rule prevents it</option><option value="C-silent">C-silent · never comes up</option></select>
       <select id="f-sort"><option value="loop">sort: loophole</option><option value="coh">sort: coherence</option><option value="eng">sort: most engaged</option><option value="name">sort: name</option></select>
       <input id="f-search" type="search" placeholder="search works">
       <span class="hint" id="f-count"></span>
