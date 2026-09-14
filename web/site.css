@@ -113,3 +113,8 @@ aside#panel .note { color: var(--muted); }
 #hovercard h4 { margin: 4px 0 4px; font-size: 13.5px; }
 #hovercard p { margin: 0 0 6px; color: var(--ink); }
 #hovercard small { color: var(--muted); }
+
+/* the six moves on the hub */
+ol.moves { padding-left: 22px; margin: 6px 0 18px; }
+ol.moves li { margin: 8px 0; line-height: 1.55; }
+ol.moves li b { font-weight: 700; }
