@@ -258,8 +258,10 @@ function draw() {
   // The grid uses a softened wall (at least 0.45 R wide) so the drag reads as
   // a curve rather than a step; the real wall is far thinner and the caption
   // under the field says so.
-  const gsig = 2 / Math.max(w.drawn, 0.45);
-  const dx = (px, py) => A * RPX * shape(Math.hypot((px - FX) / RPX, (py - FY) / RPX), 1, gsig);
+  // The transition is centred outside the drawn disc so the interior moves as
+  // a rigid block and the bunching and stretching sit in the wake and the bow.
+  const gwidth = Math.max(w.drawn, 0.45), gsig = 2 / gwidth, gR = 1 + gwidth / 2;
+  const dx = (px, py) => A * RPX * shape(Math.hypot((px - FX) / RPX, (py - FY) / RPX), gR, gsig);
   ctx.strokeStyle = A > 0 ? '#34344a' : GRID; ctx.lineWidth = 1; ctx.lineJoin = 'round';
   const STEP = 1.5;
   for (let x0 = FX % 50; x0 < W + 50; x0 += 50) {
@@ -278,8 +280,8 @@ function draw() {
     const x = x0 + dx(x0, y0); ctx.beginPath(); ctx.arc(x, y0, 1.8, 0, Math.PI * 2); ctx.fill();
   }
   if (A > 0) {
-    label(ctx, 'grid lines bunch up ahead', FX + RPX * (1 + A) + 6, FY + RPX * 0.55, DEMO.b.text, 11);
-    label(ctx, 'and stretch out behind', FX - RPX - 6, FY + RPX * 0.55, DEMO.reply.text, 11);
+    label(ctx, 'grid lines bunch up ahead', FX + RPX * (1.2 + A) + 6, FY + RPX * 0.55, DEMO.b.text, 11);
+    label(ctx, 'and stretch out behind', FX - RPX * 1.25 - 6, FY + RPX * 0.55, DEMO.reply.text, 11);
     if (w.drawn < 0.45) label(ctx, 'grid drag drawn over a softened wall so the curve can be seen', W / 2, FIELD_H - 26, MUTED, 10.5);
   }
   // profile line through the ship
