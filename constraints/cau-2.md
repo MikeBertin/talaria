@@ -49,7 +49,7 @@ A conjecture, not a theorem; semiclassical, so a full quantum gravity might not 
 **Fictional drives**
 
 - SILENT: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). No closed causal curves are contemplated; chronology protection is not in the work's vocabulary and predates the conjecture by decades.
-- SILENT: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). No chronology protection; the loop of the sixth episode is self-consistent because the writers made it so, not because anything in the setting enforces it.
+- SILENT: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). No chronology protection; the loop of the sixth episode is self-consistent by construction; nothing in the setting enforces it.
 - SILENT: [Asimov's Foundation: the Jump through hyperspace (1942 onward)](../theories/fiction/foundation-hyperspace-jumps.md). No time machine is built or forbidden; the series has no closed loops and never says why not.
 - SILENT: [Babylon 5: hyperspace, jump gates and beacons (1993 to 1998)](../theories/fiction/babylon-5-hyperspace.md). No loop built, none forbidden; "Babylon Squared" and "War Without End" send a station through time by a different device, not by hyperspace.
 - SILENT: [Banks's Culture: the energy grid, infraspace and ultraspace (1987 onward)](../theories/fiction/culture-hyperspace-grid.md). No loop built, none forbidden; the Culture has no time travel and never says why.
@@ -93,7 +93,7 @@ A conjecture, not a theorem; semiclassical, so a full quantum gravity might not 
 - SILENT: [The Hitchhiker's Guide to the Galaxy: the Infinite Improbability Drive and bistromathics](../theories/fiction/hitchhikers-improbability-drive.md). No chronology protection; the universe of the Guide has a restaurant at its end and a handbook of tense formations. Nothing in the work stops a loop.
 - SILENT: [The Lensman inertialess drive (E. E. Smith, 1934 onward)](../theories/fiction/lensman-inertialess-drive.md). No closed causal loops are built; the books never reach the question chronology protection answers.
 - SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). No causal loops are built by the drive; the show's time travel uses another device and does not engage the conjecture.
-- SILENT: [The Skylark of Space (E. E. Smith, 1928)](../theories/fiction/skylark-of-space.md). No closed timelike curves are built or contemplated; chronology protection has nothing to protect against because the book does not know there is a problem.
+- SILENT: [The Skylark of Space (E. E. Smith, 1928)](../theories/fiction/skylark-of-space.md). No closed timelike curves are built or contemplated; chronology protection has nothing to protect against, and the question is not put.
 - SILENT: [Thor (2011): the Bifrost](../theories/fiction/thor-bifrost.md). No closed causal curves are contemplated, so chronology protection has nothing to act on and is not mentioned.
 - SILENT: [Vinge's Zones of Thought: FTL only where physics permits it (1992)](../theories/fiction/vinge-zones-of-thought.md). No loop built, none forbidden; the shift of the Zones is not a chronology-protection mechanism and is never described as one.
 - SILENT: [Warhammer 40,000: the Warp (1987 onward)](../theories/fiction/warhammer-40k-the-warp.md). Nothing prevents a closed loop except that no story writes one; chronology protection is neither invoked nor contradicted.

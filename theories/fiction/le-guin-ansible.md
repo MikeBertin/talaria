@@ -24,7 +24,7 @@ Lineage: [Le Guin's ansible goes out into the field](../../lineage/le-guin-ansib
 
 ## Which loophole, and why
 
-L5, send the message. Nothing material crosses the gap; "simultaneity is identity" is a statement that the two ends are, in the relevant sense, one place, and the story's only cargo is text. The ships that carry people are honest L6 vessels, and the novels are unusually careful to keep the two apart: the ansible answers in an instant, the traveller pays in years.
+L5, send the message. Nothing material crosses the gap; "simultaneity is identity" is a statement that the two ends are, in the relevant sense, one place, and the story's only cargo is text. The ships that carry people are plain L6 vessels, and the novels are unusually careful to keep the two apart: the ansible answers in an instant, the traveller pays in years.
 
 The physics cousin is [entanglement signalling and the no-communication theorem](../physics/entanglement-signalling.md), because that is what every later reader has taken the ansible to be, and the bill there is the whole of the mechanism: a working instantaneous link needs quantum mechanics to be nonlinear, which no-signalling forbids, and its signal would be the antitelephone of [CAU-1](../../constraints/cau-1.md) unless something picks a frame. Le Guin's second cousin is the preferred-frame escape of [CAU-4](../../constraints/cau-4.md), surveyed in [Lorentz-violating frameworks](../physics/lorentz-violating-frameworks.md): a "constant of simultaneity" is a universal now, and a universal now is a frame. The register's price for that hatch is that special relativity stops being the whole story, and *The Dispossessed* pays it openly by making a new theory of time the subject of the book.
 

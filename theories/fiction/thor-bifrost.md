@@ -20,7 +20,7 @@ Bifröst is the burning rainbow bridge between Midgard and Asgard in the Prose E
 
 The content does not fit, and the physics dossier says why. The [Einstein–Rosen bridge (1935)](../physics/einstein-rosen-bridge-1935.md) is a vacuum solution with two sheets joined at a throat, and Fuller and Wheeler showed in 1962 that no signal can cross it: the throat pinches off before light gets through. Its bill is B-none, which in this catalogue means nothing faster than light sits there. The bridge the film wants is a traversable one, [Morris and Thorne 1988](../physics/morris-thorne-1988.md), and that one is paid for in negative energy at the throat, a far mouth delivered at sublight speed and a time machine on any round trip of a mouth. Jane's lab describes the first; Heimdall operates the second.
 
-Kip Thorne is not involved and the film does not claim him. The lensing Jane sees around the edges is the one honest detail: a wormhole mouth does lens light, and the "wrong stars" through it is the Morris–Thorne picture of looking through a throat at another sky **[MED] S3**.
+Kip Thorne is not involved and the film does not claim him. The lensing Jane sees around the edges is the one detail that matches the physics: a wormhole mouth does lens light, and the "wrong stars" through it is the Morris–Thorne picture of looking through a throat at another sky **[MED] S3**.
 
 Lineage: [The wormhole goes to television](../../lineage/morris-thorne-gate-fiction.md); [Physicists in the writers' room](../../lineage/physicists-in-the-writers-room.md).
 
@@ -42,7 +42,7 @@ These are consistent within the film and are used to drive the plot twice, at Jo
 
 ## What it ignores
 
-The Bifrost is instantaneous between realms as far as anyone on screen can tell, and no instalment asks in which frame. Thor is banished and returns within days by both Earth and Asgard clocks; Heimdall watches events across the realms in real time; nobody's past is ever reached by way of the bridge **[HIGH] S1**. The bridge is a wormhole by the film's own naming, and a wormhole with one mouth kept on a fast-moving world and one on a world with different gravity is the Morris, Thorne and Yurtsever construction; the film does not know this and does not need to. C-silent.
+The Bifrost is instantaneous between realms as far as anyone on screen can tell, and no instalment asks in which frame. Thor is banished and returns within days by both Earth and Asgard clocks; Heimdall watches events across the realms in real time; nobody's past is ever reached by way of the bridge **[HIGH] S1**. The bridge is a wormhole by the film's own naming, and a wormhole with one mouth kept on a fast-moving world and one on a world with different gravity is the Morris, Thorne and Yurtsever construction; the film does not raise this and does not need to. C-silent.
 
 The register would also ask what holds the bridge open, what its energy budget is (the film says it can wreck a planet, which is an answer of a kind), how Heimdall aims it and what the lensing Jane measures implies about mass at the mouth. Of these, only the destructive power is used. Time travel enters the Marvel films later, in *Avengers: Endgame* (2019), by a different mechanism and with explicit rules, and never through the Bifrost **[MED] S1**.
 

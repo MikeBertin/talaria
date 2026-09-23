@@ -16,7 +16,7 @@ Spaihts's screenplay was on the 2007 Black List; the 2007 draft that circulates 
 
 ## Which loophole, and why
 
-L6, not FTL. Half the speed of light for 120 years is the [relativistic rocket](../physics/relativistic-rocket.md) run at a modest Lorentz factor, 1.155, and the cousin's bill is B-mass: the kinetic energy of a kilometre-long liner at 0.5 c is a civilisation's output, paid on screen with the word "fusion" and an ion drive that is never shown. The entry earns its place in the class for the message scene, which is the cousin's rule for signals applied without a wink, and for hibernation as the honest answer to a voyage longer than a life.
+L6, not FTL. Half the speed of light for 120 years is the [relativistic rocket](../physics/relativistic-rocket.md) run at a modest Lorentz factor, 1.155, and the cousin's bill is B-mass: the kinetic energy of a kilometre-long liner at 0.5 c is a civilisation's output, paid on screen with the word "fusion" and an ion drive that is never shown. The entry earns its place in the class for the message scene, which is the cousin's rule for signals applied without a wink, and for hibernation as the sublight answer to a voyage longer than a life.
 
 ## The rules it keeps
 
@@ -60,7 +60,7 @@ The control group: the register prices schemes to beat light and does not bear o
 | HAZ-3 | N/A | No throat; control group |
 | LOR-1 | RULE | "50% of light speed" and 120 years are the stated rule of the ship, and the plot obeys them; the dilation that rule implies, about sixteen percent, is never mentioned |
 | LOR-2 | N/A | No tachyon; control group |
-| LOR-3 | ENGAGES | The message booth's nineteen years out and fifty-five for a reply is a light-speed signal limit stated on screen and accepted by the plot; the figures do not match the stated speed, which the film does not notice |
+| LOR-3 | ENGAGES | The message booth's nineteen years out and fifty-five for a reply is a light-speed signal limit stated on screen and accepted by the plot; the figures do not match the stated speed, and the film does not address the gap |
 | LOR-4 | N/A | Neither Scharnhorst nor OPERA; control group |
 | WRP-1 | N/A | Not a warp drive; control group |
 | WRP-2 | N/A | Not a warp shell; control group |

@@ -1,6 +1,6 @@
 # The Expanse: the ring gates and the slow zone (Corey 2013 onward)
 
-*Thirteen hundred doors in a starless bubble, opened by something long dead, with honest fusion rockets everywhere else and a speed limit inside.*
+*Thirteen hundred doors in a starless bubble, opened by something long dead, with fusion rockets everywhere else and a speed limit inside.*
 
 **Kind:** fiction · **Loophole:** L3 · **Notability:** N2 · **Coherence:** F3 · **Causality:** C-silent · **Last reviewed:** 2026-09-12
 
@@ -14,7 +14,7 @@ The rules of gate travel are therefore: a ring leads to the hub, the hub leads t
 
 ## Origin and lineage
 
-Corey is Daniel Abraham and Ty Franck, and the setting began as Franck's tabletop game; its physics of rockets, delta-v and light lag is deliberately conventional, with the Epstein drive as the single generous assumption **[MED] S3**. The gates are the setting's alien intrusion and are never explained in the vocabulary of general relativity; the word wormhole is used once the racing ship vanishes and is not developed **[HIGH] S3**. No real proposal is named. The design decision that matters for this catalogue is the same one Sagan made in [Contact](contact-sagan-machine.md) and Nolan in [Interstellar](interstellar-wormhole.md): the shortcut is inherited, built by someone gone, and the humans build only rockets. The gate's physics cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md); the honest sublight everywhere else has its own cousin, the [relativistic rocket](../physics/relativistic-rocket.md), against which the Epstein drive should be read (the novels keep speeds low enough that dilation never features). The slow zone's law, that the fast are stopped, is not a physics result; the closest register item is the observation in [Gao, Jafferis and Wall](../physics/gao-jafferis-wall-2017.md) and [Maldacena, Milekhin and Popov](../physics/maldacena-milekhin-popov-2018.md) that real traversable wormholes are slower inside than the road outside, which the Expanse turns into a rule of the hub.
+Corey is Daniel Abraham and Ty Franck, and the setting began as Franck's tabletop game; its physics of rockets, delta-v and light lag is deliberately conventional, with the Epstein drive as the single generous assumption **[MED] S3**. The gates are the setting's alien intrusion and are never explained in the vocabulary of general relativity; the word wormhole is used once the racing ship vanishes and is not developed **[HIGH] S3**. No real proposal is named. The design decision that matters for this catalogue is the same one Sagan made in [Contact](contact-sagan-machine.md) and Nolan in [Interstellar](interstellar-wormhole.md): the shortcut is inherited, built by someone gone, and the humans build only rockets. The gate's physics cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md); the sublight everywhere else has its own cousin, the [relativistic rocket](../physics/relativistic-rocket.md), against which the Epstein drive should be read (the novels keep speeds low enough that dilation never features). The slow zone's law, that the fast are stopped, is not a physics result; the closest register item is the observation in [Gao, Jafferis and Wall](../physics/gao-jafferis-wall-2017.md) and [Maldacena, Milekhin and Popov](../physics/maldacena-milekhin-popov-2018.md) that real traversable wormholes are slower inside than the road outside, which the Expanse turns into a rule of the hub.
 
 ## Which loophole, and why
 
@@ -29,7 +29,7 @@ L3, a shortcut with fixed endpoints, twice over: from a system to the hub and fr
 - **Use it too hard and you vanish.** The dutchman rule of the later books ties transit to a recent energy budget through the gate **[HIGH] S3**.
 - **Someone else built it.** The builders are dead, the station is autonomous, and the humans neither understand nor control the network until the last novel **[HIGH] S3**.
 
-F3: limitations stated and applied without exception, of the "relays only between relays" kind that GRADING.md gives as its F3 example, with the sublight physics elsewhere kept honest in a way most settings do not manage. Not F4, because the gate's own cost is never a real constraint named in the text; the speed limit and the dutchman rule are invented laws, and the real cost the series is built on (delta-v, burn time, light lag) belongs to the rockets, not to the shortcut.
+F3: limitations stated and applied without exception, of the "relays only between relays" kind that GRADING.md gives as its F3 example, with the sublight physics elsewhere kept consistent throughout. Not F4, because the gate's own cost is never a real constraint named in the text; the speed limit and the dutchman rule are invented laws, and the real cost the series is built on (delta-v, burn time, light lag) belongs to the rockets, not to the shortcut.
 
 ## What it ignores
 

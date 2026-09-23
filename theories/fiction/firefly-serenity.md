@@ -16,7 +16,7 @@ Joss Whedon created *Firefly* for Fox in 2002 and wrote and directed *Serenity* 
 
 ## Which loophole, and why
 
-L6, not FTL. Every ship is a sublight vessel in one gravitational neighbourhood, so the physics cousin is the [relativistic rocket](../physics/relativistic-rocket.md) at the low end where the cousin's bill is small: hours and days between worlds at speeds far below c cost energy, not time dilation. The interesting join is with the exodus, which the film mentions and the supplement makes a generation-ship crossing at a third of c; that is the cousin's honest route, and the supplement charges the dilation. On screen, the crossing is a sentence.
+L6, not FTL. Every ship is a sublight vessel in one gravitational neighbourhood, so the physics cousin is the [relativistic rocket](../physics/relativistic-rocket.md) at the low end where the cousin's bill is small: hours and days between worlds at speeds far below c cost energy, not time dilation. The interesting join is with the exodus, which the film mentions and the supplement makes a generation-ship crossing at a third of c; that is the cousin's sublight route, and the supplement charges the dilation. On screen, the crossing is a sentence.
 
 ## The rules it keeps
 
@@ -28,7 +28,7 @@ F3: the work states a limitation, sublight travel within one system, and applies
 
 ## What it ignores
 
-Everything the register would ask. No episode or the film mentions relativity, time dilation, the speed of light or the impossibility of FTL **[HIGH] S1** (transcripts searched). Waves cross the system with no delay, which at the scale of a single stellar system would be minutes to hours, and the show never notices. The star count and the exodus are left to the licensed supplement, whose authors disclaim canon for their own numbers. C-silent: never addressed in any instalment as of 2026-09-12. The mark is not C-owns because the refusal of FTL is a production rule rather than anything the work says.
+Everything the register would ask. No episode or the film mentions relativity, time dilation, the speed of light or the impossibility of FTL **[HIGH] S1** (transcripts searched). Waves cross the system with no delay, which at the scale of a single stellar system would be minutes to hours, and the show does not raise it. The star count and the exodus are left to the licensed supplement, whose authors disclaim canon for their own numbers. C-silent: never addressed in any instalment as of 2026-09-12. The mark is not C-owns because the refusal of FTL is a production rule rather than anything the work says.
 
 ## Constraint scoring
 

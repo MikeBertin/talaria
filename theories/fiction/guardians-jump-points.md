@@ -43,7 +43,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 
 | Constraint | Verdict | Note |
 |---|---|---|
-| CAU-1 | SILENT | A jump is an FTL signal between two points and the film never asks in which frame it is instantaneous; seven hundred of them in a row raise the question seven hundred times and it is never put. |
+| CAU-1 | SILENT | A jump is an FTL signal between two points and the film never asks in which frame it is instantaneous; seven hundred jumps in a row, and the question is never put. |
 | CAU-2 | SILENT | No closed causal curves are contemplated; chronology protection is not in the film's vocabulary. |
 | CAU-3 | SILENT | A network of fixed points between orbiting worlds is the moving-mouth configuration that becomes a time machine; the franchise's time travel is elsewhere and by another mechanism. |
 | CAU-4 | SILENT | No preferred frame; the galaxy simply shares a "now" on screen without anyone saying so. |

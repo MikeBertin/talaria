@@ -14,7 +14,7 @@ What the series never does is say what a jump is. No episode explains the drive,
 
 ## Origin and lineage
 
-Moore's stated aim for the series was naturalistic science fiction: no aliens, no sound in space, ships that move like ships, with the jump drive the one concession **[MED] S3**. The 1978 original had a lightspeed drive and a very different feel; the 2003 jump is closer to the instant transitions of [Starman Jones](starman-jones-congruencies.md) and the tramline jumps of the [Alderson drive](alderson-drive.md), minus their fixed points: a BSG jump goes anywhere within range **[MED] S3**. No real proposal is named and none was consulted as far as this catalogue can find; the drive is a plot device kept honest by procedure rather than by physics. The physics cousin, for a device that moves a ship from one place to another with no transit, is still the wormhole of [Morris and Thorne 1988](../physics/morris-thorne-1988.md); the difference is that Galactica makes its own, on demand, at both ends, which is exactly what [CON-2](../../constraints/con-2.md) says cannot be done.
+Moore's stated aim for the series was naturalistic science fiction: no aliens, no sound in space, ships that move like ships, with the jump drive the one concession **[MED] S3**. The 1978 original had a lightspeed drive and a very different feel; the 2003 jump is closer to the instant transitions of [Starman Jones](starman-jones-congruencies.md) and the tramline jumps of the [Alderson drive](alderson-drive.md), minus their fixed points: a BSG jump goes anywhere within range **[MED] S3**. No real proposal is named and none was consulted as far as this catalogue can find; the drive is a plot device kept consistent by procedure rather than by physics. The physics cousin, for a device that moves a ship from one place to another with no transit, is still the wormhole of [Morris and Thorne 1988](../physics/morris-thorne-1988.md); the difference is that Galactica makes its own, on demand, at both ends, which is exactly what [CON-2](../../constraints/con-2.md) says cannot be done.
 
 ## Which loophole, and why
 
@@ -53,7 +53,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 | ENE-6 | SILENT | No source of negative energy is named. |
 | ENE-7 | SILENT | A jump is a shortcut visible from outside in flat space; topological censorship is never touched. |
 | CON-1 | N/A | No warp bubble, so no bubble horizon. |
-| CON-2 | SILENT | Jumps go to any calculated point with nothing laid in advance, which is the opposite of what CON-2 allows; the series never notices the problem. The Red Line is a limit on calculation, not on infrastructure. |
+| CON-2 | SILENT | Jumps go to any calculated point with nothing laid in advance, which is the opposite of what CON-2 allows; the series does not raise it. The Red Line is a limit on calculation, not on infrastructure. |
 | CON-3 | N/A | No Krasnikov tube. |
 | STA-1 | N/A | Warp-bubble instability. |
 | STA-2 | SILENT | A jump that connects two points is a wormhole with the throat unstated; nothing is said of what opens or holds it. |

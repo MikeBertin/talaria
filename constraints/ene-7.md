@@ -35,7 +35,7 @@ Wormholes that are traversable but slower than the outside path (the Gao, Jaffer
 
 **Fictional drives**
 
-- SILENT: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). A gate visible from outside on Japetus that leads elsewhere is the handle topological censorship forbids under the averaged null energy condition; the work does not know the theorem and does not answer it.
+- SILENT: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). A gate visible from outside on Japetus that leads elsewhere is the handle topological censorship forbids under the averaged null energy condition; the work does not address the theorem.
 - SILENT: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). The strings connect fixed masses like handles would, and if they were tunnels in our spacetime topological censorship would apply; the show places them in another dimension and never says which, so the row is neither answered nor excluded.
 - SILENT: [Banks's Culture: the energy grid, infraspace and ultraspace (1987 onward)](../theories/fiction/culture-hyperspace-grid.md). Displacement is a wormhole shortcut in our spacetime and topological censorship says such a shortcut needs achronal ANEC violation; the novels give a failure rate and no energy.
 - SILENT: [Battlestar Galactica: the FTL jump (2004 series)](../theories/fiction/battlestar-galactica-ftl-jump.md). A jump is a shortcut visible from outside in flat space; topological censorship is never touched.

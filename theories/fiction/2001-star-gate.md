@@ -12,7 +12,7 @@ In the novel, the Tycho monolith's radio burst is aimed at Japetus, a moon of Sa
 
 In the film, the destination is Jupiter, not Saturn, because Kubrick and Douglas Trumbull could not make rings they were satisfied with **[HIGH] S3**. The final act is titled "Jupiter and Beyond the Infinite"; the monolith floats in orbit among the moons; Bowman's pod approaches it and the screen becomes the corridor of light that Trumbull built with slit-scan photography, then landscapes in false colour, then the hotel room **[HIGH] S1**. The film has no narration and no dialogue after HAL is shut down, so the film's Star Gate is defined entirely by what is shown: a slab, a pod, a passage, a room, a rebirth. The name "Star Gate" is the production's, used by Trumbull and Clarke, and is never spoken in the film **[HIGH] S3**.
 
-Two things are constant across both versions. The gate is alien infrastructure, not a drive: nobody builds it, nobody carries it, it is found where it was left three million years earlier, and it is one node of a system. And the work declines to explain it. Clarke's chapter 37, "Experiment", gives the makers' history, minds that outgrew bodies and learned to store themselves in the structure of space itself, and stops there **[HIGH] S1**. That refusal is a choice, and it is the reason this dossier is F2 rather than F1: the gate has consistent rules and no stated mechanism, and the work is honest that it has none.
+Two things are constant across both versions. The gate is alien infrastructure, not a drive: nobody builds it, nobody carries it, it is found where it was left three million years earlier, and it is one node of a system. And the work declines to explain it. Clarke's chapter 37, "Experiment", gives the makers' history, minds that outgrew bodies and learned to store themselves in the structure of space itself, and stops there **[HIGH] S1**. That refusal is a choice, and it is the reason this dossier is F2 rather than F1: the gate has consistent rules and no stated mechanism, and the work says so.
 
 ## Origin and lineage
 
@@ -58,7 +58,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 | ENE-4 | N/A | Warp-bubble pocket geometry; the gate is a door, not a bubble. |
 | ENE-5 | N/A | The Natário-class NEC result does not bear on a wormhole gate. |
 | ENE-6 | SILENT | No source of negative energy is named; the Casimir floor is not approached. |
-| ENE-7 | SILENT | A gate visible from outside on Japetus that leads elsewhere is the handle topological censorship forbids under the averaged null energy condition; the work does not know the theorem and does not answer it. |
+| ENE-7 | SILENT | A gate visible from outside on Japetus that leads elsewhere is the handle topological censorship forbids under the averaged null energy condition; the work does not address the theorem. |
 | CON-1 | N/A | Warp-bubble horizons; no bubble. |
 | CON-2 | RULE | The gate was laid three million years in advance by the makers and signalled from the Moon; the route exists before any human uses it, which is the entry's demand, and the novel makes the waiting explicit. |
 | CON-3 | N/A | No Krasnikov tube. |

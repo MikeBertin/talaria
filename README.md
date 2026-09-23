@@ -1,6 +1,6 @@
 # TALARIA
 
-*Every way anyone has proposed to beat light, real or invented, catalogued, graded and scored against the physics that says you can't.*
+*The ways people have proposed to beat light, real and invented, catalogued, graded and scored against the physics that says you can't.*
 
 ![The antitelephone, the Alcubierre bubble and the atlas](web/demo.gif)
 
@@ -45,7 +45,7 @@ Start at [GRADING.md](GRADING.md) for the vocabulary, then [constraints/REGISTER
 
 ## Editorial stance
 
-Neutral scoring, honest about consensus. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.
+Neutral scoring, with the consensus stated as it stands. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.
 
 ## The site
 

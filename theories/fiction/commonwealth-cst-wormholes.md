@@ -18,7 +18,7 @@ Hamilton's wormholes are the traversable wormhole as everyday infrastructure, an
 
 ## Which loophole, and why
 
-L3, a shortcut: a gateway joins two points and a train crosses it. The starship is also L3, a wormhole moved with the ship rather than a bubble carrying it; the ship's own speed through the wormhole is never stated to exceed light and the shortcut is the wormhole, not the motion. The cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md), with its bill of negative energy at the throat scaling with radius (and a train-sized throat is large), mass beyond engineering, a pre-laid route and a time machine once a mouth is moved. The Commonwealth pays none of it, opens its wormholes from one end in defiance of the third, and moves a mouth with every voyage of the *Second Chance* in defiance of the fourth.
+L3, a shortcut: a gateway joins two points and a train crosses it. The starship is also L3, a wormhole moved with the ship rather than a bubble carrying it; the ship's own speed through the wormhole is never stated to exceed light and the shortcut is the wormhole, not the motion. The cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md), with its bill of negative energy at the throat scaling with radius (and a train-sized throat is large), mass beyond engineering, a pre-laid route and a time machine once a mouth is moved. The Commonwealth pays none of it, opens its wormholes from one end, which the third forbids, and moves a mouth with every voyage of the *Second Chance*, which the fourth prices.
 
 ## The rules it keeps
 
@@ -42,7 +42,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 |---|---|---|
 | CAU-1 | SILENT | Trains and messages cross hundreds of light years with no transit time; the novel never asks about the frame in which arrival precedes departure. |
 | CAU-2 | SILENT | No chronology protection; no time loop exists in the novels. |
-| CAU-3 | SILENT | The *Second Chance* is a wormhole mouth carried on a relativistic round trip, which is exactly the CAU-3 construction, and the text never notices. |
+| CAU-3 | SILENT | The *Second Chance* is a wormhole mouth carried on a relativistic round trip, which is exactly the CAU-3 construction, and the text does not raise it. |
 | CAU-4 | SILENT | No preferred frame is stated for the gateways or the ship. |
 | CAU-5 | N/A | No entanglement signalling; the Commonwealth's communications go through the wormholes with everything else. |
 | ENE-1 | SILENT | Generators are described as costly in money and power; the currency of a wormhole, negative energy density, is never named. |

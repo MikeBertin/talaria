@@ -24,7 +24,7 @@ Exactly the ones that make the jokes land, and no others. Higher speed settings 
 
 ## What it ignores
 
-Everything, on purpose. No clock, no frame, no consequence. The film's one genuine time joke is elsewhere: Helmet and Sandurz watch the videocassette of Spaceballs itself to find out where the heroes are, fast-forwarding to "now", and the film's own present is shown on the screen in the film. That is a causality gag about the medium, not about the drive, and it is not scored. On the register's question the film is C-silent, which is the only mark a parody can honestly take.
+Everything, on purpose. No clock, no frame, no consequence. The film's one genuine time joke is elsewhere: Helmet and Sandurz watch the videocassette of Spaceballs itself to find out where the heroes are, fast-forwarding to "now", and the film's own present is shown on the screen in the film. That is a causality gag about the medium, not about the drive, and it is not scored. On the register's question the film is C-silent, which is the only mark a parody can take.
 
 ## Constraint scoring
 

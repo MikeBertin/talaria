@@ -89,7 +89,7 @@ If the effect were real it would need a theory of gravity in which local energy-
 - 2018 to 2019: Kößling, Monette, Weikert and Tajmar report only thermal drifts on a 100 nN balance, in conference and then in Acta Astronautica 161, 139 **[HIGH] S1**.
 - 2019: Rodal, General Relativity and Gravitation, finds no first-order term of Woodward's form for local fluctuations in either Einstein's or Hoyle-Narlikar's theory **[HIGH] S1**.
 - 2021: Monette, Kößling and Tajmar, Acta Astronautica 182, 531, conclude the observed effect is coupled vibration on the balance **[HIGH] S1**.
-- As of 2026-09-12 there is no peer-reviewed reply from Woodward's group to the 2021 paper and no independent positive result on a balance of comparable sensitivity. The theoretical derivation has been examined in print once, by Rodal, and found not to follow from general relativity. The proposal is scored K0 as an artefact on the experimental evidence; the reader who weighs the Fullerton yoke argument more heavily than this dossier does would move it to K1, and no higher.
+- As of 2026-09-12 there is no peer-reviewed reply from Woodward's group to the 2021 paper and no independent positive result on a balance of comparable sensitivity. The theoretical derivation has been examined in print once, by Rodal, and found not to follow from general relativity. The proposal is scored K0 as an artefact on the experimental evidence; the reader who weighs the Fullerton yoke argument more heavily than this dossier does would move it to K1.
 
 ## Sources
 

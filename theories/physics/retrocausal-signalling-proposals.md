@@ -83,7 +83,7 @@ Nothing material, and everything theoretical. The scheme is built from lenses, s
 - 2007 to 2014: Cramer's laboratory and theoretical programme at the University of Washington, supported in part by the US Department of Energy and by public donations. Cramer reported year by year that the apparatus was not yet able to test the claim, and in 2014 reported the theoretical "show stopper" **[MED] S3** (his web summary).
 - 2014 to 2015: Cramer and Herbert, arXiv:1409.5098, the negative result, with the 71 percent conjecture withdrawn **[HIGH] S1**. The paper was submitted to Foundations of Physics; no journal version has been located as of 2026-09-12.
 - 2016: Cramer's *The Quantum Handshake*, chapter 7, restates the negative conclusion **[MED] S2**.
-- Since then: further eraser-based proposals appear, mostly as preprints or in low-tier journals, and are answered by the same argument; Ghirardi and Romano's 2013 reply to one such proposal is representative **[MED] S1**. No peer-reviewed proposal for retrocausal signalling within linear quantum mechanics has survived review as of 2026-09-12, and the field's own most committed experimenter is on record that none can.
+- Since then: further eraser-based proposals appear, mostly as preprints, and are answered by the same argument; Ghirardi and Romano's 2013 reply to one such proposal is representative **[MED] S1**. No peer-reviewed proposal for retrocausal signalling within linear quantum mechanics has survived review as of 2026-09-12, and the field's own most committed experimenter is on record that none can.
 
 ## Sources
 

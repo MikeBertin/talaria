@@ -25,7 +25,7 @@ the dossier may revise.
 | lensman-inertialess-drive | E. E. Smith, Lensman series (1937 onward): the Bergenholm cancels inertia | N3 | ✓ |
 | mass-effect-element-zero | Mass Effect (2007): element zero lowers a ship's mass so conventional thrust exceeds c, with static-discharge rules | N2 | ✓ |
 | spaceballs-ludicrous-speed | *Spaceballs* (1987) | N3 | ✓ |
-| flight-of-the-navigator | *Flight of the Navigator* (1986): faster-than-light with an honest time slip | N3 | ✓ |
+| flight-of-the-navigator | *Flight of the Navigator* (1986): faster-than-light with the time slip kept | N3 | ✓ |
 
 ## L2: Move the space
 
@@ -83,9 +83,9 @@ the dossier may revise.
 | dune-holtzman-fold-space | Herbert, *Dune* (1965): folding space with a navigator's prescience | N1 | ✓ |
 | stargate-gate-network | *Stargate* (1994 onward): stable wormholes between fixed gates | N1 | ✓ |
 | battlestar-galactica-ftl-jump | *Battlestar Galactica* (2004): instantaneous jumps with spool-up and range limits | N2 | ✓ |
-| expanse-ring-gates | The Expanse (2011 onward): gates only where gates are, and honest sublight everywhere else | N2 | ✓ |
+| expanse-ring-gates | The Expanse (2011 onward): gates only where gates are, and sublight everywhere else | N2 | ✓ |
 | mass-effect-relays | Mass Effect: relays only between relays | N2 | ✓ |
-| forever-war-collapsars | Haldeman, *The Forever War* (1974): collapsar jumps and honest time dilation | N2 | ✓ |
+| forever-war-collapsars | Haldeman, *The Forever War* (1974): collapsar jumps and time dilation paid in full | N2 | ✓ |
 | commonwealth-cst-wormholes | Hamilton, Commonwealth saga (2004): wormholes with trains through them | N2 | ✓ |
 | alderson-drive | Niven and Pournelle, *The Mote in God's Eye* (1974): tramlines between fixed jump points | N2 | ✓ |
 | starman-jones-congruencies | Heinlein, *Starman Jones* (1953): anomalies that must be hit exactly | N3 | ✓ |
@@ -156,9 +156,9 @@ the dossier may revise.
 |---|---|---|---|
 | le-guin-ansible | Le Guin, *Rocannon's World* (1966) and *The Dispossessed* (1974): the word and the device, alongside NAFAL ships | N1 | ✓ |
 | ender-philotic-ansible | Card, *Ender's Game* (1985): philotic connections, alongside relativistic troopships | N2 | ✓ |
-| time-for-the-stars-telepathy | Heinlein, *Time for the Stars* (1956): telepathic twins as the ansible, torchships with honest dilation | N3 | ✓ |
+| time-for-the-stars-telepathy | Heinlein, *Time for the Stars* (1956): telepathic twins as the ansible, torchships with the dilation kept | N3 | ✓ |
 | timescape-tachyon-message | Benford, *Timescape* (1980): a physicist sends a warning to the past by tachyon beam | N3 | ✓ |
-| star-trek-subspace-radio | Star Trek: subspace communication and the tachyon as tech-babble | N2 | ✓ |
+| star-trek-subspace-radio | Star Trek: subspace communication and the tachyon as a stock word | N2 | ✓ |
 
 ## L6: Not FTL
 
@@ -166,7 +166,7 @@ the dossier may revise.
 
 | Slug | Proposal | Status |
 |---|---|---|
-| relativistic-rocket | The honest alternative: proper time to the nearby stars at constant acceleration | ✓ |
+| relativistic-rocket | The sublight alternative: proper time to the nearby stars at constant acceleration | ✓ |
 | em-drive | The resonant-cavity thruster and its refutation | ✓ |
 | mach-effect-thruster | Woodward's proposal | ✓ |
 

@@ -89,7 +89,7 @@ The proposal asks for no negative energy, no geometry and no infrastructure. Its
 - 1968 to 1971: the Čerenkov and missing-mass searches proposed here are carried out (Alväger and Kreisler; Baltay, Feinberg, Yeh and Linsker; Danburg et al.) and find nothing.
 - 1969: Aharonov, Komar and Susskind show the field-theory tachyon is an instability, which removes the quantum version of class III particles as stable quanta.
 - 1970: Benford, Book and Newcomb publish the tachyonic antitelephone, the first published demonstration that the reinterpretation principle fails for a two-way exchange; this is the refutation of the paper's consistency claim in the sense that matters for signalling, and it has not been answered on its own terms.
-- 1986: Recami's Riv. Nuovo Cimento review generalises the reinterpretation principle into "extended relativity" with superluminal Lorentz transformations; the programme is internally elaborate and has produced no confirmed prediction.
+- 1986: Recami's Riv. Nuovo Cimento review generalises the reinterpretation principle into "extended relativity" with superluminal Lorentz transformations; the programme has produced no confirmed prediction.
 - 2012: Rembieliński and Włodarczyk (arXiv:1206.0841) give a covariant tachyon description that avoids the paradox by fixing a synchronisation, which concedes the register's point: the paradox is removed only by a preferred frame.
 - No peer-reviewed defence of the reinterpretation principle against the antitelephone, other than by adding a preferred frame, exists as of 2026-09-12.
 

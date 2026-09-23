@@ -14,7 +14,7 @@ The story is a chase across the galaxy, a rescue and a war on the planet Osnome;
 
 ## Origin and lineage
 
-Edward Elmer Smith wrote the first draft between 1915 and 1920 with Lee Hawkins Garby, who supplied the romantic dialogue; it was serialised in *Amazing Stories* from August to October 1928 and appeared as a book in 1946 with revised editions later **[HIGH] S1** for the serial and Gutenberg text; the drafting history and the fact that the first instalment shared its issue with the first Buck Rogers story are secondary **[MED] S3**. It is generally counted the first straightforward faster-than-light spaceship in fiction and the founding text of space opera, which is why it is here at all: the Skylark did not think about the light barrier, it set the precedent for not thinking about it.
+Edward Elmer Smith wrote the first draft between 1915 and 1920 with Lee Hawkins Garby, who supplied the romantic dialogue; it was serialised in *Amazing Stories* from August to October 1928 and appeared as a book in 1946 with revised editions later **[HIGH] S1** for the serial and Gutenberg text; the drafting history and the fact that the first instalment shared its issue with the first Buck Rogers story are secondary **[MED] S3**. It is generally counted the first straightforward faster-than-light spaceship in fiction and the founding text of space opera, which is why it is here at all: the Skylark set the genre's precedent of stating the light barrier and then passing it.
 
 Smith held a doctorate in chemical engineering and his physics is of its decade: intra-atomic energy is the radium-era phrase for what became nuclear energy, and the mass increase he cites in Chapter VII is textbook special relativity. The book names no real proposal for beating light and none existed; tachyons ([Feinberg 1967](../physics/tachyons-feinberg-1967.md)) were forty years away. Nothing downstream in physics descends from it. Downstream in fiction, almost everything does: Smith's own Lensman books replaced the bare push with an inertialess drive ([Lensman inertialess drive](lensman-inertialess-drive.md)), which is the first sign of a writer feeling the need for a mechanism.
 
@@ -35,7 +35,7 @@ Everything the register would ask. The novel never mentions time, clocks, simult
 | Constraint | Verdict | Note |
 |---|---|---|
 | CAU-1 | SILENT | The ship outruns light in flat space, which is exactly the signal CAU-1 prices, and the book never considers that an observer in another frame would see it arrive before it left. |
-| CAU-2 | SILENT | No closed timelike curves are built or contemplated; chronology protection has nothing to protect against because the book does not know there is a problem. |
+| CAU-2 | SILENT | No closed timelike curves are built or contemplated; chronology protection has nothing to protect against, and the question is not put. |
 | CAU-3 | N/A | No wormholes or warp bubbles; the two-device time machine is a construction on geometric drives and the Skylark is a rocket. |
 | CAU-4 | SILENT | The book has an implicit preferred frame, the frame in which stopwatch distances are "facts", but never names it or notices that it needs one. |
 | CAU-5 | N/A | No entanglement or quantum signalling; the object-compass that tracks DuQuesne is a mechanical needle, not a quantum device. |
@@ -56,7 +56,7 @@ Everything the register would ask. The novel never mentions time, clocks, simult
 | HAZ-2 | N/A | No horizon to radiate. |
 | HAZ-3 | N/A | No throat tides. |
 | LOR-1 | ENGAGES | Chapter VII states the relativistic mass increase and the light-speed ceiling; Chapter VIII overrides them with a measured distance. The constraint is named and then dismissed, which is engagement of a kind. |
-| LOR-2 | SILENT | The ship crosses c from below, which is what tachyon kinematics forbids for any particle; the book does not know the crossing is the problem. |
+| LOR-2 | SILENT | The ship crosses c from below, which is what tachyon kinematics forbids for any particle; the book does not raise the crossing. |
 | LOR-3 | N/A | No wave in a medium; the speed claimed is a real transit speed of matter. |
 | LOR-4 | N/A | Neither the Scharnhorst effect nor OPERA bears on a rocket. |
 | WRP-1 | N/A | Not a warp drive. |

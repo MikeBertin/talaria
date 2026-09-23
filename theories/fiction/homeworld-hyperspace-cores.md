@@ -26,7 +26,7 @@ The physics cousins are the extra-dimension dossiers and the two physics pages f
 
 The Coherence mark is F2, rule-bound. The drive's rules are consistent and without physical content. A jump needs a core or a hyperdrive; in the first game the fleet jumps as one between missions and the drive is never a tactical option in the campaign; in multiplayer a jump costs resources; in the sequel gates move ships between fixed points, inhibitors forbid jumps into their radius, and only the three cores can Far Jump. The scarcity of the cores is the setting's central rule and it holds across two games: the Kushan cannot build a second one, the Bentusi's core is theirs alone, and the sequel's war is a fight over three objects. The history is consistent with the rule, since the Kharak exodus is possible because one core was found and the empire's punishment is for using it.
 
-The rules are not physics. The window is a picture, the core is a MacGuffin with a socket, and nothing in either game says what a jump does to space, why a Far Jumper is faster or what an inhibitor inhibits. That is F2 exactly, and the games' strength is that they never pretend to more.
+The rules are not physics. The window is a picture, the core is a plot object with a socket, and nothing in either game says what a jump does to space, why a Far Jumper is faster or what an inhibitor inhibits. That is F2 exactly, and the games' strength is that they never pretend to more.
 
 ## What it ignores
 
@@ -42,7 +42,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 |---|---|---|
 | CAU-1 | SILENT | Jumps are effectively instantaneous and the setting has one clock; the antitelephone is never raised. |
 | CAU-2 | SILENT | No chronology protection is stated. |
-| CAU-3 | SILENT | Three cores in relative motion are the sequel's whole plot and nobody notices they could be a time machine. |
+| CAU-3 | SILENT | Three cores in relative motion are the sequel's whole plot and the question of a time machine is not put. |
 | CAU-4 | SILENT | A shared galactic calendar is used across both games and never named as a frame. |
 | CAU-5 | N/A | No entanglement signalling; fleet communication is unexplained radio. |
 | ENE-1 | SILENT | The core's power is never described; in multiplayer a jump costs resource units, which is an economy, not an energy. The energy conditions do not appear. |

@@ -60,7 +60,7 @@ The theory's difficulties are in the literature within the year. Charmousis, Niz
 
 **B-new.** The SME coefficients are background tensor fields with fixed vacuum values; the khronon or aether is a new field with a timelike gradient; Hořava's foliation is a new structure on the manifold. None of these is in the Standard Model or general relativity, and each is what "a preferred frame" means once it is written down.
 
-**B-caus.** The register's mark for "requires a preferred frame to avoid" closed timelike curves fits these frameworks by construction. They are the honest way to have an FTL sector, and honesty costs the relativity of inertial frames.
+**B-caus.** The register's mark for "requires a preferred frame to avoid" closed timelike curves fits these frameworks by construction. They are the consistent way to have an FTL sector, and the price is the relativity of inertial frames.
 
 There is no negative energy and no infrastructure. What there is, instead of a bill, is a table of bounds: Table S3 and S4 of Kostelecký and Russell, in which the coefficient that would have to be nonzero for a superluminal photon or neutrino sits at $10^{-19}$ to $10^{-20}$, consistent with zero.
 

@@ -10,13 +10,13 @@ Special relativity forbids accelerating a massive body through the light barrier
 
 The strongest form of the claim has three parts. First, kinematics: a particle with $p^\mu p_\mu < 0$ has a velocity $v = pc^2/E$ greater than c in every inertial frame, can never be brought below c and loses energy as it speeds up. Second, consistency: the negative-energy states that appear when such a particle is viewed from a suitably boosted frame are to be read as positive-energy antiparticles moving the other way, the reinterpretation principle inherited from [Bilaniuk, Deshpande and Sudarshan](meta-relativity-sudarshan-1962.md). Third, quantisation: a scalar field with negative mass-squared can be quantised so that its Fourier modes with real frequency describe free tachyons, and the theory built this way is Lorentz invariant even though, as Feinberg notes, the vacuum and the particle number are not.
 
-A careful reader needs one thing before the rest: the tachyon is a claim about particles in ordinary flat spacetime, with no change to the metric, no exotic matter and no preferred frame. That is what makes it the cleanest L1 proposal in the catalogue, and it is also why the register closes it.
+One thing first: the tachyon is a claim about particles in ordinary flat spacetime, with no change to the metric, no exotic matter and no preferred frame. That is what makes it the cleanest L1 proposal in the catalogue, and it is also why the register closes it.
 
 ## Origin and lineage
 
 The pre-relativistic literature on charges moving faster than light (Thomson 1889, Heaviside 1892, Sommerfeld 1904) is reviewed in the 1962 paper by Bilaniuk, Deshpande and Sudarshan, Am. J. Phys. 30, 718, which is the classical parent of this proposal and has [its own dossier](meta-relativity-sudarshan-1962.md). Feinberg, Phys. Rev. 159, 1089 (1967) supplied the quantum field theory and the name. The experimental programme that followed (Alväger and Kreisler 1968, Baltay, Feinberg, Yeh and Linsker 1970, Danburg et al. 1971, the cosmic-ray claim of Clay and Crouch 1974) is described below. The proposal that a known neutrino might be the tachyon (Chodos, Hauser and Kostelecký 1985) kept the idea alive into the tritium beta-decay era and gave the [OPERA anomaly](opera-neutrinos-2011.md) its ready-made interpretation in 2011. The frameworks that replace the tachyon with a preferred frame are in [Lorentz-violating frameworks](lorentz-violating-frameworks.md).
 
-In fiction the tachyon became the stock word for a faster-than-light messenger, most seriously in Benford's *Timescape* (1980), which is listed in the catalogue as timescape-tachyon-message, and as tech-babble in Star Trek's subspace radio (star-trek-subspace-radio).
+In fiction the tachyon became the stock word for a faster-than-light messenger, most seriously in Benford's *Timescape* (1980), which is listed in the catalogue as timescape-tachyon-message, and as a stock word in Star Trek's subspace radio (star-trek-subspace-radio).
 
 Lineage: [Feinberg's tachyon, outward](../../lineage/feinberg-tachyon-outward.md); [Tolman's paradox to Timescape](../../lineage/tolman-benford-timescape.md).
 

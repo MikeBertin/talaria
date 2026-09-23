@@ -14,7 +14,7 @@ The film (1999, directed by Chris Roberts) changes the treatment. Jump points ar
 
 ## Origin and lineage
 
-Chris Roberts designed the 1990 game at Origin in Austin; Allston wrote the manual; the film was Roberts's directorial debut and a commercial failure **[HIGH] S3**. No real proposal is named in the game, the manual or the film. The convention of fixed jump points reached by sublight flight was already standard in prose, most cleanly in Niven and Pournelle's Alderson drive (1974), which the catalogue treats separately; no borrowing is sourced and none is claimed. The Pilgrims' navigation by feel is a version of Herbert's navigators, again unsourced as a borrowing.
+Chris Roberts designed the 1990 game at Origin in Austin; Allston wrote the manual; the film was Roberts's directorial debut **[HIGH] S3**. No real proposal is named in the game, the manual or the film. The convention of fixed jump points reached by sublight flight was already standard in prose, most cleanly in Niven and Pournelle's Alderson drive (1974), which the catalogue treats separately; no borrowing is sourced and none is claimed. The Pilgrims' navigation by feel is a version of Herbert's navigators, again unsourced as a borrowing.
 
 The forward lineage is the one worth recording. Roberts's later game *Star Citizen* keeps jump points as natural, fixed and the only way between systems, and its logo's star is the flash of a Wing Commander jump point by the franchise's own account **[MED] S3**; the catalogue carries that entry ([Star Citizen](star-citizen-jump-points.md)). The jump flash also passed into games generally as the visual for a system transit.
 

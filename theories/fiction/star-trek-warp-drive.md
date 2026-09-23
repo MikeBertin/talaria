@@ -48,7 +48,7 @@ Frames. In six decades no Star Trek instalment has considered that a ship arrivi
 | CAU-4 | SILENT | The single Starfleet clock is the preferred frame the drive would need, and no episode or manual names it as such. |
 | CAU-5 | N/A | Subspace radio, not entanglement, carries the messages; scored on the subspace radio page. |
 | ENE-1 | SILENT | The manual's field layers and coils never say what the field is made of; the energy conditions are not mentioned in any instalment. |
-| ENE-2 | SILENT | Olum's theorem says the warp field needs negative energy somewhere; the show's dilithium and antimatter are positive energy and nobody notices the shortfall. |
+| ENE-2 | SILENT | Olum's theorem says the warp field needs negative energy somewhere; the show's dilithium and antimatter are positive energy, and the shortfall is not raised. |
 | ENE-3 | SILENT | Bubble scale is ship scale, which is the case Pfenning and Ford priced at universe-scale negative energy; never addressed. |
 | ENE-4 | N/A | No pocket geometry; the warp field is ship-sized and the manual's nested layers are not a conformal pocket. |
 | ENE-5 | SILENT | The warp field is in the Natário class in everything but name, so the NEC theorem applies; never addressed. |
@@ -64,7 +64,7 @@ Frames. In six decades no Star Trek instalment has considered that a ship arrivi
 | HAZ-2 | SILENT | The crew at the centre of a superluminal bubble see no Hawking flux; the show has no wall thickness to set a temperature and does not ask. |
 | HAZ-3 | N/A | No throat tides. |
 | LOR-1 | RULE | Warp 1 is the speed of light and the drive is stated to bend space rather than push the ship past light; the barrier is honoured by a stated rule of the fiction. |
-| LOR-2 | N/A | Nothing in warp travel is a particle above c; tachyons appear in Star Trek only as tech-babble and are on the subspace radio page. |
+| LOR-2 | N/A | Nothing in warp travel is a particle above c; tachyons appear in Star Trek only as a stock word for faster than light and are on the subspace radio page. |
 | LOR-3 | N/A | No wave in a medium. |
 | LOR-4 | N/A | Neither the Scharnhorst effect nor OPERA bears on the drive. |
 | WRP-1 | RULE | The show's own description, a field that distorts space and carries the ship without local motion, matches the class definition; the rule is stated in the manual and on screen without the mathematics. |

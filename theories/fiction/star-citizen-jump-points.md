@@ -76,7 +76,7 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 | LOR-4 | N/A | Neither the Scharnhorst effect nor OPERA bears on either mechanism. |
 | WRP-1 | ENGAGES | The developer describes the quantum drive as contraction ahead and expansion behind, "essentially an Alcubierre drive", which is the entry's class definition adopted by name; the "essentially an Alcubierre drive" wording found on the Star Citizen Wiki is that wiki's paraphrase, and the forum copy of Roberts's post (2 April 2019) has the softer "somewhat inspired by" and calls the rest "hand wavium" **[MED] S3**. |
 | WRP-2 | RULE | A subluminal shell moving inertially, which is the entry's positive-energy case; the lore insists on negative energy anyway, so the game is stricter with itself than the classification requires. |
-| WRP-3 | RULE | The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result and the game does not know it. |
+| WRP-3 | RULE | The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result; the lore does not reflect it. |
 | MAN-1 | SILENT | Interspace is described as higher-dimensional in wiki summaries of developer talks and as "a smear of sight and sound" in the lore; no dimension is counted and no bulk physics is invoked. |
 
 ## Sources

@@ -6,7 +6,7 @@
 
 ## The result
 
-Absence as a finding: as of September 2026 no peer-reviewed superluminal positive-energy warp drive has survived review. Lentz's 2021 soliton was found by Santiago, Schuster and Visser never to have solved the Einstein equations, and independently by Celmaster and Rubin (2025) to contain negative-energy regions and derivation errors; Lentz replied only in conference proceedings and a blog. Fell and Heisenberg proved positivity for Eulerian observers only. The one surviving positive-energy result, Fuchs et al. (2024), is a constant-velocity subluminal shell. Rodal (2026) is "predominantly positive" and still violates the NEC. Helmerich et al. (2024) state that existing solutions have all required energy-condition violation
+Absence as a finding: as of September 2026 no peer-reviewed superluminal positive-energy warp drive has survived review. Lentz's 2021 soliton was found by Santiago, Schuster and Visser never to have solved the Einstein equations, and independently by Celmaster and Rubin (2025) to contain negative-energy regions and derivation errors; Lentz's reply is in conference proceedings and a blog post, not in a refereed paper. Fell and Heisenberg proved positivity for Eulerian observers only. The one surviving positive-energy result, Fuchs et al. (2024), is a constant-velocity subluminal shell. Rodal (2026) is "predominantly positive" and still violates the NEC. Helmerich et al. (2024) state that existing solutions have all required energy-condition violation
 
 ## What it forbids or costs
 
@@ -38,7 +38,7 @@ A future construction outside the Natário class, or a peer-reviewed reply to th
 - SILENT: [Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)](../theories/fiction/stellaris-three-modes.md). The warp mode asserted a working superluminal bubble; the absence WRP-3 records is never engaged, and the mode itself was removed in 2018 for design reasons.
 - SILENT: [The Orville: quantum drive (2017 onward)](../theories/fiction/the-orville-quantum-drive.md). The show asserts a working superluminal bubble sourced by a fuel; the absence WRP-3 records is not engaged in any episode.
 - RULE: [Death's End: curvature propulsion (Liu Cixin, 2010)](../theories/fiction/three-body-curvature-propulsion.md). The one surviving positive-energy warp result is subluminal and constant-velocity; the novel's drive accelerates to c and stays there, which is the regime WRP-3 permits, by the novel's own rule of never exceeding light.
-- RULE: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result and the game does not know it.
+- RULE: [Star Citizen: quantum drive and jump points](../theories/fiction/star-citizen-jump-points.md). The quantum drive claims no superluminal warp, so it sits on the side of the entry's line where a positive-energy result exists; the lore's negative energy is unnecessary by the 2024 result; the lore does not reflect it.
 
 ## Sources
 

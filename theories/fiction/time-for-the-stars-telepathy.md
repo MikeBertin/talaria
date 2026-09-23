@@ -43,7 +43,7 @@ The message to the past. Babcock's absolute simultaneity needs a frame, and the 
 | CAU-4 | RULE | Babcock's assertion in ch. VIII that simultaneity is real and physics wrong to discard it is the preferred-frame escape stated as a rule; the book pays the price the register names by rewriting physics into "irrelevance" in chs. XIII and XVI |
 | CAU-5 | N/A | Telepathy names no quantum correlation; the theorem's premises are absent, though the wish is the entanglement radio's |
 | ENE-1 | N/A | No stress-energy |
-| ENE-2 | N/A | No gravitational time advance; the ship is honest and the link is carrierless |
+| ENE-2 | N/A | No gravitational time advance; the ship is sublight and the link is carrierless |
 | ENE-3 | N/A | No negative energy |
 | ENE-4 | N/A | Warp-class |
 | ENE-5 | N/A | Warp-class |

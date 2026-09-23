@@ -18,7 +18,7 @@ Eisner drafted the script in 1992 as a haunted house in space; Anderson reworked
 
 The folded-paper demonstration is older than the film. Madeleine L'Engle's *A Wrinkle in Time* (1962) has Mrs Whatsit explain the tesseract by folding the hem of a skirt so an ant can cross without walking the length **[MED] S3**. Whether Eisner had it in mind is not sourced, and this dossier does not claim it. What is sourced is the forward lineage: the film's version became the standard on-screen shorthand for a wormhole, reused by Nolan's science-consulted *Interstellar* **[MED] S3**. No real proposal is named in the film. The only physics vocabulary is "singularity", "gravitons" and the Weyl tensor.
 
-The gravity drive gyroscope was modelled on the puzzle box from *Hellraiser* **[MED] S3**, which says more about what the drive is for than any equation would.
+The gravity drive gyroscope was modelled on the puzzle box from *Hellraiser* **[MED] S3**; the drive is a horror object first.
 
 Lineage: [The paper fold](../../lineage/the-paper-fold.md).
 
@@ -26,7 +26,7 @@ Lineage: [The paper fold](../../lineage/the-paper-fold.md).
 
 **L3, take a shortcut.** Weir says so in terms: the ship does not move faster than light, it makes two distant points coincide and steps across. The mechanism is a singularity produced on board, which puts the film in the black-hole-as-tunnel family rather than the traversable-wormhole family. Its nearest physics cousin is therefore [passage through the Kerr interior](../physics/kerr-interior-passage.md), the one general-relativity construction in which a black hole is a door to somewhere else. That dossier's bill is B-mass and B-caus: a rotating hole of tens of thousands of solar masses at minimum, a route that runs through a region of built-in closed timelike curves, and a destination nobody chooses. The film keeps the last part faithfully.
 
-The honest wormhole cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md), whose bill is negative energy at the throat in neutron-star-core quantities, a far mouth carried to the destination at sublight speed before the first trip and conversion to a time machine by any round trip of a mouth. The film's drive pays none of these on screen: the gateway is created from one end, on demand, with no far mouth. A gate opened from one side only is exactly the object [CON-2](../../constraints/con-2.md) says cannot be aimed.
+The wormhole cousin is [Morris and Thorne 1988](../physics/morris-thorne-1988.md), whose bill is negative energy at the throat in neutron-star-core quantities, a far mouth carried to the destination at sublight speed before the first trip and conversion to a time machine by any round trip of a mouth. The film's drive pays none of these on screen: the gateway is created from one end, on demand, with no far mouth. A gate opened from one side only is exactly the object [CON-2](../../constraints/con-2.md) says cannot be aimed.
 
 There is a secondary move. The gateway is called "dimensional" and the place it leads is outside the universe, which is L4 language. The film uses it as horror, not as transport, and the drive as a transport device is scored as L3.
 

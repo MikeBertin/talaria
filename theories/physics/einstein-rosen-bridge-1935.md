@@ -38,7 +38,7 @@ The headline number for this dossier is therefore zero. Zero signals cross, at a
 
 ## What it costs
 
-Nothing, and that is the point. The Einstein–Rosen bridge is a vacuum solution: no negative energy, no new fields, no pre-laid route, no closed timelike curves. The bill is **B-none**, which in this catalogue means that nothing faster than light sits here. The bridge is the control case for L3: a wormhole with an honest energy budget is a wormhole you cannot use.
+Nothing, and that is the point. The Einstein–Rosen bridge is a vacuum solution: no negative energy, no new fields, no pre-laid route, no closed timelike curves. The bill is **B-none**, which in this catalogue means that nothing faster than light sits here. The bridge is the control case for L3: a wormhole that pays no exotic bill is a wormhole you cannot use.
 
 To turn it into a shortcut you have to hold the throat open against the focusing of null rays, and [Morris and Thorne 1988](morris-thorne-1988.md) show that this requires matter whose radial tension exceeds its energy density, which is the [STA-2](../../constraints/sta-2.md) bill. Every cost on this page's descendants is the cost of undoing the pinch-off.
 

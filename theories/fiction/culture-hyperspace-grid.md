@@ -32,7 +32,7 @@ The mark is F2. The rules are internally consistent across a dozen novels and ha
 
 ## What it ignores
 
-Causality is never mentioned in the essay or, as far as this catalogue knows, in any Culture novel as of 2026-09-12. Ships at 233,000 c cross Culture space in years by one shared clock, Minds converse across it with lags measured in the story's own time and no instalment notices that an FTL trip in one frame is a trip into the past in another. No preferred frame is stated and no rule about hyperspace time is given, so the mark is C-silent rather than C-dodges. The register would also ask what the grid's energy is, what sign it has and what an induced singularity is; the essay's answer to all three is that Banks does not know, which is honest and is scored as silence.
+Causality is never mentioned in the essay or, as far as this catalogue knows, in any Culture novel as of 2026-09-12. Ships at 233,000 c cross Culture space in years by one shared clock, Minds converse across it with lags measured in the story's own time and no instalment notices that an FTL trip in one frame is a trip into the past in another. No preferred frame is stated and no rule about hyperspace time is given, so the mark is C-silent rather than C-dodges. The register would also ask what the grid's energy is, what sign it has and what an induced singularity is; the essay's answer to all three is that Banks does not know, and that is scored as silence.
 
 ## Constraint scoring
 

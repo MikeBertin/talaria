@@ -34,7 +34,7 @@ The mark is F3. The stories state limitations and apply them consistently for fo
 
 ## What it ignores
 
-Causality is never raised in any Known Space story this catalogue knows of, as of 2026-09-12. Known Space runs on one clock, hyperwave communication is treated as instantaneous and no character receives a message before it was sent. Niven, who wrote a careful essay on the logic of time travel, does not apply it to his own drive, and the absence is the more notable for that. No preferred frame is stated, so the mark is C-silent. Energy is never priced: the drive is a device with a switch. What the blind spot is, physically, is never explained; what hyperspace predators eat is not said.
+Causality is never raised in any Known Space story this catalogue knows of, as of 2026-09-12. Known Space runs on one clock, hyperwave communication is treated as instantaneous and no character receives a message before it was sent. Niven's essay on time travel does not touch the hyperdrive. No preferred frame is stated, so the mark is C-silent. Energy is never priced: the drive is a device with a switch. What the blind spot is, physically, is never explained; what hyperspace predators eat is not said.
 
 ## Constraint scoring
 

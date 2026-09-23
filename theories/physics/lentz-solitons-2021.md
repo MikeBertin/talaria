@@ -12,7 +12,7 @@ He exhibits a configuration of rhomboid-shaped sources in a pentagonal arrangeme
 
 ## Origin and lineage
 
-Lentz, then at Göttingen, arXiv:2006.07125, June 2020; Class. Quantum Grav. 38, 075015 (2021) **[HIGH] S1**. It answers [Alcubierre 1994](alcubierre-1994.md) and [Natário 2002](natario-2002.md) directly, as the linear and elliptic cases it means to go beyond. It prompted [Fell and Heisenberg 2021](fell-heisenberg-2021.md), who generalise its potential ansatz, and it drew the reply from [Bobrick and Martire 2021](bobrick-martire-2021.md) that their conclusions do not support it. It is the case study behind [WRP-3](../../constraints/wrp-3.md) and one of the three claims dismantled in [ENE-5](../../constraints/ene-5.md). The press treated it as the first physical warp drive; the register treats it as the clearest example of why an Eulerian check is not the weak energy condition.
+Lentz, then at Göttingen, arXiv:2006.07125, June 2020; Class. Quantum Grav. 38, 075015 (2021) **[HIGH] S1**. It answers [Alcubierre 1994](alcubierre-1994.md) and [Natário 2002](natario-2002.md) directly, as the linear and elliptic cases it means to go beyond. It prompted [Fell and Heisenberg 2021](fell-heisenberg-2021.md), who generalise its potential ansatz, and it drew the reply from [Bobrick and Martire 2021](bobrick-martire-2021.md) that their conclusions do not support it. It is the case study behind [WRP-3](../../constraints/wrp-3.md) and one of the three claims [ENE-5](../../constraints/ene-5.md) answers. The press treated it as the first physical warp drive; the register treats it as the clearest example of why an Eulerian check is not the weak energy condition.
 
 ## The mechanism
 

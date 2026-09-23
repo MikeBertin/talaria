@@ -16,7 +16,7 @@ Dan O'Bannon wrote the story and screenplay, Walter Hill and David Giler revised
 
 ## Which loophole, and why
 
-L6 by the catalogue's habit, because the entry is here for the hypersleep, which is the honest answer to a long voyage and is the cousin's own device; the [relativistic rocket](../physics/relativistic-rocket.md) dossier is the physics of a crew that sleeps because the trip is long. But the *Nostromo* is not a relativistic rocket. Ten months across thirty-nine light years is FTL, unexplained, and if it were explained it would have to be L2, L3 or L4 and pay the corresponding bill: negative energy for a bubble or a throat ([ENE-2](../../constraints/ene-2.md)), or a second space with no counterpart in physics ([MAN-1](../../constraints/man-1.md)). The film's refusal to say is the finding, and it is scored below as silence rather than as a rule.
+L6 by the catalogue's habit, because the entry is here for the hypersleep, which is the sublight answer to a long voyage and is the cousin's own device; the [relativistic rocket](../physics/relativistic-rocket.md) dossier is the physics of a crew that sleeps because the trip is long. But the *Nostromo* is not a relativistic rocket. Ten months across thirty-nine light years is FTL, unexplained, and if it were explained it would have to be L2, L3 or L4 and pay the corresponding bill: negative energy for a bubble or a throat ([ENE-2](../../constraints/ene-2.md)), or a second space with no counterpart in physics ([MAN-1](../../constraints/man-1.md)). The film's refusal to say is the finding, and it is scored below as silence rather than as a rule.
 
 ## The rules it keeps
 

@@ -1,6 +1,6 @@
 # LOR-4: The Scharnhorst effect and OPERA
 
-*The one "measured" superluminal velocity in the literature was an instrument, and the one calculated is unmeasurable and causally harmless.*
+*The one reported superluminal velocity in the literature was an instrument error, and the one calculated is unmeasurable and causally harmless.*
 
 **Kind:** constraint · **Family:** LOR (Kinematics) · **Last reviewed:** 2026-09-12
 
@@ -10,7 +10,7 @@ The Scharnhorst effect: light propagating perpendicular to Casimir plates has a 
 
 ## What it forbids or costs
 
-The one "measured" superluminal velocity in the literature was an instrument, and the one calculated is unmeasurable and causally harmless
+The one reported superluminal velocity in the literature was an instrument error, and the one calculated is unmeasurable and causally harmless
 
 ## Escape hatches
 

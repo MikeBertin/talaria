@@ -14,7 +14,7 @@ Pages for M5, written from the sourced claims in the dossiers:
 | tolman-benford-timescape | Tolman (1917); Benford, Book and Newcomb name the antitelephone (1970); Benford writes it (1980) |
 | le-guin-ansible-outward | Le Guin coins the word (1966) and invents it in-story (1974); Card, Vinge, Bujold and others adopt it |
 | hyperspace-the-word | Meadowcroft (1928); Campbell's Islands of Space (1931); Williamson, Leinster, Smith, Sturgeon, Asimov; Star Wars makes it universal |
-| feinberg-tachyon-outward | Feinberg names the tachyon (1967); Star Trek, Watchmen, Yamato and general tech-babble |
+| feinberg-tachyon-outward | Feinberg names the tachyon (1967); Star Trek, Watchmen, Yamato and the stock word elsewhere |
 | morris-thorne-gate-fiction | The traversable wormhole (1988); Stargate (1994), Deep Space Nine (1993), Farscape (1999), and Sean Carroll's Bifrost line (2011) |
 | the-paper-fold | The folded-sheet demonstration of a shortcut: L'Engle (1962), Event Horizon (1997), Interstellar (2014), Thor: Love and Thunder (2022) |
 | physicists-in-the-writers-room | Dan Alderson for The Mote in God's Eye; Thorne for Contact and Interstellar; Carroll for Thor; Bormanis for the Orville; Sternbach and Okuda for Star Trek; Pellegrino for Avatar |

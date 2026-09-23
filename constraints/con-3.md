@@ -1,6 +1,6 @@
 # CON-3: The Krasnikov tube
 
-*The honest L2 scheme, and it still pays the ENE-3 bill and the CAU-3 bill.*
+*The L2 scheme that accepts the bootstrap, and it still pays the ENE-3 bill and the CAU-3 bill.*
 
 **Kind:** constraint · **Family:** CON (Control) · **Last reviewed:** 2026-09-12
 
@@ -10,7 +10,7 @@ The Krasnikov tube: a metric laid down along the outbound sublight journey that 
 
 ## What it forbids or costs
 
-The honest L2 scheme, and it still pays the ENE-3 bill and the CAU-3 bill
+The L2 scheme that accepts the bootstrap, and it still pays the ENE-3 bill and the CAU-3 bill
 
 ## Escape hatches
 

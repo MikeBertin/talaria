@@ -1,6 +1,6 @@
 # The wormhole goes to television
 
-*After 1988 the word "wormhole" turned up wherever a series needed a door between stars; how much of that was the paper and how much was the word already being in the air is the question this page keeps honest.*
+*After 1988 the word "wormhole" turned up wherever a series needed a door between stars; how much of that was the paper and how much was the word already being in the air is the question this page asks.*
 
 **Kind:** lineage · **Span:** 1988–2011 · **Last reviewed:** 2026-09-13
 
@@ -32,7 +32,7 @@ The one link on this page with a name and a date attached is the last. Sean Carr
 - **Any writer reading the paper.** Not one of the shows above is tied to Morris and Thorne by a credit, an interview or a script note. "The Price" arrived eighteen months after the paper with the paper's central adjective, which is suggestive and nothing more. Settling it would take the *TNG* or *DS9* writers' accounts (the *Deep Space Nine Companion*, Erdmann and Block 2000, was not consulted) or a science-consultant credit naming a source.
 - **Stargate and the word.** The fiction dossier gives the 1994 film the word "wormhole" at high confidence. Two transcripts say otherwise. Watching the film would settle it; until then the word belongs to the 1997 series.
 - **Deep Space Nine has no dossier.** The Bajoran wormhole is the most-used stable wormhole in television, artificial by the pilot's own account ("whoever made the Orbs also created this wormhole"), and it is not in the catalogue. That gap is a finding of this page, dated 2026-09-13.
-- **Diffusion against influence.** The honest reading is that Morris and Thorne changed what a wormhole was allowed to do in physics, and television picked up the change through the general culture, popular science and one another, not from the paper. Carroll's account is the exception that shows what documented influence looks like: a named person, a dated post, a sentence on screen.
+- **Diffusion against influence.** The plain reading is that Morris and Thorne changed what a wormhole was allowed to do in physics, and television picked up the change through the general culture, popular science and one another, not from the paper. Carroll's account is the exception that shows what documented influence looks like: a named person, a dated post, a sentence on screen.
 - **Carroll's exchange is a reconstruction.** He presents the Feige dialogue as going "something like this". The attribution of the phrase is his own, first-hand and unchallenged; the wording of the conversation is not verbatim.
 
 ## Sources

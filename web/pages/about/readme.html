@@ -8,8 +8,10 @@
 </head><body class="page">
 <nav class="top"><a href="../../index.html">TALARIA</a><span>/</span><a href="../../atlas.html">atlas</a><span>/</span><span class="kind">method</span></nav>
 <main class="doc">
+
 <h1>TALARIA</h1>
-<p><em>Every way anyone has proposed to beat light, real or invented, catalogued, graded and scored against the physics that says you can't.</em></p>
+<p><em>The ways people have proposed to beat light, real and invented, catalogued, graded and scored against the physics that says you can't.</em></p>
+<p>!<a href="web/demo.gif">The antitelephone, the Alcubierre bubble and the atlas</a></p>
 <h2>Why TALARIA</h2>
 <p>The talaria were the winged sandals of Hermes, the oldest faster-than-anything device in Western storytelling. Nobody in the myths asks how they work. That is the interesting part: three thousand years later we still want the sandals, and physics still hasn't decided whether they are impossible or merely very expensive. This project keeps both halves in one room. The real proposals get the scrutiny of the actual theorems that constrain them. The fictional ones get sorted by which loophole they are quietly using, and graded on whether the story noticed the bill.</p>
 <h2>The idea</h2>
@@ -28,10 +30,14 @@ web/             the interactive site: atlas, diagrams and runnable demos
 tools/           health checks, index and matrix builders</code></pre>
 <p>Start at <a href="../about/grading.html">GRADING.md</a> for the vocabulary, then <a href="../../atlas.html#register">constraints/REGISTER.md</a>, then the <a href="https://github.com/mikebertin/talaria/blob/main/theories/CATALOGUE.md">theory catalogue</a>.</p>
 <h2>Editorial stance</h2>
-<p>Neutral scoring, honest about consensus. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.</p>
-<h2>Running the site</h2>
-<pre><code>python3 -m http.server 8191 --directory web</code></pre>
-<p>Then open http://localhost:8191/. No build step, no dependencies. Health checks: <code>python3 tools/wiki.py</code>.</p>
+<p>Neutral scoring, with the consensus stated as it stands. Every real proposal is stated in its strongest form before it is scored, and every score cites the theorem it comes from. Fiction is never marked down for being fiction; it is graded on what it does with the physics it chose to invoke. Fringe and refuted proposals are included because the shape of what has been tried is part of the map.</p>
+<h2>The site</h2>
+<p><code>web/</code> is a static site: a hub, the atlas (both matrices, the join, the register and the lineage list), every page of the catalogue rendered from its markdown, and six demos.</p>
+<div class='tablewrap'><table><thead><tr><th>Demo</th><th>What it shows</th></tr></thead><tbody><tr><td>The antitelephone</td><td>Send a faster-than-light message to a moving friend and watch the reply land before you sent it</td></tr><tr><td>The Alcubierre bubble</td><td>The shape function, the expansion and contraction, the negative-energy shells and the bill in kilograms</td></tr><tr><td>The wormhole</td><td>A throat you can walk through, its tidal limits, and what one round trip with a mouth does to it</td></tr><tr><td>Pick a drive, pick a frame</td><td>Any of the sixty-eight fictional drives, any observer, and whether the round trip lands before departure</td></tr><tr><td>The honest rocket</td><td>Ship years against home years to the nearby stars at one g, and the fuel bill</td></tr><tr><td>No signalling</td><td>Entangled pairs, any measurement you like, and nothing gets through</td></tr></tbody></table></div>
+<p>Shared parts are vendored from STOA (<code>web/vendor/stoa/</code>), the palette is minted in OKLCH and validated (<code>web/palette.js</code> carries the provenance), and the only external asset is KaTeX from a CDN for the maths on the rendered pages.</p>
+<pre><code>python3 tools/build_web.py                       # render pages and data from the catalogue
+python3 -m http.server 8191 --directory web      # serve</code></pre>
+<p>Then open http://localhost:8191/. Tool order after any content change: <code>bite.py</code>, <code>backlink.py</code>, <code>build_matrix.py</code>, <code>wiki.py</code>, <code>check_prose.py</code>, <code>build_web.py</code>.</p>
 <h2>Status</h2>
 <p>Research phase, M0 complete. See <a href="https://github.com/mikebertin/talaria/blob/main/ROADMAP.md">ROADMAP.md</a>.</p>
 <p><em>Any quotes used in this project are real, sourced attributions. No invented quotes.</em></p>

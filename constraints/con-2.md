@@ -1,6 +1,6 @@
 # CON-2: The bootstrap problem
 
-*"Just build a warp drive" is not a plan.*
+*A warp drive cannot be created from the ship on a first flight.*
 
 **Kind:** constraint · **Family:** CON (Control) · **Last reviewed:** 2026-09-12
 
@@ -10,7 +10,7 @@ The bootstrap problem. Krasnikov: the traveller cannot hasten reaching the desti
 
 ## What it forbids or costs
 
-"Just build a warp drive" is not a plan. Warp travel is infrastructure, like a railway, laid at sublight speed
+A warp drive cannot be created from the ship on a first flight. Warp travel is infrastructure, like a railway, laid at sublight speed
 
 ## Escape hatches
 
@@ -43,7 +43,7 @@ The Krasnikov tube (CON-3), which accepts this and makes the return trip fast. C
 
 - SILENT: [Asimov's Foundation: the Jump through hyperspace (1942 onward)](../theories/fiction/foundation-hyperspace-jumps.md). The Jump needs no route laid in advance: Trevize Jumps into unexplored space in *Foundation's Edge*, and the series never asks whether a first flight is possible without infrastructure.
 - SILENT: [Banks's Culture: the energy grid, infraspace and ultraspace (1987 onward)](../theories/fiction/culture-hyperspace-grid.md). Ships go anywhere with no route laid; the bootstrap is never raised.
-- SILENT: [Battlestar Galactica: the FTL jump (2004 series)](../theories/fiction/battlestar-galactica-ftl-jump.md). Jumps go to any calculated point with nothing laid in advance, which is the opposite of what CON-2 allows; the series never notices the problem. The Red Line is a limit on calculation, not on infrastructure.
+- SILENT: [Battlestar Galactica: the FTL jump (2004 series)](../theories/fiction/battlestar-galactica-ftl-jump.md). Jumps go to any calculated point with nothing laid in advance, which is the opposite of what CON-2 allows; the series does not raise it. The Red Line is a limit on calculation, not on infrastructure.
 - SILENT: [Campbell's Islands of Space (1931): where the word came from](../theories/fiction/word-hyperspace-campbell-1931.md). The ship's first flight goes anywhere with no route laid; the bootstrap is never raised.
 - SILENT: [Commonwealth: CST wormholes with trains through them (Hamilton 2004)](../theories/fiction/commonwealth-cst-wormholes.md). The fiction's premise is the reverse of what CON-2 allows: wormholes are opened from one end to unvisited destinations, with nothing laid in advance. The problem is never noticed; the only stated limit is range.
 - SILENT: [Doctor Who: the TARDIS and the time vortex](../theories/fiction/doctor-who-tardis.md). The ship works from anywhere on its first flight with nothing laid along the route; the bootstrap problem is never raised.
@@ -65,7 +65,7 @@ The Krasnikov tube (CON-3), which accepts this and makes the return trip fast. C
 - ENGAGES: [Contact: the Machine and the tunnel system (Sagan 1985, Zemeckis 1997)](../theories/fiction/contact-sagan-machine.md). This is the constraint the work answers on purpose: the tunnels are a pre-existing network built by an earlier civilisation and merely used by the senders of the message. Warp travel is infrastructure, and *Contact* makes it inherited infrastructure.
 - ENGAGES: [Interstellar: the wormhole near Saturn (2014)](../theories/fiction/interstellar-wormhole.md). The film says the wormhole is not natural and was placed there by "they"; the route was laid in advance by an agent whose reach covers both ends, which is exactly the escape hatch CON-2 names.
 - RULE: [2001: A Space Odyssey (1968): the Star Gate](../theories/fiction/2001-star-gate.md). The gate was laid three million years in advance by the makers and signalled from the Moon; the route exists before any human uses it, which is the entry's demand, and the novel makes the waiting explicit.
-- RULE: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). Slipstream is a network of routes that exist independently of the ship, must be found, and improve with use ("The Widening Gyre" follows routes "large and well-traveled"). That is infrastructure rather than a drive built from a standing start, which is the shape Krasnikov's bootstrap requires; the show does not know it is answering the row, but the rule does.
+- RULE: [Andromeda: the slipstream](../theories/fiction/andromeda-slipstream.md). Slipstream is a network of routes that exist independently of the ship, must be found, and improve with use ("The Widening Gyre" follows routes "large and well-traveled"). That is infrastructure rather than a drive built from a standing start, which is the shape Krasnikov's bootstrap requires; the show does not name the row, but the rule answers it.
 - RULE: [Babylon 5: hyperspace, jump gates and beacons (1993 to 1998)](../theories/fiction/babylon-5-hyperspace.md). Gates and beacons are the register's railway laid in advance: ships without jump engines cannot enter at all, everyone needs the beacon to arrive and the frontier is opened by explorer ships that build the next gate ("A Distant Star"). The stated rule answers the bootstrap without knowing it.
 - RULE: [Cordwainer Smith: planoforming, Space² and Space³](../theories/fiction/cordwainer-smith-planoforming.md). Locksheets, "one hundred thousand charts to the inch", prepared in advance for every contingency ("The Burning of the Brain"), are the work's version of a pre-laid route: a ship without the right sheet is lost. The rule answers Krasnikov's bootstrap in spirit, by making planoforming depend on prior survey.
 - RULE: [Cowboy Bebop (1998): the astral gates](../theories/fiction/cowboy-bebop-astral-gates.md). The gates were built by the corporation at sublight speed before anyone used them, and there is no gate anywhere a gate has not been built; the route-laying step the entry demands is the series' whole premise, and the show says so by making the corporation the owner.

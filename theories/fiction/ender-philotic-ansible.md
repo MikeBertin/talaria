@@ -48,7 +48,7 @@ Every ansible aboard the invasion fleet is a transmitter in relative motion with
 | CAU-2 | N/A | No geometry; a signal loop, not a closed curve of the metric |
 | CAU-3 | N/A | No wormhole or warp bubble; the relativistic round trips (Mazer, the fleet) are legs without a device |
 | CAU-4 | SILENT | "Instantaneous" needs a frame and the philotic ontology of *Xenocide* supplies none; the preferred-frame escape is neither taken nor refused |
-| CAU-5 | SILENT | Paired particles whose partner forms and deforms as the sender does is the entanglement-radio claim in costume; the theorem that closes it is never touched, and Card disclaims any real-physics basis |
+| CAU-5 | SILENT | Paired particles whose partner forms and deforms as the sender does is the entanglement-radio claim under another name; the theorem that closes it is never touched, and Card disclaims any real-physics basis |
 | ENE-1 | N/A | No stress-energy is involved |
 | ENE-2 | N/A | No gravitational time advance claimed |
 | ENE-3 | N/A | No negative energy to bound |

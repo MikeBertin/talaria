@@ -41,7 +41,7 @@ The frame question never comes up in any episode. The Union runs on one clock, s
 |---|---|---|
 | CAU-1 | SILENT | Bubbles cross flat space between stars faster than light in every episode; the frame-dependence of arrival order is never considered. |
 | CAU-2 | SILENT | No causal loops are built by the drive; the show's time travel uses another device and does not engage the conjecture. |
-| CAU-3 | SILENT | A fleet of Alcubierre bubbles is exactly the two-bubble time machine of Everett; the show has a fleet and never notices. |
+| CAU-3 | SILENT | A fleet of Alcubierre bubbles is exactly the two-bubble time machine of Everett; the show has a fleet and does not raise it. |
 | CAU-4 | SILENT | The Union's single clock is the preferred frame the drive would need and is never named as such. |
 | CAU-5 | N/A | No entanglement in the drive, although the consultant's 2017 remarks invoked entanglement as a design metaphor; nothing on screen. |
 | ENE-1 | SILENT | The production names exotic matter (dysonium) as the fuel, which is the energy-condition violation by another name; no episode says what dysonium's energy density is. |

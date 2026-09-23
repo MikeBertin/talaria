@@ -43,9 +43,9 @@ Every entry in [the register](../../constraints/REGISTER.md), one row each, verd
 
 | Constraint | Verdict | Note |
 |---|---|---|
-| CAU-1 | SILENT | Instant tachyon messages and day-long jumps in one galactic time; nobody in five seasons asks what a moving observer would see. |
+| CAU-1 | SILENT | Instant tachyon messages and day-long jumps in one galactic time; no episode asks what a moving observer would see. |
 | CAU-2 | SILENT | No loop built, none forbidden; "Babylon Squared" and "War Without End" send a station through time by a different device, not by hyperspace. |
-| CAU-3 | SILENT | Every capital ship carries jump engines; two of them are the register's time machine and the show never notices. |
+| CAU-3 | SILENT | Every capital ship carries jump engines; two of them are the register's time machine, and the show does not raise it. |
 | CAU-4 | SILENT | The setting behaves as if it had a preferred frame but no rule states one. |
 | CAU-5 | N/A | Communications are tachyon beams, not entanglement; the no-communication theorem has nothing to bite. |
 | ENE-1 | SILENT | Opening a jump point is said to be the costly step and the cost is never given a sign or a size. |

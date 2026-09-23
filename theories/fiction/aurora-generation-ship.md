@@ -18,7 +18,7 @@ The novel fed a documented physics reply. Gregory Benford reviewed it in *Nature
 
 ## Which loophole, and why
 
-L6, not FTL. The ship is the [relativistic rocket](../physics/relativistic-rocket.md) at its cautious end, a tenth of c, where the Lorentz factor is 1.005 and time dilation is a rounding error; the cousin's bill is B-mass, energy at heroic scale, and the novel pays it with a sixty-year laser and a twenty-year fusion burn, and then has the bill come due again on the way home when the fuel is gone. The physics interest of the entry is that it is the only one in the class written to prove the class insufficient: where *Tau Zero* uses the honest rocket to reach the end of time, *Aurora* uses it to argue that the honest rocket is not enough.
+L6, not FTL. The ship is the [relativistic rocket](../physics/relativistic-rocket.md) at its cautious end, a tenth of c, where the Lorentz factor is 1.005 and time dilation is a rounding error; the cousin's bill is B-mass, energy at heroic scale, and the novel pays it with a sixty-year laser and a twenty-year fusion burn, and then has the bill come due again on the way home when the fuel is gone. The physics interest of the entry is that it is the only one in the class written to prove the class insufficient: where *Tau Zero* uses the sublight rocket to reach the end of time, *Aurora* uses it to argue that the rocket is not enough.
 
 ## The rules it keeps
 

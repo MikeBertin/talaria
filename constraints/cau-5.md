@@ -28,7 +28,7 @@ None within quantum mechanics. Nonlinear modifications of quantum mechanics woul
 
 **Fictional drives**
 
-- SILENT: [Ender's philotic ansible](../theories/fiction/ender-philotic-ansible.md). Paired particles whose partner forms and deforms as the sender does is the entanglement-radio claim in costume; the theorem that closes it is never touched, and Card disclaims any real-physics basis
+- SILENT: [Ender's philotic ansible](../theories/fiction/ender-philotic-ansible.md). Paired particles whose partner forms and deforms as the sender does is the entanglement-radio claim under another name; the theorem that closes it is never touched, and Card disclaims any real-physics basis
 - SILENT: [Le Guin's ansible](../theories/fiction/le-guin-ansible.md). The texts name no quantum mechanism, so the theorem has nothing to close on the page; every later attempt to give the ansible one is the [entanglement radio](../theories/physics/entanglement-signalling.md) and is closed by it
 - SILENT: [Mass Effect: element zero and the FTL drive (BioWare, 2007)](../theories/fiction/mass-effect-element-zero.md). The quantum entanglement communicator of Mass Effect 2 sends messages instantly by entanglement; the Codex entry does not address the no-communication theorem. Scored here because the device is part of the same setting, not the drive.
 - SILENT: [Revelation Space lighthuggers](../theories/fiction/revelation-space-lighthuggers.md). The Exordium is described as a quantum, superposition-based link to other selves; the no-communication theorem is not mentioned and the text does not say how the channel evades it

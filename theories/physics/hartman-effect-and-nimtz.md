@@ -83,7 +83,7 @@ Nothing. The Hartman effect is real and needs no exotic matter, no new field and
 - 2002 to 2006: Winful reinterprets the group delay as a lifetime, first in Optics Express, then in Physical Review Letters, then at length in Physics Reports 436, 1, whose discussion section prints the referee's objections and answers them **[HIGH] S1**.
 - 2007: Nimtz and Stahlhofen's "macroscopic violation" preprint and the New Scientist coverage; Winful's comment (arXiv:0709.2736) shows the metre-scale claim is physically impossible at the stated attenuation and that the measurement is classical **[MED] S1**. Neither the preprint nor the comment appears to have been published in a journal as of 2026-09-12.
 - 2011: Nimtz, "Tunneling confronts special relativity", Found. Phys. 41, 1193, restates the claim in a peer-reviewed venue **[MED] S1**. 2013: Aichmann and Nimtz's preprint history of the dispute names Winful as the chief antagonist and does not engage the lifetime identity on its merits **[MED] S1**.
-- The consensus position of the optics community, as recorded in Winful's review and in Chiao and Steinberg's earlier review, is that tunnelling delays are real, that the Hartman effect is real and that no signal is superluminal. No peer-reviewed rebuttal of Winful's lifetime interpretation exists as of 2026-09-12; the disagreement continues in Nimtz's own papers and nowhere else.
+- The consensus position of the optics community, as recorded in Winful's review and in Chiao and Steinberg's earlier review, is that tunnelling delays are real, that the Hartman effect is real and that no signal is superluminal. No peer-reviewed rebuttal of Winful's lifetime interpretation has appeared as of 2026-09-12; Nimtz's later papers restate the claim.
 
 ## Sources
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE}} · TALARIA report card</title>
+<!-- Template for the per-drive report cards. Filled by tools/cards/make-cards.py,
+     rendered with headless Chrome, downsampled with sips. Same ground, fonts and
+     feel as og-card.html at the repo root. Placeholders use double braces. -->
+<style>
+  :root {
+    --bg: #0a0a0f; --panel: #13131c; --line: #23232f; --ink: #e7e7ef; --muted: #8a8a9c;
+    --accent: #6d96ec; --accent2: #f68aaf;
+    --loop: {{LOOP_TEXT}}; --loop-mark: {{LOOP_MARK}};
+    --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; background: var(--bg);
+    background-image: radial-gradient(900px 600px at 70% -10%, #14142a, transparent);
+    color: var(--ink); font-family: system-ui, -apple-system, sans-serif;
+    padding: 54px 70px 0; overflow: hidden; position: relative; }
+  body::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 10px; background: var(--loop-mark); }
+  .kicker { font-family: var(--mono); font-size: 19px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+  h1 { font-size: {{TITLE_SIZE}}px; line-height: 1.12; font-weight: 800; letter-spacing: -0.01em; max-width: 1060px;
+    overflow-wrap: anywhere; margin-bottom: 18px; }
+  .chip { display: inline-block; font-family: var(--mono); font-size: 21px; padding: 8px 18px; border-radius: 10px;
+    border: 1.5px solid var(--loop); color: var(--loop); background: var(--panel); margin-bottom: 22px; }
+  .chip b { font-weight: 700; }
+  .marks { display: grid; grid-template-columns: 150px 1fr; row-gap: 8px; column-gap: 18px; font-size: 25px; margin-bottom: 20px; }
+  .marks .k { font-family: var(--mono); font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); align-self: baseline; padding-top: 5px; }
+  .marks .v { color: var(--ink); }
+  .marks .v code { font-family: var(--mono); font-size: 21px; color: var(--loop); margin-right: 4px; }
+  .hook { font-size: {{HOOK_SIZE}}px; line-height: 1.38; color: var(--muted); max-width: 1060px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .foot { position: absolute; left: 70px; right: 70px; bottom: 40px; display: flex; justify-content: space-between; align-items: baseline; }
+  .mark { font-size: 24px; letter-spacing: 0.22em; font-weight: 800;
+    background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .url { font-family: var(--mono); font-size: 18px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="kicker">TALARIA · fiction report card · {{NOTABILITY}}</div>
+  <h1>{{TITLE}}</h1>
+  <span class="chip"><b>{{LOOP_CODE}}</b> · {{LOOP_NAME}}</span>
+  <div class="marks">
+    <span class="k">coherence</span><span class="v"><code>{{COHERENCE}}</code> · {{COHERENCE_WORDS}}</span>
+    <span class="k">causality</span><span class="v"><code>{{CAUSALITY}}</code> · {{CAUSALITY_WORDS}}</span>
+    <span class="k">register</span><span class="v">{{REGISTER_WORDS}}</span>
+  </div>
+  <p class="hook">{{HOOK}}</p>
+  <div class="foot">
+    <span class="mark">TALARIA</span>
+    <span class="url">mikebertin.github.io/talaria/pages/fiction/{{SLUG}}.html</span>
+  </div>
+</body>
+</html>
