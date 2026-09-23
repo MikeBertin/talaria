@@ -33,7 +33,7 @@ function openDossier(kind, slug) {
 function openConstraint(id) {
   const r = REG[id]; if (!r) return;
   const bites = kind => D[kind].filter(d => d.verdicts[id] && d.verdicts[id] !== 'N/A');
-  let h = `<h2>${esc(r.id)}: ${esc(r.title)}</h2><div class="meta">${esc(D.families[r.family] || r.family)}</div><p style="font-size:13.5px">${esc(r.result)}</p><p style="font-size:13px;color:var(--muted)"><b>What it forbids or costs.</b> ${esc(r.forbids)}</p><p><a href="pages/constraints/${id.toLowerCase()}.html">Read the entry →</a></p>`;
+  let h = `<h2>${esc(r.title)}</h2><div class="meta">${esc(D.families[r.family] || r.family)}</div><p style="font-size:13.5px">${esc(r.result)}</p><p style="font-size:13px;color:var(--muted)"><b>What it forbids or costs.</b> ${esc(r.forbids)}</p><p><a href="pages/constraints/${id.toLowerCase()}.html">Read the entry →</a></p>`;
   for (const [kind, label] of [['physics', 'Physics'], ['fiction', 'Fiction']]) {
     const bs = bites(kind); if (!bs.length) continue;
     const by = {}; bs.forEach(d => (by[d.verdicts[id]] = by[d.verdicts[id]] || []).push(d));
@@ -84,7 +84,7 @@ const hc = document.createElement('div'); hc.id = 'hovercard'; hc.hidden = true;
 function showCard(th) {
   const r = REG[th.dataset.hc]; if (!r) return;
   const short = t => t.length > 220 ? t.slice(0, 217).replace(/\s+\S*$/, '') + '…' : t;
-  hc.innerHTML = `<b>${esc(r.id)}</b> <span class="fam">${esc(D.families[r.family] || r.family)}</span><h4>${esc(r.title)}</h4><p>${esc(short(r.forbids))}</p><small>click for the full entry, escape hatches and who it bites</small>`;
+  hc.innerHTML = `<b>${esc(r.id)}</b> <span class="fam">${esc(D.families[r.family] || r.family)}</span><h4>${esc(r.title.replace(/^[A-Z]{3}-\d+:\s*/, ''))}</h4><p>${esc(short(r.forbids))}</p><small>click for the full entry, escape hatches and who it bites</small>`;
   const b = th.getBoundingClientRect();
   hc.hidden = false;
   const w = hc.offsetWidth;
@@ -120,3 +120,11 @@ renderJoin('L2');
 document.getElementById('reg-list').innerHTML = D.register.map(r => `<div class="entry"><h3><span class="id">${r.id}</span><a href="pages/constraints/${r.id.toLowerCase()}.html">${esc(r.title)}</a> <span class="chip">${esc(D.families[r.family] || r.family)}</span></h3><p>${esc(r.forbids)}</p><p><a href="#" data-c="${r.id}" style="font-size:12.5px">who it bites →</a></p></div>`).join('');
 document.getElementById('reg-list').addEventListener('click', e => { const a = e.target.closest('[data-c]'); if (a) { e.preventDefault(); openConstraint(a.dataset.c); } });
 document.getElementById('lin-list').innerHTML = D.lineage.map(l => `<div class="entry"><h3><a href="pages/lineage/${l.slug}.html">${esc(l.title)}</a> <span class="chip">${esc(l.span)}</span></h3><p>${esc(l.hook)}</p></div>`).join('');
+
+/* ---------- deep links: ?d=kind:slug opens a dossier panel, ?c=ID a constraint panel ---------- */
+{
+  const q = new URLSearchParams(location.search);
+  const d = q.get('d'), c = q.get('c');
+  if (d && d.includes(':')) { const [k, s] = d.split(':'); openDossier(k, s); }
+  else if (c) openConstraint(c.toUpperCase());
+}

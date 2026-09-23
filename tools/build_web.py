@@ -162,6 +162,7 @@ SHELL = """<!doctype html>
 </head><body class="page">
 <nav class="top"><a href="../../index.html">TALARIA</a><span>/</span><a href="../../atlas.html">atlas</a><span>/</span><span class="kind">{kind}</span></nav>
 <main class="doc">
+{actions}
 {body}
 </main>
 <footer>TALARIA · every faster-than-light scheme, real or invented, scored against the physics that says you can't · <a href="https://github.com/mikebertin/talaria">source</a></footer>
@@ -169,6 +170,18 @@ SHELL = """<!doctype html>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}})"></script>
 </body></html>
 """
+
+
+def actions_for(kind, slug):
+    if kind == "fiction":
+        return ('<div class="actions"><a href="../../demos/pick-a-drive.html?drive=%s">Run this drive through the antitelephone →</a>'
+                '<a href="../../atlas.html?d=fiction:%s#fiction">Its row in the atlas →</a>'
+                '<a href="../../cards/%s.png">Report card →</a></div>' % (slug, slug, slug))
+    if kind == "physics":
+        return '<div class="actions"><a href="../../atlas.html?d=physics:%s#physics">Its row in the atlas →</a></div>' % slug
+    if kind == "constraints":
+        return '<div class="actions"><a href="../../atlas.html?c=%s#register">Who it bites, in the atlas →</a></div>' % slug.upper()
+    return ""
 
 
 def title_hook(text, stem):
@@ -212,7 +225,7 @@ def build():
             text = p.read_text(encoding="utf-8")
             title, hook = title_hook(text, p.stem)
             body = md_to_html(text)
-            (outdir / f"{p.stem}.html").write_text(SHELL.format(title=html.escape(title), kind=kind, body=body), encoding="utf-8")
+            (outdir / f"{p.stem}.html").write_text(SHELL.format(title=html.escape(title), kind=kind, body=body, actions=actions_for(kind, p.stem)), encoding="utf-8")
             n += 1
             meta = {k: (r.search(text).group(1).strip() if r.search(text) else "") for k, r in META.items()}
             entry = {"slug": p.stem, "title": title, "hook": hook, "reviewed": meta["reviewed"]}
@@ -233,7 +246,7 @@ def build():
     for src, name in ((ROOT / "GRADING.md", "grading"), (ROOT / "constraints" / "README.md", "register"), (ROOT / "README.md", "readme")):
         text = src.read_text(encoding="utf-8")
         title = title_hook(text, name)[0]
-        (about / f"{name}.html").write_text(SHELL.format(title=html.escape(title), kind="method", body=md_to_html(text)), encoding="utf-8")
+        (about / f"{name}.html").write_text(SHELL.format(title=html.escape(title), kind="method", body=md_to_html(text), actions=""), encoding="utf-8")
         n += 1
     (WEB / "data").mkdir(exist_ok=True)
     (WEB / "data" / "talaria.js").write_text("window.TALARIA = " + json.dumps(data, ensure_ascii=False) + ";\n", encoding="utf-8")

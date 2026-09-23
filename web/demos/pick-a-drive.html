@@ -155,6 +155,7 @@ sel.addEventListener('change', () => pickDrive(sel.value));
 bindSlider('m', { out: 'mVal', scale: 0.1, fmt: x => x.toFixed(1) + ' c', set: x => { if (hasDial()) S.mult = x; }, after: () => { syncDial(); draw(); } });
 bindSlider('v', { out: 'vVal', scale: 0.01, fmt: x => x.toFixed(2) + ' c', set: x => S.v = x, after: draw });
 seg('frameSeg', d => { S.frame = d.frame; draw(); });
+{ const q = new URLSearchParams(location.search).get('drive'); if (q && byId[q]) { sel.value = q; pickDrive(q); } }
 
 function draw() {
   const { v, d } = S;

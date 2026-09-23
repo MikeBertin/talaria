@@ -118,3 +118,8 @@ aside#panel .note { color: var(--muted); }
 ol.moves { padding-left: 22px; margin: 6px 0 18px; }
 ol.moves li { margin: 8px 0; line-height: 1.55; }
 ol.moves li b { font-weight: 700; }
+
+/* per-page action bar on rendered pages */
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+.actions a { font-size: 12.5px; text-decoration: none; color: var(--accent); border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 5px 12px; }
+.actions a:hover { border-color: var(--accent); }
