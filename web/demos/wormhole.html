@@ -61,7 +61,11 @@
         <input type="range" id="vm" min="10" max="95" value="90">
         <label>Length of the trip, by the clocks at home <span class="val" id="TVal"></span></label>
         <input type="range" id="T" min="0" max="200" value="0">
-        <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Mouth B is carried away and brought back. Its clock runs slow on the trip, by the usual factor <span class="x" data-pop="gamma">gamma</span>. The tunnel is short, so it joins the two mouths at equal readings of their own clocks. The diagram is a <span class="x" data-pop="minkowski">spacetime diagram</span>: space across, home time up, with the gap between the mouths not to scale.</p>
+        <div class="row" style="margin-top:14px">
+          <button id="play" class="primary"></button>
+          <button id="reset">Reset</button>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:14px">Mouth B is carried away and brought back. Its clock runs slow on the trip, by the usual factor <span class="x" data-pop="gamma">gamma</span>. The tunnel is short, so it joins the two mouths at equal readings of their own clocks. The diagram is a <span class="x" data-pop="minkowski">spacetime diagram</span>: space across, home time up, with the gap between the mouths not to scale. Press play and the trip runs in about eight seconds, both dials turning as it goes.</p>
       </div>
     </div>
   </div>
@@ -72,6 +76,7 @@
       <div class="ncard"><h3>The throat bound <span>grows with speed</span></h3><p>In the throat view set the speed to 0.01c. The dashed one-g ring sits at 1,000 km for the Ellis tunnel and at 500 km if you switch to Morris and Thorne's own shape, the register's number. Slide the speed to 0.1c and both grow tenfold. The ring scales as γv.</p><span class="x why" data-pop="haz3">Register HAZ-3</span></div>
       <div class="ncard"><h3>Bigger is safer and <span>dearer</span></h3><p>Slide the throat radius up. The tension at the throat falls, but the mass of negative-energy matter needed to hold it open grows in step with the radius: about 170 suns' worth at 500 km, about 3,400 at 10,000 km.</p><span class="x why" data-pop="sta2">Register STA-2</span></div>
       <div class="ncard"><h3>One trip makes a <span>time machine</span></h3><p>Switch to the time machine, set 0.9c and one year. Mouth B comes home 0.56 years younger than mouth A, and the tunnel now leads 0.56 years into the past. Nothing on the diagram ever moves faster than light.</p><span class="x why" data-pop="cau3">Register CAU-3</span></div>
+      <div class="ncard"><h3>Watch the clocks <span>drift apart</span></h3><p>In the time machine view press play. Mouth B climbs its V on the diagram while A's dial turns at the home rate and B's at 1/γ of it, so the gap between the two readings opens on the way out and keeps opening on the way home. When B lands the crossing arrow appears, and its height is the lag the two dials now show.</p><span class="x why" data-pop="twin">Why no FTL is needed</span></div>
       <div class="ncard"><h3>The twin paradox <span>does all the work</span></h3><p>Push the trip speed toward 0.95c: the offset climbs toward 69 percent of the trip time. The whole effect is ordinary time dilation plus a tunnel that keeps the two clocks in step. That is why every wormhole owes this bill.</p><span class="x why" data-pop="twin">Why no FTL is needed</span></div>
       <div class="ncard"><h3>The conjectured <span>stop</span></h3><p>Hawking's chronology protection: as the loop is about to close, the energy of quantum fields piles up on the edge of the time-travel region and the back reaction shuts it. Set any offset you like on the diagram; this is the claim that the last step never happens. A conjecture, not a theorem.</p><span class="x why" data-pop="cau2">Register CAU-2</span></div>
       <div class="ncard"><h3>It cannot be a <span>shortcut</span> at all</h3><p>Topological censorship: if the averaged null energy condition holds, no wormhole beats the outside route. The tunnel drawn here is a shortcut, so it needs a violation no known field supplies. The modern traversable wormholes obey the theorem by being long, and the time-machine step fails on them.</p><span class="x why" data-pop="ene7">Register ENE-7</span></div>
@@ -87,7 +92,7 @@
 <footer>TALARIA · the wormhole · Morris and Thorne 1988 · Morris, Thorne and Yurtsever 1988 · Hawking 1992 · Friedman, Schleich and Witt 1993</footer>
 <script type="module">
 import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
-import { bindSlider, seg } from '../vendor/stoa/controls.js';
+import { bindSlider, seg, playToggle } from '../vendor/stoa/controls.js';
 import { initPopovers } from '../vendor/stoa/popover.js';
 import { DEMO, LOOPHOLES, INK, PANEL, GRID, MUTED } from '../palette.js';
 
@@ -115,13 +120,36 @@ const cv = document.getElementById('cv');
 const ctx = setup(cv, W, H);
 const S = { view: 'throat', b0: 1e6, vt: 0.01, shape: 'ellis', vm: 0.9, T: 1 };
 
+// --- the flight of mouth B: p is the fraction of the trip flown, 1 = the finished picture ---
+const FLIGHT_MS = 8000;
+const A = { p: 1, start: 0, raf: 0 };
+const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+function frame(now) {
+  A.p = Math.min(1, (now - A.start) / FLIGHT_MS);
+  draw();
+  if (A.p >= 1) { A.raf = 0; play.stop(); return; }
+  A.raf = requestAnimationFrame(frame);
+}
+const play = playToggle('play', { labels: ['▶ Fly mouth B', '⏸ Pause'], onChange: on => {
+  if (!on) { cancelAnimationFrame(A.raf); A.raf = 0; return; }
+  if (reduced.matches) { A.p = 1; draw(); play.stop(); return; }   // no motion: jump to the finished picture
+  if (A.p >= 1) A.p = 0;                                            // play from the end starts over
+  A.start = performance.now() - A.p * FLIGHT_MS;                    // resume from a pause where it left off
+  cancelAnimationFrame(A.raf); A.raf = requestAnimationFrame(frame);
+}});
+document.getElementById('reset').addEventListener('click', () => { play.stop(); A.p = 0; draw(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) play.stop(); });
+// a new speed or trip length while flying restarts the flight; paused or static, it just redraws
+function restart() { if (play.playing) { A.p = 0; A.start = performance.now(); } draw(); }
+
 bindSlider('b0', { out: 'b0Val', scale: 1, fmt: s => km(1000 * 10 ** (s / 100)), set: s => S.b0 = 1000 * 10 ** (s / 100), after: draw });
 bindSlider('vt', { out: 'vtVal', scale: 1, fmt: s => vOf(s).toFixed(3) + ' c', set: s => S.vt = vOf(s), after: draw });
-bindSlider('vm', { out: 'vmVal', scale: 0.01, fmt: x => x.toFixed(2) + ' c', set: x => S.vm = x, after: draw });
-bindSlider('T', { out: 'TVal', scale: 1, fmt: s => yr(10 ** (s / 100)) + ' years', set: s => S.T = 10 ** (s / 100), after: draw });
+bindSlider('vm', { out: 'vmVal', scale: 0.01, fmt: x => x.toFixed(2) + ' c', set: x => S.vm = x, after: restart });
+bindSlider('T', { out: 'TVal', scale: 1, fmt: s => yr(10 ** (s / 100)) + ' years', set: s => S.T = 10 ** (s / 100), after: restart });
 seg('shapeSeg', d => { S.shape = d.shape; draw(); });
 seg('viewSeg', d => {
   S.view = d.view;
+  if (d.view !== 'machine') play.stop();
   document.getElementById('ctl-throat').hidden = d.view !== 'throat';
   document.getElementById('ctl-machine').hidden = d.view !== 'machine';
   document.getElementById('legend-throat').hidden = d.view !== 'throat';
@@ -237,6 +265,7 @@ function drawThroat() {
 function drawMachine() {
   const { vm: v, T } = S;
   const g = gamma(v), dt = offset(v, T);
+  const p = A.p, tNow = p * T, flying = p < 1;   // home time flown so far; A's clock reads tNow, B's reads tNow/γ
   clear(ctx, W, H, PANEL);
 
   // two clocks on the left: one full turn = T years of home time
@@ -251,10 +280,10 @@ function drawMachine() {
     text(title, x, y - r - 18, colT, 13, 'center', true);
     text(reading, x, y + r + 18, INK, 13, 'center');
   };
-  clock(125, 150, 58, 1, DEMO.a.mark, DEMO.a.text, 'mouth A, stayed home', `clock reads ${yr(T)} yr`);
-  clock(125, 380, 58, 1 / g, DEMO.b.mark, DEMO.b.text, 'mouth B, went and came back', `clock reads ${yr(T / g)} yr`);
+  clock(125, 150, 58, p, DEMO.a.mark, DEMO.a.text, flying ? 'mouth A, at home' : 'mouth A, stayed home', `clock reads ${yr(tNow)} yr`);
+  clock(125, 380, 58, p / g, DEMO.b.mark, DEMO.b.text, flying ? (p > 0 ? 'mouth B, on its trip' : 'mouth B, about to leave') : 'mouth B, went and came back', `clock reads ${yr(tNow / g)} yr`);
   text(`one full turn = ${yr(T)} years of home time`, 125, 480, MUTED, 11.5, 'center');
-  text(`B lags A by ${yr(dt)} yr`, 125, 500, INK, 12.5, 'center');
+  text(`B lags A by ${yr(p * dt)} yr${flying ? ' so far' : ''}`, 125, 500, INK, 12.5, 'center');
 
   // spacetime diagram on the right, c = 1, years and light-years
   const ox = 372, tmin = -0.06 * T, tmax = 1.45 * T, k = (505 - 45) / (tmax - tmin);
@@ -267,24 +296,46 @@ function drawMachine() {
   line(260, Y(0), W - 10, Y(0), MUTED, 1, [3, 5]); text('B leaves', W - 16, Y(0) - 9, MUTED, 11, 'right');
   line(260, Y(T), W - 10, Y(T), MUTED, 1, [3, 5]); text(`B is back, ${yr(T)} yr later`, W - 16, Y(T) - 9, MUTED, 11, 'right');
 
-  // worldlines: A at x = 0, B out to D + vT/2 and back
-  line(X(0), Y(tmin), X(0), Y(tmax), DEMO.a.mark, 3);
-  const bpath = [[D, tmin], [D, 0], [D + v * T / 2, T / 2], [D, T], [D, tmax]];
-  ctx.strokeStyle = DEMO.b.mark; ctx.lineWidth = 3; ctx.beginPath();
-  bpath.forEach(([x, t], i) => i ? ctx.lineTo(X(x), Y(t)) : ctx.moveTo(X(x), Y(t))); ctx.stroke();
+  // worldlines: A at x = 0, B out to D + vT/2 and back. While flying, the part still to come is drawn faint
+  const bAt = t => t <= 0 ? D : t <= T / 2 ? D + v * t : t <= T ? D + v * (T - t) : D;
+  const apath = [[0, tmin], [0, tmax]], bpath = [[D, tmin], [D, 0], [D + v * T / 2, T / 2], [D, T], [D, tmax]];
+  const poly = (pts, col, alpha = 1) => {
+    ctx.save(); ctx.globalAlpha = alpha; ctx.strokeStyle = col; ctx.lineWidth = 3; ctx.beginPath();
+    pts.forEach(([x, t], i) => i ? ctx.lineTo(X(x), Y(t)) : ctx.moveTo(X(x), Y(t))); ctx.stroke(); ctx.restore();
+  };
+  if (flying) {
+    const flown = (path, at) => [...path.filter(([, t]) => t <= tNow), [at(tNow), tNow]];
+    const ahead = (path, at) => [[at(tNow), tNow], ...path.filter(([, t]) => t > tNow)];
+    poly(ahead(apath, () => 0), DEMO.a.mark, 0.28); poly(ahead(bpath, bAt), DEMO.b.mark, 0.28);
+    poly(flown(apath, () => 0), DEMO.a.mark); poly(flown(bpath, bAt), DEMO.b.mark);
+  } else { poly(apath, DEMO.a.mark); poly(bpath, DEMO.b.mark); }
   text('A', X(0) - 12, Y(tmax) + 8, DEMO.a.text, 14, 'right', true);
   text('B', X(D) + 12, Y(tmax) + 8, DEMO.b.text, 14, 'left', true);
   text(`B travels at ${v.toFixed(2)} c`, X(D + v * T / 2) + 12, Y(T / 2), DEMO.b.text, 12, 'left', true);
 
-  // each mouth's own clock ticks, every T/6 of proper time; B's are stretched by gamma while it travels
-  const bAt = t => t <= 0 ? D : t <= T / 2 ? D + v * t : t <= T ? D + v * (T - t) : D;
-  for (let n = 1; n * T / 6 <= tmax; n++) {
+  // each mouth's own clock ticks, every T/6 of proper time; B's are stretched by gamma while it travels.
+  // While flying, only the ticks already struck are drawn
+  const tickMax = flying ? tNow : tmax;
+  for (let n = 1; n * T / 6 <= tickMax; n++) {
     const tau = n * T / 6;
     line(X(0) - 6, Y(tau), X(0) + 6, Y(tau), INK, 1.5);
     const tb = tau <= T / g ? g * tau : T + (tau - T / g);
-    if (tb <= tmax) { const xb = bAt(tb); line(X(xb) - 6, Y(tb), X(xb) + 6, Y(tb), INK, 1.5); }
+    if (tb <= tickMax) { const xb = bAt(tb); line(X(xb) - 6, Y(tb), X(xb) + 6, Y(tb), INK, 1.5); }
   }
   text('ticks: each mouth’s own clock, every sixth of the trip', 268, 530, MUTED, 11);
+
+  const box = document.getElementById('readout');
+  box.classList.toggle('hot', !flying);
+  if (flying) {
+    // the two mouths now, on the diagram
+    dot(X(0), Y(tNow), DEMO.a.text, 6); dot(X(bAt(tNow)), Y(tNow), DEMO.b.text, 6);
+    box.innerHTML = p === 0
+      ? `Mouth B is at home and both clocks read zero. Press <b>▶ Fly mouth B</b> and it goes out and back at <b>${v.toFixed(2)} c</b> for <b>${yr(T)}</b> years of home time. `
+        + `Watch A's dial turn at the home rate and B's at 1/γ = <b>1/${g.toFixed(2)}</b> of it. When B is back the gap will be T(1 − 1/γ) = <b>${yr(dt)} years</b>.`
+      : `Mouth B is on its trip at <b>${v.toFixed(2)} c</b>. Home time so far <b>${yr(tNow)}</b> of ${yr(T)} years, B's clock <b>${yr(tNow / g)}</b>, so the gap is <b>${yr(p * dt)} years</b> and growing. `
+        + `A's dial turns at the home rate, B's at 1/γ = <b>1/${g.toFixed(2)}</b> of it. When B is back the gap will be T(1 − 1/γ) = <b>${yr(dt)} years</b> and the tunnel will lead that far into the past.`;
+    return;
+  }
 
   // the identified crossing: in at B after the trip, out at A at the same clock reading
   const tIn = 1.28 * T, tOut = tIn - dt;
@@ -295,8 +346,6 @@ function drawMachine() {
   text(`${yr(dt)} yr earlier`, X(0) - 10, Y(tOut) + 2, DEMO.signal.text, 12.5, 'right', true);
   text('through the throat', (X(D) + X(0)) / 2 + 60, (Y(tIn) + Y(tOut)) / 2 + 14, DEMO.signal.text, 11.5, 'left');
 
-  const box = document.getElementById('readout');
-  box.classList.toggle('hot', true);
   box.innerHTML = `Mouth B goes out and back at <b>${v.toFixed(2)} c</b> for <b>${yr(T)}</b> years of home time, so γ = <b>${g.toFixed(2)}</b> and its clock advances only T/γ = <b>${yr(T / g)}</b> years. `
     + `The tunnel joins the mouths at equal clock readings, so the offset is T(1 − 1/γ) = <b>${yr(dt)} years</b>. `
     + `Walk in at mouth B in year N, come out at mouth A in year N minus <b>${yr(dt)}</b>. Walk in at A instead and you come out of B in year N plus ${yr(dt)}. `
@@ -313,7 +362,7 @@ initPopovers({
   haz3: { title: 'Register HAZ-3', html: '<p>Morris and Thorne bound the tidal terms at the throat by about (10<sup>8</sup> m)<sup>-2</sup> for one g across two metres. Solving the sideways bound for the throat radius gives</p><div class="eq">b<sub>0</sub> ≥ γv × 10<sup>8</sup> m × √((1 − b′<sub>0</sub>)/2)</div><p>For their design shape, b′<sub>0</sub> = ½, at 0.01c that is 500 km, the register’s number. The Ellis tunnel drawn here flares harder at the throat, b′<sub>0</sub> = −1, and needs twice that. See <a href="../pages/constraints/haz-3.html">HAZ-3</a>.</p>' },
   sta2: { title: 'Register STA-2', html: '<p>At the throat the radial tension is c⁴/(8πG b<sub>0</sub>²), about 2 × 10<sup>31</sup> Pa at 500 km, and it must exceed the energy density, which violates every energy condition. The effective mass inside the throat is b<sub>0</sub>c²/2G, about 170 suns at 500 km, so the bigger the safe throat, the more exotic matter it takes. See <a href="../pages/constraints/sta-2.html">STA-2</a>.</p>' },
   cau3: { title: 'Register CAU-3', html: '<p>Morris, Thorne and Yurtsever, 1988: if a wormhole can be built and kept open for travel, it can be turned into a time machine. Move one mouth at speed v for a home time T; its clock lags by T(1 − 1/γ), and the short tunnel still joins the mouths at equal clock readings. Once the lag exceeds the light travel time between the mouths, a trip through and back around returns before it left. See <a href="../pages/constraints/cau-3.html">CAU-3</a>.</p>' },
-  twin: { title: 'Why no FTL is needed', html: '<p>Mouth B moves slower than light, the traveller moves slower than light, and nothing in the tunnel moves at all. The time travel comes from the twin paradox, which is ordinary special relativity, plus one geometric fact: the tunnel is shorter inside than the way round, so it cannot tell that the outside clocks have drifted apart. That is why the register scores this wormhole as satisfying <a href="../pages/constraints/lor-1.html">LOR-1</a> and still violating CAU-3.</p>' },
+  twin: { title: 'Why no FTL is needed', html: '<p>Mouth B moves slower than light, the traveller moves slower than light, and nothing in the tunnel moves at all. The time travel comes from the twin paradox, which is ordinary special relativity, plus one geometric fact: the tunnel is shorter inside than the way round, so it cannot tell that the outside clocks have drifted apart. Press play on the diagram and you can watch it happen: the gap opens while B is moving and stays open once it stops. That is why the register scores this wormhole as satisfying <a href="../pages/constraints/lor-1.html">LOR-1</a> and still violating CAU-3.</p>' },
   cau2: { title: 'Register CAU-2', html: '<p>Hawking, 1992: the laws of physics do not allow closed timelike curves to appear, because the energy of quantum fields grows without bound as a loop is about to close and the back reaction stops it. It is a conjecture, argued in semiclassical gravity, and a full quantum theory of gravity might not obey it. Kim and Thorne argued the divergence is weak enough to be cut off. See <a href="../pages/constraints/cau-2.html">CAU-2</a>.</p>' },
   ene7: { title: 'Register ENE-7', html: '<p>Friedman, Schleich and Witt, 1993: in a spacetime that is flat far away and obeys the averaged null energy condition, every path from far past to far future can be slid off any tunnel, so no wormhole is a shortcut. Between 2007 and 2017 that condition was proved for the light rays the theorem needs. The escape is a wormhole that is longer inside than the way round: Gao, Jafferis and Wall and Maldacena, Milekhin and Popov build exactly those, and on them the time-machine step cannot close a loop. See <a href="../pages/constraints/ene-7.html">ENE-7</a>.</p>' },
 });

@@ -10,6 +10,7 @@
 <nav class="top"><a href="index.html">TALARIA</a><span>/</span><span class="kind">atlas</span></nav>
 <header class="hero">
   <h1 style="font-size:34px">The atlas</h1>
+  <div class="search"><input id="q" type="search" placeholder="search the catalogue" aria-label="search"><ul id="q-results" class="search-results" hidden></ul></div>
   <p class="sub">Every dossier against every register entry. Click a row for the dossier's scores and notes, a column head for the register entry. Colour is the verdict; the code in each row is the loophole.</p>
 </header>
 <nav class="tabs">
@@ -63,4 +64,5 @@
 <footer>TALARIA · verdicts: physics SATISFIES, VIOLATES, DODGES, SILENT, N/A · fiction ENGAGES, RULE, SILENT, N/A · grades in <a href="https://github.com/mikebertin/talaria/blob/main/GRADING.md">GRADING.md</a></footer>
 <script src="data/talaria.js"></script>
 <script type="module" src="atlas.js"></script>
+<script type="module">import { mountSearch } from './search.js'; mountSearch(document.getElementById('q'), document.getElementById('q-results'), { base: '' });</script>
 </body></html>

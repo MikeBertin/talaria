@@ -69,7 +69,7 @@ python3 tools/build_web.py                       # render pages and data from th
 python3 -m http.server 8191 --directory web      # serve
 ```
 
-Then open http://localhost:8191/. Tool order after any content change: `bite.py`, `backlink.py`, `build_matrix.py`, `wiki.py`, `check_prose.py`, `build_web.py`.
+Then open http://localhost:8191/. Tool order after any content change: `bite.py`, `backlink.py`, `build_matrix.py`, `wiki.py`, `check_prose.py`, `build_web.py`, `build_search.py`. Site search is client-side over `web/data/search.json`; the hub cards carry live miniature versions of the demos.
 
 ## Status
 
