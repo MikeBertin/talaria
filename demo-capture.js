@@ -44,6 +44,8 @@ async function rampRange(page, sel, from, to, ms = 1200) {
   await page.click('#viewSeg button[data-view="rho"]'); await pin(page); await sleep(1000);
   await goto(page, '/demos/wormhole.html'); await sleep(800);
   await rampRange(page, '#b0', 0, 100, 1400).catch(() => {});
+  await goto(page, '/timeline.html'); await page.evaluate(() => window.scrollTo(0, 120)); await sleep(1400);
+  await page.click('#spanSeg button:nth-child(2)').catch(() => {}); await sleep(1400);
   await goto(page, '/atlas.html#join'); await page.evaluate(() => window.scrollTo(0, 260)); await sleep(1600);
   const video = page.video();
   await ctx.close(); await browser.close();

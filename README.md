@@ -60,6 +60,8 @@ Neutral scoring, with the consensus stated as it stands. Every real proposal is 
 | The honest rocket | Ship years against home years to the nearby stars at one g, and the fuel bill |
 | No signalling | Entangled pairs, any measurement you like, and nothing gets through |
 
+Two more pages: the **timeline** (every entry on one strip from 1905 to now, lineage arcs drawn between them; `tools/timeline.py` builds its data) and the **report cards** (one shareable image per fictional drive; `tools/cards/make-cards.py` renders them).
+
 Shared parts are vendored from STOA (`web/vendor/stoa/`), the palette is minted in OKLCH and validated (`web/palette.js` carries the provenance), and the only external asset is KaTeX from a CDN for the maths on the rendered pages.
 
 ```

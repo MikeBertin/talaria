@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALARIA timeline</title>
+<meta name="description" content="Every faster-than-light proposal and every fictional drive in the catalogue, set down in the year it was defined, with the lineage links drawn between them.">
+<link rel="stylesheet" href="vendor/stoa/theme.css">
+<link rel="stylesheet" href="vendor/stoa/controls.css">
+<link rel="stylesheet" href="vendor/stoa/notice.css">
+<link rel="stylesheet" href="vendor/stoa/popover.css">
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="favicon.svg">
+<style>
+  .tl-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 18px 0 12px; }
+  .tl-controls .seg { margin: 0; flex-wrap: wrap; }
+  .tl-controls .seg button { cursor: pointer; font: inherit; font-size: 12.5px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--muted); transition: .12s; --c: var(--muted); --t: var(--ink); }
+  .tl-controls .seg button:hover { color: var(--ink); border-color: var(--c); }
+  .tl-controls .seg button.active, .tl-controls .seg button[aria-pressed="true"] { background: var(--bg); color: var(--t); border-color: var(--c); font-weight: 600; }
+  .tl-controls .tog { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); cursor: pointer; }
+  .tl-controls .tog input { accent-color: var(--accent); margin: 0; }
+  .tl-controls .hint { color: var(--muted); font-size: 12.5px; margin: 0; }
+  .tl-wrap { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+  .tl-wrap canvas { display: block; width: 100%; height: 480px; }
+  .legend { margin: 10px 0 0; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; }
+  .legend i.sq { border-radius: 2px; background: var(--muted); }
+  .legend i.arc { width: 22px; height: 0; border-top: 1.5px solid var(--muted); border-radius: 0; vertical-align: 2px; }
+  .legend i.arc.low { border-top-style: dashed; }
+  .notice-grid.cols-2 .ncard h3 span { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; margin-right: 8px; }
+  section.prose { margin-top: 32px; }
+  section.prose h2 { font-size: 18px; margin: 0 0 8px; }
+  @media (max-width: 700px) { .tl-wrap canvas { height: auto; } }
+</style>
+</head><body>
+<nav class="top"><a href="index.html">TALARIA</a><span>/</span><span class="kind">timeline</span></nav>
+<header class="hero">
+  <h1 style="font-size:34px">The timeline</h1>
+  <p class="sub">Every item in the catalogue set down in the year it was defined: real proposals above the line, fictional drives below it and the <span class="x" data-pop="register">register</span>'s no-go results as grey marks along it. The thin arcs are the <span class="x" data-pop="lineage">lineage</span> pages, who was reading whom, drawn from the item that gave to the item that took.</p>
+</header>
+<main>
+  <div class="tl-controls">
+    <div class="seg" id="loopSeg"></div>
+    <div class="seg" id="spanSeg">
+      <button data-span="full" class="active" aria-pressed="true">1900 to 2026</button>
+      <button data-span="zoom" aria-pressed="false">1985 to 2026</button>
+    </div>
+    <label class="tog"><input type="checkbox" id="arcs" checked> lineage arcs</label>
+    <label class="tog"><input type="checkbox" id="labels" checked> labels</label>
+    <span class="hint" id="count"></span>
+  </div>
+  <div class="tl-wrap"><canvas id="tl" aria-label="Timeline of faster-than-light proposals and fictional drives, 1900 to 2026"></canvas></div>
+  <div class="legend">
+    <span><i style="background:var(--L2-mark)"></i>a dot is a proposal or a drive, coloured by its <span class="x" data-pop="loophole">loophole</span></span>
+    <span><i class="sq"></i>a grey square is a register entry</span>
+    <span><i class="arc"></i>a lineage link</span>
+    <span><i class="arc low"></i>a link the lineage page grades as resemblance only</span>
+    <span>hover for the card, click to open the page</span>
+  </div>
+
+  <section class="notice">
+    <p class="notice-title">Things to notice</p>
+    <div class="notice-grid cols-2">
+      <div class="ncard">
+        <h3><span style="color:var(--L2-text)">L2</span>Fiction led physics on warp</h3>
+        <p>Star Trek's warp drive sits on the fiction side from 1966 and nothing answers it from above for twenty-eight years. Then Alcubierre (1994) writes the metric and says in his abstract that it is reminiscent of the warp drive of science fiction. After that the arcs turn round: Elite Dangerous (2014), the Orville (2017) and Star Citizen (2019) all point back at the paper, and one of them names the physicist on a set visit.</p>
+      </div>
+      <div class="ncard">
+        <h3><span style="color:var(--L3-text)">L3</span>Physics led fiction on wormholes</h3>
+        <p>Morris and Thorne (1988) made a wormhole that stays open, and the word "stable" reached television within a few years: Stargate's vocabulary (1997), Farscape's opening line (1999) and Thor (2011), where a consultant offered "Einstein-Rosen bridge" because "wormhole" sounded dated. The one arc that runs the other way is Contact (1985), the novel that asked for the paper in the first place.</p>
+      </div>
+      <div class="ncard">
+        <h3><span style="color:var(--L2-text)">2021</span>The positive-energy flurry</h3>
+        <p>Four physics dots share 2021: Lentz's soliton, the Bobrick and Martire classification, Fell and Heisenberg's construction and White's Casimir plot, each reported as a <span class="x" data-pop="posen">positive-energy warp drive</span>. The register answers in the years after: ENE-5 (2022) shows the claims checked one family of observers only, Fuchs (2024) keeps one subluminal shell, and WRP-3 sits at 2026 as the running score. Superluminal and positive-energy: none.</p>
+      </div>
+      <div class="ncard">
+        <h3><span style="color:var(--L5-text)">L5</span>The ansible line</h3>
+        <p>Le Guin coins the <span class="x" data-pop="ansible">ansible</span> in 1966, gives it a theory in 1974 and then lends it out: Card (1977 and 1985), Vinge (1988), Xenocide (1991). Physics closes the door in the same decade the borrowing starts. CAU-5, the no-communication theorem, is dated 1978, and every entanglement radio since has been a story about a box the theorem already forbids.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>How to read it</h2>
+    <p>Each item is placed at its <span class="x" data-pop="defyear">defining year</span>, not the year it was first imagined or last revised. Items in the same year stack upward or downward so that none of them hides another. Pick a loophole to see one move at a time; the register stays put, because every move has to answer it. The whole span puts the pulps and the early relativity papers on the strip; the 1985 to 2026 view spreads out the forty years where most of the physics sits. Switch the labels off if you want the shape without the names.</p>
+    <p class="reg-link">Data: <code>tools/timeline.py</code> writes <code>data/timeline.json</code> from the dossiers, the register and the nine lineage pages · <a href="atlas.html#lineage">the lineage pages</a> · <a href="atlas.html">the atlas</a></p>
+  </section>
+</main>
+<div id="hovercard" hidden></div>
+<footer>TALARIA · years are the defining year of each item: the paper's year, the first instalment that shows the drive, the earliest citation in a register row · fourteen hand-checked overrides listed in <code>tools/timeline.py</code></footer>
+<script type="module" src="timeline.js"></script>
+</body></html>

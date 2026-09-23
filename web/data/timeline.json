@@ -1,0 +1,1651 @@
+{
+ "span": [
+  1900,
+  2026
+ ],
+ "items": [
+  {
+   "kind": "register",
+   "id": "LOR-1",
+   "title": "Nothing accelerates to c",
+   "short": "LOR-1",
+   "year": 1905,
+   "loophole": null,
+   "line": "Every L1 scheme that proposes to push harder",
+   "url": "pages/constraints/lor-1.html"
+  },
+  {
+   "kind": "register",
+   "id": "CAU-1",
+   "title": "The tachyonic antitelephone",
+   "short": "CAU-1",
+   "year": 1907,
+   "loophole": null,
+   "line": "Any FTL signal or vehicle, of any mechanism, unless Lorentz invariance is broken. This is the constraint every loophole must answer",
+   "url": "pages/constraints/cau-1.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "kaluza-klein-hyperspace",
+   "title": "Kaluza-Klein and the hyperspace reading (Kaluza 1921, Klein 1926, ADD 1998, Randall-Sundrum 1999)",
+   "short": "Kaluza-Klein",
+   "year": 1921,
+   "loophole": "L4",
+   "line": "Extra dimensions in physics are compact, warped or both, share the light cone of ordinary space and turn motion \"in the fifth dimension\" into mass; nothing in them is a…",
+   "url": "pages/physics/kaluza-klein-hyperspace.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "skylark-of-space",
+   "title": "The Skylark of Space (E. E. Smith, 1928)",
+   "short": "Skylark of Space",
+   "year": 1928,
+   "loophole": "L1",
+   "line": "The first spaceship in fiction to outrun light by simply pushing harder, in a novel that hears about Einstein's theory and files it under theories.",
+   "url": "pages/fiction/skylark-of-space.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "word-hyperspace-campbell-1931",
+   "title": "Campbell's Islands of Space (1931): where the word came from",
+   "short": "Islands of Space",
+   "year": 1931,
+   "loophole": "L4",
+   "line": "The first use of \"hyperspace\" for a way to beat light, and the thing it named was not a separate space but a bubble of altered space around the ship.",
+   "url": "pages/fiction/word-hyperspace-campbell-1931.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "lensman-inertialess-drive",
+   "title": "The Lensman inertialess drive (E. E. Smith, 1934 onward)",
+   "short": "Lensman",
+   "year": 1934,
+   "loophole": "L1",
+   "line": "The Bergenholm switches a ship's inertia off, so any push at all takes it to whatever speed the drag of the interstellar medium allows, and switches it back on with its…",
+   "url": "pages/fiction/lensman-inertialess-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "einstein-rosen-bridge-1935",
+   "title": "Einstein–Rosen bridge (1935)",
+   "short": "Einstein-Rosen bridge",
+   "year": 1935,
+   "loophole": "L3",
+   "line": "The two-sheeted \"bridge\" in the Schwarzschild solution: the first wormhole in the literature, and one that no signal can cross.",
+   "url": "pages/physics/einstein-rosen-bridge-1935.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "foundation-hyperspace-jumps",
+   "title": "Asimov's Foundation: the Jump through hyperspace (1942 onward)",
+   "short": "Foundation",
+   "year": 1942,
+   "loophole": "L4",
+   "line": "The Jump as a solved problem: a region that is neither space nor time, crossed between two instants, with the work done beforehand at a calculating machine.",
+   "url": "pages/fiction/foundation-hyperspace-jumps.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "relativistic-rocket",
+   "title": "The relativistic rocket",
+   "short": "Relativistic rocket",
+   "year": 1946,
+   "loophole": "L6",
+   "line": "The sublight alternative: hold one gravity of acceleration and the crew reaches Proxima in three and a half years, the galactic centre in twenty, by their own clocks…",
+   "url": "pages/physics/relativistic-rocket.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-6",
+   "title": "The Casimir floor",
+   "short": "ENE-6",
+   "year": 1948,
+   "loophole": null,
+   "line": "The only negative energy anyone has ever made, and the only one anyone can point to, and it is tens of orders of magnitude short of any bill on this page",
+   "url": "pages/constraints/ene-6.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "starman-jones-congruencies",
+   "title": "Starman Jones: the congruencies (Heinlein 1953)",
+   "short": "Starman Jones",
+   "year": 1953,
+   "loophole": "L3",
+   "line": "Space folded back on itself at charted points that must be hit exactly, with the tables done by hand; get the arithmetic wrong and the ship is nowhere.",
+   "url": "pages/fiction/starman-jones-congruencies.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "cordwainer-smith-planoforming",
+   "title": "Cordwainer Smith: planoforming, Space² and Space³",
+   "short": "Planoforming",
+   "year": 1955,
+   "loophole": "L4",
+   "line": "The Instrumentality's starships drop a dimension and pick up another, skip light-years in a flash and are steered by telepaths who pay for it with their minds; from…",
+   "url": "pages/fiction/cordwainer-smith-planoforming.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "wheeler-geons-and-foam",
+   "title": "Wheeler's geons and quantum foam (1955–1962)",
+   "short": "Wheeler's wormholes",
+   "year": 1955,
+   "loophole": "L3",
+   "line": "Where the word \"wormhole\" came from: Wheeler's programme of building matter, charge and multiply connected space out of nothing but geometry and fields.",
+   "url": "pages/physics/wheeler-geons-and-foam.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "time-for-the-stars-telepathy",
+   "title": "Time for the Stars' telepathy",
+   "short": "Time for the Stars",
+   "year": 1956,
+   "loophole": "L5",
+   "line": "Heinlein's twins talk across light years in the same instant, the torchship pays for it in the twin paradox, and the book ends by turning the loophole into a drive.",
+   "url": "pages/fiction/time-for-the-stars-telepathy.html"
+  },
+  {
+   "kind": "register",
+   "id": "LOR-3",
+   "title": "Front velocity is the signal velocity",
+   "short": "LOR-3",
+   "year": 1960,
+   "loophole": null,
+   "line": "Every L5 claim built on a group velocity or a tunnelling time",
+   "url": "pages/constraints/lor-3.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "hartman-effect-and-nimtz",
+   "title": "The Hartman effect and the Nimtz tunnelling claims",
+   "short": "Hartman effect",
+   "year": 1962,
+   "loophole": "L5",
+   "line": "A tunnelling wave packet's delay stops growing with barrier thickness, so its apparent speed can exceed c without limit; the delay turns out to be a lifetime, not a…",
+   "url": "pages/physics/hartman-effect-and-nimtz.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "meta-relativity-sudarshan-1962",
+   "title": "Meta relativity (Bilaniuk, Deshpande and Sudarshan 1962)",
+   "short": "Meta relativity",
+   "year": 1962,
+   "loophole": "L1",
+   "line": "The classical extension of special relativity to particles created above c: imaginary rest mass, a single-sheeted energy surface and the reinterpretation principle for…",
+   "url": "pages/physics/meta-relativity-sudarshan-1962.html"
+  },
+  {
+   "kind": "register",
+   "id": "LOR-2",
+   "title": "Tachyons are an instability",
+   "short": "LOR-2",
+   "year": 1962,
+   "loophole": null,
+   "line": "L1 by particle physics is closed: the tachyon is an instability, and if it were a particle it would be a time machine",
+   "url": "pages/constraints/lor-2.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "doctor-who-tardis",
+   "title": "Doctor Who: the TARDIS and the time vortex",
+   "short": "Doctor Who",
+   "year": 1963,
+   "loophole": "L4",
+   "line": "A police box that is bigger inside, dematerialises here and materialises anywhere in time and space, travelling through a vortex the series has never explained and…",
+   "url": "pages/fiction/doctor-who-tardis.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "dune-holtzman-fold-space",
+   "title": "Dune: the Guild navigators and folding space (Herbert 1965)",
+   "short": "Dune",
+   "year": 1965,
+   "loophole": "L3",
+   "line": "Ships that arrive without travelling, steered by men who drink a drug to see the road before they take it; the mechanism is a name and the limit is a monopoly.",
+   "url": "pages/fiction/dune-holtzman-fold-space.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "known-space-hyperdrive",
+   "title": "Niven's Known Space: the Outsider hyperdrive and the blind spot (1966 onward)",
+   "short": "Known Space",
+   "year": 1966,
+   "loophole": "L4",
+   "line": "A drive bought from aliens who never use it, three days to the light year, a window you must not look through, and a rule that a mass nearby will take your ship away…",
+   "url": "pages/fiction/known-space-hyperdrive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "le-guin-ansible",
+   "title": "Le Guin's ansible",
+   "short": "Le Guin's ansible",
+   "year": 1966,
+   "loophole": "L5",
+   "line": "The word and the device: Le Guin's instantaneous communicator, coined in 1966 and given its theory in 1974, sitting alongside ships that never beat light.",
+   "url": "pages/fiction/le-guin-ansible.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "star-trek-subspace-radio",
+   "title": "Star Trek subspace radio",
+   "short": "Star Trek: subspace radio",
+   "year": 1966,
+   "loophole": "L5",
+   "line": "Starfleet's faster-than-light telephone: a signal through \"subspace\" at a finite speed with a range limit and relay stations, and a tachyon for every occasion.",
+   "url": "pages/fiction/star-trek-subspace-radio.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "star-trek-warp-drive",
+   "title": "Star Trek: warp drive (1966 onward)",
+   "short": "Star Trek: warp drive",
+   "year": 1966,
+   "loophole": "L2",
+   "line": "A subspace field carries the ship at speeds numbered by warp factor on a scale that runs to infinity at warp 10; the drive that gave the physics its name.",
+   "url": "pages/fiction/star-trek-warp-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "tachyons-feinberg-1967",
+   "title": "Tachyons (Feinberg 1967)",
+   "short": "Feinberg's tachyons",
+   "year": 1967,
+   "loophole": "L1",
+   "line": "Feinberg's Lorentz-invariant field theory of particles that were never below c, and why its quanta turned out to be an instability rather than a courier.",
+   "url": "pages/physics/tachyons-feinberg-1967.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "2001-star-gate",
+   "title": "2001: A Space Odyssey (1968): the Star Gate",
+   "short": "2001",
+   "year": 1968,
+   "loophole": "L3",
+   "line": "A slab left on a moon of Saturn that opens into a switching station for the galaxy; Clarke's novel and Kubrick's film show the passage and refuse to explain it.",
+   "url": "pages/fiction/2001-star-gate.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "kerr-interior-passage",
+   "title": "Passage through the Kerr interior (Carter 1968)",
+   "short": "Kerr interior",
+   "year": 1968,
+   "loophole": "L3",
+   "line": "The analytically extended rotating black hole has a ring you can fly through into another universe; the real interior has a wall of infinite blueshift where the map…",
+   "url": "pages/physics/kerr-interior-passage.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "tau-zero-ramjet",
+   "title": "Tau Zero's ramjet",
+   "short": "Tau Zero",
+   "year": 1970,
+   "loophole": "L6",
+   "line": "Anderson's Bussard ramjet loses its brakes, and the crew ride time dilation past the end of the universe rather than around the light barrier.",
+   "url": "pages/fiction/tau-zero-ramjet.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-1",
+   "title": "The energy conditions",
+   "short": "ENE-1",
+   "year": 1973,
+   "loophole": null,
+   "line": "Not itself a no-go, but the currency every other ENE entry is priced in",
+   "url": "pages/constraints/ene-1.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "alderson-drive",
+   "title": "The Alderson drive (Niven and Pournelle 1974)",
+   "short": "Alderson drive",
+   "year": 1974,
+   "loophole": "L3",
+   "line": "Tramlines between stars along lines of equal thermonuclear flux, an instantaneous jump from one Alderson point to another, and a crew too dazed afterwards to fight.",
+   "url": "pages/fiction/alderson-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "forever-war-collapsars",
+   "title": "The Forever War: collapsar jumps (Haldeman 1974)",
+   "short": "The Forever War",
+   "year": 1974,
+   "loophole": "L3",
+   "line": "Fling a ship at a collapsed star and it comes out at another one at the same speed; the jump is free, the approach costs decades, and the decades are the novel.",
+   "url": "pages/fiction/forever-war-collapsars.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "yamato-wave-motion-warp",
+   "title": "Space Battleship Yamato: warp by wave motion engine",
+   "short": "Yamato",
+   "year": 1974,
+   "loophole": "L4",
+   "line": "The 1974 anime's rebuilt battleship crosses 148,000 light-years and back inside a year on an engine built from alien plans; the same engine fires the ship's great gun…",
+   "url": "pages/fiction/yamato-wave-motion-warp.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "star-wars-hyperspace",
+   "title": "Star Wars: hyperspace (1977 onward)",
+   "short": "Star Wars",
+   "year": 1977,
+   "loophole": "L4",
+   "line": "The hyperdrive that made \"jump to lightspeed\" a household phrase: a separate dimension entered at speed, navigated by charted lanes and never priced.",
+   "url": "pages/fiction/star-wars-hyperspace.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "hitchhikers-improbability-drive",
+   "title": "The Hitchhiker's Guide to the Galaxy: the Infinite Improbability Drive and bistromathics",
+   "short": "Hitchhiker's Guide",
+   "year": 1978,
+   "loophole": "L4",
+   "line": "Douglas Adams's starship drives, from the 1978 radio series and 1979 novel onward: a ship that is everywhere at once because that is very unlikely, and a later one…",
+   "url": "pages/fiction/hitchhikers-improbability-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "entanglement-signalling",
+   "title": "Entanglement signalling and the no-communication theorem",
+   "short": "Entanglement signalling",
+   "year": 1978,
+   "loophole": "L5",
+   "line": "Every \"entanglement radio\" and quantum ansible, and the theorem that closes them: measuring one half of an entangled pair changes nothing that the other half can see.",
+   "url": "pages/physics/entanglement-signalling.html"
+  },
+  {
+   "kind": "register",
+   "id": "CAU-5",
+   "title": "The no-communication theorem",
+   "short": "CAU-5",
+   "year": 1978,
+   "loophole": null,
+   "line": "Every \"entanglement radio\" and quantum ansible",
+   "url": "pages/constraints/cau-5.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "alien-nostromo-hypersleep",
+   "title": "Alien's Nostromo",
+   "short": "Alien",
+   "year": 1979,
+   "loophole": "L6",
+   "line": "A working freighter whose crew sleep the voyage away in freezers, ten months from Earth near a star thirty-nine light years off, with a faster-than-light drive the film…",
+   "url": "pages/fiction/alien-nostromo-hypersleep.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "timescape-tachyon-message",
+   "title": "Timescape's tachyon message",
+   "short": "Timescape",
+   "year": 1980,
+   "loophole": "L5",
+   "line": "A working physicist's novel in which a 1998 laboratory beams a warning to 1962 by tachyon, and the paradox is handled with the same care as the apparatus.",
+   "url": "pages/fiction/timescape-tachyon-message.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "macross-fold-drive",
+   "title": "Super Dimension Fortress Macross (1982): the space fold",
+   "short": "Macross",
+   "year": 1982,
+   "loophole": "L3",
+   "line": "An alien fold system in a rebuilt warship, fired once in a panic near the Earth's surface, that takes an island along, lands the ship at Pluto and then is not there any…",
+   "url": "pages/fiction/macross-fold-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "star-trek-transwarp-and-slipstream",
+   "title": "Star Trek: transwarp, quantum slipstream and the other beyond-warp drives",
+   "short": "Star Trek: transwarp",
+   "year": 1984,
+   "loophole": "L4",
+   "line": "Everything in Star Trek that goes faster than warp: Borg conduits through transwarp space, the infinite-velocity threshold, the quantum slipstream and the mushroom…",
+   "url": "pages/fiction/star-trek-transwarp-and-slipstream.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "contact-sagan-machine",
+   "title": "Contact: the Machine and the tunnel system (Sagan 1985, Zemeckis 1997)",
+   "short": "Contact",
+   "year": 1985,
+   "loophole": "L3",
+   "line": "The wormhole that Carl Sagan asked Kip Thorne to make legal: a chain of tunnels between stars, built by somebody older than the aliens who send the plans.",
+   "url": "pages/fiction/contact-sagan-machine.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "ender-philotic-ansible",
+   "title": "Ender's philotic ansible",
+   "short": "Ender's Game",
+   "year": 1985,
+   "loophole": "L5",
+   "line": "Card's instantaneous communicator, borrowed by name from Le Guin, given a particle-pairing mechanism in Xenocide and used to fight a war with fleets that left decades…",
+   "url": "pages/fiction/ender-philotic-ansible.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "flight-of-the-navigator",
+   "title": "Flight of the Navigator (1986)",
+   "short": "Flight of the Navigator",
+   "year": 1986,
+   "loophole": "L1",
+   "line": "A boy is flown 560 light years and back in 4.4 hours, comes home eight years late and is offered the return trip through time as the price of going faster than light.",
+   "url": "pages/fiction/flight-of-the-navigator.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "culture-hyperspace-grid",
+   "title": "Banks's Culture: the energy grid, infraspace and ultraspace (1987 onward)",
+   "short": "The Culture",
+   "year": 1987,
+   "loophole": "L4",
+   "line": "Ships that push against a grid of energy between nested universes, in a cosmology the author described as fake before anyone asked.",
+   "url": "pages/fiction/culture-hyperspace-grid.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "spaceballs-ludicrous-speed",
+   "title": "Spaceballs: ludicrous speed (1987)",
+   "short": "Spaceballs",
+   "year": 1987,
+   "loophole": "L1",
+   "line": "Light speed is too slow, so Spaceball One goes to ludicrous speed, turns plaid and overshoots the heroes by a week and a half; the drive is the punchline and knows it.",
+   "url": "pages/fiction/spaceballs-ludicrous-speed.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "warhammer-40k-the-warp",
+   "title": "Warhammer 40,000: the Warp (1987 onward)",
+   "short": "Warhammer 40,000",
+   "year": 1987,
+   "loophole": "L4",
+   "line": "A second reality made of emotion and inhabited by things that want in, crossed behind a Gellar field, steered by a mutant who can see it, with time that does not agree…",
+   "url": "pages/fiction/warhammer-40k-the-warp.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "morris-thorne-1988",
+   "title": "Morris–Thorne traversable wormhole (1988)",
+   "short": "Morris and Thorne 1988",
+   "year": 1988,
+   "loophole": "L3",
+   "line": "The metric that made wormholes a subject: a horizon-free throat held open by matter whose tension exceeds its energy density.",
+   "url": "pages/physics/morris-thorne-1988.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "morris-thorne-yurtsever-time-machine",
+   "title": "Morris, Thorne and Yurtsever: the wormhole time machine (1988)",
+   "short": "Wormhole time machine",
+   "year": 1988,
+   "loophole": "L3",
+   "line": "Take one mouth of a traversable wormhole on a fast round trip and the shortcut becomes a machine for visiting your own past.",
+   "url": "pages/physics/morris-thorne-yurtsever-time-machine.html"
+  },
+  {
+   "kind": "register",
+   "id": "CAU-3",
+   "title": "Two devices make a time machine",
+   "short": "CAU-3",
+   "year": 1988,
+   "loophole": null,
+   "line": "Wormholes and warp drives are not merely fast: they are time machines with an assembly step",
+   "url": "pages/constraints/cau-3.html"
+  },
+  {
+   "kind": "register",
+   "id": "HAZ-3",
+   "title": "Tidal limits on a traversable throat",
+   "short": "HAZ-3",
+   "year": 1988,
+   "loophole": null,
+   "line": "The throat is large, and the exotic matter bill (STA-2) scales with it",
+   "url": "pages/constraints/haz-3.html"
+  },
+  {
+   "kind": "register",
+   "id": "STA-2",
+   "title": "The throat needs exotic matter",
+   "short": "STA-2",
+   "year": 1988,
+   "loophole": null,
+   "line": "Every L3 wormhole pays in negative energy, and the amount scales with throat radius",
+   "url": "pages/constraints/sta-2.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "hyperion-farcasters",
+   "title": "Hyperion: the farcasters (Simmons 1989)",
+   "short": "Hyperion",
+   "year": 1989,
+   "loophole": "L3",
+   "line": "Doorways between worlds that anyone can step through and nobody understands, and the reveal that the people who gave them away were living inside them.",
+   "url": "pages/fiction/hyperion-farcasters.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "visser-thin-shell-1989",
+   "title": "Visser's thin-shell wormholes (1989)",
+   "short": "Visser 1989",
+   "year": 1989,
+   "loophole": "L3",
+   "line": "Cut a hole in two copies of flat space, glue the edges together, and the exotic matter collapses to a sheet at the throat that a traveller need never touch.",
+   "url": "pages/physics/visser-thin-shell-1989.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "wing-commander-jump-points",
+   "title": "Wing Commander (1990) and the 1999 film: jump points",
+   "short": "Wing Commander",
+   "year": 1990,
+   "loophole": "L3",
+   "line": "A war fought around fixed jump points between star systems, told first as a carrier pilot's briefings and then, in the film, as a story about the people who can feel…",
+   "url": "pages/fiction/wing-commander-jump-points.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "mach-effect-thruster",
+   "title": "The Mach effect thruster",
+   "short": "Mach effect thruster",
+   "year": 1990,
+   "loophole": "L6",
+   "line": "Woodward's proposal that a body whose internal energy fluctuates while it accelerates fluctuates in mass, and that a piezoelectric stack can turn that into…",
+   "url": "pages/physics/mach-effect-thruster.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "scharnhorst-effect",
+   "title": "The Scharnhorst effect",
+   "short": "Scharnhorst effect",
+   "year": 1990,
+   "loophole": "L5",
+   "line": "Light crossing the gap between Casimir plates travels a fraction of order $10^{-32}$ faster than c for micron plates, because the vacuum it crosses has been made…",
+   "url": "pages/physics/scharnhorst-effect.html"
+  },
+  {
+   "kind": "register",
+   "id": "LOR-4",
+   "title": "The Scharnhorst effect and OPERA",
+   "short": "LOR-4",
+   "year": 1990,
+   "loophole": null,
+   "line": "The one reported superluminal velocity in the literature was an instrument error, and the one calculated is unmeasurable and causally harmless",
+   "url": "pages/constraints/lor-4.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "xenocide-outside",
+   "title": "Xenocide: travel through the Outside",
+   "short": "Xenocide",
+   "year": 1991,
+   "loophole": "L4",
+   "line": "Orson Scott Card's 1991 answer to his own instantaneous ansible: a ship whose every particle is held in one mind is pushed out of the universe and back in somewhere…",
+   "url": "pages/fiction/xenocide-outside.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "gott-cosmic-string-time-machine",
+   "title": "Gott's cosmic-string time machine (1991)",
+   "short": "Gott's cosmic strings",
+   "year": 1991,
+   "loophole": "L3",
+   "line": "Two infinitely long cosmic strings passing each other fast enough let an observer circle them and arrive in their own past, with no exotic matter anywhere.",
+   "url": "pages/physics/gott-cosmic-string-time-machine.html"
+  },
+  {
+   "kind": "register",
+   "id": "STA-3",
+   "title": "Divergence at the chronology horizon",
+   "short": "STA-3",
+   "year": 1991,
+   "loophole": null,
+   "line": "The time-machine step in CAU-3 may be self-destroying",
+   "url": "pages/constraints/sta-3.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "vinge-zones-of-thought",
+   "title": "Vinge's Zones of Thought: FTL only where physics permits it (1992)",
+   "short": "Zones of Thought",
+   "year": 1992,
+   "loophole": "L4",
+   "line": "The one setting in which the laws governing faster-than-light travel change with where you are: no FTL near the galactic core, an ultradrive out toward the rim, and the…",
+   "url": "pages/fiction/vinge-zones-of-thought.html"
+  },
+  {
+   "kind": "register",
+   "id": "CAU-2",
+   "title": "Chronology protection",
+   "short": "CAU-2",
+   "year": 1992,
+   "loophole": null,
+   "line": "Any scheme that turns FTL into a time machine, which by CAU-1 and CAU-3 is all of them given two devices",
+   "url": "pages/constraints/cau-2.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "babylon-5-hyperspace",
+   "title": "Babylon 5: hyperspace, jump gates and beacons (1993 to 1998)",
+   "short": "Babylon 5",
+   "year": 1993,
+   "loophole": "L4",
+   "line": "A red parallel dimension where distances are shorter, entered through gates or a ship's own jump engines, and navigated by following a beacon you must never lose.",
+   "url": "pages/fiction/babylon-5-hyperspace.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "honorverse-hyperspace",
+   "title": "Weber's Honorverse: hyper bands and Warshawski sails (1993 onward)",
+   "short": "Honorverse",
+   "year": 1993,
+   "loophole": "L4",
+   "line": "Hyperspace as a stack of bands, each with a bigger multiplier and worse weather, sailed on gravity waves by ships that lose most of their speed on the way in.",
+   "url": "pages/fiction/honorverse-hyperspace.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-7",
+   "title": "Topological censorship, no wormhole shortcuts",
+   "short": "ENE-7",
+   "year": 1993,
+   "loophole": null,
+   "line": "The modern form of ENE-2 for L3: a wormhole may be traversable, but it cannot be a shortcut. Any traversal that beats the outside route needs achronal ANEC violation…",
+   "url": "pages/constraints/ene-7.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "stargate-gate-network",
+   "title": "Stargate: the gate network (1994 film, SG-1 1997 onward)",
+   "short": "Stargate: the gates",
+   "year": 1994,
+   "loophole": "L3",
+   "line": "A ring that dials another ring: stable wormholes between fixed gates, one way for matter, thirty-eight minutes at a time, built by somebody long gone.",
+   "url": "pages/fiction/stargate-gate-network.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "alcubierre-1994",
+   "title": "Alcubierre 1994: the warp drive metric",
+   "short": "Alcubierre 1994",
+   "year": 1994,
+   "loophole": "L2",
+   "line": "A bubble of contracted and expanded space that carries a ship past light speed, paid for in negative energy.",
+   "url": "pages/physics/alcubierre-1994.html"
+  },
+  {
+   "kind": "register",
+   "id": "WRP-1",
+   "title": "What a warp drive is",
+   "short": "WRP-1",
+   "year": 1994,
+   "loophole": null,
+   "line": "The class definition. A proposal outside it is not a warp drive and must say what it is instead",
+   "url": "pages/constraints/wrp-1.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-3",
+   "title": "Quantum inequalities and the Alcubierre bill",
+   "short": "ENE-3",
+   "year": 1995,
+   "loophole": null,
+   "line": "Any L2 scheme at engineering scale; the bill is not merely large but larger than the universe",
+   "url": "pages/constraints/ene-3.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "event-horizon-gravity-drive",
+   "title": "Event Horizon (1997): the gravity drive",
+   "short": "Event Horizon",
+   "year": 1997,
+   "loophole": "L3",
+   "line": "A ship that makes its own black hole to fold space between two points, explained with a folded sheet of paper, and which comes back from somewhere worse than nowhere.",
+   "url": "pages/fiction/event-horizon-gravity-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "everett-roman-superluminal-subway",
+   "title": "Everett and Roman 1997: the superluminal subway",
+   "short": "Everett and Roman 1997",
+   "year": 1997,
+   "loophole": "L2",
+   "line": "The Krasnikov tube in four dimensions: its negative-energy bill, its Planck-thin walls and the time machine two tubes make.",
+   "url": "pages/physics/everett-roman-superluminal-subway.html"
+  },
+  {
+   "kind": "register",
+   "id": "CON-1",
+   "title": "The horizon: nobody is steering",
+   "short": "CON-1",
+   "year": 1997,
+   "loophole": null,
+   "line": "The pilot's chair is decorative. Control must come from outside, ahead of the bubble",
+   "url": "pages/constraints/con-1.html"
+  },
+  {
+   "kind": "register",
+   "id": "CON-3",
+   "title": "The Krasnikov tube",
+   "short": "CON-3",
+   "year": 1997,
+   "loophole": null,
+   "line": "The L2 scheme that accepts the bootstrap, and it still pays the ENE-3 bill and the CAU-3 bill",
+   "url": "pages/constraints/con-3.html"
+  },
+  {
+   "kind": "register",
+   "id": "STA-1",
+   "title": "Semiclassical instability of warp bubbles",
+   "short": "STA-1",
+   "year": 1997,
+   "loophole": null,
+   "line": "A superluminal bubble is not a stable object even if you could build it",
+   "url": "pages/constraints/sta-1.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "cowboy-bebop-astral-gates",
+   "title": "Cowboy Bebop (1998): the astral gates",
+   "short": "Cowboy Bebop",
+   "year": 1998,
+   "loophole": "L3",
+   "line": "Toll gates through hyperspace between the planets of one solar system, run by a corporation, and a backstory in which the first one blew up the Moon.",
+   "url": "pages/fiction/cowboy-bebop-astral-gates.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "stargate-hyperdrive",
+   "title": "Stargate: the ships' hyperdrives",
+   "short": "Stargate: hyperdrive",
+   "year": 1998,
+   "loophole": "L4",
+   "line": "The starships of SG-1 and Atlantis open a window into hyperspace and cross galaxies at speeds set by whose engine is fitted; a tiered technology, distinct from the…",
+   "url": "pages/fiction/stargate-hyperdrive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "krasnikov-tube",
+   "title": "Krasnikov 1998: the tube laid on the way out",
+   "short": "Krasnikov tube",
+   "year": 1998,
+   "loophole": "L2",
+   "line": "A metric laid along the outbound flight makes the return arbitrarily short by the home clock, for negative energy.",
+   "url": "pages/physics/krasnikov-tube.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "lorentz-violating-frameworks",
+   "title": "Lorentz-violating frameworks (the Standard-Model Extension and Hořava-Lifshitz gravity)",
+   "short": "Lorentz violation",
+   "year": 1998,
+   "loophole": "L1",
+   "line": "Effective field theories with a preferred frame, in which a particle species may have its own maximal velocity without an antitelephone; every coefficient measured so…",
+   "url": "pages/physics/lorentz-violating-frameworks.html"
+  },
+  {
+   "kind": "register",
+   "id": "CON-2",
+   "title": "The bootstrap problem",
+   "short": "CON-2",
+   "year": 1998,
+   "loophole": null,
+   "line": "A warp drive cannot be created from the ship on a first flight. Warp travel is infrastructure, like a railway, laid at sublight speed",
+   "url": "pages/constraints/con-2.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-2",
+   "title": "Superluminal travel requires negative energy",
+   "short": "ENE-2",
+   "year": 1998,
+   "loophole": null,
+   "line": "Every L2 and L3 scheme pays in negative energy; positive-energy warp drives cannot be superluminal",
+   "url": "pages/constraints/ene-2.html"
+  },
+  {
+   "kind": "register",
+   "id": "MAN-1",
+   "title": "Extra dimensions offer no hyperspace",
+   "short": "MAN-1",
+   "year": 1998,
+   "loophole": null,
+   "line": "\"Hyperspace\" as a separate space with laxer rules has no counterpart in physics. Bulk shortcuts are a form of L3, remain inside the bulk light cone, and look to a brane…",
+   "url": "pages/constraints/man-1.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "farscape-wormholes",
+   "title": "Farscape (1999): wormholes, and starburst as a separate thing",
+   "short": "Farscape",
+   "year": 1999,
+   "loophole": "L3",
+   "line": "A show that begins with an astronaut falling down a wormhole and ends with him proving that a wormhole is a weapon; in between it says out loud that every wormhole is…",
+   "url": "pages/fiction/farscape-wormholes.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "futurama-planet-express-drive",
+   "title": "Futurama: the Planet Express ship's dark matter engines (1999 onward)",
+   "short": "Futurama",
+   "year": 1999,
+   "loophole": "L2",
+   "line": "The engines don't move the ship; the ship stays where it is and the engines move the universe around it, which is a warp drive described exactly and as a joke.",
+   "url": "pages/fiction/futurama-planet-express-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "homeworld-hyperspace-cores",
+   "title": "Homeworld: hyperspace cores and the Far Jumpers",
+   "short": "Homeworld",
+   "year": 1999,
+   "loophole": "L4",
+   "line": "Relic's 1999 strategy game hangs an exodus on a hyperspace core dug out of the desert; its 2003 sequel reveals the core as one of three, each a Far Jumper, and the…",
+   "url": "pages/fiction/homeworld-hyperspace-cores.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "van-den-broeck-1999",
+   "title": "Van Den Broeck 1999: the pocket geometry",
+   "short": "Van Den Broeck 1999",
+   "year": 1999,
+   "loophole": "L2",
+   "line": "A femtometre bubble around a neck to a 200 m pocket cuts the warp bill from universe scale to a few solar masses.",
+   "url": "pages/physics/van-den-broeck-1999.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-4",
+   "title": "Van Den Broeck's pocket",
+   "short": "ENE-4",
+   "year": 1999,
+   "loophole": null,
+   "line": "Does not remove the negative energy, only its quantity. Structure a few orders of magnitude above the Planck scale is its own bill",
+   "url": "pages/constraints/ene-4.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "andromeda-slipstream",
+   "title": "Andromeda: the slipstream",
+   "short": "Andromeda",
+   "year": 2000,
+   "loophole": "L4",
+   "line": "The 2000 television series' only way between the stars: a web of strings through another dimension that a machine cannot navigate, because choosing the right branch…",
+   "url": "pages/fiction/andromeda-slipstream.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "revelation-space-lighthuggers",
+   "title": "Revelation Space lighthuggers",
+   "short": "Revelation Space",
+   "year": 2000,
+   "loophole": "L6",
+   "line": "Reynolds's universe refuses faster-than-light travel outright, runs its plots on decades of light-lag and, when a character tries to break the rule, erases her crew…",
+   "url": "pages/fiction/revelation-space-lighthuggers.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "brane-bulk-shortcuts",
+   "title": "Brane-bulk shortcuts (Chung and Freese 2000, Ishihara 2001, Caldwell and Langlois 2001)",
+   "short": "Brane-bulk shortcuts",
+   "year": 2000,
+   "loophole": "L4",
+   "line": "If our universe is a brane bent by its own matter into a warped bulk, a graviton can leave, cut across and return before light along the brane; the shortcut is real…",
+   "url": "pages/physics/brane-bulk-shortcuts.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "gain-assisted-superluminal-light",
+   "title": "Gain-assisted superluminal light propagation",
+   "short": "Gain-assisted light",
+   "year": 2000,
+   "loophole": "L5",
+   "line": "A light pulse crossing a caesium cell with a negative group index leaves before it arrives, undistorted, by classical interference in anomalous dispersion; its front…",
+   "url": "pages/physics/gain-assisted-superluminal-light.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "halo-slipspace",
+   "title": "Halo: slipspace and the Shaw-Fujikawa translight engine (2001 onward)",
+   "short": "Halo",
+   "year": 2001,
+   "loophole": "L4",
+   "line": "Eleven hidden dimensions entered through a rupture torn by microscopic black holes, crossed at ordinary speed inside a protective field, and left with an error measured…",
+   "url": "pages/fiction/halo-slipspace.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "firefly-serenity",
+   "title": "Firefly's Verse",
+   "short": "Firefly",
+   "year": 2002,
+   "loophole": "L6",
+   "line": "Whedon's space western keeps every ship in one terraformed system and never lets anyone go faster than light, so journeys take hours and days and nobody explains the…",
+   "url": "pages/fiction/firefly-serenity.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "natario-2002",
+   "title": "Natário 2002: warp drive with zero expansion",
+   "short": "Natário 2002",
+   "year": 2002,
+   "loophole": "L2",
+   "line": "The general warp drive class, and a member of it that neither contracts nor expands space and still needs negative energy.",
+   "url": "pages/physics/natario-2002.html"
+  },
+  {
+   "kind": "register",
+   "id": "CAU-4",
+   "title": "The preferred-frame escape",
+   "short": "CAU-4",
+   "year": 2002,
+   "loophole": null,
+   "line": "Any FTL scheme that keeps full Lorentz invariance with no fixed FTL speed is a time machine. Any that avoids the time machine has picked a frame, and must say what…",
+   "url": "pages/constraints/cau-4.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "eve-online-warp-drive",
+   "title": "EVE Online: the warp drive (CCP Games, 2003)",
+   "short": "EVE Online",
+   "year": 2003,
+   "loophole": "L2",
+   "line": "A bubble of vacuum emptier than empty carries a ship across a solar system in seconds, but only toward something heavy enough to steer by; stargates do the rest.",
+   "url": "pages/fiction/eve-online-warp-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "battlestar-galactica-ftl-jump",
+   "title": "Battlestar Galactica: the FTL jump (2004 series)",
+   "short": "Battlestar Galactica",
+   "year": 2004,
+   "loophole": "L3",
+   "line": "Spin up the drive, plot the jump, disappear: a fleet that survives by never being where the enemy looks, with a red line it crosses once.",
+   "url": "pages/fiction/battlestar-galactica-ftl-jump.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "commonwealth-cst-wormholes",
+   "title": "Commonwealth: CST wormholes with trains through them (Hamilton 2004)",
+   "short": "Commonwealth",
+   "year": 2004,
+   "loophole": "L3",
+   "line": "Two students open a wormhole to Mars and beat NASA there by minutes; three centuries later the same firm runs railways through them to hundreds of worlds.",
+   "url": "pages/fiction/commonwealth-cst-wormholes.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "heim-theory",
+   "title": "Heim theory and the Dröscher-Häuser propulsion proposal (2004 to 2005)",
+   "short": "Heim theory",
+   "year": 2004,
+   "loophole": "L4",
+   "line": "A 12-dimensional quantised \"poly-metric\" with six interactions, a photon-to-gravitophoton converter and an integer-indexed parallel space with light speed nc…",
+   "url": "pages/physics/heim-theory.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "em-drive",
+   "title": "The EM drive",
+   "short": "EM drive",
+   "year": 2006,
+   "loophole": "L6",
+   "line": "A closed, tapered microwave cavity claimed to push itself without exhaust at a millinewton per kilowatt; the most careful measurement finds nothing above the…",
+   "url": "pages/physics/em-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "mass-effect-element-zero",
+   "title": "Mass Effect: element zero and the FTL drive (BioWare, 2007)",
+   "short": "Mass Effect: eezo",
+   "year": 2007,
+   "loophole": "L1",
+   "line": "A ship whose mass is dialled down by a dark-energy field can be pushed past light by ordinary thrusters, and pays for it in static charge that must be grounded on a…",
+   "url": "pages/fiction/mass-effect-element-zero.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "mass-effect-relays",
+   "title": "Mass Effect: the mass relays (BioWare 2007 onward)",
+   "short": "Mass Effect: relays",
+   "year": 2007,
+   "loophole": "L3",
+   "line": "Corridors of mass-free space between fixed stations, primary relays paired one to one, secondaries reaching any relay in range; the network is a trap and the trap is…",
+   "url": "pages/fiction/mass-effect-relays.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "avatar-venture-star",
+   "title": "Avatar's Venture Star",
+   "short": "Avatar",
+   "year": 2009,
+   "loophole": "L6",
+   "line": "Cameron's freighter to Alpha Centauri: on screen a cryosleep of five years, nine months and twenty-two days; in the companions a laser-pushed sail out, antimatter home…",
+   "url": "pages/fiction/avatar-venture-star.html"
+  },
+  {
+   "kind": "register",
+   "id": "HAZ-2",
+   "title": "The crew is cooked",
+   "short": "HAZ-2",
+   "year": 2009,
+   "loophole": null,
+   "line": "The crew problem as well as the bubble problem, if ENE-3 holds",
+   "url": "pages/constraints/haz-2.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "three-body-curvature-propulsion",
+   "title": "Death's End: curvature propulsion (Liu Cixin, 2010)",
+   "short": "Death's End",
+   "year": 2010,
+   "loophole": "L6",
+   "line": "Ships that flatten the space behind them and are pulled forward to lightspeed, never past it, leaving trails in which light itself is slowed; the one great space opera…",
+   "url": "pages/fiction/three-body-curvature-propulsion.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "thor-bifrost",
+   "title": "Thor (2011): the Bifrost",
+   "short": "Thor",
+   "year": 2011,
+   "loophole": "L3",
+   "line": "Asgard's rainbow bridge, named on screen as an Einstein–Rosen bridge, opened and closed by a gatekeeper and shattered by its own god to keep it from being used as a…",
+   "url": "pages/fiction/thor-bifrost.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "opera-neutrinos-2011",
+   "title": "The OPERA superluminal neutrino (2011)",
+   "short": "OPERA neutrinos",
+   "year": 2011,
+   "loophole": "L1",
+   "line": "A 60 nanosecond early arrival over 730 km that became a 6.5 nanosecond null result once a fibre connector was reseated and an oscillator recalibrated; corrected, not…",
+   "url": "pages/physics/opera-neutrinos-2011.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "ftl-the-game",
+   "title": "FTL: Faster Than Light, the jump drive as a game mechanic",
+   "short": "FTL",
+   "year": 2012,
+   "loophole": "L4",
+   "line": "Subset Games' 2012 roguelike puts the drive in the title and makes its one rule, the charge bar, the whole rhythm of play: jump, fight, wait to jump again, with the…",
+   "url": "pages/fiction/ftl-the-game.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "star-citizen-jump-points",
+   "title": "Star Citizen: quantum drive and jump points",
+   "short": "Star Citizen",
+   "year": 2012,
+   "loophole": "L3",
+   "line": "A sublight warp bubble for getting around a system and natural wormholes for getting out of it, in a game that has been in development since 2012 and opened its first…",
+   "url": "pages/fiction/star-citizen-jump-points.html"
+  },
+  {
+   "kind": "register",
+   "id": "HAZ-1",
+   "title": "The arrival burst",
+   "short": "HAZ-1",
+   "year": 2012,
+   "loophole": null,
+   "line": "Do not decelerate towards anything you like",
+   "url": "pages/constraints/haz-1.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "expanse-ring-gates",
+   "title": "The Expanse: the ring gates and the slow zone (Corey 2013 onward)",
+   "short": "The Expanse",
+   "year": 2013,
+   "loophole": "L3",
+   "line": "Thirteen hundred doors in a starless bubble, opened by something long dead, with fusion rockets everywhere else and a speed limit inside.",
+   "url": "pages/fiction/expanse-ring-gates.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "eagleworks-warp-field-interferometer",
+   "title": "NASA Eagleworks warp field interferometer",
+   "short": "Eagleworks interferometer",
+   "year": 2013,
+   "loophole": "L2",
+   "line": "A tabletop laser interferometer at Johnson Space Center meant to see a one-part-in-ten-million warp of space from a charged ring; it saw nothing above the noise and…",
+   "url": "pages/physics/eagleworks-warp-field-interferometer.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "er-equals-epr",
+   "title": "ER = EPR (Maldacena and Susskind 2013)",
+   "short": "ER = EPR",
+   "year": 2013,
+   "loophole": "L3",
+   "line": "The conjecture that every entangled pair is joined by an Einstein–Rosen bridge, and why that bridge carries no messages.",
+   "url": "pages/physics/er-equals-epr.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "warp-drives-in-modified-gravity",
+   "title": "Warp drives in modified gravity",
+   "short": "Modified-gravity warp",
+   "year": 2013,
+   "loophole": "L2",
+   "line": "Torsion, conformal gravity and other extensions move the warp bill from the matter side of the field equations to the geometry, and what each move costs.",
+   "url": "pages/physics/warp-drives-in-modified-gravity.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "elite-dangerous-frame-shift-drive",
+   "title": "Elite Dangerous: the frame shift drive (Frontier Developments, 2014)",
+   "short": "Elite Dangerous",
+   "year": 2014,
+   "loophole": "L2",
+   "line": "One module, two moves: supercruise carries the ship in moved space at up to two thousand times light within a system, and the hyperspace jump drops it through…",
+   "url": "pages/fiction/elite-dangerous-frame-shift-drive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "interstellar-wormhole",
+   "title": "Interstellar: the wormhole near Saturn (2014)",
+   "short": "Interstellar",
+   "year": 2014,
+   "loophole": "L3",
+   "line": "A wormhole nobody on Earth built, placed by \"they\", with the clocks at Gargantua done to the equations and a physicist's book to show the working.",
+   "url": "pages/fiction/interstellar-wormhole.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "retrocausal-signalling-proposals",
+   "title": "Retrocausal signalling proposals",
+   "short": "Retrocausal signalling",
+   "year": 2014,
+   "loophole": "L5",
+   "line": "Delayed-choice and quantum-eraser schemes in which switching a distant interference pattern on and off would send a message backwards in time; the fringes and the…",
+   "url": "pages/physics/retrocausal-signalling-proposals.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "aurora-generation-ship",
+   "title": "Aurora's generation ship",
+   "short": "Aurora",
+   "year": 2015,
+   "loophole": "L6",
+   "line": "Robinson's ship to Tau Ceti at a tenth of light speed, narrated by its own computer, written to argue that the stars are too far.",
+   "url": "pages/fiction/aurora-generation-ship.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "no-mans-sky-hyperdrive",
+   "title": "No Man's Sky: the hyperdrive, warp cells and range",
+   "short": "No Man's Sky",
+   "year": 2016,
+   "loophole": "L4",
+   "line": "Hello Games' 2016 galaxy of eighteen quintillion planets is crossed by a ship-mounted hyperdrive with a range in light-years, a fuel cell per warp and a drive upgrade…",
+   "url": "pages/fiction/no-mans-sky-hyperdrive.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "passengers-hibernation",
+   "title": "Passengers' Avalon",
+   "short": "Passengers",
+   "year": 2016,
+   "loophole": "L6",
+   "line": "A starliner at half the speed of light on a 120-year run, with hibernation for the passengers, a message home that takes nineteen years, and no relativity.",
+   "url": "pages/fiction/passengers-hibernation.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "stellaris-three-modes",
+   "title": "Stellaris: warp, hyperlane and wormhole (Paradox Development Studio, 2016)",
+   "short": "Stellaris",
+   "year": 2016,
+   "loophole": "L2",
+   "line": "A strategy game that offered its players a choice of loophole at the start, one each from L2, L4 and L3, and then in 2018 took two of them away.",
+   "url": "pages/fiction/stellaris-three-modes.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "guardians-jump-points",
+   "title": "Guardians of the Galaxy Vol. 2 (2017): jump points",
+   "short": "Guardians Vol. 2",
+   "year": 2017,
+   "loophole": "L3",
+   "line": "A galaxy threaded with fixed jump points, a rule that a body should take no more than fifty in a row, and a ship that takes seven hundred.",
+   "url": "pages/fiction/guardians-jump-points.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "the-orville-quantum-drive",
+   "title": "The Orville: quantum drive (2017 onward)",
+   "short": "The Orville",
+   "year": 2017,
+   "loophole": "L2",
+   "line": "A ship whose three rings fold space into a bubble that crosses ten light years an hour, designed by a science consultant who says out loud that it is an Alcubierre drive.",
+   "url": "pages/fiction/the-orville-quantum-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "gao-jafferis-wall-2017",
+   "title": "Gao, Jafferis and Wall: traversable wormholes via a double-trace deformation (2017)",
+   "short": "Gao, Jafferis and Wall",
+   "year": 2017,
+   "loophole": "L3",
+   "line": "Couple the two boundaries of an eternal AdS black hole and the Einstein–Rosen bridge opens by a Planck-sized crack; nothing goes through faster than the coupling that…",
+   "url": "pages/physics/gao-jafferis-wall-2017.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "maldacena-milekhin-popov-2018",
+   "title": "Maldacena, Milekhin and Popov: traversable wormholes in four dimensions (2018), and the humanly traversable sequel (2021)",
+   "short": "Maldacena, Milekhin and Popov",
+   "year": 2018,
+   "loophole": "L3",
+   "line": "A pair of near-extremal magnetic black holes joined by a throat that charged fermions hold open with Casimir energy; it is longer inside than the road outside.",
+   "url": "pages/physics/maldacena-milekhin-popov-2018.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "outer-wilds-warp-cores",
+   "title": "Outer Wilds (2019): Nomai warp cores",
+   "short": "Outer Wilds",
+   "year": 2019,
+   "loophole": "L3",
+   "line": "A video game whose lost civilisation built black-hole-to-white-hole warp towers, noticed that travellers arrive a hundred-thousandth of a second before they leave, and…",
+   "url": "pages/fiction/outer-wilds-warp-cores.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "bobrick-martire-2021",
+   "title": "Bobrick and Martire 2021: physical warp drives",
+   "short": "Bobrick and Martire 2021",
+   "year": 2021,
+   "loophole": "L2",
+   "line": "A classification that says every warp drive is a moving shell of matter, and a subluminal positive-energy class whose one worked example turns out to be flat space.",
+   "url": "pages/physics/bobrick-martire-2021.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "fell-heisenberg-2021",
+   "title": "Fell and Heisenberg 2021: positive energy from hidden geometric structure",
+   "short": "Fell and Heisenberg 2021",
+   "year": 2021,
+   "loophole": "L2",
+   "line": "A Helmholtz split of the shift vector that turns Eulerian energy density into a sum of principal minors, and a superluminal example that is positive for those observers…",
+   "url": "pages/physics/fell-heisenberg-2021.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "lentz-solitons-2021",
+   "title": "Lentz 2021: hyper-fast positive-energy solitons",
+   "short": "Lentz 2021",
+   "year": 2021,
+   "loophole": "L2",
+   "line": "The claim that a superluminal warp soliton can be sourced by positive energy and a conducting plasma, and the two independent analyses that found it was never a…",
+   "url": "pages/physics/lentz-solitons-2021.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "white-casimir-nano-bubble-2021",
+   "title": "White et al. 2021: the worldline-numerics Casimir pattern",
+   "short": "White 2021",
+   "year": 2021,
+   "loophole": "L2",
+   "line": "A DARPA-funded numerical study of Casimir energy around a micron pillar, whose plot resembled the Alcubierre toroid and was reported as the first real warp bubble.",
+   "url": "pages/physics/white-casimir-nano-bubble-2021.html"
+  },
+  {
+   "kind": "register",
+   "id": "WRP-2",
+   "title": "A warp drive is a shell of matter",
+   "short": "WRP-2",
+   "year": 2021,
+   "loophole": null,
+   "line": "Positive energy buys you a subluminal shell, which is a spaceship. Superluminal warp is exotic matter by the authors' own classification",
+   "url": "pages/constraints/wrp-2.html"
+  },
+  {
+   "kind": "register",
+   "id": "ENE-5",
+   "title": "Generic warp drives violate the null energy condition",
+   "short": "ENE-5",
+   "year": 2022,
+   "loophole": null,
+   "line": "The positive-energy warp claims of 2021 are not what the press said they were",
+   "url": "pages/constraints/ene-5.html"
+  },
+  {
+   "kind": "fiction",
+   "slug": "starfield-grav-drive",
+   "title": "Starfield (2023): the grav drive",
+   "short": "Starfield",
+   "year": 2023,
+   "loophole": "L3",
+   "line": "A ship component with a jump range in light years, a fuel gauge in helium-3 and a backstory in which testing it stripped the Earth of its magnetosphere.",
+   "url": "pages/fiction/starfield-grav-drive.html"
+  },
+  {
+   "kind": "physics",
+   "slug": "fuchs-constant-velocity-2024",
+   "title": "Fuchs et al. 2024: the constant-velocity physical warp shell",
+   "short": "Fuchs et al. 2024",
+   "year": 2024,
+   "loophole": "L2",
+   "line": "A matter shell of two Jupiter masses carrying a small shift vector, satisfying every energy condition, subluminal and at constant velocity: the one positive-energy warp…",
+   "url": "pages/physics/fuchs-constant-velocity-2024.html"
+  },
+  {
+   "kind": "register",
+   "id": "WRP-3",
+   "title": "No superluminal positive-energy warp drive survives",
+   "short": "WRP-3",
+   "year": 2026,
+   "loophole": null,
+   "line": "The live argument, with a dated score: superluminal and positive-energy, none; subluminal and positive-energy, one",
+   "url": "pages/constraints/wrp-3.html"
+  }
+ ],
+ "links": [
+  {
+   "from": "contact-sagan-machine",
+   "to": "morris-thorne-1988",
+   "year": 1985,
+   "lineage": "sagan-thorne-contact-interstellar",
+   "note": "Sagan sends Thorne a draft of Contact and asks for a legal wormhole",
+   "grade": "HIGH"
+  },
+  {
+   "from": "morris-thorne-1988",
+   "to": "morris-thorne-yurtsever-time-machine",
+   "year": 1988,
+   "lineage": "sagan-thorne-contact-interstellar",
+   "note": "the traversable wormhole becomes a time machine within months",
+   "grade": "MED"
+  },
+  {
+   "from": "morris-thorne-1988",
+   "to": "interstellar-wormhole",
+   "year": 2014,
+   "lineage": "sagan-thorne-contact-interstellar",
+   "note": "Interstellar's wormhole is a Morris and Thorne throat with a chosen shape function",
+   "grade": "HIGH"
+  },
+  {
+   "from": "star-trek-warp-drive",
+   "to": "alcubierre-1994",
+   "year": 1994,
+   "lineage": "star-trek-alcubierre-outward",
+   "note": "the abstract calls the metric reminiscent of the warp drive of science fiction",
+   "grade": "HIGH"
+  },
+  {
+   "from": "alcubierre-1994",
+   "to": "elite-dangerous-frame-shift-drive",
+   "year": 2014,
+   "lineage": "star-trek-alcubierre-outward",
+   "note": "supercruise moves space rather than the ship; a community wiki links it, Frontier never has",
+   "grade": "LOW"
+  },
+  {
+   "from": "alcubierre-1994",
+   "to": "the-orville-quantum-drive",
+   "year": 2017,
+   "lineage": "star-trek-alcubierre-outward",
+   "note": "the science consultant says the writers are using Alcubierre's theory",
+   "grade": "HIGH"
+  },
+  {
+   "from": "alcubierre-1994",
+   "to": "star-citizen-jump-points",
+   "year": 2019,
+   "lineage": "star-trek-alcubierre-outward",
+   "note": "a developer post describes the quantum drive as a warp bubble inspired by Alcubierre",
+   "grade": "MED"
+  },
+  {
+   "from": "tachyons-feinberg-1967",
+   "to": "CAU-1",
+   "year": 1970,
+   "lineage": "tolman-benford-timescape",
+   "note": "Benford, Book and Newcomb name the antitelephone; Feinberg is their reference 2",
+   "grade": "HIGH"
+  },
+  {
+   "from": "CAU-1",
+   "to": "timescape-tachyon-message",
+   "year": 1980,
+   "lineage": "tolman-benford-timescape",
+   "note": "the co-author turns his own antitelephone paper into a novel",
+   "grade": "HIGH"
+  },
+  {
+   "from": "tachyons-feinberg-1967",
+   "to": "timescape-tachyon-message",
+   "year": 1980,
+   "lineage": "tolman-benford-timescape",
+   "note": "part of the novel is set at Columbia because of Feinberg",
+   "grade": "HIGH"
+  },
+  {
+   "from": "le-guin-ansible",
+   "to": "ender-philotic-ansible",
+   "year": 1977,
+   "lineage": "le-guin-ansible-outward",
+   "note": "Card borrows the word by name and adds his own mechanism",
+   "grade": "HIGH"
+  },
+  {
+   "from": "ender-philotic-ansible",
+   "to": "xenocide-outside",
+   "year": 1991,
+   "lineage": "le-guin-ansible-outward",
+   "note": "the philotic ansible is extended into a starship",
+   "grade": "HIGH"
+  },
+  {
+   "from": "le-guin-ansible",
+   "to": "vinge-zones-of-thought",
+   "year": 1988,
+   "lineage": "le-guin-ansible-outward",
+   "note": "It's an ansible, in The Blabber, the novella that opened the Zones",
+   "grade": "HIGH"
+  },
+  {
+   "from": "le-guin-ansible",
+   "to": "entanglement-signalling",
+   "year": 1978,
+   "lineage": "le-guin-ansible-outward",
+   "note": "the ansible becomes the generic word for the entanglement radio the no-communication theorem closes",
+   "grade": "HIGH"
+  },
+  {
+   "from": "word-hyperspace-campbell-1931",
+   "to": "lensman-inertialess-drive",
+   "year": 1939,
+   "lineage": "hyperspace-the-word",
+   "note": "Gray Lensman uses the word in Campbell's Astounding",
+   "grade": "HIGH"
+  },
+  {
+   "from": "word-hyperspace-campbell-1931",
+   "to": "foundation-hyperspace-jumps",
+   "year": 1942,
+   "lineage": "hyperspace-the-word",
+   "note": "the Foundation stories were written for Campbell's Astounding; the Jump through hyperspace",
+   "grade": "HIGH"
+  },
+  {
+   "from": "word-hyperspace-campbell-1931",
+   "to": "star-wars-hyperspace",
+   "year": 1977,
+   "lineage": "hyperspace-the-word",
+   "note": "the jump to hyperspace takes a forty-six-year-old genre word and makes it the one everybody knows",
+   "grade": "HIGH"
+  },
+  {
+   "from": "word-hyperspace-campbell-1931",
+   "to": "star-trek-warp-drive",
+   "year": 1966,
+   "lineage": "hyperspace-the-word",
+   "note": "the word warp is older than the show; it goes back to Islands of Space",
+   "grade": "MED"
+  },
+  {
+   "from": "kaluza-klein-hyperspace",
+   "to": "word-hyperspace-campbell-1931",
+   "year": 1931,
+   "lineage": "hyperspace-the-word",
+   "note": "the same word, borrowed from 1852 mathematics; the physics keeps the old sense and the fiction invents a new one",
+   "grade": "HIGH"
+  },
+  {
+   "from": "meta-relativity-sudarshan-1962",
+   "to": "tachyons-feinberg-1967",
+   "year": 1967,
+   "lineage": "feinberg-tachyon-outward",
+   "note": "Feinberg's first footnote; the reinterpretation principle is inherited",
+   "grade": "HIGH"
+  },
+  {
+   "from": "tachyons-feinberg-1967",
+   "to": "star-trek-subspace-radio",
+   "year": 1990,
+   "lineage": "feinberg-tachyon-outward",
+   "note": "a field of energetic tachyons in Deja Q; the name travels, the theory stays home",
+   "grade": "HIGH"
+  },
+  {
+   "from": "tachyons-feinberg-1967",
+   "to": "yamato-wave-motion-warp",
+   "year": 1974,
+   "lineage": "feinberg-tachyon-outward",
+   "note": "fan wikis say the wave motion engine runs on tachyons; no 1974 script line found",
+   "grade": "LOW"
+  },
+  {
+   "from": "morris-thorne-1988",
+   "to": "stargate-gate-network",
+   "year": 1997,
+   "lineage": "morris-thorne-gate-fiction",
+   "note": "SG-1 talks in the paper's vocabulary: stable wormhole, event horizon",
+   "grade": "MED"
+  },
+  {
+   "from": "wheeler-geons-and-foam",
+   "to": "farscape-wormholes",
+   "year": 1999,
+   "lineage": "morris-thorne-gate-fiction",
+   "note": "Wheeler's word, not any paper: I must have come here through a wormhole",
+   "grade": "MED"
+  },
+  {
+   "from": "morris-thorne-yurtsever-time-machine",
+   "to": "farscape-wormholes",
+   "year": 2002,
+   "lineage": "morris-thorne-gate-fiction",
+   "note": "a character called Einstein explains that wormholes join times as well as places",
+   "grade": "LOW"
+  },
+  {
+   "from": "einstein-rosen-bridge-1935",
+   "to": "thor-bifrost",
+   "year": 2011,
+   "lineage": "morris-thorne-gate-fiction",
+   "note": "Sean Carroll offers Einstein-Rosen bridge because wormhole sounded too Nineties",
+   "grade": "HIGH"
+  },
+  {
+   "from": "einstein-rosen-bridge-1935",
+   "to": "morris-thorne-1988",
+   "year": 1988,
+   "lineage": "the-paper-fold",
+   "note": "the embedding diagram of a throat becomes a tool for teaching general relativity",
+   "grade": "HIGH"
+  },
+  {
+   "from": "event-horizon-gravity-drive",
+   "to": "interstellar-wormhole",
+   "year": 2014,
+   "lineage": "the-paper-fold",
+   "note": "the same folded sheet and pen; noticed by audiences, never confirmed by the filmmakers",
+   "grade": "LOW"
+  },
+  {
+   "from": "relativistic-rocket",
+   "to": "avatar-venture-star",
+   "year": 2009,
+   "lineage": "physicists-in-the-writers-room",
+   "note": "Pellegrino's Valkyrie antimatter rocket, a relativistic rocket design, animated as the Venture Star",
+   "grade": "MED"
+  }
+ ],
+ "lineages": {
+  "star-trek-alcubierre-outward": "Star Trek to Alcubierre and back out",
+  "the-paper-fold": "The paper fold",
+  "feinberg-tachyon-outward": "Feinberg's tachyon, outward",
+  "physicists-in-the-writers-room": "Physicists in the writers' room",
+  "hyperspace-the-word": "Hyperspace: the word",
+  "tolman-benford-timescape": "Tolman's paradox to Timescape",
+  "morris-thorne-gate-fiction": "The wormhole goes to television",
+  "le-guin-ansible-outward": "Le Guin's ansible goes out into the field",
+  "sagan-thorne-contact-interstellar": "Sagan asks Thorne for a legal wormhole"
+ },
+ "overrides": {
+  "ENE-5": {
+   "year": 2022,
+   "why": "the row cites Alcubierre and Lobo's 2017 lecture notes as a secondary proof; the result is Santiago, Schuster and Visser 2022"
+  },
+  "WRP-3": {
+   "year": 2026,
+   "why": "absence as a finding, dated September 2026; the earliest citation in the row is a 2013 conformal-gravity paper"
+  },
+  "eagleworks-warp-field-interferometer": {
+   "year": 2013,
+   "why": "no year in the title; the earliest source is Alcubierre 1994, the programme is White's 2013 Warp Field Mechanics 101"
+  },
+  "hartman-effect-and-nimtz": {
+   "year": 1962,
+   "why": "no year in the title; the earliest source is Brillouin 1960, the effect is Hartman 1962"
+  },
+  "mach-effect-thruster": {
+   "year": 1990,
+   "why": "no year in the title; the earliest source is a 1953 Mach's-principle paper, Woodward's proposal is 1990"
+  },
+  "scharnhorst-effect": {
+   "year": 1990,
+   "why": "no year in the title; the earliest source is Casimir 1948, the effect is Scharnhorst 1990"
+  },
+  "gain-assisted-superluminal-light": {
+   "year": 2000,
+   "why": "no year in the title; the earliest source is Brillouin 1960, the experiment is Wang, Kuzmich and Dogariu 2000"
+  },
+  "retrocausal-signalling-proposals": {
+   "year": 2014,
+   "why": "no year in the title; the earliest source is Cramer's 1986 transactional interpretation, the signalling proposal is Cramer and Herbert 2014"
+  },
+  "warp-drives-in-modified-gravity": {
+   "year": 2013,
+   "why": "no year in the title; the earliest source is Flanagan 2006 on Weyl gravity, the first warp result is Varieschi and Burstein 2013"
+  },
+  "cordwainer-smith-planoforming": {
+   "year": 1955,
+   "why": "the catalogue line says 1950s to 60s; the drive is defined in The Game of Rat and Dragon, 1955"
+  },
+  "star-citizen-jump-points": {
+   "year": 2012,
+   "why": "no year in the title or catalogue line; crowdfunded and defined from 2012"
+  },
+  "star-trek-subspace-radio": {
+   "year": 1966,
+   "why": "no year in the title or catalogue line; subspace radio is in the original series from its first weeks"
+  },
+  "star-trek-transwarp-and-slipstream": {
+   "year": 1984,
+   "why": "no year in the title or catalogue line; transwarp first appears in Star Trek III, 1984"
+  },
+  "stargate-hyperdrive": {
+   "year": 1998,
+   "why": "no year in the title or catalogue line; the first hyperdrive ship on screen is in Within the Serpent's Grasp, 1998"
+  }
+ }
+}
