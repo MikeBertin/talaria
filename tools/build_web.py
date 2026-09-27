@@ -152,24 +152,43 @@ def md_to_html(text):
 
 
 # ---------------------------------------------------------------- pages
+SITE = "https://mikebertin.github.io/talaria/"
 SHELL = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title} · TALARIA</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{title} · TALARIA">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../../site.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-<link rel="icon" href="../../favicon.svg">
+<link rel="icon" href="../../badge.svg" type="image/svg+xml">
 </head><body class="page">
 <nav class="top"><a href="../../index.html">TALARIA</a><span>/</span><a href="../../atlas.html">atlas</a><span>/</span><span class="kind">{kind}</span></nav>
 <main class="doc">
 {actions}
 {body}
 </main>
-<footer>TALARIA · every faster-than-light scheme, real or invented, scored against the physics that says you can't · <a href="https://github.com/mikebertin/talaria">source</a></footer>
+<footer>TALARIA · every faster-than-light scheme, real or invented, scored against the physics that says you can't · <a href="https://github.com/mikebertin/talaria">source</a><span class="hub"><img src="../../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}})"></script>
 </body></html>
 """
+
+
+def head_for(rel, desc):
+    """Per-page head values (TAXIS T2/T3): the canonical URL and a plain-text
+    description taken from the page's italic hook, markdown stripped."""
+    plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", desc)
+    plain = re.sub(r"[*_`$]", "", plain).strip()
+    return {"url": SITE + rel, "desc": html.escape(plain, quote=True)}
 
 
 def actions_for(kind, slug):
@@ -225,7 +244,7 @@ def build():
             text = p.read_text(encoding="utf-8")
             title, hook = title_hook(text, p.stem)
             body = md_to_html(text)
-            (outdir / f"{p.stem}.html").write_text(SHELL.format(title=html.escape(title), kind=kind, body=body, actions=actions_for(kind, p.stem)), encoding="utf-8")
+            (outdir / f"{p.stem}.html").write_text(SHELL.format(title=html.escape(title), kind=kind, body=body, actions=actions_for(kind, p.stem), **head_for(f"pages/{kind}/{p.stem}.html", hook or title)), encoding="utf-8")
             n += 1
             meta = {k: (r.search(text).group(1).strip() if r.search(text) else "") for k, r in META.items()}
             entry = {"slug": p.stem, "title": title, "hook": hook, "reviewed": meta["reviewed"]}
@@ -245,8 +264,13 @@ def build():
     about = WEB / "pages" / "about"; about.mkdir(parents=True, exist_ok=True)
     for src, name in ((ROOT / "GRADING.md", "grading"), (ROOT / "constraints" / "README.md", "register"), (ROOT / "README.md", "readme")):
         text = src.read_text(encoding="utf-8")
+        if name == "readme":
+            # GitHub-only furniture: the hero GIF block (raw HTML) and the
+            # [!NOTE] alert marker, neither of which md_to_html speaks.
+            text = re.sub(r'^<p align="center">.*?</p>\n', "", text, flags=re.S | re.M)
+            text = text.replace("> [!NOTE]\n> ", "> ")
         title = title_hook(text, name)[0]
-        (about / f"{name}.html").write_text(SHELL.format(title=html.escape(title), kind="method", body=md_to_html(text), actions=""), encoding="utf-8")
+        (about / f"{name}.html").write_text(SHELL.format(title=html.escape(title), kind="method", body=md_to_html(text), actions="", **head_for(f"pages/about/{name}.html", title_hook(text, name)[1] or title)), encoding="utf-8")
         n += 1
     (WEB / "data").mkdir(exist_ok=True)
     (WEB / "data" / "talaria.js").write_text("window.TALARIA = " + json.dumps(data, ensure_ascii=False) + ";\n", encoding="utf-8")

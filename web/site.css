@@ -137,3 +137,13 @@ ol.moves li b { font-weight: 700; }
 .search-results li a .hook { grid-column: 2; color: var(--muted); font-size: 12.5px; line-height: 1.45; }
 .search-results li.active a, .search-results li a:hover { background: var(--bg); }
 .search-results .search-empty { padding: 10px; color: var(--muted); font-size: 13px; }
+
+/* one Play/Pause button for all the hub teasers (TAXIS R12, WCAG 2.2.2) */
+.teaser-bar { display: flex; justify-content: flex-end; margin: 4px 0 10px; }
+.teaser-bar button { font-size: 12.5px; padding: 6px 12px; min-height: 32px; }
+
+/* hub footer: link back to https://mikebertin.github.io/ (TAXIS G3) */
+footer .hub { display: flex; align-items: center; gap: 7px; margin-top: 8px; font-size: 12px; color: var(--muted); }
+footer .hub img { width: 13px; height: auto; }
+footer .hub a { color: var(--muted); }
+footer .hub a:hover { color: var(--accent); }

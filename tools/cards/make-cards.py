@@ -129,10 +129,20 @@ def write_index(drives, loops):
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TALARIA report cards</title>
+<meta name="description" content="One shareable card per fictional drive: its loophole, how well the story handles the physics and whether it raises the time-travel bill.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/cards/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TALARIA report cards">
+<meta property="og:description" content="One shareable card per fictional drive: its loophole, how well the story handles the physics and whether it raises the time-travel bill.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/cards/index.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../palette.css">
 <link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../favicon.svg">
+<link rel="icon" href="../badge.svg" type="image/svg+xml">
 <style>
   .rcgrid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; margin: 18px 0 30px; }}
   a.rc {{ display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: var(--panel); transition: border-color .15s, transform .15s; }}
@@ -154,7 +164,7 @@ def write_index(drives, loops):
 {chr(10).join(tiles)}
   </div>
 </main>
-<footer>TALARIA · report cards are 1200 by 630 PNGs rendered from the dossier data · grades in <a href="https://github.com/mikebertin/talaria/blob/main/GRADING.md">GRADING.md</a></footer>
+<footer>TALARIA · report cards are 1200 by 630 PNGs rendered from the dossier data · grades in <a href="https://github.com/mikebertin/talaria/blob/main/GRADING.md">GRADING.md</a><span class="hub"><img src="../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 </body></html>
 '''
     (OUT / 'index.html').write_text(page, encoding='utf-8')

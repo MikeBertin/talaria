@@ -2,13 +2,22 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TALARIA timeline</title>
 <meta name="description" content="Every faster-than-light proposal and every fictional drive in the catalogue, set down in the year it was defined, with the lineage links drawn between them.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/timeline.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TALARIA timeline">
+<meta property="og:description" content="Every faster-than-light proposal and every fictional drive in the catalogue, set down in the year it was defined, with the lineage links drawn between them.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/timeline.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="vendor/stoa/theme.css">
 <link rel="stylesheet" href="vendor/stoa/controls.css">
 <link rel="stylesheet" href="vendor/stoa/notice.css">
 <link rel="stylesheet" href="vendor/stoa/popover.css">
 <link rel="stylesheet" href="palette.css">
 <link rel="stylesheet" href="site.css">
-<link rel="icon" href="favicon.svg">
+<link rel="icon" href="badge.svg" type="image/svg+xml">
 <style>
   .tl-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 18px 0 12px; }
   .tl-controls .seg { margin: 0; flex-wrap: wrap; }
@@ -47,7 +56,7 @@
     <label class="tog"><input type="checkbox" id="labels" checked> labels</label>
     <span class="hint" id="count"></span>
   </div>
-  <div class="tl-wrap"><canvas id="tl" aria-label="Timeline of faster-than-light proposals and fictional drives, 1900 to 2026"></canvas></div>
+  <div class="tl-wrap"><canvas id="tl" role="img" aria-label="Timeline of faster-than-light proposals and fictional drives, 1900 to 2026"></canvas></div>
   <div class="legend">
     <span><i style="background:var(--L2-mark)"></i>a dot is a proposal or a drive, coloured by its <span class="x" data-pop="loophole">loophole</span></span>
     <span><i class="sq"></i>a grey square is a register entry</span>
@@ -85,6 +94,6 @@
   </section>
 </main>
 <div id="hovercard" hidden></div>
-<footer>TALARIA · years are the defining year of each item: the paper's year, the first instalment that shows the drive, the earliest citation in a register row · fourteen hand-checked overrides listed in <code>tools/timeline.py</code></footer>
+<footer>TALARIA · years are the defining year of each item: the paper's year, the first instalment that shows the drive, the earliest citation in a register row · fourteen hand-checked overrides listed in <code>tools/timeline.py</code><span class="hub"><img src="badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script type="module" src="timeline.js"></script>
 </body></html>

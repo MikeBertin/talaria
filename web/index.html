@@ -2,6 +2,10 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TALARIA</title>
 <meta name="description" content="The ways people have proposed to beat light, real and invented, catalogued and scored against the physics that says you can't.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:title" content="TALARIA">
 <meta property="og:description" content="The ways people have proposed to beat light, real and invented, catalogued and scored against the physics that says you can't.">
 <meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
@@ -9,9 +13,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="vendor/stoa/theme.css">
 <link rel="stylesheet" href="vendor/stoa/cards.css">
+<link rel="stylesheet" href="vendor/stoa/controls.css">
 <link rel="stylesheet" href="palette.css">
 <link rel="stylesheet" href="site.css">
-<link rel="icon" href="favicon.svg">
+<link rel="icon" href="badge.svg" type="image/svg+xml">
 </head><body>
 <nav class="top"><a href="index.html">TALARIA</a></nav>
 <header class="hero">
@@ -21,6 +26,7 @@
   <p class="sub">Thirty-seven real proposals and sixty-eight fictional drives, each sorted by the loophole it uses and scored line by line against a register of twenty-nine no-go results. The two halves join on the loophole: pick a drive from a story and see what its real cousin would cost.</p>
 </header>
 <main>
+  <div class="controls teaser-bar"><button id="teaser-play" type="button" aria-pressed="true">Pause previews</button></div>
   <div class="grid">
     <a class="card" href="atlas.html" style="--c:var(--L2-text)">
       <span class="num">01</span><h3>The atlas</h3>
@@ -50,7 +56,7 @@
     </a>
     <a class="card" href="cards/index.html" style="--c:var(--L6-text)">
       <span class="num">06</span><h3>Report cards</h3>
-      <p>One shareable card per fictional drive: its loophole, how well the story handles the physics, and whether it raises the time-travel bill.</p>
+      <p>One shareable card per fictional drive: its loophole, how well the story handles the physics and whether it raises the time-travel bill.</p>
       <span class="open">open <span class="arrow">→</span></span>
     </a>
     <a class="card" href="demos/alcubierre-bubble.html" style="--c:var(--L2-text)"><canvas class="teaser" data-teaser="bubble" aria-hidden="true"></canvas><span class="num">07</span><h3>The Alcubierre bubble</h3><p>Expansion, contraction, the negative-energy shells and the bill in kilograms.</p><span class="open">open <span class="arrow">→</span></span></a>
@@ -71,11 +77,11 @@
       <li><b style="color:var(--L6-text)">L6 · Not FTL at all.</b> Filed here by habit: time dilation, hibernation, the sublight epic.</li>
     </ol>
     <p>Against those sits the register: the theorems, inequalities and instabilities that put a price on each move. Three of them do most of the work. Any signal faster than light is a message to somebody's past unless something breaks Lorentz invariance. Any geometric shortcut needs negative energy. And the negative energy has to be laid along the route in advance, at sublight speed, which makes a warp drive a railway rather than a car.</p>
-    <p>Real proposals are stated in their strongest form and then scored: satisfies, violates, dodges or silent, against every entry. Fiction cannot violate a theorem, so it is graded on what it does with the physics it chose to invoke: does the story engage with the cost, follow a rule that happens to answer it, or never notice? The join between the two is the point.</p>
+    <p>Real proposals are stated in their strongest form and then scored: satisfies, violates, dodges or silent, against every entry. Fiction cannot violate a theorem, so it is graded on what it does with the physics it chose to invoke: does the story engage with the cost, follow a rule that happens to answer it or never notice? The join between the two is the point.</p>
     <p class="reg-link">Method: <a href="pages/about/grading.html">the grading scheme</a> · <a href="pages/about/register.html">how to read the register</a> · every dossier and source: <a href="https://github.com/mikebertin/talaria">the repository</a></p>
   </section>
 </main>
 <script type="module" src="teasers.js"></script>
 <script type="module">import { mountSearch } from './search.js'; mountSearch(document.getElementById('q'), document.getElementById('q-results'), { base: '' });</script>
-<footer>TALARIA, the winged sandals of Hermes: the oldest faster-than-anything device in the canon, and nobody in the myths asks how they work.</footer>
+<footer>TALARIA, the winged sandals of Hermes: the oldest faster-than-anything device in the canon, and nobody in the myths asks how they work.<span class="hub"><img src="badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 </body></html>
