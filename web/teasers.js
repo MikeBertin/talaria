@@ -1,7 +1,8 @@
 // TALARIA hub teasers: six miniature, slowly moving previews of the demo
 // pages, one canvas per demo card. One requestAnimationFrame loop drives all
-// six (the STOA survey pattern), it stops while the tab is hidden, and under
-// prefers-reduced-motion each canvas gets a single still frame instead.
+// six (the STOA survey pattern). It stops while the tab is hidden or no card
+// is on screen; under prefers-reduced-motion each canvas shows one still frame
+// until the reader presses the Play previews button above the cards.
 // Colours come from palette.js only, so each teaser matches its page.
 import { fit } from './vendor/stoa/draw.js';
 import { DEMO, LOOPHOLES, INK, BOARD, PANEL, GRID, MUTED } from './palette.js';
@@ -265,29 +266,55 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 // Read from the console as TALARIA_TEASERS; step(t) paints one frame by hand.
 const stats = { last: 0, avg: 0, frames: 0, step: t => { for (const it of items) paint(it, t); } };
 window.TALARIA_TEASERS = stats;
-const t0 = performance.now();
-let raf = 0;
+
+// The loop runs only while all three hold: the reader wants motion (on by
+// default, off under prefers-reduced-motion until they press Play), the tab
+// is visible and at least one teaser is on screen. The clock is the loop's
+// own, so a pause resumes where it stopped rather than jumping ahead.
+const STILL_T = 2.4;                 // the frame shown when nothing moves
+let wanted = !reduced.matches;
+let t = STILL_T, last = null, raf = 0;
+const anyVisible = () => items.some(it => it.visible);
 function frame(now) {
   raf = 0;
-  const t = (now - t0) / 1000, a = performance.now();
+  if (last !== null) t += Math.min(0.05, (now - last) / 1000);
+  last = now;
+  const a = performance.now();
   for (const it of items) if (it.visible) paint(it, t);
   stats.last = performance.now() - a; stats.frames++;
   stats.avg += (stats.last - stats.avg) / Math.min(stats.frames, 120);
-  if (!document.hidden && !reduced.matches) raf = requestAnimationFrame(frame);
+  update();
 }
-function start() { if (!raf && !document.hidden && !reduced.matches) raf = requestAnimationFrame(frame); }
-function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; }
-function still() { for (const it of items) paint(it, 2.4); }   // one static frame each
+function update() {
+  const run = wanted && !document.hidden && anyVisible();
+  if (run && !raf) raf = requestAnimationFrame(frame);
+  if (!run && raf) { cancelAnimationFrame(raf); raf = 0; }
+  if (!run) last = null;
+}
+function still() { for (const it of items) paint(it, t); }   // one static frame each
+
+// One Play/Pause button for all six previews (WCAG 2.2.2 and TAXIS R12).
+const btn = document.getElementById('teaser-play');
+function syncButton() {
+  if (!btn) return;
+  btn.textContent = wanted ? 'Pause previews' : 'Play previews';
+  btn.setAttribute('aria-pressed', String(wanted));
+}
+if (btn) btn.addEventListener('click', () => { wanted = !wanted; syncButton(); update(); });
 
 if ('IntersectionObserver' in window) {
-  const io = new IntersectionObserver(es => { for (const e of es) { const it = byCanvas.get(e.target); if (it) it.visible = e.isIntersecting; } });
+  const io = new IntersectionObserver(es => {
+    for (const e of es) { const it = byCanvas.get(e.target); if (it) it.visible = e.isIntersecting; }
+    update();
+  });
   for (const it of items) io.observe(it.cv);
 }
-document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
-reduced.addEventListener('change', () => { if (reduced.matches) { stop(); still(); } else start(); });
+document.addEventListener('visibilitychange', update);
+reduced.addEventListener('change', () => { wanted = !reduced.matches; syncButton(); update(); });
 let resizeRaf = 0;
 window.addEventListener('resize', () => {
   if (resizeRaf) return;
-  resizeRaf = requestAnimationFrame(() => { resizeRaf = 0; for (const it of items) size(it); if (reduced.matches) still(); });
+  resizeRaf = requestAnimationFrame(() => { resizeRaf = 0; for (const it of items) size(it); if (!raf) still(); });
 });
-still(); if (!reduced.matches) start();  // always paint one frame so no card is ever blank
+syncButton();
+still(); update();  // always paint one frame so no card is ever blank

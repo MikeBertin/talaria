@@ -9,7 +9,7 @@
 }
 
 .eq-body { display: inline-flex; align-items: center; gap: 2px; flex-wrap: wrap; justify-content: center; }
-.eq-sym { font-style: italic; font-weight: 600; padding: 0 1px; }
+.eq-sym { font-family: var(--math, "Cambria Math", "Times New Roman", serif); font-style: italic; font-weight: 600; padding: 0 1px; }
 .eq-bold { font-weight: 800; }
 .eq-op, .eq-paren { color: var(--ink, #e7e7ef); padding: 0 4px; }
 .eq-fn { font-style: normal; padding: 0 2px; }
@@ -20,3 +20,30 @@
 .eq-sqrt-arg { border-top: 1.5px solid currentColor; padding: 0 3px; }
 .eq-sup, .eq-sub { font-size: 60%; }
 .eq-caption { font-size: 14px; color: var(--muted, #8a8a9c); margin-top: 10px; }
+
+/* Live values (setValues): a small label under the symbol, above it inside
+   a numerator. Absolutely placed so the equation never reflows. Shown on
+   hover, or for every symbol when the container has .eq-numbers. */
+.eq-has-val { position: relative; }
+.eq-val {
+  position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+  margin-top: 1px; font: 500 12px/1.2 var(--mono, ui-monospace, monospace);
+  font-style: normal; white-space: nowrap; pointer-events: none;
+  opacity: 0; transition: opacity 200ms;
+}
+.eq-top .eq-val { top: auto; bottom: 100%; margin: 0 0 1px; }
+.eq-numbers .eq-val, .eq-has-val:hover > .eq-val { opacity: 0.9; }
+
+/* Morph (morph.js): the real markup hides while ghosts fly over it. */
+.eq-morphing { position: relative; }
+.eq-morphing > .eq-body, .eq-morphing > .eq-caption { visibility: hidden; }
+.eq-morph-layer { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.eq-morph-layer > .eq-ghost {
+  position: absolute; margin: 0; line-height: normal; white-space: pre;
+  vertical-align: baseline; will-change: transform, opacity;
+}
+.eq-morph-layer > .eq-ghost-bar { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  .eq-val { transition: none; }
+}

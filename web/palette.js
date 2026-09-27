@@ -11,6 +11,14 @@
 // with direct labels, and every diagram labels both:
 //   loopholes: [PASS] CVD separation         worst adjacent #9b3b6e↔#29a987 ΔE 15.4 (deutan) · tritan 9.7 / [PASS] Normal-vision floor    worst adjacent #814ea4↔#9f7100 ΔE 24.4 (normal)
 //   demo:      [PASS] Normal-vision floor    worst adjacent #a1942f↔#c64e31 ΔE 17.7 (normal)
+// TAXIS gate, 2026-09-27: node stoa/components/palette/check.js web/palette.js
+// PASS (11 entities, 4 warnings). Text tiers 5.50:1 to 11.03:1 and marks
+// 3.05:1 to 6.70:1 on #0a0a0f, so every text and mark clears WCAG 1.4.3 and
+// 1.4.11 and no colour changed. Warnings kept by choice: L2, L4, L6 and a sit
+// below the 0.10 L band, and L1/b, L2/a and L5/reply are near twins in OKLab,
+// but each pair joins a loophole to a diagram actor, and every diagram labels
+// its actors by name where they meet.
+//
 // All-pairs safety past three slots is not achievable by the skill's own
 // reference, so both sets rely on direct labels wherever two entities meet:
 // every loophole carries its L-code and every diagram actor carries its name.

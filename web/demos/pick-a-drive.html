@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pick a drive, pick a frame · TALARIA</title>
+<meta name="description" content="Pick any of sixty-eight fictional drives and any observer, and see whether the round trip lands before it set off.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/demos/pick-a-drive.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pick a drive, pick a frame · TALARIA">
+<meta property="og:description" content="Pick any of sixty-eight fictional drives and any observer, and see whether the round trip lands before it set off.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/demos/pick-a-drive.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../vendor/stoa/controls.css">
 <link rel="stylesheet" href="../vendor/stoa/notice.css">
 <link rel="stylesheet" href="../vendor/stoa/popover.css">
 <link rel="stylesheet" href="../palette.css">
 <link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../favicon.svg">
+<link rel="icon" href="../badge.svg" type="image/svg+xml">
 <style>
   .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
   .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
@@ -75,12 +85,14 @@
     <p>The only way out that keeps the drive is <a href="../pages/constraints/cau-4.html">CAU-4</a>, the preferred-frame escape: if "instant" means instant in one special frame for everyone, the two legs no longer add up. The cost is that special relativity is no longer the whole story for the FTL sector, and the story has to say what picks the frame. The catalogue marks each fictional drive on what it does about all this. Most say nothing. A few own it and build the plot on it. A few dodge it with a stated rule. The sublight ships, kept as a control group, never owed the bill in the first place.</p>
   </section>
 </main>
-<footer>TALARIA · pick a drive, pick a frame · Einstein 1907, Tolman 1917, Benford, Book and Newcomb 1970, Liberati, Sonego and Visser 2002</footer>
+<footer>TALARIA · pick a drive, pick a frame · Einstein 1907, Tolman 1917, Benford, Book and Newcomb 1970, Liberati, Sonego and Visser 2002<span class="hub"><img src="../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script src="../data/talaria.js"></script>
 <script type="module">
 import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
 import { bindSlider, seg } from '../vendor/stoa/controls.js';
 import { initPopovers } from '../vendor/stoa/popover.js';
+import { accessDemo } from '../access.js';
+accessDemo(document.getElementById('cv'), "A spacetime diagram for the chosen drive: you at rest, the other observer moving, the message carried out at the drive's speed and the reply coming back the same way, which can land before you sent it. The readout below gives the verdict.");
 import { DEMO, LOOPHOLES, PANEL, GRID, MUTED } from '../palette.js';
 
 // PURE-BEGIN

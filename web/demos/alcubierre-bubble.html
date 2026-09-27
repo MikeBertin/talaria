@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Alcubierre bubble · TALARIA</title>
+<meta name="description" content="Build an Alcubierre warp bubble: see space expand and contract around the ship, the negative-energy shells in its wall and the bill in kilograms.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/demos/alcubierre-bubble.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Alcubierre bubble · TALARIA">
+<meta property="og:description" content="Build an Alcubierre warp bubble: see space expand and contract around the ship, the negative-energy shells in its wall and the bill in kilograms.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/demos/alcubierre-bubble.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../vendor/stoa/controls.css">
 <link rel="stylesheet" href="../vendor/stoa/notice.css">
 <link rel="stylesheet" href="../vendor/stoa/popover.css">
 <link rel="stylesheet" href="../palette.css">
 <link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../favicon.svg">
+<link rel="icon" href="../badge.svg" type="image/svg+xml">
 <style>
   .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
   .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
@@ -84,11 +94,13 @@
     <p>How much negative energy depends on how thin the wall is, and quantum field theory has a say in that. The <span class="x" data-pop="qi-def">quantum inequalities</span> of Ford and Roman bound how much negative energy can sit in one place for how long. Pfenning and Ford applied them to this bubble in 1997 and found the wall can be no thicker than about 10² v<sub>s</sub> Planck lengths, which makes the total for a 100 m bubble about ten orders of magnitude more than the mass of everything we can see. That is <a href="../pages/constraints/ene-3.html">ENE-3</a>. Van Den Broeck's pocket, <a href="../pages/constraints/ene-4.html">ENE-4</a>, cuts the bill to a few solar masses by making the bubble tiny and the room inside big. The horizon that stops the crew steering is <a href="../pages/constraints/con-1.html">CON-1</a> and the need to lay the route first is <a href="../pages/constraints/con-2.html">CON-2</a>. The burst on arrival is <a href="../pages/constraints/haz-1.html">HAZ-1</a>.</p>
   </section>
 </main>
-<footer>TALARIA · the Alcubierre bubble · Alcubierre 1994, Pfenning and Ford 1997, Van Den Broeck 1999</footer>
+<footer>TALARIA · the Alcubierre bubble · Alcubierre 1994, Pfenning and Ford 1997, Van Den Broeck 1999<span class="hub"><img src="../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script type="module">
 import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
 import { bindSlider, seg } from '../vendor/stoa/controls.js';
 import { initPopovers } from '../vendor/stoa/popover.js';
+import { accessDemo } from '../access.js';
+accessDemo(document.getElementById('cv'), 'A slice through an Alcubierre warp bubble seen from above, the ship heading right: space expanding behind it and contracting ahead, the negative-energy shells in the wall and the shape of the bubble plotted underneath. The numbers are in the readout below the picture.');
 import { DEMO, LOOPHOLES, INK, PANEL, GRID, MUTED } from '../palette.js';
 
 // Constants. Planck units turn the Pfenning and Ford estimate into kilograms.

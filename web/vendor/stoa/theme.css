@@ -18,6 +18,20 @@
   --bad: #ff6b6b;
   --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
 
+  /* TAXIS P6: one face for maths symbols only, from system fonts so nothing
+     downloads. Everything else stays sans. */
+  --math: "STIX Two Math", "Cambria Math", "Latin Modern Math", "Times New Roman", serif;
+
+  /* TAXIS P3: ink layers. Context recedes, data stands out. Mint your own
+     with palette.js inkLayers(ground); these defaults suit the ground above. */
+  --ink-context: #1c1c21;
+  --ink-secondary: #7f7f87;
+  --ink-data: #bdbdc5;
+
+  /* TAXIS P5: named widths. */
+  --measure: 42rem;   /* prose column */
+  --wide: 64rem;      /* breakout figures */
+
   /* aliases kept for pages written against older names */
   --fg: var(--ink);
   --border: var(--line);
@@ -37,6 +51,10 @@ body {
 
 a { color: var(--accent); }
 
+/* Canvases scale down on narrow screens instead of pushing the page
+   sideways (found in the SYMBOLE pilot). */
+canvas { max-width: 100%; height: auto; }
+
 footer {
   margin-top: 44px;
   padding-top: 22px;
@@ -45,6 +63,25 @@ footer {
   font-size: 12.5px;
   line-height: 1.7;
 }
+
+/* TAXIS P5: layout widths. Wrap page content in .l-page; children default
+   to the prose measure, .l-wide breaks out for figures, .l-screen runs full
+   bleed. */
+.l-page { display: grid; grid-template-columns: 1fr min(var(--measure), 100% - 32px) 1fr; }
+.l-page > * { grid-column: 2; }
+.l-page > .l-wide { grid-column: 1 / -1; width: min(var(--wide), 100% - 32px); justify-self: center; }
+.l-page > .l-screen { grid-column: 1 / -1; width: 100%; }
+
+/* TAXIS R11: captions lead with a bold headline sentence; data figures end
+   with one muted source line. */
+figcaption { font-size: 13px; line-height: 1.55; color: var(--muted); margin-top: 8px; }
+figcaption b, figcaption strong { color: var(--ink); font-weight: 600; }
+.source { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* TAXIS R15: say "tap" on touch screens and "click" elsewhere.
+   <span class="click-word">Click</span><span class="tap-word">Tap</span> */
+.tap-word { display: none; }
+@media (pointer: coarse) { .tap-word { display: inline; } .click-word { display: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

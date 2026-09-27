@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The wormhole · TALARIA</title>
+<meta name="description" content="Walk through a Morris-Thorne wormhole: how wide the throat must be, what holds it open and how one trip with a mouth turns it into a time machine.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/demos/wormhole.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The wormhole · TALARIA">
+<meta property="og:description" content="Walk through a Morris-Thorne wormhole: how wide the throat must be, what holds it open and how one trip with a mouth turns it into a time machine.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/demos/wormhole.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../vendor/stoa/controls.css">
 <link rel="stylesheet" href="../vendor/stoa/notice.css">
 <link rel="stylesheet" href="../vendor/stoa/popover.css">
 <link rel="stylesheet" href="../palette.css">
 <link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../favicon.svg">
+<link rel="icon" href="../badge.svg" type="image/svg+xml">
 <style>
   .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
   .legend-row[hidden] { display:none; }
@@ -89,11 +99,13 @@
     <p>Within the year, with Yurtsever, they showed that any such wormhole is a time machine with an assembly step: carry one mouth away at high speed and bring it back, and its clock lags the other by T(1 − 1/γ), while the tunnel still joins the mouths at equal clock readings. Walk in at the mouth that travelled and you step out of the other one in the past. That is <a href="../pages/constraints/cau-3.html">CAU-3</a>. Hawking's reply in 1992, <a href="../pages/constraints/cau-2.html">chronology protection, CAU-2</a>, conjectures that quantum back reaction stops the loop from ever closing. And a theorem of Friedman, Schleich and Witt from 1993, with the averaged null energy condition proved for the geodesics it needs between 2007 and 2017, says a wormhole in ordinary flat surroundings cannot be a shortcut at all: that is <a href="../pages/constraints/ene-7.html">topological censorship, ENE-7</a>. The traversable wormholes built since 2017 by Gao, Jafferis and Wall and by Maldacena, Milekhin and Popov obey it by being longer inside than the way round, which is also why they cannot be turned into time machines.</p>
   </section>
 </main>
-<footer>TALARIA · the wormhole · Morris and Thorne 1988 · Morris, Thorne and Yurtsever 1988 · Hawking 1992 · Friedman, Schleich and Witt 1993</footer>
+<footer>TALARIA · the wormhole · Morris and Thorne 1988 · Morris, Thorne and Yurtsever 1988 · Hawking 1992 · Friedman, Schleich and Witt 1993<span class="hub"><img src="../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script type="module">
 import { setup, clear, arrow, label } from '../vendor/stoa/draw.js';
 import { bindSlider, seg, playToggle } from '../vendor/stoa/controls.js';
 import { initPopovers } from '../vendor/stoa/popover.js';
+import { accessDemo } from '../access.js';
+accessDemo(document.getElementById('cv'), 'Either an embedding diagram of a wormhole throat, with a ring for the narrowest throat a traveller survives at this speed, or a spacetime diagram of one mouth flown out and back until the tunnel leads into the past, depending on the view chosen. The readout below gives the numbers.');
 import { DEMO, LOOPHOLES, INK, PANEL, GRID, MUTED } from '../palette.js';
 
 // --- physics ---
@@ -123,7 +135,9 @@ const S = { view: 'throat', b0: 1e6, vt: 0.01, shape: 'ellis', vm: 0.9, T: 1 };
 // --- the flight of mouth B: p is the fraction of the trip flown, 1 = the finished picture ---
 const FLIGHT_MS = 8000;
 const A = { p: 1, start: 0, raf: 0 };
-const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+// Nothing moves until the reader presses play, so reduced motion needs no
+// special case here: the page opens on the finished picture (A.p = 1) and
+// under prefers-reduced-motion the press is the reader asking for motion.
 function frame(now) {
   A.p = Math.min(1, (now - A.start) / FLIGHT_MS);
   draw();
@@ -132,13 +146,16 @@ function frame(now) {
 }
 const play = playToggle('play', { labels: ['▶ Fly mouth B', '⏸ Pause'], onChange: on => {
   if (!on) { cancelAnimationFrame(A.raf); A.raf = 0; return; }
-  if (reduced.matches) { A.p = 1; draw(); play.stop(); return; }   // no motion: jump to the finished picture
   if (A.p >= 1) A.p = 0;                                            // play from the end starts over
   A.start = performance.now() - A.p * FLIGHT_MS;                    // resume from a pause where it left off
   cancelAnimationFrame(A.raf); A.raf = requestAnimationFrame(frame);
 }});
 document.getElementById('reset').addEventListener('click', () => { play.stop(); A.p = 0; draw(); });
+// Pause when the tab is hidden or the diagram scrolls out of view.
 document.addEventListener('visibilitychange', () => { if (document.hidden) play.stop(); });
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(es => { for (const e of es) if (!e.isIntersecting) play.stop(); }).observe(cv);
+}
 // a new speed or trip length while flying restarts the flight; paused or static, it just redraws
 function restart() { if (play.playing) { A.p = 0; A.start = performance.now(); } draw(); }
 

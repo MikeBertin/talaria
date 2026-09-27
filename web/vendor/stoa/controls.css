@@ -46,6 +46,18 @@ button:disabled { opacity: 0.45; cursor: default; }
 
 input[type="range"] { width: 100%; margin-top: 7px; accent-color: var(--accent, #7cc4ff); }
 
+/* Visible focus for keyboard users (WCAG 2.4.7, 1.4.11). The fallback ring
+   is about 9.8:1 against the panel; if you set --focus or --accent, keep it
+   at 3:1 or better against your panel and ground. */
+input[type="range"]:focus-visible,
+.panel button:focus-visible,
+.controls button:focus-visible,
+.seg button:focus-visible {
+  outline: 2px solid var(--focus, var(--accent, #7cc4ff));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* dialect 2: grid of label | slider | output triples */
 .controls.grid {
   display: grid;
@@ -80,3 +92,67 @@ input[type="range"] { width: 100%; margin-top: 7px; accent-color: var(--accent, 
 .readout { color: var(--muted, #8a8a9c); font-size: 0.9rem; }
 .readout b { color: var(--ink, #e7e7ef); font-variant-numeric: tabular-nums; }
 .hint { color: var(--muted, #8a8a9c); font-size: 11.5px; margin-top: 12px; line-height: 1.5; }
+
+/* Entity sliders (bindSlider { ent }). TAXIS R1: the slider is drawn in its
+   entity's colour so prose can say "the orange slider". The colour is
+   currentColor, which registry's linkageCSS sets per [data-ent]; pass
+   bindSlider { colour } or set --ent-colour to use one without the registry.
+   The filled part of the track is a gradient bindSlider keeps current in
+   --ent-track, drawn on the track pseudo-element in every engine (WebKit,
+   Blink and Gecko), with accent-color as the fallback where those pseudo
+   elements are ignored. The input is 40px tall so the hit area meets R15
+   while the visible track stays thin. */
+input[type="range"].ent-range {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--ent-colour, currentColor);
+  accent-color: currentColor;
+  background: transparent;
+  height: var(--ent-hit, 40px);
+  margin-top: 0;
+  cursor: pointer;
+}
+input[type="range"].ent-range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--ent-track, var(--ent-rest, #34344a));
+}
+input[type="range"].ent-range::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--ent-track, var(--ent-rest, #34344a));
+}
+input[type="range"].ent-range::-moz-range-progress { background: transparent; }
+/* The thumb carries a ring in the panel colour so it stays distinct from
+   the filled track, which is the same hue. P4: the entity colour itself
+   clears 3:1 on the ground (palette/check.js gates that). */
+input[type="range"].ent-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--ent-thumb, 18px);
+  height: var(--ent-thumb, 18px);
+  margin-top: calc((6px - var(--ent-thumb, 18px)) / 2);
+  border-radius: 50%;
+  background: currentColor;
+  border: 3px solid var(--panel, #13131c);
+  box-shadow: 0 0 0 1px currentColor;
+}
+input[type="range"].ent-range::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--ent-thumb, 18px);
+  height: var(--ent-thumb, 18px);
+  border-radius: 50%;
+  background: currentColor;
+  border: 3px solid var(--panel, #13131c);
+  box-shadow: 0 0 0 1px currentColor;
+}
+input[type="range"].ent-range:hover::-webkit-slider-thumb,
+input[type="range"].ent-range:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 1px currentColor, 0 0 8px currentColor; }
+input[type="range"].ent-range:hover::-moz-range-thumb,
+input[type="range"].ent-range:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 1px currentColor, 0 0 8px currentColor; }
+
+/* Reduced motion (STYLE.md): keep the state change, drop the transition,
+   even when this sheet is used without theme.css. */
+@media (prefers-reduced-motion: reduce) {
+  .panel *, .controls *, .seg * { transition: none !important; }
+}

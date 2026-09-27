@@ -1,13 +1,23 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The honest rocket · TALARIA</title>
+<meta name="description" content="Fly to the nearby stars at one g: ship years against home years and the fuel bill, with nothing ever faster than light.">
+<link rel="canonical" href="https://mikebertin.github.io/talaria/demos/rocket.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The honest rocket · TALARIA">
+<meta property="og:description" content="Fly to the nearby stars at one g: ship years against home years and the fuel bill, with nothing ever faster than light.">
+<meta property="og:url" content="https://mikebertin.github.io/talaria/demos/rocket.html">
+<meta property="og:image" content="https://mikebertin.github.io/talaria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../vendor/stoa/theme.css">
 <link rel="stylesheet" href="../vendor/stoa/controls.css">
 <link rel="stylesheet" href="../vendor/stoa/notice.css">
 <link rel="stylesheet" href="../vendor/stoa/popover.css">
 <link rel="stylesheet" href="../palette.css">
 <link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../favicon.svg">
+<link rel="icon" href="../badge.svg" type="image/svg+xml">
 <style>
   .legend-row { display:flex; flex-wrap:wrap; gap:14px; font-size:12.5px; color:var(--muted); margin:8px 0 0; }
   .legend-row i { display:inline-block; width:18px; height:3px; margin-right:6px; vertical-align:middle; border-radius:2px; }
@@ -67,11 +77,13 @@
     <p>Crew time grows only as the logarithm of the distance, which is why the galaxy fits in a career. Home time grows as the distance itself, which is why nobody waits up. The exponential fuel bill is <a href="../pages/constraints/lor-1.html">LOR-1 in the register</a>, the rule that a massive body cannot be pushed to c because its energy runs away first; in the register's own words the rocket satisfies LOR-1 exactly and its bill is B-mass. The reason the diagram never produces a paradox is <a href="../pages/constraints/cau-1.html">CAU-1</a>: the worldline is timelike, always inside the light cone, so every observer agrees on the order of departure and arrival. The full physics dossier is <a href="../pages/physics/relativistic-rocket.html">the relativistic rocket</a>; the novels that keep this account are <a href="../pages/fiction/forever-war-collapsars.html">The Forever War</a>, <a href="../pages/fiction/le-guin-ansible.html">Le Guin's Hainish cycle</a> and <a href="../pages/fiction/tau-zero-ramjet.html">Tau Zero</a>.</p>
   </section>
 </main>
-<footer>TALARIA · the honest rocket · Ackeret 1946, Sänger 1953, Sagan 1963, Rindler</footer>
+<footer>TALARIA · the honest rocket · Ackeret 1946, Sänger 1953, Sagan 1963, Rindler<span class="hub"><img src="../badge.svg" alt="" width="13" height="16"> <a href="https://mikebertin.github.io/">More builds by Mike Bertin</a></span></footer>
 <script type="module">
 import { setup, clear, arrow, label, bar } from '../vendor/stoa/draw.js';
 import { bindSlider } from '../vendor/stoa/controls.js';
 import { initPopovers } from '../vendor/stoa/popover.js';
+import { accessDemo } from '../access.js';
+accessDemo(document.getElementById('cv'), 'Left, a spacetime diagram of a constant-thrust trip to the chosen star as seen from home, hugging the light line. Right, bars comparing years on the ship with years at home and the fuel the trip needs. The readout below gives the numbers.');
 import { DEMO, LOOPHOLES, INK, BOARD, PANEL, GRID, MUTED } from '../palette.js';
 
 const W = 760, H = 560;

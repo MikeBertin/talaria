@@ -6,6 +6,12 @@
   border-bottom: 1px dotted var(--muted, #8a8a9c);
   color: var(--ink, #e7e7ef);
 }
+.x:focus-visible {
+  outline: 2px solid var(--focus, var(--accent, #7cc4ff));
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.x[aria-expanded="true"] { border-bottom-style: solid; }
 .x.why {
   display: inline-block;
   margin-top: 8px;
@@ -30,6 +36,9 @@
   transition: opacity 120ms;
 }
 #pop.show { opacity: 1; pointer-events: auto; }
+/* A pinned popover gets an accent edge so you can tell it will stay put. */
+#pop.pinned { border-color: var(--accent, #7cc4ff); }
+@media (prefers-reduced-motion: reduce) { #pop { transition: none; } }
 #pop h4 {
   margin: 0 0 6px;
   font-size: 12px;
