@@ -193,6 +193,14 @@ def main():
             render(page, OUT / f"{d['slug']}.png", args.scale)
             print(f"[{i}/{len(todo)}] {d['slug']}.png", flush=True)
         shutil.rmtree(work, ignore_errors=True)
+        # Quantise in place with pngquant when available: the cards are flat dark
+        # panels and lose nothing visible, and the set drops from about 19 MB to a
+        # few. Only after fresh renders: quantising is lossy, so re-running it on
+        # already-quantised cards (e.g. an --index-only run) degrades them.
+        if shutil.which("pngquant"):
+            subprocess.run(["pngquant", "--quality", "70-95", "--speed", "1", "--force",
+                            "--ext", ".png", *[str(OUT / f"{d['slug']}.png") for d in todo]],
+                           check=False)
     write_index(drives, loops)
     total = sum(p.stat().st_size for p in OUT.glob('*.png'))
     n = len(list(OUT.glob('*.png')))
@@ -203,11 +211,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Quantise in place with pngquant when available: the cards are flat dark
-# panels and lose nothing visible, and the set drops from about 19 MB to a
-# few. Run after the renders; skipped silently if pngquant is not installed.
-import shutil, subprocess as _sp
-if shutil.which("pngquant"):
-    _sp.run(["pngquant", "--quality", "70-95", "--speed", "1", "--force", "--ext", ".png",
-             *[str(f) for f in sorted((Path(__file__).resolve().parent.parent.parent / "web" / "cards").glob("*.png"))]], check=False)
