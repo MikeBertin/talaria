@@ -249,7 +249,7 @@ function draw() {
     ctx.strokeStyle = PANEL; ctx.lineWidth = 1.5; ctx.stroke();
     if (S.send) label(ctx, 'bit ' + s, X(t) + (t > 150 ? -18 : 18), Y(E) + (E > 0 ? 14 : -14), R.text, 11, false);
   }
-  if (!C[0].n && !(S.send && C[1].n)) label(ctx, 'no records to compare yet', (gx0 + gx1) / 2, Y(0) - 26, MUTED, 12);
+  if (!C[0].n && !(S.send && C[1].n)) label(ctx, 'no records to compare yet', (X(90) + gx1) / 2, Y(-0.6), MUTED, 12);  // lower right: the curve never goes there
   label(ctx, 'visible only after comparing notes', cx0 + cw / 2, py + ph - 14, MUTED, 12);
 
   // ---- footer strip ----

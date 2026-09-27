@@ -167,6 +167,7 @@ SHELL = """<!doctype html>
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../vendor/stoa/theme.css">
+<link rel="stylesheet" href="../../palette.css">
 <link rel="stylesheet" href="../../site.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <link rel="icon" href="../../badge.svg" type="image/svg+xml">
