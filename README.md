@@ -96,7 +96,7 @@ Start at [GRADING.md](GRADING.md) for the vocabulary, then [constraints/REGISTER
 
 ## License
 
-No licence file yet; one will be chosen before the repository goes public.
+MIT. See [LICENSE](LICENSE).
 
 ---
 <sub>Part of a collection of interactive builds · [mikebertin.github.io](https://mikebertin.github.io/)</sub>
