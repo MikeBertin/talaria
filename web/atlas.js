@@ -12,6 +12,20 @@ const chip = (t, cls = '') => `<span class="chip ${cls}">${esc(t)}</span>`;
 const vcls = v => v === 'N/A' ? 'v-NA-bg' : `v-${v}-bg`;
 const count = (d, v) => IDS.filter(i => d.verdicts[i] === v).length;
 
+// Maths in the notes: KaTeX (loaded in atlas.html, as on the dossier pages)
+// typesets each block once it is filled. A tooltip cannot hold markup, so
+// its maths is flattened to plain symbols instead.
+const MATH = { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], throwOnError: false };
+function typeset(el) {
+  if (window.renderMathInElement) window.renderMathInElement(el, MATH);
+  else window.addEventListener('load', () => window.renderMathInElement?.(el, MATH), { once: true });
+}
+const TEX = { times: '×', approx: '≈', sim: '~', gtrsim: '≳', ll: '≪', ge: '≥', leq: '≤', propto: '∝', to: '→', hbar: 'ħ', ell: 'ℓ', nabla: '∇',
+  alpha: 'α', beta: 'β', gamma: 'γ', delta: 'δ', Delta: 'Δ', varepsilon: 'ε', kappa: 'κ', mu: 'μ', nu: 'ν', pi: 'π', rho: 'ρ', sigma: 'σ', tau: 'τ', phi: 'φ', varphi: 'φ', Phi: 'Φ' };
+const plainMath = s => String(s).replace(/\$\$?([^$]+)\$\$?/g, (_, m) => m
+  .replace(/\\,/g, ' ').replace(/\\([a-zA-Z]+)/g, (c, w) => TEX[w] ?? '')
+  .replace(/\^\{([^}]*)\}/g, '^$1').replace(/_\{([^}]*)\}/g, '_$1').replace(/[{}]/g, '').replace(/\s+/g, ' ').trim());
+
 initChapters(['physics', 'fiction', 'join', 'register', 'lineage']);
 
 /* ---------- panel ---------- */
@@ -28,7 +42,7 @@ function openDossier(kind, slug) {
   const shown = IDS.filter(i => d.verdicts[i] && d.verdicts[i] !== 'N/A');
   h += `<h4 style="margin:14px 0 6px;color:var(--muted);font-size:12px;letter-spacing:.06em">SCORES (${shown.length} of ${IDS.length} apply)</h4><ul>`;
   for (const i of shown) h += `<li>${chip(d.verdicts[i], 'v-' + d.verdicts[i])} <b><a href="pages/constraints/${i.toLowerCase()}.html">${i}</a></b> ${esc(REG[i]?.title || '')}<br><span class="note">${esc(d.notes[i] || '')}</span></li>`;
-  pbody.innerHTML = h + '</ul>'; panel.classList.remove('hidden'); panel.scrollTop = 0;
+  pbody.innerHTML = h + '</ul>'; typeset(pbody); panel.classList.remove('hidden'); panel.scrollTop = 0;
 }
 function openConstraint(id) {
   const r = REG[id]; if (!r) return;
@@ -40,7 +54,7 @@ function openConstraint(id) {
     h += `<h4 style="margin:14px 0 6px;color:var(--muted);font-size:12px;letter-spacing:.06em">${label.toUpperCase()} (${bs.length})</h4>`;
     for (const v of ['VIOLATES', 'ENGAGES', 'DODGES', 'RULE', 'SATISFIES', 'SILENT']) if (by[v]) h += `<div style="margin:6px 0 2px">${chip(v, 'v-' + v)} ${by[v].length}</div><ul>` + by[v].map(d => `<li><a href="#" data-open="${kind}:${d.slug}">${esc(d.title)}</a></li>`).join('') + '</ul>';
   }
-  pbody.innerHTML = h; panel.classList.remove('hidden'); panel.scrollTop = 0;
+  pbody.innerHTML = h; typeset(pbody); panel.classList.remove('hidden'); panel.scrollTop = 0;
 }
 pbody.addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) { e.preventDefault(); const [k, s] = a.dataset.open.split(':'); openDossier(k, s); } });
 
@@ -50,7 +64,7 @@ function grid(table, rows, kind) {
   h += IDS.map(i => `<th class="rot" data-hc="${i}"><a href="pages/constraints/${i.toLowerCase()}.html">${i}</a></th>`).join('') + '</tr></thead><tbody>';
   for (const d of rows) {
     h += `<tr><td class="name" data-open="${kind}:${d.slug}">${chip(d.loophole, d.loophole)} ${esc(d.title)}</td>`;
-    h += IDS.map(i => { const v = d.verdicts[i] || 'N/A'; return `<td class="cell" data-open="${kind}:${d.slug}" title="${i} ${v}: ${esc(d.notes[i] || '')}"><span class="${vcls(v)}"></span></td>`; }).join('') + '</tr>';
+    h += IDS.map(i => { const v = d.verdicts[i] || 'N/A'; return `<td class="cell" data-open="${kind}:${d.slug}" title="${i} ${v}: ${esc(plainMath(d.notes[i] || '')).replace(/"/g, '&quot;')}"><span class="${vcls(v)}"></span></td>`; }).join('') + '</tr>';
   }
   table.innerHTML = h + '</tbody>';
 }
@@ -85,6 +99,7 @@ function showCard(th) {
   const r = REG[th.dataset.hc]; if (!r) return;
   const short = t => t.length > 220 ? t.slice(0, 217).replace(/\s+\S*$/, '') + '…' : t;
   hc.innerHTML = `<b>${esc(r.id)}</b> <span class="fam">${esc(D.families[r.family] || r.family)}</span><h4>${esc(r.title.replace(/^[A-Z]{3}-\d+:\s*/, ''))}</h4><p>${esc(short(r.forbids))}</p><small>click for the full entry, escape hatches and who it bites</small>`;
+  typeset(hc);
   const b = th.getBoundingClientRect();
   hc.hidden = false;
   const w = hc.offsetWidth;
@@ -118,8 +133,10 @@ renderJoin('L2');
 
 /* ---------- register and lineage lists ---------- */
 document.getElementById('reg-list').innerHTML = D.register.map(r => `<div class="entry"><h3><span class="id">${r.id}</span><a href="pages/constraints/${r.id.toLowerCase()}.html">${esc(r.title)}</a> <span class="chip">${esc(D.families[r.family] || r.family)}</span></h3><p>${esc(r.forbids)}</p><p><a href="#" data-c="${r.id}" style="font-size:12.5px">who it bites →</a></p></div>`).join('');
+typeset(document.getElementById('reg-list'));
 document.getElementById('reg-list').addEventListener('click', e => { const a = e.target.closest('[data-c]'); if (a) { e.preventDefault(); openConstraint(a.dataset.c); } });
 document.getElementById('lin-list').innerHTML = D.lineage.map(l => `<div class="entry"><h3><a href="pages/lineage/${l.slug}.html">${esc(l.title)}</a> <span class="chip">${esc(l.span)}</span></h3><p>${esc(l.hook)}</p></div>`).join('');
+typeset(document.getElementById('lin-list'));
 
 /* ---------- deep links: ?d=kind:slug opens a dossier panel, ?c=ID a constraint panel ---------- */
 {
